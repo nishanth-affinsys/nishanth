@@ -1,0 +1,122 @@
+[
+  {
+    "model": "handoff.auditloglogentry",
+    "pk": 877,
+    "fields": {
+      "object_pk": "5",
+      "object_id": 5,
+      "object_repr": "srujangowda",
+      "action": 1,
+      "changes": "{\"is_ready\": [\"False\", \"True\"]}",
+      "timestamp": "2023-04-26T07:24:00.524Z",
+      "actor": null,
+      "content_type": 16,
+      "remote_addr": null,
+      "additional_data": null,
+      "serialized_data": {
+        "pk": 5,
+        "model": "socialconversation.agent",
+        "fields": {
+          "is_ready": true,
+          "is_online": true
+        }
+      }
+    }
+  },
+  {
+    "model": "handoff.auditloglogentry",
+    "pk": 878,
+    "fields": {
+      "object_pk": "5",
+      "object_id": 5,
+      "object_repr": "srujangowda",
+      "action": 1,
+      "changes": "{\"is_online\": [\"True\", \"False\"], \"is_ready\": [\"True\", \"False\"]}",
+      "timestamp": "2023-04-26T07:24:24.320Z",
+      "actor": null,
+      "content_type": 16,
+      "remote_addr": null,
+      "additional_data": null,
+      "serialized_data": {
+        "pk": 5,
+        "model": "socialconversation.agent",
+        "fields": {
+          "is_ready": false,
+          "is_online": false
+        }
+      }
+    }
+  },
+  {
+    "model": "handoff.auditloglogentry",
+    "pk": 879,
+    "fields": {
+      "object_pk": "5",
+      "object_id": 5,
+      "object_repr": "srujangowda",
+      "action": 1,
+      "changes": "{\"is_online\": [\"False\", \"True\"]}",
+      "timestamp": "2023-04-26T07:24:28.469Z",
+      "actor": null,
+      "content_type": 16,
+      "remote_addr": null,
+      "additional_data": null,
+      "serialized_data": {
+        "pk": 5,
+        "model": "socialconversation.agent",
+        "fields": {
+          "is_ready": false,
+          "is_online": true
+        }
+      }
+    }
+  },
+  {
+    "model": "handoff.auditloglogentry",
+    "pk": 880,
+    "fields": {
+      "object_pk": "5",
+      "object_id": 5,
+      "object_repr": "srujangowda",
+      "action": 1,
+      "changes": "{\"is_ready\": [\"False\", \"True\"]}",
+      "timestamp": "2023-04-26T07:24:29.164Z",
+      "actor": null,
+      "content_type": 16,
+      "remote_addr": null,
+      "additional_data": null,
+      "serialized_data": {
+        "pk": 5,
+        "model": "socialconversation.agent",
+        "fields": {
+          "is_ready": true,
+          "is_online": true
+        }
+      }
+    }
+  },
+  {
+    "model": "handoff.auditloglogentry",
+    "pk": 881,
+    "fields": {
+      "object_pk": "5",
+      "object_id": 5,
+      "object_repr": "srujangowda",
+      "action": 1,
+      "changes": "{\"is_online\": [\"True\", \"False\"], \"is_ready\": [\"True\", \"False\"]}",
+      "timestamp": "2023-04-26T07:26:28.826Z",
+      "actor": null,
+      "content_type": 16,
+      "remote_addr": null,
+      "additional_data": null,
+      "serialized_data": {
+        "pk": 5,
+        "model": "socialconversation.agent",
+        "fields": {
+          "is_ready": false,
+          "is_online": false
+        }
+      }
+    }
+  }
+]

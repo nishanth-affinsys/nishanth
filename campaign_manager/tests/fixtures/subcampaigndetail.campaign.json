@@ -1,0 +1,122 @@
+[
+  {
+    "model": "campaign_manager.subcampaigndetail",
+    "pk": 85,
+    "fields": {
+      "name": "testing",
+      "status": "COMPLETED",
+      "description": "testing",
+      "identifier": "26-A",
+      "is_primary": true,
+      "type": "NOTIFICATION",
+      "campaign": 85,
+      "created_timestamp": "2023-09-19T05:41:36.412Z",
+      "last_modified": "2023-09-19T05:41:36.412Z"
+    }
+  },
+  {
+    "model": "campaign_manager.subcampaigndetail",
+    "pk": 77,
+    "fields": {
+      "name": "test marketing",
+      "status": "INACTIVE",
+      "description": "saad",
+      "identifier": "2.1-A",
+      "is_primary": true,
+      "type": "NOTIFICATION",
+      "campaign": 77,
+      "created_timestamp": "2023-09-15T12:03:54.756Z",
+      "last_modified": "2023-09-15T12:03:54.756Z"
+    }
+  },
+  {
+    "model": "campaign_manager.subcampaigndetail",
+    "pk": 86,
+    "fields": {
+      "name": "test marketing",
+      "status": "INACTIVE",
+      "description": "saad",
+      "identifier": "2.4-A",
+      "is_primary": true,
+      "type": "NOTIFICATION",
+      "campaign": 86,
+      "created_timestamp": "2023-09-19T06:08:24.408Z",
+      "last_modified": "2023-09-19T06:08:24.408Z"
+    }
+  },
+  {
+    "model": "campaign_manager.subcampaigndetail",
+    "pk": 79,
+    "fields": {
+      "name": "test marketing",
+      "status": "INACTIVE",
+      "description": "saad",
+      "identifier": "2.3-A",
+      "is_primary": true,
+      "type": "NOTIFICATION",
+      "campaign": 79,
+      "created_timestamp": "2023-09-15T12:05:18.568Z",
+      "last_modified": "2023-09-19T04:51:10.181Z"
+    }
+  },
+  {
+    "model": "campaign_manager.subcampaigndetail",
+    "pk": 87,
+    "fields": {
+      "name": "campaign test admin",
+      "status": "COMPLETED",
+      "description": "",
+      "identifier": "1-A",
+      "is_primary": true,
+      "type": "NOTIFICATION",
+      "campaign": 87,
+      "created_timestamp": "2023-09-19T07:11:01.478Z",
+      "last_modified": "2023-09-19T07:11:01.478Z"
+    }
+  },
+   {
+    "model": "campaign_manager.subcampaigndetail",
+    "pk": 94,
+    "fields": {
+      "name": "campaign test admin",
+      "status": "INACTIVE",
+      "description": "",
+      "identifier": "1-A",
+      "is_primary": true,
+      "type": "NOTIFICATION",
+      "campaign": 94,
+      "created_timestamp": "2023-09-19T07:11:01.478Z",
+      "last_modified": "2023-09-19T07:11:01.478Z"
+    }
+  },
+  {
+    "model": "campaign_manager.subcampaigndetail",
+    "pk": 91,
+    "fields": {
+      "name": "campaign test12 admin",
+      "status": "ACTIVE",
+      "description": "",
+      "identifier": "12-A",
+      "is_primary": true,
+      "type": "NOTIFICATION",
+      "campaign": 91,
+      "created_timestamp": "2023-09-19T07:11:01.478Z",
+      "last_modified": "2023-09-19T07:11:01.478Z"
+    }
+  },
+   {
+    "model": "campaign_manager.subcampaigndetail",
+    "pk": 90,
+    "fields": {
+      "name": "campaign test12 admin",
+      "status": "ACTIVE",
+      "description": "",
+      "identifier": "12-A",
+      "is_primary": true,
+      "type": "UTILITY",
+      "campaign": 90,
+      "created_timestamp": "2023-09-19T07:11:01.478Z",
+      "last_modified": "2023-09-19T07:11:01.478Z"
+    }
+  }
+]

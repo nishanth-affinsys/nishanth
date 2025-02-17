@@ -1,0 +1,146 @@
+[
+  {
+    "model": "campaign_manager.campaign",
+    "pk": 94,
+    "fields": {
+      "last_modified": "2023-09-19T07:13:00.830Z",
+      "campaign_id": "1",
+      "parent": "",
+      "campaign_name": "campaign test admin",
+      "campaign_type": "PARENT",
+      "campaign_description": "",
+      "campaign_tags": null,
+      "tenant": "lebacampaign",
+      "archived": false,
+      "status": "COMPLETED",
+      "created_timestamp": "2023-09-19T07:11:01.473Z",
+      "campaign_category": "Marketing"
+    }
+  },
+  {
+    "model": "campaign_manager.campaign",
+    "pk": 79,
+    "fields": {
+      "last_modified": "2023-09-19T11:59:47.912Z",
+      "campaign_id": "27",
+      "parent": "",
+      "campaign_name": "test",
+      "campaign_type": "PARENT",
+      "campaign_description": "",
+      "campaign_tags": null,
+      "tenant": "lebacampaign",
+      "archived": false,
+      "status": "INACTIVE",
+      "created_timestamp": "2023-09-19T11:59:47.912Z",
+      "campaign_category": "Marketing"
+    }
+  },
+  {
+    "model": "campaign_manager.campaign",
+    "pk": 86,
+    "fields": {
+      "last_modified": "2023-09-19T10:30:00.350Z",
+      "campaign_id": "3",
+      "parent": "",
+      "campaign_name": "Sample Bill",
+      "campaign_type": "PARENT",
+      "campaign_description": "",
+      "campaign_tags": "Billing",
+      "tenant": "lebacampaign",
+      "archived": false,
+      "status": "ACTIVE",
+      "created_timestamp": "2023-09-19T10:28:18.463Z",
+      "campaign_category": "Marketing"
+    }
+  },
+  {
+    "model": "campaign_manager.campaign",
+    "pk": 77,
+    "fields": {
+      "last_modified": "2023-09-19T10:45:02.379Z",
+      "campaign_id": "2.5",
+      "parent": "2",
+      "campaign_name": "20 numbers",
+      "campaign_type": "VARIANT",
+      "campaign_description": "20 numbers",
+      "campaign_tags": "20 numbers,Variant of Campaign->2",
+      "tenant": "lebacampaign",
+      "archived": false,
+      "status": "COMPLETED",
+      "created_timestamp": "2023-09-19T09:52:20.652Z",
+      "campaign_category": "Marketing"
+    }
+  },
+  {
+    "model": "campaign_manager.campaign",
+    "pk": 85,
+    "fields": {
+      "last_modified": "2023-09-19T11:24:00.707Z",
+      "campaign_id": "4",
+      "parent": "",
+      "campaign_name": "Affinsys Bill",
+      "campaign_type": "PARENT",
+      "campaign_description": "",
+      "campaign_tags": "Billing",
+      "tenant": "lebacampaign",
+      "archived": false,
+      "status": "COMPLETED",
+      "created_timestamp": "2023-09-19T11:22:34.025Z",
+      "campaign_category": "Utility"
+    }
+  },
+  {
+    "model": "campaign_manager.campaign",
+    "pk": 87,
+    "fields": {
+      "last_modified": "2023-09-19T11:24:00.707Z",
+      "campaign_id": "5",
+      "parent": "",
+      "campaign_name": "Affinsys Bill payments",
+      "campaign_type": "PARENT",
+      "campaign_description": "",
+      "campaign_tags": "Billing",
+      "tenant": "lebacampaign",
+      "archived": true,
+      "status": "COMPLETED",
+      "created_timestamp": "2023-09-19T11:22:34.025Z",
+      "campaign_category": "Utility"
+    }
+  },
+   {
+    "model": "campaign_manager.campaign",
+    "pk": 91,
+    "fields": {
+      "last_modified": "2023-09-19T07:13:00.830Z",
+      "campaign_id": "12",
+      "parent": "",
+      "campaign_name": "campaign test12 admin",
+      "campaign_type": "PARENT",
+      "campaign_description": "",
+      "campaign_tags": null,
+      "tenant": "lebacampaign",
+      "archived": false,
+      "status": "COMPLETED",
+      "created_timestamp": "2023-09-19T07:11:01.473Z",
+      "campaign_category": "Marketing"
+    }
+  },
+   {
+    "model": "campaign_manager.campaign",
+    "pk": 90,
+    "fields": {
+      "last_modified": "2023-09-19T07:13:00.830Z",
+      "campaign_id": "13",
+      "parent": "",
+      "campaign_name": "campaign test13 admin",
+      "campaign_type": "PARENT",
+      "campaign_description": "",
+      "campaign_tags": null,
+      "tenant": "lebacampaign",
+      "archived": false,
+      "status": "ACTIVE",
+      "created_timestamp": "2023-09-19T07:11:01.473Z",
+      "campaign_category": "Utility"
+    }
+  }
+]

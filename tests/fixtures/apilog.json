@@ -1,0 +1,102 @@
+[
+  {
+    "model": "console.apilog",
+    "pk": 1,
+    "fields": {
+      "endpoint": "http://localhost:8999/otp/generate",
+      "channel_id": "ef22d0f5b557631266d309a1a54c5407",
+      "request_id": null,
+      "session_id": "d4e45b31064644d398d67824758dc1e8",
+      "api": "generate otp",
+      "stage": "Request",
+      "status": "201",
+      "channel": "webchat",
+      "internal_reference": "5868e438cda643b19f4ffccfa7e178b9",
+      "external_reference": null,
+      "data": "{\n        \"phone\": \"+966579183150\",\n        \"channel_id\": \"f9587074-8b30-11ed-a349-0200d830badf\",\n        \"otp_string\": \"Your One-Time Password (OTP) is {0} \",\n        \"tenant\": \"lebacpsix\"\n}",
+      "exception": null,
+      "timestamp": "2023-01-03T06:36:37.874Z",
+      "tenant": "lebacpsix"
+    }
+  },
+  {
+    "model": "console.apilog",
+    "pk": 2,
+    "fields": {
+      "endpoint": "http://localhost:8999/otp/generate",
+      "channel_id": "ef22d0f5b557631266d309a1a54c5407",
+      "request_id": null,
+      "session_id": "d4e45b31064644d398d67824758dc1e8",
+      "api": "generate otp",
+      "stage": "Response",
+      "status": "201",
+      "channel": "webchat",
+      "internal_reference": "5868e438cda643b19f4ffccfa7e178b9",
+      "external_reference": null,
+      "data": "{\"id\":\"1d990a5d-c9a2-4789-8577-d42df6462933\",\"expiry\":135.0}",
+      "exception": null,
+      "timestamp": "2023-01-03T06:36:37.878Z",
+      "tenant": "lebacpsix"
+    }
+  },
+  {
+    "model": "console.apilog",
+    "pk": 3,
+    "fields": {
+      "endpoint": "http://localhost:8999/otp/verify",
+      "channel_id": "ef22d0f5b557631266d309a1a54c5407",
+      "request_id": null,
+      "session_id": "d4e45b31064644d398d67824758dc1e8",
+      "api": "Validate OTP",
+      "stage": "Request",
+      "status": "201",
+      "channel": "webchat",
+      "internal_reference": "5868e438cda643b19f4ffccfa7e178b9",
+      "external_reference": null,
+      "data": "{\n        \"id\": \"1d990a5d-c9a2-4789-8577-d42df6462933\",\n        \"token\": \"1212\",\n        \"tenant\": \"lebacpsix\"\n}",
+      "exception": null,
+      "timestamp": "2023-01-03T06:36:42.824Z",
+      "tenant": "lebacpsix"
+    }
+  },
+  {
+    "model": "console.apilog",
+    "pk": 4,
+    "fields": {
+      "endpoint": "http://localhost:8999/otp/verify",
+      "channel_id": "ef22d0f5b557631266d309a1a54c5407",
+      "request_id": null,
+      "session_id": "d4e45b31064644d398d67824758dc1e8",
+      "api": "Validate OTP",
+      "stage": "Response",
+      "status": "201",
+      "channel": "webchat",
+      "internal_reference": "5868e438cda643b19f4ffccfa7e178b9",
+      "external_reference": null,
+      "data": "{\"valid\":true}",
+      "exception": null,
+      "timestamp": "2023-01-03T06:36:42.826Z",
+      "tenant": "lebacpsix"
+    }
+  },
+  {
+    "model": "console.apilog",
+    "pk": 5,
+    "fields": {
+      "endpoint": "http://localhost:8999/otp/generate",
+      "channel_id": "ef22d0f5b557631266d309a1a54c5407",
+      "request_id": null,
+      "session_id": "2195766c08ae462a85ebdd804b152f97",
+      "api": "generate otp",
+      "stage": "Request",
+      "status": "201",
+      "channel": "webchat",
+      "internal_reference": "8dbe4fce2d364d328a186af8e3ca9c90",
+      "external_reference": null,
+      "data": "{\n        \"phone\": \"+966579183150\",\n        \"channel_id\": \"9e812018-8b5a-11ed-8893-0200d830badf\",\n        \"otp_string\": \"Your One-Time Password (OTP) is {0} \",\n        \"tenant\": \"lebacpsix\"\n}",
+      "exception": null,
+      "timestamp": "2023-01-03T11:34:44.432Z",
+      "tenant": "lebacpsix"
+    }
+  }
+]

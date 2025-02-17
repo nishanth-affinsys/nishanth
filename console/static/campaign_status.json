@@ -1,0 +1,488 @@
+{
+  "common": {
+    "chart_title": "Campaign Status Report",
+    "screenshot": true,
+    "charts": [
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Total Created Campaigns",
+        "screenshot": true,
+        "color": 0,
+        "cols": 3,
+        "rows": 1,
+        "Property": {},
+        "description": "The numeric value represents the total number of campaigns that were created.",
+        "chart_api_url": "campaign_active_inactive/campaign_created_bigNum/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Total Active Campaigns",
+        "screenshot": true,
+        "color": 0,
+        "cols": 3,
+        "rows": 1,
+        "Property": {},
+        "description": "The numeric value represents the total number of campaigns that are active",
+        "chart_api_url": "campaign_active_inactive/campaigns_active_bigNum/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Total Inactive Campaigns",
+        "screenshot": true,
+        "color": 0,
+        "cols": 3,
+        "rows": 1,
+        "Property": {},
+        "description": "The numeric value represents the total number of campaigns that are inactive",
+        "chart_api_url": "campaign_active_inactive/campaigns_inactive_bigNum/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Total Completed Campaigns",
+        "screenshot": true,
+        "color": 0,
+        "cols": 3,
+        "rows": 1,
+        "Property": {},
+        "description": "The numeric value represents the total number of campaigns that are completed",
+        "chart_api_url": "campaign_active_inactive/campaigns_completed_bigNum/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Total Deleted Campaigns",
+        "screenshot": true,
+        "color": 0,
+        "cols": 3,
+        "rows": 1.5,
+        "Property": {},
+        "description": "The numeric value represents the total number of campaigns that are deleted",
+        "chart_api_url": "campaign_active_inactive/campaigns_deleted_bigNum/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "line_chart",
+        "chartType": "group",
+        "title": "Status of Campaigns",
+        "screenshot": true,
+        "color": 0,
+        "cols": 9,
+        "rows": 1.5,
+        "Property": {
+          "x": "Date",
+          "y": [
+            "Active_Campaigns",
+            "Inactive_Campaigns",
+            "Completed_Campaigns",
+            "Deleted_Campaigns"
+          ]
+        },
+        "description": "The multi-line chart represents the total active and inactive campaigns for each day",
+        "chart_api_url": "campaign_active_inactive/campaigns_active_inactive_linechart/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Aggregate Details",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "campaign_manager.views.campaign_active_inactive_views/CampaignActiveInActiveViewSet/campaign_aggregate_details_export_csv",
+        "description": "The table represents the count of all the sub-campaigns under the main campaign and their status",
+        "chart_api_url": "campaign_active_inactive/campaign_aggregate_details/",
+        "chart_report_api": "campaign_active_inactive/campaign_aggregate_details_export_csv/",
+        "chart_report_pdf_api": "campaign_active_inactive/campaign_aggregate_details_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Campaign Types Details",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "campaign_manager.views.campaign_active_inactive_views/CampaignActiveInActiveViewSet/campaign_types_details_export_csv",
+        "description": "The table gives the status and type of all the sub-campaigns",
+        "chart_api_url": "campaign_active_inactive/campaign_types_details/",
+        "chart_report_api": "campaign_active_inactive/campaign_types_details_export_csv/",
+        "chart_report_pdf_api": "campaign_active_inactive/campaign_types_details_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Targeted Users",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "campaign_manager.views.campaign_active_inactive_views/CampaignActiveInActiveViewSet/sub_campaign_targeted_user_export_csv",
+        "description": "The table gives the targeted users of every sub campaign",
+        "chart_api_url": "campaign_active_inactive/campaign_sub_targeted_users/",
+        "chart_report_api": "campaign_active_inactive/campaign_sub_targeted_users_export_csv/",
+        "chart_report_pdf_api": "campaign_active_inactive/campaign_sub_targeted_users_export_pdf/"
+      }
+    ],
+    "filters": [
+      {
+        "return_key": "timestamp__range",
+        "service": "analytics",
+        "filter_type": "timestamp",
+        "filter_title": "Time Range"
+      },
+      {
+        "api_url": "get_campaigns/",
+        "request_method": "POST",
+        "dependency": [
+          "timestamp__range"
+        ],
+        "return_key": "campaign_variants",
+        "service": "analytics",
+        "filter_type": "multiselect",
+        "filter_title": "Campaign Name"
+      }
+    ]
+  },
+  "stanbic": {
+    "chart_title": "Campaign Status Report",
+    "screenshot": true,
+    "charts": [
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Total Created Campaigns",
+        "screenshot": true,
+        "color": 0,
+        "cols": 3,
+        "rows": 1,
+        "Property": {},
+        "description": "The numeric value represents the total number of campaigns that were created.",
+        "chart_api_url": "campaign_active_inactive/campaign_created_bigNum/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Total Active Campaigns",
+        "screenshot": true,
+        "color": 0,
+        "cols": 3,
+        "rows": 1,
+        "Property": {},
+        "description": "The numeric value represents the total number of campaigns that are active",
+        "chart_api_url": "campaign_active_inactive/campaigns_active_bigNum/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Total Inactive Campaigns",
+        "screenshot": true,
+        "color": 0,
+        "cols": 3,
+        "rows": 1,
+        "Property": {},
+        "description": "The numeric value represents the total number of campaigns that are inactive",
+        "chart_api_url": "campaign_active_inactive/campaigns_inactive_bigNum/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Total Completed Campaigns",
+        "screenshot": true,
+        "color": 0,
+        "cols": 3,
+        "rows": 1,
+        "Property": {},
+        "description": "The numeric value represents the total number of campaigns that are completed",
+        "chart_api_url": "campaign_active_inactive/campaigns_completed_bigNum/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Total Deleted Campaigns",
+        "screenshot": true,
+        "color": 0,
+        "cols": 3,
+        "rows": 1.5,
+        "Property": {},
+        "description": "The numeric value represents the total number of campaigns that are deleted",
+        "chart_api_url": "campaign_active_inactive/campaigns_deleted_bigNum/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "line_chart",
+        "chartType": "group",
+        "title": "Status of Campaigns",
+        "screenshot": true,
+        "color": 0,
+        "cols": 9,
+        "rows": 1.5,
+        "Property": {
+          "x": "Date",
+          "y": [
+            "Active_Campaigns",
+            "Inactive_Campaigns",
+            "Completed_Campaigns",
+            "Deleted_Campaigns"
+          ]
+        },
+        "description": "The multi-line chart represents the total active and inactive campaigns for each day",
+        "chart_api_url": "campaign_active_inactive/campaigns_active_inactive_linechart/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Aggregate Details",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "campaign_manager.views.campaign_active_inactive_views/CampaignActiveInActiveViewSet/campaign_aggregate_details_export_csv",
+        "description": "The table represents the count of all the sub-campaigns under the main campaign and their status",
+        "chart_api_url": "campaign_active_inactive/campaign_aggregate_details/",
+        "chart_report_api": "campaign_active_inactive/campaign_aggregate_details_export_csv/",
+        "chart_report_pdf_api": "campaign_active_inactive/campaign_aggregate_details_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Campaign Types Details",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "campaign_manager.views.campaign_active_inactive_views/CampaignActiveInActiveViewSet/campaign_types_details_export_csv",
+        "description": "The table gives the status and type of all the sub-campaigns",
+        "chart_api_url": "campaign_active_inactive/campaign_types_details/",
+        "chart_report_api": "campaign_active_inactive/campaign_types_details_export_csv/",
+        "chart_report_pdf_api": "campaign_active_inactive/campaign_types_details_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Targeted Users",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "campaign_manager.views.campaign_active_inactive_views/CampaignActiveInActiveViewSet/sub_campaign_targeted_user_export_csv",
+        "description": "The table gives the targeted users of every sub campaign",
+        "chart_api_url": "campaign_active_inactive/campaign_sub_targeted_users/",
+        "chart_report_api": "campaign_active_inactive/campaign_sub_targeted_users_export_csv/",
+        "chart_report_pdf_api": "campaign_active_inactive/campaign_sub_targeted_users_export_pdf/"
+      }
+    ],
+    "filters": [
+      {
+        "return_key": "timestamp__range",
+        "service": "analytics",
+        "filter_type": "timestamp",
+        "filter_title": "Time Range"
+      },
+      {
+        "api_url": "get_campaigns/",
+        "request_method": "POST",
+        "dependency": [
+          "timestamp__range"
+        ],
+        "return_key": "campaign_variants",
+        "service": "analytics",
+        "filter_type": "multiselect",
+        "filter_title": "Campaign Name"
+      }
+    ]
+  },
+  "dashboard": {
+    "chart_title": "Campaign Status Report",
+    "screenshot": true,
+    "charts": [
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Total Created Campaigns",
+        "screenshot": true,
+        "color": 0,
+        "cols": 3,
+        "rows": 1,
+        "Property": {},
+        "description": "The numeric value represents the total number of campaigns that were created.",
+        "chart_api_url": "campaign_active_inactive/campaign_created_bigNum/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Total Active Campaigns",
+        "screenshot": true,
+        "color": 0,
+        "cols": 3,
+        "rows": 1,
+        "Property": {},
+        "description": "The numeric value represents the total number of campaigns that are active",
+        "chart_api_url": "campaign_active_inactive/campaigns_active_bigNum/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Total Inactive Campaigns",
+        "screenshot": true,
+        "color": 0,
+        "cols": 3,
+        "rows": 1,
+        "Property": {},
+        "description": "The numeric value represents the total number of campaigns that are inactive",
+        "chart_api_url": "campaign_active_inactive/campaigns_inactive_bigNum/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Total Completed Campaigns",
+        "screenshot": true,
+        "color": 0,
+        "cols": 3,
+        "rows": 1,
+        "Property": {},
+        "description": "The numeric value represents the total number of campaigns that are completed",
+        "chart_api_url": "campaign_active_inactive/campaigns_completed_bigNum/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Total Deleted Campaigns",
+        "screenshot": true,
+        "color": 0,
+        "cols": 3,
+        "rows": 1.5,
+        "Property": {},
+        "description": "The numeric value represents the total number of campaigns that are deleted",
+        "chart_api_url": "campaign_active_inactive/campaigns_deleted_bigNum/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "line_chart",
+        "chartType": "group",
+        "title": "Status of Campaigns",
+        "screenshot": true,
+        "color": 0,
+        "cols": 9,
+        "rows": 1.5,
+        "Property": {
+          "x": "Date",
+          "y": [
+            "Active_Campaigns",
+            "Inactive_Campaigns",
+            "Completed_Campaigns",
+            "Deleted_Campaigns"
+          ]
+        },
+        "description": "The multi-line chart represents the total active and inactive campaigns for each day",
+        "chart_api_url": "campaign_active_inactive/campaigns_active_inactive_linechart/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Aggregate Details",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "campaign_manager.views.campaign_active_inactive_views/CampaignActiveInActiveViewSet/campaign_aggregate_details_export_csv",
+        "description": "The table represents the count of all the sub-campaigns under the main campaign and their status",
+        "chart_api_url": "campaign_active_inactive/campaign_aggregate_details/",
+        "chart_report_api": "campaign_active_inactive/campaign_aggregate_details_export_csv/",
+        "chart_report_pdf_api": "campaign_active_inactive/campaign_aggregate_details_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Campaign Types Details",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "campaign_manager.views.campaign_active_inactive_views/CampaignActiveInActiveViewSet/campaign_types_details_export_csv",
+        "description": "The table gives the status and type of all the sub-campaigns",
+        "chart_api_url": "campaign_active_inactive/campaign_types_details/",
+        "chart_report_api": "campaign_active_inactive/campaign_types_details_export_csv/",
+        "chart_report_pdf_api": "campaign_active_inactive/campaign_types_details_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Targeted Users",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "campaign_manager.views.campaign_active_inactive_views/CampaignActiveInActiveViewSet/sub_campaign_targeted_user_export_csv",
+        "description": "The table gives the targeted users of every sub campaign",
+        "chart_api_url": "campaign_active_inactive/campaign_sub_targeted_users/",
+        "chart_report_api": "campaign_active_inactive/campaign_sub_targeted_users_export_csv/",
+        "chart_report_pdf_api": "campaign_active_inactive/campaign_sub_targeted_users_export_pdf/"
+      }
+    ],
+    "filters": [
+      {
+        "return_key": "timestamp__range",
+        "service": "analytics",
+        "filter_type": "timestamp",
+        "filter_title": "Time Range"
+      },
+      {
+        "api_url": "get_campaigns/",
+        "request_method": "POST",
+        "dependency": [
+          "timestamp__range"
+        ],
+        "return_key": "campaign_variants",
+        "service": "analytics",
+        "filter_type": "multiselect",
+        "filter_title": "Campaign Name"
+      }
+    ]
+  }
+}

@@ -1,0 +1,182 @@
+{
+  "success_rt": {
+    "count": 3,
+    "next": null,
+    "previous": null,
+    "results": [
+      {
+        "Application_number": "20230526113943483081",
+        "Customer_name": "Malavika M V",
+        "Account_number_1": "23456543212345",
+        "Account_number_2": null,
+        "Branch_code": "2034",
+        "Customer_type": "NTB",
+        "Mode": "Staff",
+        "Approved_by": "amogha",
+        "Approved_timestamp": "2023-06-09 06:09:09+00:00"
+      },
+      {
+        "Application_number": "20230606070857293152",
+        "Customer_name": "Riya M Rodriguez",
+        "Account_number_1": "23456543212345",
+        "Account_number_2": "23456543212349",
+        "Branch_code": "2034",
+        "Customer_type": "ETB",
+        "Mode": "Self",
+        "Approved_by": "amogha",
+        "Approved_timestamp": "2023-06-09 06:09:09+00:00"
+      },
+      {
+        "Application_number": "20230606070857293952",
+        "Customer_name": "Ryan M Rodriguez",
+        "Account_number_1": "23456543212345",
+        "Account_number_2": "23456543212349",
+        "Branch_code": "2034",
+        "Customer_type": "ETB",
+        "Mode": "Agent",
+        "Approved_by": "amogha",
+        "Approved_timestamp": "2023-06-09 06:09:09+00:00"
+      }
+    ]
+  },
+  "success_sp": {
+    "count": 3,
+    "next": null,
+    "previous": null,
+    "results": [
+      {
+        "Application_number": "20230606070857293900",
+        "Business_name": "Tech",
+        "Account_number_1": "5754324565445",
+        "Account_number_2": "5754324565433",
+        "Branch_code": "2014",
+        "Customer_type": "ETB",
+        "Mode": "Self",
+        "Approved_by": "tushar",
+        "Approved_timestamp": "2023-05-09 06:09:09+00:00"
+      },
+      {
+        "Application_number": "20230606070857293901",
+        "Business_name": "Tech",
+        "Account_number_1": "5754324565445",
+        "Account_number_2": "5754324565433",
+        "Branch_code": "2014",
+        "Customer_type": "ETB",
+        "Mode": "Staff",
+        "Approved_by": "tushar",
+        "Approved_timestamp": "2023-05-09 06:09:09+00:00"
+      },
+      {
+        "Application_number": "20230606070857293902",
+        "Business_name": "Tech",
+        "Account_number_1": "5754324565445",
+        "Account_number_2": "5754324565433",
+        "Branch_code": "2014",
+        "Customer_type": "ETB",
+        "Mode": "Agent",
+        "Approved_by": "tushar",
+        "Approved_timestamp": "2023-05-09 06:09:09+00:00"
+      }
+    ]
+  },
+  "rejected_rt": {
+    "count": 3,
+    "next": null,
+    "previous": null,
+    "results": [
+      {
+        "Application_number": "20230526113943483084",
+        "Customer_name": "Liam L L",
+        "Branch_code": "2034",
+        "Customer_type": "NTB",
+        "Mode": "Self",
+        "Rejected_by": "malavika",
+        "Rejected_timestamp": "2023-06-09 08:19:09+00:00"
+      },
+      {
+        "Application_number": "20230526113943483086",
+        "Customer_name": "Niall L Hall",
+        "Branch_code": "2034",
+        "Customer_type": "ETB",
+        "Mode": "Agent",
+        "Rejected_by": "amogha",
+        "Rejected_timestamp": "2023-06-09 06:39:09+00:00"
+      },
+      {
+        "Application_number": "20230526113943483083",
+        "Customer_name": "Mythlee M V",
+        "Branch_code": "2034",
+        "Customer_type": "ETB",
+        "Mode": "Staff",
+        "Rejected_by": "malavika",
+        "Rejected_timestamp": "2023-06-08 16:07:09+00:00"
+      }
+    ]
+  },
+  "rejected_sp": {
+    "count": 3,
+    "next": null,
+    "previous": null,
+    "results": [
+      {
+        "Application_number": "20230606070857293912",
+        "Business_name": "Tech",
+        "Branch_code": "2014",
+        "Customer_type": "ETB",
+        "Mode": "Agent",
+        "Rejected_by": "malavika",
+        "Rejected_timestamp": "2023-05-19 03:39:09+00:00"
+      },
+      {
+        "Application_number": "20230606070857293990",
+        "Business_name": "Tech",
+        "Branch_code": "2014",
+        "Customer_type": "ETB",
+        "Mode": "Staff",
+        "Rejected_by": "malavika",
+        "Rejected_timestamp": "2023-05-11 16:49:09+00:00"
+      },
+      {
+        "Application_number": "20230606070857293952",
+        "Business_name": "Tech",
+        "Branch_code": "2014",
+        "Customer_type": "ETB",
+        "Mode": "Self",
+        "Rejected_by": "amogha",
+        "Rejected_timestamp": "2023-05-10 13:09:09+00:00"
+      }
+    ]
+  },
+  "abandoned_rt": {
+    "count": 1,
+    "next": null,
+    "previous": null,
+    "results": [
+      {
+        "Application_number": "20230526113943483017",
+        "Customer_name": "Samantha L Irene",
+        "Branch_code": "2034",
+        "Customer_type": "ETB",
+        "Mode": "Self",
+        "Abandoned_by": "tushar singla",
+        "Abandoned_timestamp": "2023-06-09 06:09:09+00:00"
+      }
+    ]
+  },
+  "abandoned_sp": {
+    "count": 1,
+    "next": null,
+    "previous": null,
+    "results": [
+      {
+        "Application_number": "20230526113943483087",
+        "Customer_name": "Emily L Irene",
+        "Branch_code": "2034",
+        "Customer_type": "ETB",
+        "Mode": "Agent",
+        "Last_modified_by": "amogha",
+        "Last_modified_timestamp": "2023-06-08 06:07:09+00:00"
+      }
+    ]
+  }
+}

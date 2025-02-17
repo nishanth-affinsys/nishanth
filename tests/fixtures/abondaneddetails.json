@@ -1,0 +1,77 @@
+[
+  {
+    "model": "handoff.abondaneddetails",
+    "pk": 1265,
+    "fields": {
+      "timestamp": "2023-04-26T09:34:02.822Z",
+      "session": "499f6ca9-cb4a-42d1-9cd4-f04016879343",
+      "username": "aerqwrefewqdsfc",
+      "phone_number": "",
+      "email": "",
+      "social_id": 29,
+      "channel": "webchat",
+      "event": "user-fallout",
+      "tenant": "lebahandofffive"
+    }
+  },
+  {
+    "model": "handoff.abondaneddetails",
+    "pk": 1266,
+    "fields": {
+      "timestamp": "2023-04-26T09:34:02.911Z",
+      "session": "38f04bba-91ef-4698-a5e9-ad570c9c009b",
+      "username": "aerqwrefewqdsfc",
+      "phone_number": "",
+      "email": "",
+      "social_id": 29,
+      "channel": "webchat",
+      "event": "handoff-initial",
+      "tenant": "lebahandofffive"
+    }
+  },
+  {
+    "model": "handoff.abondaneddetails",
+    "pk": 1267,
+    "fields": {
+      "timestamp": "2023-04-26T09:34:04.922Z",
+      "session": "",
+      "username": "aerqwrefewqdsfc",
+      "phone_number": "",
+      "email": "",
+      "social_id": 29,
+      "channel": "webchat",
+      "event": "agent-unavailable",
+      "tenant": "lebahandofffive"
+    }
+  },
+  {
+    "model": "handoff.abondaneddetails",
+    "pk": 1268,
+    "fields": {
+      "timestamp": "2023-04-26T09:34:04.978Z",
+      "session": "17471f20-c716-4d19-b3fa-030fc23c9a3b",
+      "username": "aerqwrefewqdsfc",
+      "phone_number": "",
+      "email": "",
+      "social_id": 29,
+      "channel": "webchat",
+      "event": "handoff-initial",
+      "tenant": "lebahandofffive"
+    }
+  },
+  {
+    "model": "handoff.abondaneddetails",
+    "pk": 1269,
+    "fields": {
+      "timestamp": "2023-04-26T09:34:06.154Z",
+      "session": "",
+      "username": "aerqwrefewqdsfc",
+      "phone_number": "",
+      "email": "",
+      "social_id": 29,
+      "channel": "webchat",
+      "event": "agent-unavailable",
+      "tenant": "lebahandofffive"
+    }
+  }
+]

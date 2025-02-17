@@ -1,0 +1,446 @@
+{
+  "common": {
+    "chart_title": "Retail Agent Applications Report",
+    "screenshot": true,
+    "charts": [
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Ageing Report",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "onboarding.views.onboarding_ageing_report_views/AgeingReportViewSet/scheduled_ageing_report_agent_rt_csv",
+        "description": "The table lists the ageing report for retail customer applications, where customers are onboarded from agent channel.",
+        "chart_api_url": "onboarding_ageing_charts/scheduled_ageing_report_agent_rt/",
+        "chart_report_api": "onboarding_ageing_charts/scheduled_ageing_report_agent_rt_csv/",
+        "chart_report_pdf_api": "onboarding_ageing_charts/scheduled_ageing_report_agent_rt_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Detailed Report",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "onboarding.views.onboarding_detailed_report_views/DetailedReportViewSet/applications_report_agent_rt_export_csv",
+        "description": "The table presents the audit trail record for agent applications in retail sector",
+        "chart_api_url": "onboarding_detailed_charts/applications_report_agent_rt/",
+        "chart_report_api": "onboarding_detailed_charts/applications_report_agent_rt_export_csv/",
+        "chart_report_pdf_api": "onboarding_detailed_charts/applications_report_agent_rt_export_pdf/"
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Total Applications",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "The numeric value represents the total number of retail applications received from the agent-onboarding channel.",
+        "chart_api_url": "onboarding_stagereport_charts/agent_started_flow_retail/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Applications Successful",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "The numeric value indicates the total count of retail accounts that have been successfully created through the agent-onboarding channel.",
+        "chart_api_url": "onboarding_stagereport_charts/agent_cif_created_retail/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Applications Failed",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "The numeric value represents the count of discarded or rejected retail applications from agent onboarding channel for the chosen time period.",
+        "chart_api_url": "onboarding_stagereport_charts/agent_cif_failed_retail/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Applications Successful Details",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "onboarding.views.onboarding_stage_reports_views/StageReportViewSet/agent_successful_cif_details_rt_export",
+        "description": "This table presents information about the retail accounts that have been created successfully by agents during the chosen time period.",
+        "chart_api_url": "onboarding_stagereport_charts/agent_successful_cif_details_rt/",
+        "chart_report_api": "onboarding_stagereport_charts/agent_successful_cif_details_rt_export/",
+        "chart_report_pdf_api": "onboarding_stagereport_charts/agent_successful_cif_details_rt_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Applications Failed Details",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "onboarding.views.onboarding_stage_reports_views/StageReportViewSet/agent_failed_cif_details_rt_export",
+        "description": "The table presented provides an overview of retail applications that were unsuccessful via the agent onboarding channel due to being rejected by the bank staff.",
+        "chart_api_url": "onboarding_stagereport_charts/agent_failed_cif_details_rt/",
+        "chart_report_api": "onboarding_stagereport_charts/agent_failed_cif_details_rt_export/",
+        "chart_report_pdf_api": "onboarding_stagereport_charts/agent_failed_cif_details_rt_export_pdf/"
+      },
+      {
+        "type": "pie_chart",
+        "chartType": "group",
+        "title": "Applications Status",
+        "screenshot": true,
+        "color": [
+          "#6A77DD",
+          "#22BBEE",
+          "#FF2F8E",
+          "#91CD76",
+          "#FF6969",
+          "#FF9E4C",
+          "#FFD600"
+        ],
+        "cols": 12,
+        "rows": 1,
+        "Property": {
+          "values": [
+            "In Progress",
+            "Pending Verification",
+            "Pending Approval",
+            "Successful",
+            "Rejected",
+            "Abandoned",
+            "Exceptions"
+          ]
+        },
+        "description": "The pie chart illustrates the various stages of retail applications that have been received through the agent onboarding channel.",
+        "chart_api_url": "onboarding_stagereport_charts/agent_queuecodes_pie_rt/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      }
+    ],
+    "filters": [
+      {
+        "return_key": "timestamp__range",
+        "service": "analytics",
+        "filter_type": "timestamp",
+        "filter_title": "Time Range"
+      }
+    ]
+  },
+  "dashboard": {
+    "chart_title": "Agent Applications Report",
+    "screenshot": true,
+    "charts": [
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Ageing Report",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "onboarding.views.onboarding_ageing_report_views/AgeingReportViewSet/scheduled_ageing_report_agent_rt_csv",
+        "description": "The table lists the ageing report for retail customer applications, where customers are onboarded from agent channel.",
+        "chart_api_url": "onboarding_ageing_charts/scheduled_ageing_report_agent_rt/",
+        "chart_report_api": "onboarding_ageing_charts/scheduled_ageing_report_agent_rt_csv/",
+        "chart_report_pdf_api": "onboarding_ageing_charts/scheduled_ageing_report_agent_rt_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Detailed Report",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "onboarding.views.onboarding_detailed_report_views/DetailedReportViewSet/applications_report_agent_rt_export_csv",
+        "description": "The table presents the audit trail record for agent applications in retail sector",
+        "chart_api_url": "onboarding_detailed_charts/applications_report_agent_rt/",
+        "chart_report_api": "onboarding_detailed_charts/applications_report_agent_rt_export_csv/",
+        "chart_report_pdf_api": "onboarding_detailed_charts/applications_report_agent_rt_export_pdf/"
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Total Applications",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "The numeric value represents the total number of retail applications received from the agent-onboarding channel.",
+        "chart_api_url": "onboarding_stagereport_charts/agent_started_flow_retail/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Applications Successful",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "The numeric value indicates the total count of retail accounts that have been successfully created through the agent-onboarding channel.",
+        "chart_api_url": "onboarding_stagereport_charts/agent_cif_created_retail/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Applications Failed",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "The numeric value represents the count of discarded or rejected retail applications from agent onboarding channel for the chosen time period.",
+        "chart_api_url": "onboarding_stagereport_charts/agent_cif_failed_retail/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Applications Successful Details",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "onboarding.views.onboarding_stage_reports_views/StageReportViewSet/agent_successful_cif_details_rt_export",
+        "description": "This table presents information about the retail accounts that have been created successfully by agents during the chosen time period.",
+        "chart_api_url": "onboarding_stagereport_charts/agent_successful_cif_details_rt/",
+        "chart_report_api": "onboarding_stagereport_charts/agent_successful_cif_details_rt_export/",
+        "chart_report_pdf_api": "onboarding_stagereport_charts/agent_successful_cif_details_rt_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Applications Failed Details",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "onboarding.views.onboarding_stage_reports_views/StageReportViewSet/agent_failed_cif_details_rt_export",
+        "description": "The table presented provides an overview of retail applications that were unsuccessful via the agent onboarding channel due to being rejected by the bank staff.",
+        "chart_api_url": "onboarding_stagereport_charts/agent_failed_cif_details_rt/",
+        "chart_report_api": "onboarding_stagereport_charts/agent_failed_cif_details_rt_export/",
+        "chart_report_pdf_api": "onboarding_stagereport_charts/agent_failed_cif_details_rt_export_pdf/"
+      },
+      {
+        "type": "pie_chart",
+        "chartType": "group",
+        "title": "Applications Status",
+        "screenshot": true,
+        "color": [
+          "#6A77DD",
+          "#22BBEE",
+          "#FF2F8E",
+          "#91CD76",
+          "#FF6969",
+          "#FF9E4C",
+          "#FFD600"
+        ],
+        "cols": 12,
+        "rows": 1,
+        "Property": {
+          "values": [
+            "In Progress",
+            "Pending Verification",
+            "Pending Approval",
+            "Successful",
+            "Rejected",
+            "Abandoned",
+            "Exceptions"
+          ]
+        },
+        "description": "The pie chart illustrates the various stages of retail applications that have been received through the agent onboarding channel.",
+        "chart_api_url": "onboarding_stagereport_charts/agent_queuecodes_pie_rt/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      }
+    ],
+    "filters": [
+      {
+        "return_key": "timestamp__range",
+        "service": "analytics",
+        "filter_type": "timestamp",
+        "filter_title": "Time Range"
+      }
+    ]
+  },
+  "stanbic": {
+    "chart_title": "Agent Applications Report",
+    "screenshot": true,
+    "charts": [
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Ageing Report",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "onboarding.views.onboarding_ageing_report_views/AgeingReportViewSet/scheduled_ageing_report_agent_rt_csv",
+        "description": "The table lists the ageing report for retail customer applications, where customers are onboarded from agent channel.",
+        "chart_api_url": "onboarding_ageing_charts/scheduled_ageing_report_agent_rt/",
+        "chart_report_api": "onboarding_ageing_charts/scheduled_ageing_report_agent_rt_csv/",
+        "chart_report_pdf_api": "onboarding_ageing_charts/scheduled_ageing_report_agent_rt_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Detailed Report",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "onboarding.views.onboarding_detailed_report_views/DetailedReportViewSet/applications_report_agent_rt_export_csv",
+        "description": "The table presents the audit trail record for agent applications in retail sector",
+        "chart_api_url": "onboarding_detailed_charts/applications_report_agent_rt/",
+        "chart_report_api": "onboarding_detailed_charts/applications_report_agent_rt_export_csv/",
+        "chart_report_pdf_api": "onboarding_detailed_charts/applications_report_agent_rt_export_pdf/"
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Total Applications",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "The numeric value represents the total number of retail applications received from the agent-onboarding channel.",
+        "chart_api_url": "onboarding_stagereport_charts/agent_started_flow_retail/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Applications Successful",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "The numeric value indicates the total count of retail accounts that have been successfully created through the agent-onboarding channel.",
+        "chart_api_url": "onboarding_stagereport_charts/agent_cif_created_retail/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Applications Failed",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "The numeric value represents the count of discarded or rejected retail applications from agent onboarding channel for the chosen time period.",
+        "chart_api_url": "onboarding_stagereport_charts/agent_cif_failed_retail/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Applications Successful Details",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "onboarding.views.onboarding_stage_reports_views/StageReportViewSet/agent_successful_cif_details_rt_export",
+        "description": "This table presents information about the retail accounts that have been created successfully by agents during the chosen time period.",
+        "chart_api_url": "onboarding_stagereport_charts/agent_successful_cif_details_rt/",
+        "chart_report_api": "onboarding_stagereport_charts/agent_successful_cif_details_rt_export/",
+        "chart_report_pdf_api": "onboarding_stagereport_charts/agent_successful_cif_details_rt_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Applications Failed Details",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "onboarding.views.onboarding_stage_reports_views/StageReportViewSet/agent_failed_cif_details_rt_export",
+        "description": "The table presented provides an overview of retail applications that were unsuccessful via the agent onboarding channel due to being rejected by the bank staff.",
+        "chart_api_url": "onboarding_stagereport_charts/agent_failed_cif_details_rt/",
+        "chart_report_api": "onboarding_stagereport_charts/agent_failed_cif_details_rt_export/",
+        "chart_report_pdf_api": "onboarding_stagereport_charts/agent_failed_cif_details_rt_export_pdf/"
+      },
+      {
+        "type": "pie_chart",
+        "chartType": "group",
+        "title": "Applications Status",
+        "screenshot": true,
+        "color": [
+          "#6A77DD",
+          "#22BBEE",
+          "#FF2F8E",
+          "#91CD76",
+          "#FF6969",
+          "#FF9E4C",
+          "#FFD600"
+        ],
+        "cols": 12,
+        "rows": 1,
+        "Property": {
+          "values": [
+            "In Progress",
+            "Pending Verification",
+            "Pending Approval",
+            "Successful",
+            "Rejected",
+            "Abandoned",
+            "Exceptions"
+          ]
+        },
+        "description": "The pie chart illustrates the various stages of retail applications that have been received through the agent onboarding channel.",
+        "chart_api_url": "onboarding_stagereport_charts/agent_queuecodes_pie_rt/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      }
+    ],
+    "filters": [
+      {
+        "return_key": "timestamp__range",
+        "service": "analytics",
+        "filter_type": "timestamp",
+        "filter_title": "Time Range"
+      }
+    ]
+  }
+}

@@ -1,0 +1,62 @@
+[
+  {
+    "model": "campaign_manager.subcampaigntargetsegment",
+    "pk": 60,
+    "fields": {
+      "csv_upload": false,
+      "segment_name": "⚽️ 🏀 🏈 ⚾️ 🥎",
+      "cj_name": "cjashu",
+      "task_id": "",
+      "cj_id": 4857,
+      "filename": "cjashu"
+    }
+  },
+  {
+    "model": "campaign_manager.subcampaigntargetsegment",
+    "pk": 78,
+    "fields": {
+      "csv_upload": true,
+      "segment_name": "2 users",
+      "cj_name": "",
+      "task_id": "",
+      "cj_id": null,
+      "filename": "CSV Template.csv"
+    }
+  },
+  {
+    "model": "campaign_manager.subcampaigntargetsegment",
+    "pk": 62,
+    "fields": {
+      "csv_upload": true,
+      "segment_name": "test",
+      "cj_name": "",
+      "task_id": "",
+      "cj_id": null,
+      "filename": "CSV Template (8) (1).csv"
+    }
+  },
+  {
+    "model": "campaign_manager.subcampaigntargetsegment",
+    "pk": 76,
+    "fields": {
+      "csv_upload": false,
+      "segment_name": "prerna test",
+      "cj_name": "asdf",
+      "task_id": "",
+      "cj_id": 4863,
+      "filename": "asdf"
+    }
+  },
+  {
+    "model": "campaign_manager.subcampaigntargetsegment",
+    "pk": 75,
+    "fields": {
+      "csv_upload": false,
+      "segment_name": "⚽️ 🏀 🏈 ⚾️ 🥎",
+      "cj_name": "cjashu",
+      "task_id": "",
+      "cj_id": 4847,
+      "filename": "cjashu"
+    }
+  }
+]

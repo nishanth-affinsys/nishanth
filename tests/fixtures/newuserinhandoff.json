@@ -1,0 +1,72 @@
+[
+  {
+    "model": "handoff.newuserinhandoff",
+    "pk": 32,
+    "fields": {
+      "social_id": 24,
+      "username": "Name",
+      "phone_number": "",
+      "email": "",
+      "tenant": "lebahandofffive",
+      "time": "2023-04-01T06:26:22.456Z",
+      "channel": "webchat",
+      "channel_id": "17d058ff4053d50e2feb68b660cad307"
+    }
+  },
+  {
+    "model": "handoff.newuserinhandoff",
+    "pk": 33,
+    "fields": {
+      "social_id": 29,
+      "username": "aerqwrefewqdsfc",
+      "phone_number": "",
+      "email": "",
+      "tenant": "stanbickenya",
+      "time": "2023-04-17T11:07:57.602Z",
+      "channel": "webchat",
+      "channel_id": "LaNAvYnmRARBcdlI"
+    }
+  },
+  {
+    "model": "handoff.newuserinhandoff",
+    "pk": 34,
+    "fields": {
+      "social_id": 11,
+      "username": "yes",
+      "phone_number": "",
+      "email": "",
+      "tenant": "lebahandofffive",
+      "time": "2023-03-24T10:32:50.335Z",
+      "channel": "webchat",
+      "channel_id": "03259301b1bcebcacce87039831d5e9a"
+    }
+  },
+  {
+    "model": "handoff.newuserinhandoff",
+    "pk": 35,
+    "fields": {
+      "social_id": 6,
+      "username": "ssss",
+      "phone_number": "",
+      "email": "",
+      "tenant": "lebahandofffive",
+      "time": "2023-03-30T06:40:04.223Z",
+      "channel": "webchat",
+      "channel_id": "7b3199eaaf74cca3c10298b57d3383e6"
+    }
+  },
+  {
+    "model": "handoff.newuserinhandoff",
+    "pk": 36,
+    "fields": {
+      "social_id": 1,
+      "username": "ssss",
+      "phone_number": "",
+      "email": "",
+      "tenant": "lebahandofffive",
+      "time": "2023-03-24T10:48:24.472Z",
+      "channel": "webchat",
+      "channel_id": "d403e5ed305e95326d65fb955eea1e08"
+    }
+  }
+]

@@ -1,0 +1,395 @@
+{
+  "common": {
+    "chart_title": "Notification Campaign Details",
+    "screenshot": true,
+    "charts": [
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Notifications Sent",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "The total number of messages sent in each channel",
+        "chart_api_url": "campaign-charts/campaign_total_sent_messages_per_channel/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Notifications Delivered",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "The total number of messages delivered in each channel",
+        "chart_api_url": "campaign-charts/campaign_total_delivered_messages_per_channel/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Notifications Read",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "The total number of messages read in each channel",
+        "chart_api_url": "campaign-charts/campaign_total_read_messages_per_channel/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Notification Details",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {
+          "info": {
+            "type": "table_chart",
+            "chartType": "group",
+            "title": "Conversations",
+            "color": 0,
+            "Property": {},
+            "description": "",
+            "chart_api_url": "campaign-charts/campaign_conversations/",
+            "chart_report_api": 0,
+            "chart_report_pdf_api": 0,
+            "params": [
+              "campaign_id",
+              "sub_campaign_id",
+              "run_id",
+              "channel",
+              "channel_id"
+            ]
+          }
+        },
+        "path": "campaign_manager.views.campaign_views/CampaignViewSet/campaign_notification_details_export",
+        "description": "The table chart shows the status of the messages whether its delivered, sent or read by the user.",
+        "chart_api_url": "campaign-charts/campaign_notification_details/",
+        "chart_report_api": "campaign-charts/campaign_notification_details_export_csv/",
+        "chart_report_pdf_api": "campaign-charts/campaign_notification_details_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Targeted Users by Run ",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "campaign_manager.views.campaign_views/CampaignViewSet/target_users_by_run_id_export_csv",
+        "description": "The table chart number of targeted users in each run of the campaign",
+        "chart_api_url": "campaign-charts/campaign_target_users_by_run_id/",
+        "chart_report_api": "campaign-charts/campaign_target_users_by_run_id_export_csv/",
+        "chart_report_pdf_api": "campaign-charts/campaign_target_users_by_run_id_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "CTA Clicked",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "campaign_manager.views.campaign_views/CampaignViewSet/campaign_call_to_action_details_export_csv",
+        "description": "The table chart essentially displays the instances of users clicking the call-to-action button in response to each campaign sent.",
+        "chart_api_url": "campaign-charts/campaign_call_to_action_details/",
+        "chart_report_api": "campaign-charts/campaign_call_to_action_details_export_csv/",
+        "chart_report_pdf_api": "campaign-charts/campaign_call_to_action_details_export_pdf/"
+      }
+    ],
+    "filters": [
+      {
+        "return_key": "timestamp__range",
+        "service": "analytics",
+        "filter_type": "timestamp",
+        "filter_title": "Time Range"
+      },
+      {
+        "api_url": "get_campaigns/",
+        "request_method": "POST",
+        "dependency": [
+          "timestamp__range"
+        ],
+        "return_key": "campaign_variants",
+        "service": "analytics",
+        "filter_type": "multiselect",
+        "filter_title": "Campaign Name"
+      }
+    ]
+  },
+  "stanbic": {
+    "chart_title": "Notification Campaign Details",
+    "screenshot": true,
+    "charts": [
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Notifications Sent",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "The total number of messages sent in each channel",
+        "chart_api_url": "campaign-charts/campaign_total_sent_messages_per_channel/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Notifications Delivered",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "The total number of messages delivered in each channel",
+        "chart_api_url": "campaign-charts/campaign_total_delivered_messages_per_channel/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Notifications Read",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "The total number of messages read in each channel",
+        "chart_api_url": "campaign-charts/campaign_total_read_messages_per_channel/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Notification Details",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {
+          "info": {
+            "type": "table_chart",
+            "chartType": "group",
+            "title": "Conversations",
+            "color": 0,
+            "Property": {},
+            "description": "",
+            "chart_api_url": "campaign-charts/campaign_conversations/",
+            "chart_report_api": 0,
+            "chart_report_pdf_api": 0,
+            "params": [
+              "campaign_id",
+              "sub_campaign_id",
+              "run_id",
+              "channel",
+              "channel_id"
+            ]
+          }
+        },
+        "path": "campaign_manager.views.campaign_views/CampaignViewSet/campaign_notification_details_export",
+        "description": "The table chart shows the status of the messages whether its delivered, sent or read by the user.",
+        "chart_api_url": "campaign-charts/campaign_notification_details/",
+        "chart_report_api": "campaign-charts/campaign_notification_details_export_csv/",
+        "chart_report_pdf_api": "campaign-charts/campaign_notification_details_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Targeted Users by Run ",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "campaign_manager.views.campaign_views/CampaignViewSet/target_users_by_run_id_export_csv",
+        "description": "The table chart number of targeted users in each run of the campaign",
+        "chart_api_url": "campaign-charts/campaign_target_users_by_run_id/",
+        "chart_report_api": "campaign-charts/campaign_target_users_by_run_id_export_csv/",
+        "chart_report_pdf_api": "campaign-charts/campaign_target_users_by_run_id_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "CTA Clicked",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "campaign_manager.views.campaign_views/CampaignViewSet/campaign_call_to_action_details_export_csv",
+        "description": "The table chart essentially displays the instances of users clicking the call-to-action button in response to each campaign sent.",
+        "chart_api_url": "campaign-charts/campaign_call_to_action_details/",
+        "chart_report_api": "campaign-charts/campaign_call_to_action_details_export_csv/",
+        "chart_report_pdf_api": "campaign-charts/campaign_call_to_action_details_export_pdf/"
+      }
+    ],
+    "filters": [
+      {
+        "return_key": "timestamp__range",
+        "service": "analytics",
+        "filter_type": "timestamp",
+        "filter_title": "Time Range"
+      },
+      {
+        "api_url": "get_campaigns/",
+        "request_method": "POST",
+        "dependency": [
+          "timestamp__range"
+        ],
+        "return_key": "campaign_variants",
+        "service": "analytics",
+        "filter_type": "multiselect",
+        "filter_title": "Campaign Name"
+      }
+    ]
+  },
+  "dashboard": {
+    "chart_title": "Notification Campaign Details",
+    "screenshot": true,
+    "charts": [
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Notifications Sent",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "The total number of messages sent in each channel",
+        "chart_api_url": "campaign-charts/campaign_total_sent_messages_per_channel/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Notifications Delivered",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "The total number of messages delivered in each channel",
+        "chart_api_url": "campaign-charts/campaign_total_delivered_messages_per_channel/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Notifications Read",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "The total number of messages read in each channel",
+        "chart_api_url": "campaign-charts/campaign_total_read_messages_per_channel/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Notification Details",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {
+          "info": {
+            "type": "table_chart",
+            "chartType": "group",
+            "title": "Conversations",
+            "color": 0,
+            "Property": {},
+            "description": "",
+            "chart_api_url": "campaign-charts/campaign_conversations/",
+            "chart_report_api": 0,
+            "chart_report_pdf_api": 0,
+            "params": [
+              "campaign_id",
+              "sub_campaign_id",
+              "run_id",
+              "channel",
+              "channel_id"
+            ]
+          }
+        },
+        "path": "campaign_manager.views.campaign_views/CampaignViewSet/campaign_notification_details_export",
+        "description": "The table chart shows the status of the messages whether its delivered, sent or read by the user.",
+        "chart_api_url": "campaign-charts/campaign_notification_details/",
+        "chart_report_api": "campaign-charts/campaign_notification_details_export_csv/",
+        "chart_report_pdf_api": "campaign-charts/campaign_notification_details_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Targeted Users by Run ",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "campaign_manager.views.campaign_views/CampaignViewSet/target_users_by_run_id_export_csv",
+        "description": "The table chart number of targeted users in each run of the campaign",
+        "chart_api_url": "campaign-charts/campaign_target_users_by_run_id/",
+        "chart_report_api": "campaign-charts/campaign_target_users_by_run_id_export_csv/",
+        "chart_report_pdf_api": "campaign-charts/campaign_target_users_by_run_id_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "CTA Clicked",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "campaign_manager.views.campaign_views/CampaignViewSet/campaign_call_to_action_details_export_csv",
+        "description": "The table chart essentially displays the instances of users clicking the call-to-action button in response to each campaign sent.",
+        "chart_api_url": "campaign-charts/campaign_call_to_action_details/",
+        "chart_report_api": "campaign-charts/campaign_call_to_action_details_export_csv/",
+        "chart_report_pdf_api": "campaign-charts/campaign_call_to_action_details_export_pdf/"
+      }
+    ],
+    "filters": [
+      {
+        "return_key": "timestamp__range",
+        "service": "analytics",
+        "filter_type": "timestamp",
+        "filter_title": "Time Range"
+      },
+      {
+        "api_url": "get_campaigns/",
+        "request_method": "POST",
+        "dependency": [
+          "timestamp__range"
+        ],
+        "return_key": "campaign_variants",
+        "service": "analytics",
+        "filter_type": "multiselect",
+        "filter_title": "Campaign Name"
+      }
+    ]
+  }
+}

@@ -1,0 +1,692 @@
+{
+  "common": {
+    "chart_title": "Detailed Report",
+    "screenshot": true,
+    "charts": [
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Customer Activity",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "handoff.views.detail_report_views/DetailReportViewSet/customer_activity_export",
+        "description": "The table shows skill requested by customer and  the details of the customer.",
+        "chart_api_url": "detailreport-charts/agent_detailed_customer_activity/",
+        "chart_report_api": "detailreport-charts/agent_detailed_customer_activity_export_csv/",
+        "chart_report_pdf_api": "detailreport-charts/agent_detailed_customer_activity_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Agent Handoff Details",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "handoff.views.detail_report_views/DetailReportViewSet/agent_handoff_details_export",
+        "description": "The table shows the agent name and the details of customer that the agent is interacting with.",
+        "chart_api_url": "detailreport-charts/agent_detailed_handoff_details/",
+        "chart_report_api": "detailreport-charts/agent_detailed_handoff_details_export_csv/",
+        "chart_report_pdf_api": "detailreport-charts/agent_detailed_handoff_details_export_pdf/"
+      },
+      {
+        "type": "bar_chart",
+        "chartType": "group",
+        "title": "Chatbot Messages Interactions",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {
+          "x": "Channel",
+          "y": [
+            "Total_messages_user_to_agent",
+            "Total_messages_agent_to_user",
+            "Total_messages_user_to_bot"
+          ]
+        },
+        "path": "handoff.views.detail_report_views/DetailReportViewSet/chatbot_message_interactions_export",
+        "description": "The Bar chart shows the number of messages exchanged between user, agent and bot.",
+        "chart_api_url": "detailreport-charts/agent_detailed_chatbot_message_interactions/",
+        "chart_report_api": "detailreport-charts/agent_detailed_chatbot_message_interactions_export_csv/",
+        "chart_report_pdf_api": "detailreport-charts/agent_detailed_chatbot_message_interactions_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Abandoned Chats Details",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "handoff.views.detail_report_views/DetailReportViewSet/abandoned_users_details_export",
+        "description": "The table shows the details of the instances where chat sessions between agents and customers are ended prematurely, before being completed or initiated.",
+        "chart_api_url": "detailreport-charts/agent_detailed_abandoned_users/",
+        "chart_report_api": "detailreport-charts/agent_detailed_abandoned_users_export_csv/",
+        "chart_report_pdf_api": "detailreport-charts/agent_detailed_abandoned_users_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Number of Customers Requested for Handoff",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1.5,
+        "Property": {},
+        "description": "The table displays the hourly report of the handoffs initiated on that day for each hour.",
+        "chart_api_url": "detailreport-charts/agent_detailed_cust_req_for_handoff/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Total Handling Time",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1.5,
+        "Property": {},
+        "path": "handoff.views.detail_report_views/DetailReportViewSet/total_session_time_export",
+        "description": "The table chart presents the aggregate duration of an agent's engagement with a customer across all sessions.",
+        "chart_api_url": "detailreport-charts/agent_detailed_total_handling_time/",
+        "chart_report_api": "detailreport-charts/agent_detailed_total_handling_time_export_csv/",
+        "chart_report_pdf_api": "detailreport-charts/agent_detailed_total_handling_time_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Average Handling Time",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1.5,
+        "Property": {},
+        "path": "handoff.views.detail_report_views/DetailReportViewSet/average_session_time_seconds_export",
+        "description": "The table shows average duration an agent spends on a single customer interaction across all sessions.",
+        "chart_api_url": "detailreport-charts/agent_detailed_average_handling_time/",
+        "chart_report_api": "detailreport-charts/agent_detailed_average_handling_time_export_csv/",
+        "chart_report_pdf_api": "detailreport-charts/agent_detailed_average_handling_time_export_pdf/"
+      },
+      {
+        "type": "line_chart",
+        "chartType": "group",
+        "title": "Agent Interactions",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1,
+        "Property": {
+          "x": "Date_and_Hour",
+          "y": [
+            "count"
+          ]
+        },
+        "path": "handoff.views.detail_report_views/DetailReportViewSet/agent_interactions_export_csv",
+        "description": "The line chart shows the hourly count of users interactions with the agent.",
+        "chart_api_url": "detailreport-charts/agent_detailed_interactions_linechart/",
+        "chart_report_api": "detailreport-charts/agent_detailed_interactions_linechart_export_csv/",
+        "chart_report_pdf_api": "detailreport-charts/agent_detailed_interactions_linechart_export_pdf/"
+      },
+      {
+        "type": "line_chart",
+        "chartType": "group",
+        "title": "BOT Interactions",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1,
+        "Property": {
+          "x": "Date_and_Hour",
+          "y": [
+            "count"
+          ]
+        },
+        "path": "handoff.views.detail_report_views/DetailReportViewSet/bot_interactions_export_csv",
+        "description": "The line chart shows the hourly count of users interactions with the bot.",
+        "chart_api_url": "detailreport-charts/agent_detailed_bot_interactions_linechart/",
+        "chart_report_api": "detailreport-charts/agent_detailed_bot_interactions_linechart_export_csv/",
+        "chart_report_pdf_api": "detailreport-charts/agent_detailed_bot_interactions_linechart_export_pdf/"
+      }
+    ],
+    "filters": [
+      {
+        "api_url": "get_channels/",
+        "request_method": "GET",
+        "return_key": "channel",
+        "service": "analytics",
+        "filter_type": "select",
+        "filter_title": "Channel"
+      },
+      {
+        "return_key": "timestamp__range",
+        "service": "analytics",
+        "filter_type": "timestamp",
+        "filter_title": "Time Range"
+      }
+    ]
+  },
+  "stanbic": {
+    "chart_title": "Detailed Report",
+    "screenshot": true,
+    "charts": [
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Customer Activity",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "handoff.views.detail_report_views/DetailReportViewSet/customer_activity_export",
+        "description": "The table shows skill requested by customer and  the details of the customer.",
+        "chart_api_url": "detailreport-charts/agent_detailed_customer_activity/",
+        "chart_report_api": "detailreport-charts/agent_detailed_customer_activity_export_csv/",
+        "chart_report_pdf_api": "detailreport-charts/agent_detailed_customer_activity_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Agent Handoff Details",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "handoff.views.detail_report_views/DetailReportViewSet/agent_handoff_details_export",
+        "description": "The table shows the agent name and the details of customer that the agent is interacting with.",
+        "chart_api_url": "detailreport-charts/agent_detailed_handoff_details/",
+        "chart_report_api": "detailreport-charts/agent_detailed_handoff_details_export_csv/",
+        "chart_report_pdf_api": "detailreport-charts/agent_detailed_handoff_details_export_pdf/"
+      },
+      {
+        "type": "bar_chart",
+        "chartType": "group",
+        "title": "Chatbot Messages Interactions",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {
+          "x": "Channel",
+          "y": [
+            "Total_messages_user_to_agent",
+            "Total_messages_agent_to_user",
+            "Total_messages_user_to_bot"
+          ]
+        },
+        "path": "handoff.views.detail_report_views/DetailReportViewSet/chatbot_message_interactions_export",
+        "description": "The Bar chart shows the number of messages exchanged between user, agent and bot.",
+        "chart_api_url": "detailreport-charts/agent_detailed_chatbot_message_interactions/",
+        "chart_report_api": "detailreport-charts/agent_detailed_chatbot_message_interactions_export_csv/",
+        "chart_report_pdf_api": "detailreport-charts/agent_detailed_chatbot_message_interactions_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Abandoned Chats Details",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "handoff.views.detail_report_views/DetailReportViewSet/abandoned_users_details_export",
+        "description": "The table shows the details of the instances where chat sessions between agents and customers are ended prematurely, before being completed or initiated.",
+        "chart_api_url": "detailreport-charts/agent_detailed_abandoned_users/",
+        "chart_report_api": "detailreport-charts/agent_detailed_abandoned_users_export_csv/",
+        "chart_report_pdf_api": "detailreport-charts/agent_detailed_abandoned_users_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Number of Customers Requested for Handoff",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1.5,
+        "Property": {},
+        "description": "The table displays the hourly report of the handoffs initiated on that day for each hour.",
+        "chart_api_url": "detailreport-charts/agent_detailed_cust_req_for_handoff/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Total Handling Time",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1.5,
+        "Property": {},
+        "path": "handoff.views.detail_report_views/DetailReportViewSet/total_session_time_export",
+        "description": "The table chart presents the aggregate duration of an agent's engagement with a customer across all sessions.",
+        "chart_api_url": "detailreport-charts/agent_detailed_total_handling_time/",
+        "chart_report_api": "detailreport-charts/agent_detailed_total_handling_time_export_csv/",
+        "chart_report_pdf_api": "detailreport-charts/agent_detailed_total_handling_time_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Average Handling Time",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1.5,
+        "Property": {},
+        "path": "handoff.views.detail_report_views/DetailReportViewSet/average_session_time_seconds_export",
+        "description": "The table shows average duration an agent spends on a single customer interaction across all sessions.",
+        "chart_api_url": "detailreport-charts/agent_detailed_average_handling_time/",
+        "chart_report_api": "detailreport-charts/agent_detailed_average_handling_time_export_csv/",
+        "chart_report_pdf_api": "detailreport-charts/agent_detailed_average_handling_time_export_pdf/"
+      },
+      {
+        "type": "line_chart",
+        "chartType": "group",
+        "title": "Agent Interactions",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1,
+        "Property": {
+          "x": "Date_and_Hour",
+          "y": [
+            "count"
+          ]
+        },
+        "path": "handoff.views.detail_report_views/DetailReportViewSet/agent_interactions_export_csv",
+        "description": "The line chart shows the hourly count of users interactions with the agent.",
+        "chart_api_url": "detailreport-charts/agent_detailed_interactions_linechart/",
+        "chart_report_api": "detailreport-charts/agent_detailed_interactions_linechart_export_csv/",
+        "chart_report_pdf_api": "detailreport-charts/agent_detailed_interactions_linechart_export_pdf/"
+      },
+      {
+        "type": "line_chart",
+        "chartType": "group",
+        "title": "BOT Interactions",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1,
+        "Property": {
+          "x": "Date_and_Hour",
+          "y": [
+            "count"
+          ]
+        },
+        "path": "handoff.views.detail_report_views/DetailReportViewSet/bot_interactions_export_csv",
+        "description": "The line chart shows the hourly count of users interactions with the bot.",
+        "chart_api_url": "detailreport-charts/agent_detailed_bot_interactions_linechart/",
+        "chart_report_api": "detailreport-charts/agent_detailed_bot_interactions_linechart_export_csv/",
+        "chart_report_pdf_api": "detailreport-charts/agent_detailed_bot_interactions_linechart_export_pdf/"
+      }
+    ],
+    "filters": [
+      {
+        "api_url": "get_channels/",
+        "request_method": "GET",
+        "return_key": "channel",
+        "service": "analytics",
+        "filter_type": "select",
+        "filter_title": "Channel"
+      },
+      {
+        "return_key": "timestamp__range",
+        "service": "analytics",
+        "filter_type": "timestamp",
+        "filter_title": "Time Range"
+      }
+    ]
+  },
+  "nbf": {
+    "chart_title": "Detailed Report",
+    "screenshot": true,
+    "charts": [
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Customer Activity",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "handoff.views.detail_report_views/DetailReportViewSet/customer_activity_export",
+        "description": "The table shows skill requested by customer and  the details of the customer.",
+        "chart_api_url": "detailreport-charts/agent_detailed_customer_activity/",
+        "chart_report_api": "detailreport-charts/agent_detailed_customer_activity_export_csv/",
+        "chart_report_pdf_api": "detailreport-charts/agent_detailed_customer_activity_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Agent Handoff Details",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "handoff.views.detail_report_views/DetailReportViewSet/agent_handoff_details_export",
+        "description": "The table shows the agent name and the details of customer that the agent is interacting with.",
+        "chart_api_url": "detailreport-charts/agent_detailed_handoff_details/",
+        "chart_report_api": "detailreport-charts/agent_detailed_handoff_details_export_csv/",
+        "chart_report_pdf_api": "detailreport-charts/agent_detailed_handoff_details_export_pdf/"
+      },
+      {
+        "type": "bar_chart",
+        "chartType": "group",
+        "title": "Chatbot Messages Interactions",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {
+          "x": "Channel",
+          "y": [
+            "Total_messages_user_to_agent",
+            "Total_messages_agent_to_user",
+            "Total_messages_user_to_bot"
+          ]
+        },
+        "path": "handoff.views.detail_report_views/DetailReportViewSet/chatbot_message_interactions_export",
+        "description": "The Bar chart shows the number of messages exchanged between user, agent and bot.",
+        "chart_api_url": "detailreport-charts/agent_detailed_chatbot_message_interactions/",
+        "chart_report_api": "detailreport-charts/agent_detailed_chatbot_message_interactions_export_csv/",
+        "chart_report_pdf_api": "detailreport-charts/agent_detailed_chatbot_message_interactions_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Abandoned Chats Details",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "handoff.views.detail_report_views/DetailReportViewSet/abandoned_users_details_export",
+        "description": "The table shows the details of the instances where chat sessions between agents and customers are ended prematurely, before being completed or initiated.",
+        "chart_api_url": "detailreport-charts/agent_detailed_abandoned_users/",
+        "chart_report_api": "detailreport-charts/agent_detailed_abandoned_users_export_csv/",
+        "chart_report_pdf_api": "detailreport-charts/agent_detailed_abandoned_users_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Number of Customers Requested for Handoff",
+        "screenshot": true,
+        "color": 0,
+        "cols": 6,
+        "rows": 2,
+        "Property": {},
+        "description": "The table displays the hourly report of the handoffs initiated on that day for each hour.",
+        "chart_api_url": "detailreport-charts/agent_detailed_cust_req_for_handoff/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "line_chart",
+        "chartType": "group",
+        "title": "Number of Agent Interactions",
+        "screenshot": true,
+        "color": 0,
+        "cols": 6,
+        "rows": 1,
+        "Property": {
+          "x": "Date",
+          "y": [
+            "count"
+          ]
+        },
+        "description": "The line chart shows the hourly count of users interactions with the agent.",
+        "chart_api_url": "detailreport-charts/agent_detailed_interactions_linechart/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "line_chart",
+        "chartType": "group",
+        "title": "Number of BOT Interactions",
+        "screenshot": true,
+        "color": 0,
+        "cols": 6,
+        "rows": 1,
+        "Property": {
+          "x": "Date",
+          "y": [
+            "count"
+          ]
+        },
+        "description": "The line chart shows the hourly count of users interactions with the bot.",
+        "chart_api_url": "detailreport-charts/agent_detailed_bot_interactions_linechart/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Total Handling Time",
+        "screenshot": true,
+        "color": 0,
+        "cols": 6,
+        "rows": 1.5,
+        "Property": {},
+        "path": "handoff.views.detail_report_views/DetailReportViewSet/total_session_time_export",
+        "description": "The table chart presents the aggregate duration of an agent's engagement with a customer across all sessions.",
+        "chart_api_url": "detailreport-charts/agent_detailed_total_handling_time/",
+        "chart_report_api": "detailreport-charts/agent_detailed_total_handling_time_export_csv/",
+        "chart_report_pdf_api": "detailreport-charts/agent_detailed_total_handling_time_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Average Handling Time",
+        "screenshot": true,
+        "color": 0,
+        "cols": 6,
+        "rows": 1.5,
+        "Property": {},
+        "path": "handoff.views.detail_report_views/DetailReportViewSet/average_session_time_seconds_export",
+        "description": "The table shows average duration an agent spends on a single customer interaction across all sessions.",
+        "chart_api_url": "detailreport-charts/agent_detailed_average_handling_time/",
+        "chart_report_api": "detailreport-charts/agent_detailed_average_handling_time_export_csv/",
+        "chart_report_pdf_api": "detailreport-charts/agent_detailed_average_handling_time_export_pdf/"
+      }
+    ],
+    "filters": [
+      {
+        "api_url": "get_channels/",
+        "request_method": "GET",
+        "return_key": "channel",
+        "service": "analytics",
+        "filter_type": "select",
+        "filter_title": "Channel"
+      },
+      {
+        "return_key": "timestamp__range",
+        "service": "analytics",
+        "filter_type": "timestamp",
+        "filter_title": "Time Range"
+      }
+    ]
+  },
+  "dashboard": {
+    "chart_title": "Detailed Report",
+    "screenshot": true,
+    "charts": [
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Customer Activity",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "handoff.views.detail_report_views/DetailReportViewSet/customer_activity_export",
+        "description": "The table shows skill requested by customer and  the details of the customer.",
+        "chart_api_url": "detailreport-charts/agent_detailed_customer_activity/",
+        "chart_report_api": "detailreport-charts/agent_detailed_customer_activity_export_csv/",
+        "chart_report_pdf_api": "detailreport-charts/agent_detailed_customer_activity_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Agent Handoff Details",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "handoff.views.detail_report_views/DetailReportViewSet/agent_handoff_details_export",
+        "description": "The table shows the agent name and the details of customer that the agent is interacting with.",
+        "chart_api_url": "detailreport-charts/agent_detailed_handoff_details/",
+        "chart_report_api": "detailreport-charts/agent_detailed_handoff_details_export_csv/",
+        "chart_report_pdf_api": "detailreport-charts/agent_detailed_handoff_details_export_pdf/"
+      },
+      {
+        "type": "bar_chart",
+        "chartType": "group",
+        "title": "Chatbot Messages Interactions",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {
+          "x": "Channel",
+          "y": [
+            "Total_messages_user_to_agent",
+            "Total_messages_agent_to_user",
+            "Total_messages_user_to_bot"
+          ]
+        },
+        "path": "handoff.views.detail_report_views/DetailReportViewSet/chatbot_message_interactions_export",
+        "description": "The Bar chart shows the number of messages exchanged between user, agent and bot.",
+        "chart_api_url": "detailreport-charts/agent_detailed_chatbot_message_interactions/",
+        "chart_report_api": "detailreport-charts/agent_detailed_chatbot_message_interactions_export_csv/",
+        "chart_report_pdf_api": "detailreport-charts/agent_detailed_chatbot_message_interactions_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Abandoned Chats Details",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "handoff.views.detail_report_views/DetailReportViewSet/abandoned_users_details_export",
+        "description": "The table shows the details of the instances where chat sessions between agents and customers are ended prematurely, before being completed or initiated.",
+        "chart_api_url": "detailreport-charts/agent_detailed_abandoned_users/",
+        "chart_report_api": "detailreport-charts/agent_detailed_abandoned_users_export_csv/",
+        "chart_report_pdf_api": "detailreport-charts/agent_detailed_abandoned_users_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Number of Customers Requested for Handoff",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1.5,
+        "Property": {},
+        "description": "The table displays the hourly report of the handoffs initiated on that day for each hour.",
+        "chart_api_url": "detailreport-charts/agent_detailed_cust_req_for_handoff/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Total Handling Time",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1.5,
+        "Property": {},
+        "path": "handoff.views.detail_report_views/DetailReportViewSet/total_session_time_export",
+        "description": "The table chart presents the aggregate duration of an agent's engagement with a customer across all sessions.",
+        "chart_api_url": "detailreport-charts/agent_detailed_total_handling_time/",
+        "chart_report_api": "detailreport-charts/agent_detailed_total_handling_time_export_csv/",
+        "chart_report_pdf_api": "detailreport-charts/agent_detailed_total_handling_time_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Average Handling Time",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1.5,
+        "Property": {},
+        "path": "handoff.views.detail_report_views/DetailReportViewSet/average_session_time_seconds_export",
+        "description": "The table shows average duration an agent spends on a single customer interaction across all sessions.",
+        "chart_api_url": "detailreport-charts/agent_detailed_average_handling_time/",
+        "chart_report_api": "detailreport-charts/agent_detailed_average_handling_time_export_csv/",
+        "chart_report_pdf_api": "detailreport-charts/agent_detailed_average_handling_time_export_pdf/"
+      },
+      {
+        "type": "line_chart",
+        "chartType": "group",
+        "title": "Agent Interactions",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1,
+        "Property": {
+          "x": "Date_and_Hour",
+          "y": [
+            "count"
+          ]
+        },
+        "path": "handoff.views.detail_report_views/DetailReportViewSet/agent_interactions_export_csv",
+        "description": "The line chart shows the hourly count of users interactions with the agent.",
+        "chart_api_url": "detailreport-charts/agent_detailed_interactions_linechart/",
+        "chart_report_api": "detailreport-charts/agent_detailed_interactions_linechart_export_csv/",
+        "chart_report_pdf_api": "detailreport-charts/agent_detailed_interactions_linechart_export_pdf/"
+      },
+      {
+        "type": "line_chart",
+        "chartType": "group",
+        "title": "BOT Interactions",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1,
+        "Property": {
+          "x": "Date_and_Hour",
+          "y": [
+            "count"
+          ]
+        },
+        "path": "handoff.views.detail_report_views/DetailReportViewSet/bot_interactions_export_csv",
+        "description": "The line chart shows the hourly count of users interactions with the bot.",
+        "chart_api_url": "detailreport-charts/agent_detailed_bot_interactions_linechart/",
+        "chart_report_api": "detailreport-charts/agent_detailed_bot_interactions_linechart_export_csv/",
+        "chart_report_pdf_api": "detailreport-charts/agent_detailed_bot_interactions_linechart_export_pdf/"
+      }
+    ],
+    "filters": [
+      {
+        "api_url": "get_channels/",
+        "request_method": "GET",
+        "return_key": "channel",
+        "service": "analytics",
+        "filter_type": "select",
+        "filter_title": "Channel"
+      },
+      {
+        "return_key": "timestamp__range",
+        "service": "analytics",
+        "filter_type": "timestamp",
+        "filter_title": "Time Range"
+      }
+    ]
+  }
+}

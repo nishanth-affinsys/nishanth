@@ -1,0 +1,164 @@
+{
+  "common": {
+    "chart_title": "LLM Report",
+    "screenshot": false,
+    "charts": [
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Total Documents Uploaded",
+        "screenshot": false,
+        "color": 0,
+        "cols": 6,
+        "rows": 1,
+        "description": "The numeric value represents the total number of documents uploaded",
+        "chart_api_url": "llm-reports/llm_total_docs_uploaded_bigno/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Total Links Received",
+        "screenshot": false,
+        "color": 0,
+        "cols": 6,
+        "rows": 1,
+        "description": "The numeric value represents the total number of links the bot received",
+        "chart_api_url": "llm-reports/llm_total_links_given_bigno/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Conversation Log",
+        "screenshot": false,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "path": "console.views.llm_reports_views/LLMReportsViewSet/llm_conversations_log_export_csv",
+        "description": "The table gives the comprehensive view of the user and bot conversation",
+        "chart_api_url": "llm-reports/llm_conversations_log/",
+        "chart_report_api": "llm-reports/llm_conversations_log_export_csv/",
+        "chart_report_pdf_api": "llm-reports/llm_conversations_log_export_pdf/"
+      }
+    ],
+    "filters": [
+      {
+        "return_key": "timestamp__range",
+        "service": "analytics",
+        "filter_type": "timestamp",
+        "filter_title": "Time Range"
+      }
+    ]
+  },
+  "dashboard": {
+    "chart_title": "LLM Report",
+    "screenshot": false,
+    "charts": [
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Total Documents Uploaded",
+        "screenshot": false,
+        "color": 0,
+        "cols": 6,
+        "rows": 1,
+        "description": "The numeric value represents the total number of documents uploaded",
+        "chart_api_url": "llm-reports/llm_total_docs_uploaded_bigno/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Total Links Received",
+        "screenshot": false,
+        "color": 0,
+        "cols": 6,
+        "rows": 1,
+        "description": "The numeric value represents the total number of links the bot received",
+        "chart_api_url": "llm-reports/llm_total_links_given_bigno/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Conversation Log",
+        "screenshot": false,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "path": "console.views.llm_reports_views/LLMReportsViewSet/llm_conversations_log_export_csv",
+        "description": "The table gives the comprehensive view of the user and bot conversation",
+        "chart_api_url": "llm-reports/llm_conversations_log/",
+        "chart_report_api": "llm-reports/llm_conversations_log_export_csv/",
+        "chart_report_pdf_api": "llm-reports/llm_conversations_log_export_pdf/"
+      }
+    ],
+    "filters": [
+      {
+        "return_key": "timestamp__range",
+        "service": "analytics",
+        "filter_type": "timestamp",
+        "filter_title": "Time Range"
+      }
+    ]
+  },
+  "stanbic": {
+    "chart_title": "LLM Report",
+    "screenshot": false,
+    "charts": [
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Total Documents Uploaded",
+        "screenshot": false,
+        "color": 0,
+        "cols": 6,
+        "rows": 1,
+        "description": "The numeric value represents the total number of documents uploaded",
+        "chart_api_url": "llm-reports/llm_total_docs_uploaded_bigno/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Total Links Received",
+        "screenshot": false,
+        "color": 0,
+        "cols": 6,
+        "rows": 1,
+        "description": "The numeric value represents the total number of links the bot received",
+        "chart_api_url": "llm-reports/llm_total_links_given_bigno/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Conversation Log",
+        "screenshot": false,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "path": "console.views.llm_reports_views/LLMReportsViewSet/llm_conversations_log_export_csv",
+        "description": "The table gives the comprehensive view of the user and bot conversation",
+        "chart_api_url": "llm-reports/llm_conversations_log/",
+        "chart_report_api": "llm-reports/llm_conversations_log_export_csv/",
+        "chart_report_pdf_api": "llm-reports/llm_conversations_log_export_pdf/"
+      }
+    ],
+    "filters": [
+      {
+        "return_key": "timestamp__range",
+        "service": "analytics",
+        "filter_type": "timestamp",
+        "filter_title": "Time Range"
+      }
+    ]
+  }
+}

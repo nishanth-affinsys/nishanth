@@ -1,0 +1,42 @@
+[
+  {
+    "model": "handoff.socialconversationagenttenant",
+    "pk": 45,
+    "fields": {
+      "agent": 20,
+      "tenant": 7
+    }
+  },
+  {
+    "model": "handoff.socialconversationagenttenant",
+    "pk": 46,
+    "fields": {
+      "agent": 18,
+      "tenant": 6
+    }
+  },
+  {
+    "model": "handoff.socialconversationagenttenant",
+    "pk": 47,
+    "fields": {
+      "agent": 18,
+      "tenant": 8
+    }
+  },
+  {
+    "model": "handoff.socialconversationagenttenant",
+    "pk": 49,
+    "fields": {
+      "agent": 5,
+      "tenant": 4
+    }
+  },
+  {
+    "model": "handoff.socialconversationagenttenant",
+    "pk": 50,
+    "fields": {
+      "agent": 5,
+      "tenant": 7
+    }
+  }
+]

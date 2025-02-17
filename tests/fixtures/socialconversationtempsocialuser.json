@@ -1,0 +1,82 @@
+[
+  {
+    "model": "handoff.socialconversationtempsocialuser",
+    "pk": 32,
+    "fields": {
+      "username": "sss",
+      "channel_id": "b68a86966db8639e8365e35bc8c081173333",
+      "email": "",
+      "phone_number": "",
+      "channel": "webchat",
+      "skill": "en",
+      "last_activity": "2023-03-31T06:46:24.543Z",
+      "is_circulating": false,
+      "agent": null,
+      "tenant": "lebahandofffive"
+    }
+  },
+  {
+    "model": "handoff.socialconversationtempsocialuser",
+    "pk": 28,
+    "fields": {
+      "username": "mango",
+      "channel_id": "902bdb646979db0e633f0fc3a0538ae2",
+      "email": "",
+      "phone_number": "",
+      "channel": "webchat",
+      "skill": "en",
+      "last_activity": "2023-04-04T07:07:39.995Z",
+      "is_circulating": false,
+      "agent": null,
+      "tenant": "lebahandofffive"
+    }
+  },
+  {
+    "model": "handoff.socialconversationtempsocialuser",
+    "pk": 1,
+    "fields": {
+      "username": "april",
+      "channel_id": "3f471c56d601a25b32c207c5b46f44bf",
+      "email": "",
+      "phone_number": "",
+      "channel": "webchat",
+      "skill": "en",
+      "last_activity": "2023-04-04T07:05:15.437Z",
+      "is_circulating": false,
+      "agent": null,
+      "tenant": "lebahandofffive"
+    }
+  },
+  {
+    "model": "handoff.socialconversationtempsocialuser",
+    "pk": 30,
+    "fields": {
+      "username": "sss",
+      "channel_id": "b68a86966db8639e8365e35bc8c08117",
+      "email": "",
+      "phone_number": "",
+      "channel": "webchat",
+      "skill": "en",
+      "last_activity": "2023-03-31T07:30:04.762Z",
+      "is_circulating": false,
+      "agent": null,
+      "tenant": "lebahandofffive"
+    }
+  },
+  {
+    "model": "handoff.socialconversationtempsocialuser",
+    "pk": 29,
+    "fields": {
+      "username": "Koli",
+      "channel_id": "d023d4ecf358ff53d1ccdae5cfeb3c57",
+      "email": "",
+      "phone_number": "",
+      "channel": "webchat",
+      "skill": "en",
+      "last_activity": "2023-04-01T06:31:15.837Z",
+      "is_circulating": false,
+      "agent": null,
+      "tenant": "lebahandofffive"
+    }
+  }
+]

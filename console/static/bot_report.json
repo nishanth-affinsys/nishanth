@@ -1,0 +1,1450 @@
+{
+  "common": {
+    "chart_title": "Bot Report",
+    "screenshot": true,
+    "charts": [
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Number of Messages coming to BOT",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "path": "console.views.bot_reports_views/BotChartsViewSet/faq_messages_export_csv",
+        "description": "The table illustrates the precise count of messages that were exchanged between the user and the bot in every session that occurred.",
+        "chart_api_url": "bot-charts/bot_no_of_msgs_coming_to_bot/",
+        "chart_report_api": "bot-charts/bot_no_of_msgs_coming_to_bot_export_csv/",
+        "chart_report_pdf_api": "bot-charts/bot_no_of_msgs_coming_to_bot_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Total Messages by Session",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 2,
+        "Property": {},
+        "path": "console.views.bot_reports_views/BotChartsViewSet/total_messages_export_csv",
+        "description": "The table illustrates the precise count of messages that were exchanged between the user and the bot in every session that occurred.",
+        "chart_api_url": "bot-charts/bot_total_messages_by_session/",
+        "chart_report_api": "bot-charts/bot_total_messages_by_session_export_csv/",
+        "chart_report_pdf_api": "bot-charts/bot_total_messages_by_session_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Top Messages",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 2,
+        "Property": {},
+        "path": "console.views.bot_reports_views/BotChartsViewSet/top_messages_export_csv",
+        "description": "This table shows the messages that users sent to the bot and are ranked based on their frequency of usage.",
+        "chart_api_url": "bot-charts/bot_top_messages/",
+        "chart_report_api": "bot-charts/bot_top_messages_export_csv/",
+        "chart_report_pdf_api": "bot-charts/bot_top_messages_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Active Customers",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "path": "console.views.bot_reports_views/BotChartsViewSet/active_customers_export_csv",
+        "description": "For each channel, the table shows the number of customers who interacted with the bot during a specific time period.",
+        "chart_api_url": "bot-charts/bot_active_customers/",
+        "chart_report_api": "bot-charts/bot_active_customers_export_csv/",
+        "chart_report_pdf_api": "bot-charts/bot_active_customers_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Top Matched Intents",
+        "screenshot": true,
+        "color": 0,
+        "cols": 6,
+        "rows": 2,
+        "Property": {},
+        "path": "console.views.bot_reports_views/BotChartsViewSet/top_intent_export_csv",
+        "description": "This table lists the most frequently matched intents, i.e the user intents that the bot correctly identified and responded to, during the interactions.",
+        "chart_api_url": "bot-charts/bot_top_matched_intents/",
+        "chart_report_api": "bot-charts/bot_top_matched_intents_export_csv/",
+        "chart_report_pdf_api": "bot-charts/bot_top_matched_intents_export_pdf/"
+      },
+      {
+        "type": "bar_chart",
+        "chartType": "group",
+        "title": "Total Matched Intents",
+        "screenshot": true,
+        "color": 0,
+        "cols": 6,
+        "rows": 1,
+        "Property": {
+          "x": "Channel",
+          "y": [
+            "Count"
+          ]
+        },
+        "path": "console.views.bot_reports_views/BotChartsViewSet/total_intents_matched_export_csv",
+        "description": "The bar chart represents the user intents that were most frequently identified and correctly responded to by the bot during user's interactions",
+        "chart_api_url": "bot-charts/bot_total_matched_intents/",
+        "chart_report_api": "bot-charts/bot_total_matched_intents_export_csv/",
+        "chart_report_pdf_api": "bot-charts/bot_total_matched_intents_export_pdf/"
+      },
+      {
+        "type": "bar_chart",
+        "chartType": "group",
+        "title": "Total Unmatched Intents",
+        "screenshot": true,
+        "color": 0,
+        "cols": 6,
+        "rows": 1,
+        "Property": {
+          "x": "Channel",
+          "y": [
+            "Count"
+          ]
+        },
+        "path": "console.views.bot_reports_views/BotChartsViewSet/total_intents_unmatched_export_csv",
+        "description": " The bar chart represents the user intents that were not recognized by the bot during interactions.",
+        "chart_api_url": "bot-charts/bot_total_unmatched_intents/",
+        "chart_report_api": "bot-charts/bot_total_unmatched_intents_export_csv/",
+        "chart_report_pdf_api": "bot-charts/bot_total_unmatched_intents_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Top 10 Matched Intents by Channel",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "console.views.bot_reports_views/BotChartsViewSet/top_ten_matched_intents_by_channel_export_csv",
+        "description": "This table lists the top 10 frequently matched intents, i.e the user intents that the bot correctly identified and responded to, during the interactions.",
+        "chart_api_url": "bot-charts/bot_top_ten_matched_intents_by_channel/",
+        "chart_report_api": "bot-charts/bot_top_ten_matched_intents_by_channel_export_csv/",
+        "chart_report_pdf_api": "bot-charts/bot_top_ten_matched_intents_by_channel_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Number of User Sessions",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "path": "console.views.bot_reports_views/BotChartsViewSet/user_interactions_export_csv",
+        "description": "For each channel, the table displays the total count of distinct sessions that users had with the bot during a specific time period.",
+        "chart_api_url": "bot-charts/bot_no_of_user_sessions/",
+        "chart_report_api": "bot-charts/bot_no_of_user_sessions_export_csv/",
+        "chart_report_pdf_api": "bot-charts/bot_no_of_user_sessions_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Average Session Time",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "path": "console.views.bot_reports_views/BotChartsViewSet/average_session_time_export_csv",
+        "description": "This table displays the mean duration of user sessions with the bot for each channel during a specific time period.",
+        "chart_api_url": "bot-charts/bot_average_session_time/",
+        "chart_report_api": "bot-charts/bot_average_session_time_export_csv/",
+        "chart_report_pdf_api": "bot-charts/bot_average_session_time_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Average Messages per Session",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "path": "console.views.bot_reports_views/BotChartsViewSet/average_message_export_csv",
+        "description": "This table displays the average number of messages sent by the user to the bot during a single session over a specific time period.",
+        "chart_api_url": "bot-charts/bot_avg_msgs_per_session/",
+        "chart_report_api": "bot-charts/bot_avg_msgs_per_session_export_csv/",
+        "chart_report_pdf_api": "bot-charts/bot_avg_msgs_per_session_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "New Users in BOT",
+        "screenshot": true,
+        "color": 0,
+        "cols": 6,
+        "rows": 1.5,
+        "Property": {},
+        "path": "console.views.bot_reports_views/BotChartsViewSet/new_user_in_bot_export",
+        "description": "This table displays the list of new users coming to the bot.",
+        "chart_api_url": "bot-charts/bot_new_user/",
+        "chart_report_api": "bot-charts/bot_new_user_export_csv/",
+        "chart_report_pdf_api": "bot-charts/bot_new_user_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Returning Users in BOT",
+        "screenshot": true,
+        "color": 0,
+        "cols": 6,
+        "rows": 1.5,
+        "Property": {},
+        "path": "console.views.bot_reports_views/BotChartsViewSet/return_user_in_bot_export",
+        "description": "This table shows users who have previously interacted with the bot and have returned for another interaction.",
+        "chart_api_url": "bot-charts/bot_returning_user/",
+        "chart_report_api": "bot-charts/bot_returning_user_export_csv/",
+        "chart_report_pdf_api": "bot-charts/bot_returning_user_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Conversations",
+        "screenshot": true,
+        "color": [
+          "#91CD76",
+          "#E11237"
+        ],
+        "cols": 12,
+        "rows": 2,
+        "Property": {
+          "column": "Handled",
+          "values": [
+            "Y",
+            "N"
+          ]
+        },
+        "path": "console.views.bot_reports_views/BotChartsViewSet/conversations_export",
+        "description": "The table presents a comprehensive view of the messages sent by the user.",
+        "chart_api_url": "bot-charts/bot_conversations/",
+        "chart_report_api": "bot-charts/bot_conversations_export_csv/",
+        "chart_report_pdf_api": "bot-charts/bot_conversations_export_pdf/",
+        "chart_report_xlsx_api": "bot-charts/bot_conversations_export_excel/"
+      },
+      {
+        "type": "shankey_chart",
+        "chartType": "group",
+        "title": "User Flow Details",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "description": "The Sankey chart provides a visual representation of the flow of the first three user intents exchanged with the bot during interactions.",
+        "chart_api_url": "bot-charts/bot_user_flow_sankey_chart/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Net Registrations Activity",
+        "screenshot": false,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "property": {},
+        "path": "console.views.reg_deregistration/RegDeregViewSet/net_registration_activity_export",
+        "description": "The table shows the number of registered and deregistered customers at the end of the day.",
+        "chart_api_url": "registration/bot_net_registration_activity/",
+        "chart_report_api": "registration/bot_net_registration_activity_export_csv/",
+        "chart_report_pdf_api": "registration/bot_net_registration_activity_export_pdf/"
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Number of Registrations",
+        "screenshot": false,
+        "color": 0,
+        "cols": 6,
+        "rows": 1,
+        "description": "The numeric value displays the total number of currently registered customers",
+        "chart_api_url": "registration/bot_number_of_registrations_bigno/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Number of Deregistrations",
+        "screenshot": false,
+        "color": 0,
+        "cols": 6,
+        "rows": 1,
+        "description": "The numeric value displays the total number of currently deregistered customers",
+        "chart_api_url": "registration/bot_number_of_deregistrations_bigno/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Registered Customer List",
+        "screenshot": false,
+        "color": 0,
+        "cols": 6,
+        "rows": 1.5,
+        "property": {},
+        "path": "console.views.reg_deregistration/RegDeregViewSet/number_of_registrations_list_export",
+        "description": "The table shows the details of the currently registered users.",
+        "chart_api_url": "registration/bot_number_of_registrations_list/",
+        "chart_report_api": "registration/bot_number_of_registrations_list_export_csv/",
+        "chart_report_pdf_api": "registration/bot_number_of_registrations_list_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Deregistered Customer List",
+        "screenshot": false,
+        "color": 0,
+        "cols": 6,
+        "rows": 1.5,
+        "property": {},
+        "path": "console.views.reg_deregistration/RegDeregViewSet/number_of_deregistrations_list_export",
+        "description": "The table shows the details of the currently deregistered users.",
+        "chart_api_url": "registration/bot_number_of_deregistrations_list/",
+        "chart_report_api": "registration/bot_number_of_deregistrations_list_export_csv/",
+        "chart_report_pdf_api": "registration/bot_number_of_deregistrations_list_export_pdf/"
+      }
+    ],
+    "filters": [
+      {
+        "api_url": "get_channels/",
+        "request_method": "GET",
+        "return_key": "channel",
+        "service": "analytics",
+        "filter_type": "select",
+        "filter_title": "Channel"
+      },
+      {
+        "return_key": "timestamp__range",
+        "service": "analytics",
+        "filter_type": "timestamp",
+        "filter_title": "Time Range"
+      }
+    ]
+  },
+  "stanbic": {
+    "chart_title": "Bot Report",
+    "screenshot": true,
+    "charts": [
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Number of Messages coming to BOT",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "path": "console.views.bot_reports_views/BotChartsViewSet/faq_messages_export_csv",
+        "description": "The table illustrates the precise count of messages that were exchanged between the user and the bot in every session that occurred.",
+        "chart_api_url": "bot-charts/bot_no_of_msgs_coming_to_bot/",
+        "chart_report_api": "bot-charts/bot_no_of_msgs_coming_to_bot_export_csv/",
+        "chart_report_pdf_api": "bot-charts/bot_no_of_msgs_coming_to_bot_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Total Messages by Session",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 2,
+        "Property": {},
+        "path": "console.views.bot_reports_views/BotChartsViewSet/total_messages_export_csv",
+        "description": "The table illustrates the precise count of messages that were exchanged between the user and the bot in every session that occurred.",
+        "chart_api_url": "bot-charts/bot_total_messages_by_session/",
+        "chart_report_api": "bot-charts/bot_total_messages_by_session_export_csv/",
+        "chart_report_pdf_api": "bot-charts/bot_total_messages_by_session_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Top Messages",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 2,
+        "Property": {},
+        "path": "console.views.bot_reports_views/BotChartsViewSet/top_messages_export_csv",
+        "description": "This table shows the messages that users sent to the bot and are ranked based on their frequency of usage.",
+        "chart_api_url": "bot-charts/bot_top_messages/",
+        "chart_report_api": "bot-charts/bot_top_messages_export_csv/",
+        "chart_report_pdf_api": "bot-charts/bot_top_messages_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Active Customers",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "path": "console.views.bot_reports_views/BotChartsViewSet/active_customers_export_csv",
+        "description": "For each channel, the table shows the number of customers who interacted with the bot during a specific time period.",
+        "chart_api_url": "bot-charts/bot_active_customers/",
+        "chart_report_api": "bot-charts/bot_active_customers_export_csv/",
+        "chart_report_pdf_api": "bot-charts/bot_active_customers_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Top Matched Intents",
+        "screenshot": true,
+        "color": 0,
+        "cols": 6,
+        "rows": 2,
+        "Property": {},
+        "path": "console.views.bot_reports_views/BotChartsViewSet/top_intent_export_csv",
+        "description": "This table lists the most frequently matched intents, i.e the user intents that the bot correctly identified and responded to, during the interactions.",
+        "chart_api_url": "bot-charts/bot_top_matched_intents/",
+        "chart_report_api": "bot-charts/bot_top_matched_intents_export_csv/",
+        "chart_report_pdf_api": "bot-charts/bot_top_matched_intents_export_pdf/"
+      },
+      {
+        "type": "bar_chart",
+        "chartType": "group",
+        "title": "Total Matched Intents",
+        "screenshot": true,
+        "color": 0,
+        "cols": 6,
+        "rows": 1,
+        "Property": {
+          "x": "Channel",
+          "y": [
+            "Count"
+          ]
+        },
+        "path": "console.views.bot_reports_views/BotChartsViewSet/total_intents_matched_export_csv",
+        "description": "The bar chart represents the user intents that were most frequently identified and correctly responded to by the bot during user's interactions",
+        "chart_api_url": "bot-charts/bot_total_matched_intents/",
+        "chart_report_api": "bot-charts/bot_total_matched_intents_export_csv/",
+        "chart_report_pdf_api": "bot-charts/bot_total_matched_intents_export_pdf/"
+      },
+      {
+        "type": "bar_chart",
+        "chartType": "group",
+        "title": "Total Unmatched Intents",
+        "screenshot": true,
+        "color": 0,
+        "cols": 6,
+        "rows": 1,
+        "Property": {
+          "x": "Channel",
+          "y": [
+            "Count"
+          ]
+        },
+        "path": "console.views.bot_reports_views/BotChartsViewSet/total_intents_unmatched_export_csv",
+        "description": " The bar chart represents the user intents that were not recognized by the bot during interactions.",
+        "chart_api_url": "bot-charts/bot_total_unmatched_intents/",
+        "chart_report_api": "bot-charts/bot_total_unmatched_intents_export_csv/",
+        "chart_report_pdf_api": "bot-charts/bot_total_unmatched_intents_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Top 10 Matched Intents by Channel",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "console.views.bot_reports_views/BotChartsViewSet/top_ten_matched_intents_by_channel_export_csv",
+        "description": "This table lists the top 10 frequently matched intents, i.e the user intents that the bot correctly identified and responded to, during the interactions.",
+        "chart_api_url": "bot-charts/bot_top_ten_matched_intents_by_channel/",
+        "chart_report_api": "bot-charts/bot_top_ten_matched_intents_by_channel_export_csv/",
+        "chart_report_pdf_api": "bot-charts/bot_top_ten_matched_intents_by_channel_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Number of User Sessions",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "path": "console.views.bot_reports_views/BotChartsViewSet/user_interactions_export_csv",
+        "description": "For each channel, the table displays the total count of distinct sessions that users had with the bot during a specific time period.",
+        "chart_api_url": "bot-charts/bot_no_of_user_sessions/",
+        "chart_report_api": "bot-charts/bot_no_of_user_sessions_export_csv/",
+        "chart_report_pdf_api": "bot-charts/bot_no_of_user_sessions_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Average Session Time",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "path": "console.views.bot_reports_views/BotChartsViewSet/average_session_time_export_csv",
+        "description": "This table displays the mean duration of user sessions with the bot for each channel during a specific time period.",
+        "chart_api_url": "bot-charts/bot_average_session_time/",
+        "chart_report_api": "bot-charts/bot_average_session_time_export_csv/",
+        "chart_report_pdf_api": "bot-charts/bot_average_session_time_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Average Messages per Session",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "path": "console.views.bot_reports_views/BotChartsViewSet/average_message_export_csv",
+        "description": "This table displays the average number of messages sent by the user to the bot during a single session over a specific time period.",
+        "chart_api_url": "bot-charts/bot_avg_msgs_per_session/",
+        "chart_report_api": "bot-charts/bot_avg_msgs_per_session_export_csv/",
+        "chart_report_pdf_api": "bot-charts/bot_avg_msgs_per_session_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "New Users in BOT",
+        "screenshot": true,
+        "color": 0,
+        "cols": 6,
+        "rows": 1.5,
+        "Property": {},
+        "path": "console.views.bot_reports_views/BotChartsViewSet/new_user_in_bot_export",
+        "description": "This table displays the list of new users coming to the bot.",
+        "chart_api_url": "bot-charts/bot_new_user/",
+        "chart_report_api": "bot-charts/bot_new_user_export_csv/",
+        "chart_report_pdf_api": "bot-charts/bot_new_user_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Returning Users in BOT",
+        "screenshot": true,
+        "color": 0,
+        "cols": 6,
+        "rows": 1.5,
+        "Property": {},
+        "path": "console.views.bot_reports_views/BotChartsViewSet/return_user_in_bot_export",
+        "description": "This table shows users who have previously interacted with the bot and have returned for another interaction.",
+        "chart_api_url": "bot-charts/bot_returning_user/",
+        "chart_report_api": "bot-charts/bot_returning_user_export_csv/",
+        "chart_report_pdf_api": "bot-charts/bot_returning_user_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Conversations",
+        "screenshot": true,
+        "color": [
+          "#91CD76",
+          "#E11237"
+        ],
+        "cols": 12,
+        "rows": 2,
+        "Property": {
+          "column": "Handled",
+          "values": [
+            "Y",
+            "N"
+          ]
+        },
+        "path": "console.views.bot_reports_views/BotChartsViewSet/conversations_export",
+        "description": "The table presents a comprehensive view of the messages sent by the user.",
+        "chart_api_url": "bot-charts/bot_conversations/",
+        "chart_report_api": "bot-charts/bot_conversations_export_csv/",
+        "chart_report_pdf_api": "bot-charts/bot_conversations_export_pdf/"
+      },
+      {
+        "type": "shankey_chart",
+        "chartType": "group",
+        "title": "User Flow Details",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "description": "The Sankey chart provides a visual representation of the flow of the first three user intents exchanged with the bot during interactions.",
+        "chart_api_url": "bot-charts/bot_user_flow_sankey_chart/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Net Registrations Activity",
+        "screenshot": false,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "property": {},
+        "path": "console.views.reg_deregistration/RegDeregViewSet/net_registration_activity_export",
+        "description": "The table shows the number of registered and deregistered customers at the end of the day.",
+        "chart_api_url": "registration/bot_net_registration_activity/",
+        "chart_report_api": "registration/bot_net_registration_activity_export_csv/",
+        "chart_report_pdf_api": "registration/bot_net_registration_activity_export_pdf/"
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Number of Registrations",
+        "screenshot": false,
+        "color": 0,
+        "cols": 6,
+        "rows": 1,
+        "description": "The numeric value displays the total number of currently registered customers",
+        "chart_api_url": "registration/bot_number_of_registrations_bigno/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Number of Deregistrations",
+        "screenshot": false,
+        "color": 0,
+        "cols": 6,
+        "rows": 1,
+        "description": "The numeric value displays the total number of currently deregistered customers",
+        "chart_api_url": "registration/bot_number_of_deregistrations_bigno/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Registered Customer List",
+        "screenshot": false,
+        "color": 0,
+        "cols": 6,
+        "rows": 1.5,
+        "property": {},
+        "path": "console.views.reg_deregistration/RegDeregViewSet/number_of_registrations_list_export",
+        "description": "The table shows the details of the currently registered users.",
+        "chart_api_url": "registration/bot_number_of_registrations_list/",
+        "chart_report_api": "registration/bot_number_of_registrations_list_export_csv/",
+        "chart_report_pdf_api": "registration/bot_number_of_registrations_list_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Deregistered Customer List",
+        "screenshot": false,
+        "color": 0,
+        "cols": 6,
+        "rows": 1.5,
+        "property": {},
+        "path": "console.views.reg_deregistration/RegDeregViewSet/number_of_deregistrations_list_export",
+        "description": "The table shows the details of the currently deregistered users.",
+        "chart_api_url": "registration/number_of_deregistrations_list/",
+        "chart_report_api": "registration/number_of_deregistrations_list_export/",
+        "chart_report_pdf_api": "registration/number_of_deregistrations_list_export_pdf/"
+      }
+    ],
+    "filters": [
+      {
+        "api_url": "get_channels/",
+        "request_method": "GET",
+        "return_key": "channel",
+        "service": "analytics",
+        "filter_type": "select",
+        "filter_title": "Channel"
+      },
+      {
+        "return_key": "timestamp__range",
+        "service": "analytics",
+        "filter_type": "timestamp",
+        "filter_title": "Time Range"
+      }
+    ]
+  },
+  "nbf": {
+    "chart_title": "Bot Report",
+    "screenshot": true,
+    "charts": [
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Number of Messages coming to BOT",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "path": "console.views.bot_reports_views/BotChartsViewSet/faq_messages_export_csv",
+        "description": "The table illustrates the precise count of messages that were exchanged between the user and the bot in every session that occurred.",
+        "chart_api_url": "bot-charts/bot_no_of_msgs_coming_to_bot/",
+        "chart_report_api": "bot-charts/bot_no_of_msgs_coming_to_bot_export_csv/",
+        "chart_report_pdf_api": "bot-charts/bot_no_of_msgs_coming_to_bot_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Total Messages by Session",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 2,
+        "Property": {},
+        "path": "console.views.bot_reports_views/BotChartsViewSet/total_messages_export_csv",
+        "description": "The table illustrates the precise count of messages that were exchanged between the user and the bot in every session that occurred.",
+        "chart_api_url": "bot-charts/bot_total_messages_by_session/",
+        "chart_report_api": "bot-charts/bot_total_messages_by_session_export_csv/",
+        "chart_report_pdf_api": "bot-charts/bot_total_messages_by_session_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Top Messages",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 2,
+        "Property": {},
+        "path": "console.views.bot_reports_views/BotChartsViewSet/top_messages_export_csv",
+        "description": "This table shows the messages that users sent to the bot and are ranked based on their frequency of usage.",
+        "chart_api_url": "bot-charts/bot_top_messages/",
+        "chart_report_api": "bot-charts/bot_top_messages_export_csv/",
+        "chart_report_pdf_api": "bot-charts/bot_top_messages_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Active Customers",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "path": "console.views.bot_reports_views/BotChartsViewSet/active_customers_export_csv",
+        "description": "For each channel, the table shows the number of customers who interacted with the bot during a specific time period.",
+        "chart_api_url": "bot-charts/bot_active_customers/",
+        "chart_report_api": "bot-charts/bot_active_customers_export_csv/",
+        "chart_report_pdf_api": "bot-charts/bot_active_customers_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Top Matched Intents",
+        "screenshot": true,
+        "color": 0,
+        "cols": 6,
+        "rows": 2,
+        "Property": {},
+        "path": "console.views.bot_reports_views/BotChartsViewSet/top_intent_export_csv",
+        "description": "This table lists the most frequently matched intents, i.e the user intents that the bot correctly identified and responded to, during the interactions.",
+        "chart_api_url": "bot-charts/bot_top_matched_intents/",
+        "chart_report_api": "bot-charts/bot_top_matched_intents_export_csv/",
+        "chart_report_pdf_api": "bot-charts/bot_top_matched_intents_export_pdf/"
+      },
+      {
+        "type": "bar_chart",
+        "chartType": "group",
+        "title": "Total Matched Intents",
+        "screenshot": true,
+        "color": 0,
+        "cols": 6,
+        "rows": 1,
+        "Property": {
+          "x": "Channel",
+          "y": [
+            "Count"
+          ]
+        },
+        "path": "console.views.bot_reports_views/BotChartsViewSet/total_intents_matched_export_csv",
+        "description": "The bar chart represents the user intents that were most frequently identified and correctly responded to by the bot during user's interactions",
+        "chart_api_url": "bot-charts/bot_total_matched_intents/",
+        "chart_report_api": "bot-charts/bot_total_matched_intents_export_csv/",
+        "chart_report_pdf_api": "bot-charts/bot_total_matched_intents_export_pdf/"
+      },
+      {
+        "type": "bar_chart",
+        "chartType": "group",
+        "title": "Total Unmatched Intents",
+        "screenshot": true,
+        "color": 0,
+        "cols": 6,
+        "rows": 1,
+        "Property": {
+          "x": "Channel",
+          "y": [
+            "Count"
+          ]
+        },
+        "path": "console.views.bot_reports_views/BotChartsViewSet/total_intents_unmatched_export_csv",
+        "description": " The bar chart represents the user intents that were not recognized by the bot during interactions.",
+        "chart_api_url": "bot-charts/bot_total_unmatched_intents/",
+        "chart_report_api": "bot-charts/bot_total_unmatched_intents_export_csv/",
+        "chart_report_pdf_api": "bot-charts/bot_total_unmatched_intents_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Number of User Sessions",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "path": "console.views.bot_reports_views/BotChartsViewSet/user_interactions_export_csv",
+        "description": "For each channel, the table displays the total count of distinct sessions that users had with the bot during a specific time period.",
+        "chart_api_url": "bot-charts/bot_no_of_user_sessions/",
+        "chart_report_api": "bot-charts/bot_no_of_user_sessions_export_csv/",
+        "chart_report_pdf_api": "bot-charts/bot_no_of_user_sessions_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Average Messages per Session",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "path": "console.views.bot_reports_views/BotChartsViewSet/average_message_export_csv",
+        "description": "This table displays the average number of messages sent by the user to the bot during a single session over a specific time period.",
+        "chart_api_url": "bot-charts/bot_avg_msgs_per_session/",
+        "chart_report_api": "bot-charts/bot_avg_msgs_per_session_export_csv/",
+        "chart_report_pdf_api": "bot-charts/bot_avg_msgs_per_session_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "New Users in BOT",
+        "screenshot": true,
+        "color": 0,
+        "cols": 6,
+        "rows": 1.5,
+        "Property": {},
+        "path": "console.views.bot_reports_views/BotChartsViewSet/new_user_in_bot_export",
+        "description": "This table displays the list of new users coming to the bot.",
+        "chart_api_url": "bot-charts/bot_new_user/",
+        "chart_report_api": "bot-charts/bot_new_user_export_csv/",
+        "chart_report_pdf_api": "bot-charts/bot_new_user_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Returning Users in BOT",
+        "screenshot": true,
+        "color": 0,
+        "cols": 6,
+        "rows": 1.5,
+        "Property": {},
+        "path": "console.views.bot_reports_views/BotChartsViewSet/return_user_in_bot_export",
+        "description": "This table shows users who have previously interacted with the bot and have returned for another interaction.",
+        "chart_api_url": "bot-charts/bot_returning_user/",
+        "chart_report_api": "bot-charts/bot_returning_user_export_csv/",
+        "chart_report_pdf_api": "bot-charts/bot_returning_user_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Conversations",
+        "screenshot": true,
+        "color": [
+          "#91CD76",
+          "#E11237"
+        ],
+        "cols": 12,
+        "rows": 2,
+        "Property": {
+          "column": "Handled",
+          "values": [
+            "Y",
+            "N"
+          ]
+        },
+        "path": "console.views.bot_reports_views/BotChartsViewSet/conversations_export",
+        "description": "The table presents a comprehensive view of the messages sent by the user.",
+        "chart_api_url": "bot-charts/bot_conversations/",
+        "chart_report_api": "bot-charts/bot_conversations_export_csv/",
+        "chart_report_pdf_api": "bot-charts/bot_conversations_export_pdf/"
+      },
+      {
+        "type": "shankey_chart",
+        "chartType": "group",
+        "title": "User Flow Details",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "description": "The Sankey chart provides a visual representation of the flow of the first three user messages exchanged with the bot during interactions.",
+        "chart_api_url": "bot-charts/bot_user_flow_sankey_chart/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      }
+    ],
+    "filters": [
+      {
+        "api_url": "get_channels/",
+        "request_method": "GET",
+        "return_key": "channel",
+        "service": "analytics",
+        "filter_type": "select",
+        "filter_title": "Channel"
+      },
+      {
+        "return_key": "timestamp__range",
+        "service": "analytics",
+        "filter_type": "timestamp",
+        "filter_title": "Time Range"
+      }
+    ]
+  },
+  "dashboard": {
+    "chart_title": "Bot Report",
+    "screenshot": true,
+    "charts": [
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Number of Messages coming to BOT",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "path": "console.views.bot_reports_views/BotChartsViewSet/faq_messages_export_csv",
+        "description": "The table illustrates the precise count of messages that were exchanged between the user and the bot in every session that occurred.",
+        "chart_api_url": "bot-charts/bot_no_of_msgs_coming_to_bot/",
+        "chart_report_api": "bot-charts/bot_no_of_msgs_coming_to_bot_export_csv/",
+        "chart_report_pdf_api": "bot-charts/bot_no_of_msgs_coming_to_bot_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Total Messages by Session",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 2,
+        "Property": {},
+        "path": "console.views.bot_reports_views/BotChartsViewSet/total_messages_export_csv",
+        "description": "The table illustrates the precise count of messages that were exchanged between the user and the bot in every session that occurred.",
+        "chart_api_url": "bot-charts/bot_total_messages_by_session/",
+        "chart_report_api": "bot-charts/bot_total_messages_by_session_export_csv/",
+        "chart_report_pdf_api": "bot-charts/bot_total_messages_by_session_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Top Messages",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 2,
+        "Property": {},
+        "path": "console.views.bot_reports_views/BotChartsViewSet/top_messages_export_csv",
+        "description": "This table shows the messages that users sent to the bot and are ranked based on their frequency of usage.",
+        "chart_api_url": "bot-charts/bot_top_messages/",
+        "chart_report_api": "bot-charts/bot_top_messages_export_csv/",
+        "chart_report_pdf_api": "bot-charts/bot_top_messages_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Active Customers",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "path": "console.views.bot_reports_views/BotChartsViewSet/active_customers_export_csv",
+        "description": "For each channel, the table shows the number of customers who interacted with the bot during a specific time period.",
+        "chart_api_url": "bot-charts/bot_active_customers/",
+        "chart_report_api": "bot-charts/bot_active_customers_export_csv/",
+        "chart_report_pdf_api": "bot-charts/bot_active_customers_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Top Matched Intents",
+        "screenshot": true,
+        "color": 0,
+        "cols": 6,
+        "rows": 2,
+        "Property": {},
+        "path": "console.views.bot_reports_views/BotChartsViewSet/top_intent_export_csv",
+        "description": "This table lists the most frequently matched intents, i.e the user intents that the bot correctly identified and responded to, during the interactions.",
+        "chart_api_url": "bot-charts/bot_top_matched_intents/",
+        "chart_report_api": "bot-charts/bot_top_matched_intents_export_csv/",
+        "chart_report_pdf_api": "bot-charts/bot_top_matched_intents_export_pdf/"
+      },
+      {
+        "type": "bar_chart",
+        "chartType": "group",
+        "title": "Total Matched Intents",
+        "screenshot": true,
+        "color": 0,
+        "cols": 6,
+        "rows": 1,
+        "Property": {
+          "x": "Channel",
+          "y": [
+            "Count"
+          ]
+        },
+        "path": "console.views.bot_reports_views/BotChartsViewSet/total_intents_matched_export_csv",
+        "description": "The bar chart represents the user intents that were most frequently identified and correctly responded to by the bot during user's interactions",
+        "chart_api_url": "bot-charts/bot_total_matched_intents/",
+        "chart_report_api": "bot-charts/bot_total_matched_intents_export_csv/",
+        "chart_report_pdf_api": "bot-charts/bot_total_matched_intents_export_pdf/"
+      },
+      {
+        "type": "bar_chart",
+        "chartType": "group",
+        "title": "Total Unmatched Intents",
+        "screenshot": true,
+        "color": 0,
+        "cols": 6,
+        "rows": 1,
+        "Property": {
+          "x": "Channel",
+          "y": [
+            "Count"
+          ]
+        },
+        "path": "console.views.bot_reports_views/BotChartsViewSet/total_intents_unmatched_export_csv",
+        "description": " The bar chart represents the user intents that were not recognized by the bot during interactions.",
+        "chart_api_url": "bot-charts/bot_total_unmatched_intents/",
+        "chart_report_api": "bot-charts/bot_total_unmatched_intents_export_csv/",
+        "chart_report_pdf_api": "bot-charts/bot_total_unmatched_intents_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Top 10 Matched Intents by Channel",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "console.views.bot_reports_views/BotChartsViewSet/top_ten_matched_intents_by_channel_export_csv",
+        "description": "This table lists the top 10 frequently matched intents, i.e the user intents that the bot correctly identified and responded to, during the interactions.",
+        "chart_api_url": "bot-charts/bot_top_ten_matched_intents_by_channel/",
+        "chart_report_api": "bot-charts/bot_top_ten_matched_intents_by_channel_export_csv/",
+        "chart_report_pdf_api": "bot-charts/bot_top_ten_matched_intents_by_channel_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Number of User Sessions",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "path": "console.views.bot_reports_views/BotChartsViewSet/user_interactions_export_csv",
+        "description": "For each channel, the table displays the total count of distinct sessions that users had with the bot during a specific time period.",
+        "chart_api_url": "bot-charts/bot_no_of_user_sessions/",
+        "chart_report_api": "bot-charts/bot_no_of_user_sessions_export_csv/",
+        "chart_report_pdf_api": "bot-charts/bot_no_of_user_sessions_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Average Session Time",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "path": "console.views.bot_reports_views/BotChartsViewSet/average_session_time_export_csv",
+        "description": "This table displays the mean duration of user sessions with the bot for each channel during a specific time period.",
+        "chart_api_url": "bot-charts/bot_average_session_time/",
+        "chart_report_api": "bot-charts/bot_average_session_time_export_csv/",
+        "chart_report_pdf_api": "bot-charts/bot_average_session_time_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Average Messages per Session",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "path": "console.views.bot_reports_views/BotChartsViewSet/average_message_export_csv",
+        "description": "This table displays the average number of messages sent by the user to the bot during a single session over a specific time period.",
+        "chart_api_url": "bot-charts/bot_avg_msgs_per_session/",
+        "chart_report_api": "bot-charts/bot_avg_msgs_per_session_export_csv/",
+        "chart_report_pdf_api": "bot-charts/bot_avg_msgs_per_session_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "New Users in BOT",
+        "screenshot": true,
+        "color": 0,
+        "cols": 6,
+        "rows": 1.5,
+        "Property": {},
+        "path": "console.views.bot_reports_views/BotChartsViewSet/new_user_in_bot_export",
+        "description": "This table displays the list of new users coming to the bot.",
+        "chart_api_url": "bot-charts/bot_new_user/",
+        "chart_report_api": "bot-charts/bot_new_user_export_csv/",
+        "chart_report_pdf_api": "bot-charts/bot_new_user_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Returning Users in BOT",
+        "screenshot": true,
+        "color": 0,
+        "cols": 6,
+        "rows": 1.5,
+        "Property": {},
+        "path": "console.views.bot_reports_views/BotChartsViewSet/return_user_in_bot_export",
+        "description": "This table shows users who have previously interacted with the bot and have returned for another interaction.",
+        "chart_api_url": "bot-charts/bot_returning_user/",
+        "chart_report_api": "bot-charts/bot_returning_user_export_csv/",
+        "chart_report_pdf_api": "bot-charts/bot_returning_user_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Conversations",
+        "screenshot": true,
+        "color": [
+          "#91CD76",
+          "#E11237"
+        ],
+        "cols": 12,
+        "rows": 2,
+        "Property": {
+          "column": "Handled",
+          "values": [
+            "Y",
+            "N"
+          ]
+        },
+        "path": "console.views.bot_reports_views/BotChartsViewSet/conversations_export",
+        "description": "The table presents a comprehensive view of the messages sent by the user.",
+        "chart_api_url": "bot-charts/bot_conversations/",
+        "chart_report_api": "bot-charts/bot_conversations_export_csv/",
+        "chart_report_pdf_api": "bot-charts/bot_conversations_export_pdf/",
+        "chart_report_xlsx_api": "bot-charts/bot_conversations_export_excel/"
+      },
+      {
+        "type": "shankey_chart",
+        "chartType": "group",
+        "title": "User Flow Details",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "description": "The Sankey chart provides a visual representation of the flow of the first three user intents exchanged with the bot during interactions.",
+        "chart_api_url": "bot-charts/bot_user_flow_sankey_chart/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      }
+    ],
+    "filters": [
+      {
+        "api_url": "get_channels/",
+        "request_method": "GET",
+        "return_key": "channel",
+        "service": "analytics",
+        "filter_type": "select",
+        "filter_title": "Channel"
+      },
+      {
+        "return_key": "timestamp__range",
+        "service": "analytics",
+        "filter_type": "timestamp",
+        "filter_title": "Time Range"
+      }
+    ]
+  },
+  "dib": {
+    "chart_title": "Bot Report",
+    "screenshot": true,
+    "charts": [
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Number of Messages coming to BOT",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "path": "console.views.bot_reports_views/BotChartsViewSet/faq_messages_export_csv",
+        "description": "The table illustrates the precise count of messages that were exchanged between the user and the bot in every session that occurred.",
+        "chart_api_url": "bot-charts/bot_no_of_msgs_coming_to_bot/",
+        "chart_report_api": "bot-charts/bot_no_of_msgs_coming_to_bot_export_csv/",
+        "chart_report_pdf_api": "bot-charts/bot_no_of_msgs_coming_to_bot_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Total Messages by Session",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 2,
+        "Property": {},
+        "path": "console.views.bot_reports_views/BotChartsViewSet/total_messages_export_csv",
+        "description": "The table illustrates the precise count of messages that were exchanged between the user and the bot in every session that occurred.",
+        "chart_api_url": "bot-charts/bot_total_messages_by_session/",
+        "chart_report_api": "bot-charts/bot_total_messages_by_session_export_csv/",
+        "chart_report_pdf_api": "bot-charts/bot_total_messages_by_session_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Top Messages",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 2,
+        "Property": {},
+        "path": "console.views.bot_reports_views/BotChartsViewSet/top_messages_export_csv",
+        "description": "This table shows the messages that users sent to the bot and are ranked based on their frequency of usage.",
+        "chart_api_url": "bot-charts/bot_top_messages/",
+        "chart_report_api": "bot-charts/bot_top_messages_export_csv/",
+        "chart_report_pdf_api": "bot-charts/bot_top_messages_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Active Customers",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "path": "console.views.bot_reports_views/BotChartsViewSet/active_customers_export_csv",
+        "description": "For each channel, the table shows the number of customers who interacted with the bot during a specific time period.",
+        "chart_api_url": "bot-charts/bot_active_customers/",
+        "chart_report_api": "bot-charts/bot_active_customers_export_csv/",
+        "chart_report_pdf_api": "bot-charts/bot_active_customers_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Top Matched Intents",
+        "screenshot": true,
+        "color": 0,
+        "cols": 6,
+        "rows": 2,
+        "Property": {},
+        "path": "console.views.bot_reports_views/BotChartsViewSet/top_intent_export_csv",
+        "description": "This table lists the most frequently matched intents, i.e the user intents that the bot correctly identified and responded to, during the interactions.",
+        "chart_api_url": "bot-charts/bot_top_matched_intents/",
+        "chart_report_api": "bot-charts/bot_top_matched_intents_export_csv/",
+        "chart_report_pdf_api": "bot-charts/bot_top_matched_intents_export_pdf/"
+      },
+      {
+        "type": "bar_chart",
+        "chartType": "group",
+        "title": "Total Matched Intents",
+        "screenshot": true,
+        "color": 0,
+        "cols": 6,
+        "rows": 1,
+        "Property": {
+          "x": "Channel",
+          "y": [
+            "Count"
+          ]
+        },
+        "path": "console.views.bot_reports_views/BotChartsViewSet/total_intents_matched_export_csv",
+        "description": "The bar chart represents the user intents that were most frequently identified and correctly responded to by the bot during user's interactions",
+        "chart_api_url": "bot-charts/bot_total_matched_intents/",
+        "chart_report_api": "bot-charts/bot_total_matched_intents_export_csv/",
+        "chart_report_pdf_api": "bot-charts/bot_total_matched_intents_export_pdf/"
+      },
+      {
+        "type": "bar_chart",
+        "chartType": "group",
+        "title": "Total Unmatched Intents",
+        "screenshot": true,
+        "color": 0,
+        "cols": 6,
+        "rows": 1,
+        "Property": {
+          "x": "Channel",
+          "y": [
+            "Count"
+          ]
+        },
+        "path": "console.views.bot_reports_views/BotChartsViewSet/total_intents_unmatched_export_csv",
+        "description": " The bar chart represents the user intents that were not recognized by the bot during interactions.",
+        "chart_api_url": "bot-charts/bot_total_unmatched_intents/",
+        "chart_report_api": "bot-charts/bot_total_unmatched_intents_export_csv/",
+        "chart_report_pdf_api": "bot-charts/bot_total_unmatched_intents_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Top 10 Matched Intents by Channel",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "console.views.bot_reports_views/BotChartsViewSet/top_ten_matched_intents_by_channel_export_csv",
+        "description": "This table lists the top 10 frequently matched intents, i.e the user intents that the bot correctly identified and responded to, during the interactions.",
+        "chart_api_url": "bot-charts/bot_top_ten_matched_intents_by_channel/",
+        "chart_report_api": "bot-charts/bot_top_ten_matched_intents_by_channel_export_csv/",
+        "chart_report_pdf_api": "bot-charts/bot_top_ten_matched_intents_by_channel_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Number of User Sessions",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "path": "console.views.bot_reports_views/BotChartsViewSet/user_interactions_export_csv",
+        "description": "For each channel, the table displays the total count of distinct sessions that users had with the bot during a specific time period.",
+        "chart_api_url": "bot-charts/bot_no_of_user_sessions/",
+        "chart_report_api": "bot-charts/bot_no_of_user_sessions_export_csv/",
+        "chart_report_pdf_api": "bot-charts/bot_no_of_user_sessions_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Average Session Time",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "path": "console.views.bot_reports_views/BotChartsViewSet/average_session_time_export_csv",
+        "description": "This table displays the mean duration of user sessions with the bot for each channel during a specific time period.",
+        "chart_api_url": "bot-charts/bot_average_session_time/",
+        "chart_report_api": "bot-charts/bot_average_session_time_export_csv/",
+        "chart_report_pdf_api": "bot-charts/bot_average_session_time_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Average Messages per Session",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "path": "console.views.bot_reports_views/BotChartsViewSet/average_message_export_csv",
+        "description": "This table displays the average number of messages sent by the user to the bot during a single session over a specific time period.",
+        "chart_api_url": "bot-charts/bot_avg_msgs_per_session/",
+        "chart_report_api": "bot-charts/bot_avg_msgs_per_session_export_csv/",
+        "chart_report_pdf_api": "bot-charts/bot_avg_msgs_per_session_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "New Users in BOT",
+        "screenshot": true,
+        "color": 0,
+        "cols": 6,
+        "rows": 1.5,
+        "Property": {},
+        "path": "console.views.bot_reports_views/BotChartsViewSet/new_user_in_bot_export",
+        "description": "This table displays the list of new users coming to the bot.",
+        "chart_api_url": "bot-charts/bot_new_user/",
+        "chart_report_api": "bot-charts/bot_new_user_export_csv/",
+        "chart_report_pdf_api": "bot-charts/bot_new_user_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Returning Users in BOT",
+        "screenshot": true,
+        "color": 0,
+        "cols": 6,
+        "rows": 1.5,
+        "Property": {},
+        "path": "console.views.bot_reports_views/BotChartsViewSet/return_user_in_bot_export",
+        "description": "This table shows users who have previously interacted with the bot and have returned for another interaction.",
+        "chart_api_url": "bot-charts/bot_returning_user/",
+        "chart_report_api": "bot-charts/bot_returning_user_export_csv/",
+        "chart_report_pdf_api": "bot-charts/bot_returning_user_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Conversations",
+        "screenshot": true,
+        "color": [
+          "#91CD76",
+          "#E11237"
+        ],
+        "cols": 12,
+        "rows": 2,
+        "Property": {
+          "column": "Handled",
+          "values": [
+            "Y",
+            "N"
+          ]
+        },
+        "path": "console.views.bot_reports_views/BotChartsViewSet/conversations_export",
+        "description": "The table presents a comprehensive view of the messages sent by the user.",
+        "chart_api_url": "bot-charts/bot_conversations/",
+        "chart_report_api": "bot-charts/bot_conversations_export_csv/",
+        "chart_report_pdf_api": "bot-charts/bot_conversations_export_pdf/",
+        "chart_report_xlsx_api": "bot-charts/bot_conversations_export_excel/"
+      },
+      {
+        "type": "shankey_chart",
+        "chartType": "group",
+        "title": "User Flow Details",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "description": "The Sankey chart provides a visual representation of the flow of the first three user intents exchanged with the bot during interactions.",
+        "chart_api_url": "bot-charts/bot_user_flow_sankey_chart/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      }
+    ],
+    "filters": [
+      {
+        "api_url": "get_channels/",
+        "request_method": "GET",
+        "return_key": "channel",
+        "service": "analytics",
+        "filter_type": "select",
+        "filter_title": "Channel"
+      },
+      {
+        "return_key": "timestamp__range",
+        "service": "analytics",
+        "filter_type": "timestamp",
+        "filter_title": "Time Range"
+      },
+      {
+        "api_url": "get_customer_types/",
+        "request_method": "GET",
+        "return_key": "customer_type",
+        "service": "analytics",
+        "filter_type": "select",
+        "filter_title": "Customer Type"
+      }
+    ]
+  }
+}

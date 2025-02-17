@@ -1,0 +1,132 @@
+def generateReleaseBuildCMD(image,context){
+    String cmd = "/kaniko/executor \
+                 --build-arg GIT_TOKEN=\${GIT_PASSWD} \
+                 --compressed-caching=true  \
+                 --force --verbosity=info --dockerfile ./devops/Dockerfile \
+                 --context=${context} --git branch=\${RELEASE_VERSION} \
+                 --tar-path=/trivy/image.tar --destination=${image}"
+  return cmd
+}
+
+def generateDeployCommands(server_ip,server_uname,deploy_cmd){
+    String cmd = """ssh -o StrictHostKeyChecking=no ${server_uname}@${server_ip} ${deploy_cmd}""" 
+    return cmd
+}
+
+String determineRepoName() {
+    String reponame = scm.getUserRemoteConfigs()[0].getUrl().tokenize('/').last().split("\\.")[0]
+    return reponame.toLowerCase();
+}
+
+
+node("kaniko-agent") {
+
+   checkout scm  
+   //Tool Envs
+   env.TEAMS_WEBHOOK="https://affinsys.webhook.office.com/webhookb2/b8f1ee10-a1c2-41b2-9565-ae506ad2c257@ff6a797c-4692-4d8d-95cf-5f0481069b29/JenkinsCI/34756a6f3c144f509784e078201e3441/23d1354c-62e6-4d8d-b1ec-cbf1bd0430f5"
+
+   //Build Envs
+   env.RELEASE_VERSION=sh(returnStdout: true, script: 'git describe --tags').trim()
+
+   env.REPOSITORY_NAME=determineRepoName()
+   
+   def image="bankbuddy.azurecr.io/${REPOSITORY_NAME}:${RELEASE_VERSION}"
+
+   def context="git://\${GIT_PASSWD}@github.com/BankBuddy/${REPOSITORY_NAME}.git"
+
+
+   def release_build_cmd=generateReleaseBuildCMD(image,context)
+
+     //Deploy Envs
+   env.BETA_STUDIO_SERVER_IP="216.48.189.13"
+   env.BETA_STUDIO_SERVER_UNAME="root"
+   env.BETA_STUDIO_DEPLOY_CMD="'cd /root/studio-deploy/services/${REPOSITORY_NAME} && git pull && docker-compose pull && docker-compose down && docker-compose --env-file=/root/studio-deploy/global.env up -d && docker exec ${REPOSITORY_NAME} python manage.py setup'" 
+
+
+
+
+
+
+    stage('Start Build Notifier') {
+        catchError {
+            script {
+                def teamsMessage = "started build ${env.BUILD_NUMBER}"
+                office365ConnectorSend(
+                    message: teamsMessage,
+                    webhookUrl: env.TEAMS_WEBHOOK
+                )
+            }
+        }
+    }
+
+    stage('Sonarqube Scanning'){
+       sh "echo 'Sonarqube scans in progess' "
+    }
+
+    stage('Build Docker Image') {    
+       container('kaniko') {
+       stage('Build a Docker project') {
+       withCredentials([usernamePassword(credentialsId: 'Pratham-GH', passwordVariable: 'GIT_PASSWD', usernameVariable: 'GIT_UNAME')]) {
+              sh "${release_build_cmd}"
+          }
+         }
+       }
+    }
+
+    stage("Update Artifacts and Deploy"){
+      container("utilities"){
+        stage("Deploy Approval"){
+          input message: "Deploy This Release?", ok: 'Deploy'
+          withCredentials([usernamePassword(credentialsId: 'Pratham-GH', passwordVariable: 'GIT_PASSWD', usernameVariable: 'GIT_UNAME')]) {
+          sh '''
+          /workdir/artifact_update.py -rn=studio-deploy --image_name=${REPOSITORY_NAME} --branch=beta --directory_path=studio-deploy/services/${REPOSITORY_NAME}/ -t=${RELEASE_VERSION} -gt=${GIT_PASSWD} -e ${REPOSITORY_NAME} -rv=${RELEASE_VERSION}
+          '''
+          }
+        }
+      }
+      sshagent(['Jenkins-Private-Key']) {
+             def cmd = generateDeployCommands(env.BETA_STUDIO_SERVER_IP,env.BETA_STUDIO_SERVER_UNAME,env.BETA_STUDIO_DEPLOY_CMD)
+             sh """${cmd}"""
+       }
+    }
+
+    stage("Trivy Scan"){
+      container("utilities"){
+        
+        env.TRIVY_REPORT=sh(returnStdout: true, script: 'trivy  image  --ignore-unfixed  --input /trivy/image.tar > /trivy/trivy.txt && cat /trivy/trivy.txt')
+        sh "cat /trivy/trivy.txt"
+        office365ConnectorSend(
+          color: '#FFFF00',
+          message: env.TRIVY_REPORT,
+          webhookUrl: env.TEAMS_WEBHOOK
+        )
+        
+      }
+    }
+
+    stage("Triggering VAPT scan") {
+        catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
+            build job: 'bud-sol-owaspscan-svc/main', wait: true
+        }
+    }
+
+    stage("Build Notification"){
+      catchError {
+        
+              script {
+                def status = currentBuild.currentResult == 'SUCCESS' ? 'Success' : 'FAILURE'
+                def color = currentBuild.currentResult == 'SUCCESS' ? '#00FF00' : '#FF0000'
+                def buildNumber = "Build-Number: ${env.BUILD_NUMBER}"
+           
+                office365ConnectorSend(
+                    color: color,
+                    status: status,
+                    message: buildNumber,
+                    webhookUrl: env.TEAMS_WEBHOOK
+                )
+            }  
+      }
+    }
+
+}
+

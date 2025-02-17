@@ -1,0 +1,647 @@
+{
+  "common": {
+    "chart_title": "Transaction Report",
+    "screenshot": true,
+    "charts": [
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Initiated Transactions",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "",
+        "chart_api_url": "wallet_merchant_transactions/merchant_transactions_initiated_by_customer_bigno/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Inprogress Transactions",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "",
+        "chart_api_url": "wallet_merchant_transactions/merchant_inprogress_transactions_bigno/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Successful Transactions",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "",
+        "chart_api_url": "wallet_merchant_transactions/merchant_successful_transactions_bigno/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Failed Transactions",
+        "screenshot": true,
+        "color": 0,
+        "cols": 6,
+        "rows": 1,
+        "Property": {},
+        "description": "",
+        "chart_api_url": "wallet_merchant_transactions/merchant_failed_transactions_bigno/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Abandoned Transactions",
+        "screenshot": true,
+        "color": 0,
+        "cols": 6,
+        "rows": 1,
+        "Property": {},
+        "description": "",
+        "chart_api_url": "wallet_merchant_transactions/merchant_abandoned_transactions_bigno/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Total Revenue",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "",
+        "chart_api_url": "wallet_merchant_transactions/merchant_revenue_earned_bigno/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Average Revenue",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "",
+        "chart_api_url": "wallet_merchant_transactions/merchant_avg_revenue_earned_bigno/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Max Revenue",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "",
+        "chart_api_url": "wallet_merchant_transactions/merchant_max_revenue_earned_bigno/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "sunburst_chart",
+        "chartType": "group",
+        "title": "Transactions Hierarchy ",
+        "screenshot": true,
+        "color": [
+          "#BF444C",
+          "#F6EFA6"
+        ],
+        "cols": 6,
+        "rows": 1.5,
+        "Property": {},
+        "description": "",
+        "chart_api_url": "wallet_merchant_transactions/merchant_transactions_hierarchy_sunburst/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "sunburst_chart",
+        "chartType": "group",
+        "title": "Revenue Hierarchy",
+        "screenshot": true,
+        "color": [
+          "#1B5E20",
+          "#91CC75"
+        ],
+        "cols": 6,
+        "rows": 1.5,
+        "Property": {},
+        "description": "",
+        "chart_api_url": "wallet_merchant_transactions/merchant_revenue_hierarchy_sunburst/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "line_chart",
+        "chartType": "group",
+        "title": "Transaction Trend",
+        "screenshot": true,
+        "color": 0,
+        "cols": 6,
+        "rows": 1,
+        "Property": {
+          "x": "Date",
+          "y": [
+            "bank_transactions",
+            "wallet_transactions"
+          ]
+        },
+        "description": "",
+        "chart_api_url": "wallet_merchant_transactions/merchant_transaction_trendline/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "line_chart",
+        "chartType": "group",
+        "title": "Sales Trend",
+        "screenshot": true,
+        "color": 0,
+        "cols": 6,
+        "rows": 1,
+        "Property": {
+          "x": "Date",
+          "y": [
+            "bank_transactions",
+            "wallet_transactions"
+          ]
+        },
+        "description": "",
+        "chart_api_url": "wallet_merchant_transactions/merchant_revenue_trendline/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Transaction details",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "wallet.views.merchant_transaction_views/MerchantTransactionWalletViewSet/merchant_transaction_history_export_csv",
+        "description": "The table gives the complete details of the transactions, that were made to the merchant.",
+        "chart_api_url": "wallet_merchant_transactions/merchant_transaction_history/",
+        "chart_report_api": "wallet_merchant_transactions/merchant_transaction_history_export_csv/",
+        "chart_report_pdf_api": "wallet_merchant_transactions/merchant_transaction_history_export_pdf/"
+      }
+    ],
+    "filters": [
+      {
+        "return_key": "timestamp__range",
+        "service": "analytics",
+        "filter_type": "timestamp",
+        "filter_title": "Time Range"
+      }
+    ]
+  },
+  "dashboard": {
+    "chart_title": "Transaction Report",
+    "screenshot": true,
+    "charts": [
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Initiated Transactions",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "",
+        "chart_api_url": "wallet_merchant_transactions/merchant_transactions_initiated_by_customer_bigno/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Inprogress Transactions",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "",
+        "chart_api_url": "wallet_merchant_transactions/merchant_inprogress_transactions_bigno/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Successful Transactions",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "",
+        "chart_api_url": "wallet_merchant_transactions/merchant_successful_transactions_bigno/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Failed Transactions",
+        "screenshot": true,
+        "color": 0,
+        "cols": 6,
+        "rows": 1,
+        "Property": {},
+        "description": "",
+        "chart_api_url": "wallet_merchant_transactions/merchant_failed_transactions_bigno/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Abandoned Transactions",
+        "screenshot": true,
+        "color": 0,
+        "cols": 6,
+        "rows": 1,
+        "Property": {},
+        "description": "",
+        "chart_api_url": "wallet_merchant_transactions/merchant_abandoned_transactions_bigno/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Total Revenue",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "",
+        "chart_api_url": "wallet_merchant_transactions/merchant_revenue_earned_bigno/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Average Revenue",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "",
+        "chart_api_url": "wallet_merchant_transactions/merchant_avg_revenue_earned_bigno/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Max Revenue",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "",
+        "chart_api_url": "wallet_merchant_transactions/merchant_max_revenue_earned_bigno/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "sunburst_chart",
+        "chartType": "group",
+        "title": "Consolidated Transactions",
+        "screenshot": true,
+        "color": [
+          "#BF444C",
+          "#F6EFA6"
+        ],
+        "cols": 6,
+        "rows": 1.5,
+        "Property": {},
+        "description": "",
+        "chart_api_url": "wallet_merchant_transactions/merchant_transactions_hierarchy_sunburst/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "sunburst_chart",
+        "chartType": "group",
+        "title": "Consolidated Revenue",
+        "screenshot": true,
+        "color": [
+          "#1B5E20",
+          "#91CC75"
+        ],
+        "cols": 6,
+        "rows": 1.5,
+        "Property": {},
+        "description": "",
+        "chart_api_url": "wallet_merchant_transactions/merchant_revenue_hierarchy_sunburst/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "line_chart",
+        "chartType": "group",
+        "title": "Transaction Trend",
+        "screenshot": true,
+        "color": 0,
+        "cols": 6,
+        "rows": 1,
+        "Property": {
+          "x": "Date",
+          "y": [
+            "bank_transactions",
+            "wallet_transactions"
+          ]
+        },
+        "description": "",
+        "chart_api_url": "wallet_merchant_transactions/merchant_transaction_trendline/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "line_chart",
+        "chartType": "group",
+        "title": "Sales Trend",
+        "screenshot": true,
+        "color": 0,
+        "cols": 6,
+        "rows": 1,
+        "Property": {
+          "x": "Date",
+          "y": [
+            "bank_transactions",
+            "wallet_transactions"
+          ]
+        },
+        "description": "",
+        "chart_api_url": "wallet_merchant_transactions/merchant_revenue_trendline/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Transaction details",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "wallet.views.merchant_transaction_views/MerchantTransactionWalletViewSet/merchant_transaction_history_export_csv",
+        "description": "The table gives the complete details of the transactions, that were made to the merchant.",
+        "chart_api_url": "wallet_merchant_transactions/merchant_transaction_history/",
+        "chart_report_api": "wallet_merchant_transactions/merchant_transaction_history_export_csv/",
+        "chart_report_pdf_api": "wallet_merchant_transactions/merchant_transaction_history_export_pdf/"
+      }
+    ],
+    "filters": [
+      {
+        "return_key": "timestamp__range",
+        "service": "analytics",
+        "filter_type": "timestamp",
+        "filter_title": "Time Range"
+      }
+    ]
+  },
+  "stanbic": {
+    "chart_title": "Transaction Report",
+    "screenshot": true,
+    "charts": [
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Initiated Transactions",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "",
+        "chart_api_url": "wallet_merchant_transactions/merchant_transactions_initiated_by_customer_bigno/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Inprogress Transactions",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "",
+        "chart_api_url": "wallet_merchant_transactions/merchant_inprogress_transactions_bigno/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Successful Transactions",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "",
+        "chart_api_url": "wallet_merchant_transactions/merchant_successful_transactions_bigno/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Failed Transactions",
+        "screenshot": true,
+        "color": 0,
+        "cols": 6,
+        "rows": 1,
+        "Property": {},
+        "description": "",
+        "chart_api_url": "wallet_merchant_transactions/merchant_failed_transactions_bigno/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Abandoned Transactions",
+        "screenshot": true,
+        "color": 0,
+        "cols": 6,
+        "rows": 1,
+        "Property": {},
+        "description": "",
+        "chart_api_url": "wallet_merchant_transactions/merchant_abandoned_transactions_bigno/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Total Revenue",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "",
+        "chart_api_url": "wallet_merchant_transactions/merchant_revenue_earned_bigno/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Average Revenue",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "",
+        "chart_api_url": "wallet_merchant_transactions/merchant_avg_revenue_earned_bigno/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Max Revenue",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "",
+        "chart_api_url": "wallet_merchant_transactions/merchant_max_revenue_earned_bigno/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "sunburst_chart",
+        "chartType": "group",
+        "title": "Transactions Hierarchy ",
+        "screenshot": true,
+        "color": [
+          "#BF444C",
+          "#F6EFA6"
+        ],
+        "cols": 6,
+        "rows": 1.5,
+        "Property": {},
+        "description": "",
+        "chart_api_url": "wallet_merchant_transactions/merchant_transactions_hierarchy_sunburst/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "sunburst_chart",
+        "chartType": "group",
+        "title": "Revenue Hierarchy",
+        "screenshot": true,
+        "color": [
+          "#1B5E20",
+          "#91CC75"
+        ],
+        "cols": 6,
+        "rows": 1.5,
+        "Property": {},
+        "description": "",
+        "chart_api_url": "wallet_merchant_transactions/merchant_revenue_hierarchy_sunburst/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "line_chart",
+        "chartType": "group",
+        "title": "Transaction Trend",
+        "screenshot": true,
+        "color": 0,
+        "cols": 6,
+        "rows": 1,
+        "Property": {
+          "x": "Date",
+          "y": [
+            "bank_transactions",
+            "wallet_transactions"
+          ]
+        },
+        "description": "",
+        "chart_api_url": "wallet_merchant_transactions/merchant_transaction_trendline/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "line_chart",
+        "chartType": "group",
+        "title": "Sales Trend",
+        "screenshot": true,
+        "color": 0,
+        "cols": 6,
+        "rows": 1,
+        "Property": {
+          "x": "Date",
+          "y": [
+            "bank_transactions",
+            "wallet_transactions"
+          ]
+        },
+        "description": "",
+        "chart_api_url": "wallet_merchant_transactions/merchant_revenue_trendline/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Transaction details",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "wallet.views.merchant_transaction_views/MerchantTransactionWalletViewSet/merchant_transaction_history_export_csv",
+        "description": "The table gives the complete details of the transactions, that were made to the merchant.",
+        "chart_api_url": "wallet_merchant_transactions/merchant_transaction_history/",
+        "chart_report_api": "wallet_merchant_transactions/merchant_transaction_history_export_csv/",
+        "chart_report_pdf_api": "wallet_merchant_transactions/merchant_transaction_history_export_pdf/"
+      }
+    ],
+    "filters": [
+      {
+        "return_key": "timestamp__range",
+        "service": "analytics",
+        "filter_type": "timestamp",
+        "filter_title": "Time Range"
+      }
+    ]
+  }
+}

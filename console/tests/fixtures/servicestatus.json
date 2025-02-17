@@ -1,0 +1,119 @@
+[
+  {
+    "model": "console.servicestatus",
+    "pk": 27,
+    "fields": {
+      "service": "Notification",
+      "healthz_endpoint": "http://bud-core-notification-svc-svc:8515/healthz/",
+      "healthz_status": "200",
+      "livez_endpoint": "http://bud-core-notification-svc-svc:8515/livez/",
+      "livez_status": "200",
+      "created_timestamp": "2023-11-21T06:48:06.866Z",
+      "last_modified_timestamp": "2023-11-22T08:56:49.853Z"
+    }
+  },
+  {
+    "model": "console.servicestatus",
+    "pk": 38,
+    "fields": {
+      "service": "QR - SVC",
+      "healthz_endpoint": "http://bud-core-qr-svc-svc:8102/healthz/",
+      "healthz_status": "-1",
+      "livez_endpoint": "http://bud-core-qr-svc-svc:8102/livez/",
+      "livez_status": "-1",
+      "created_timestamp": "2023-11-21T10:06:24.165Z",
+      "last_modified_timestamp": "2023-11-22T08:56:52.032Z"
+    }
+  },
+  {
+    "model": "console.servicestatus",
+    "pk": 18,
+    "fields": {
+      "service": "Agent Provider",
+      "healthz_endpoint": "http://bud-core-authprovideragents-svc-svc:9203/healthz/",
+      "healthz_status": "200",
+      "livez_endpoint": "http://bud-core-authprovideragents-svc-svc:9203/livez/",
+      "livez_status": "200",
+      "created_timestamp": "2023-11-21T06:16:27.029Z",
+      "last_modified_timestamp": "2023-11-22T08:56:52.074Z"
+    }
+  },
+  {
+    "model": "console.servicestatus",
+    "pk": 39,
+    "fields": {
+      "service": "OTP",
+      "healthz_endpoint": "http://bud-core-otp-svc-svc:8509/healthz/",
+      "healthz_status": "-1",
+      "livez_endpoint": "http://bud-core-otp-svc-svc:8509/livez/",
+      "livez_status": "-1",
+      "created_timestamp": "2023-11-21T10:06:26.336Z",
+      "last_modified_timestamp": "2023-11-22T08:56:53.120Z"
+    }
+  },
+  {
+    "model": "console.servicestatus",
+    "pk": 21,
+    "fields": {
+      "service": "Charges",
+      "healthz_endpoint": "http://bud-core-charges-svc-svc:8105/healthz/",
+      "healthz_status": "200",
+      "livez_endpoint": "http://bud-core-charges-svc-svc:8105/livez/",
+      "livez_status": "200",
+      "created_timestamp": "2023-11-21T06:16:27.720Z",
+      "last_modified_timestamp": "2023-11-22T08:56:53.262Z"
+    }
+  },
+  {
+    "model": "console.servicestatus",
+    "pk": 1,
+    "fields": {
+      "service": "EventLogger",
+      "healthz_endpoint": "http://bud-core-eventlogger-svc-svc:8506/healthz/",
+      "healthz_status": "200",
+      "livez_endpoint": "http://bud-core-eventlogger-svc-svc:8506/livez/",
+      "livez_status": "200",
+      "created_timestamp": "2023-09-23T02:16:25.169Z",
+      "last_modified_timestamp": "2023-11-22T08:56:47.342Z"
+    }
+  },
+  {
+    "model": "console.servicestatus",
+    "pk": 3,
+    "fields": {
+      "service": "Bot Builder",
+      "healthz_endpoint": "http://bud-core-botbuilder-svc-svc:8500/healthz/",
+      "healthz_status": "200",
+      "livez_endpoint": "http://bud-core-botbuilder-svc-svc:8500/livez/",
+      "livez_status": "200",
+      "created_timestamp": "2023-09-23T02:16:25.807Z",
+      "last_modified_timestamp": "2023-11-22T08:56:47.837Z"
+    }
+  },
+  {
+    "model": "console.servicestatus",
+    "pk": 2,
+    "fields": {
+      "service": "Bot",
+      "healthz_endpoint": "http://bud-core-botengine-svc-svc:8503/healthz/",
+      "healthz_status": "404",
+      "livez_endpoint": "http://bud-core-botengine-svc-svc:8503/livez/",
+      "livez_status": "404",
+      "created_timestamp": "2023-09-23T02:16:25.627Z",
+      "last_modified_timestamp": "2023-11-21T09:52:07.545Z"
+    }
+  },
+  {
+    "model": "console.servicestatus",
+    "pk": 44,
+    "fields": {
+      "service": "Bot",
+      "healthz_endpoint": "http://bud-core-botengine-svc-svc:8503/healthz/",
+      "healthz_status": "200",
+      "livez_endpoint": "http://bud-core-botengine-svc-svc:8503/livez/",
+      "livez_status": "200",
+      "created_timestamp": "2023-09-23T03:15:25.627Z",
+      "last_modified_timestamp": "2023-11-21T09:52:07.545Z"
+    }
+  }
+]

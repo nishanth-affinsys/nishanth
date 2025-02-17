@@ -1,0 +1,218 @@
+[
+  {
+    "name": "bot_report",
+    "description": "Frontend uses this permission to show bot report dashboard"
+  },
+  {
+    "name": "agent_report",
+    "description": "Frontend uses this permission to show agent report dashboard"
+  },
+  {
+    "name": "api_analysis",
+    "description": "Frontend uses this permission to show api analysis dashboard"
+  },
+  {
+    "name": "detailed_report",
+    "description": "Frontend uses this permission to show detailed report dashboard"
+  },
+  {
+    "name": "queue_report",
+    "description": "Frontend uses this permission to show queue report dashboard"
+  },
+  {
+    "name": "daily_traffic",
+    "description": "Frontend uses this permission to show daily traffic dashboard"
+  },
+  {
+    "name": "transaction_status",
+    "description": "Frontend uses this permission to show transaction status dashboard"
+  },
+  {
+    "name": "reports",
+    "description": "Frontend uses this permission to show reports dashboard"
+  },
+  {
+    "name": "user_behaviour",
+    "description": "Frontend uses this permission to show user behaviour dashboard"
+  },
+  {
+    "name": "live_data",
+    "description": "Frontend uses this permission to show live data dashboard"
+  },
+  {
+    "name": "campaign_details",
+    "description": "Frontend uses this permission to show campaign details dashboard"
+  },
+  {
+    "name": "campaign_status",
+    "description": "Frontend uses this permission to show campaign status dashboard"
+  },
+  {
+    "name": "agent_transfer",
+    "description": "Frontend uses this permission to show agent transfer dashboard"
+  },
+  {
+    "name": "onboarding_agent_rt_dashboard",
+    "description": "Frontend uses this permission to show onboarding agent reports rt dashboard"
+  },
+  {
+    "name": "onboarding_agent_sp_dashboard",
+    "description": "Frontend uses this permission to show onboarding agent reports sp dashboard"
+  },
+  {
+    "name": "onboarding_transaction_reports_rt",
+    "description": "Frontend uses this permission to show onboarding transaction reports rt dashboard"
+  },
+  {
+    "name": "onboarding_transaction_reports_sp",
+    "description": "Frontend uses this permission to show onboarding transaction reports sp dashboard"
+  },
+  {
+    "name": "onboarding_self_rt_dashboard",
+    "description": "Frontend uses this permission to show onboarding self reports rt dashboard"
+  },
+  {
+    "name": "onboarding_self_sp_dashboard",
+    "description": "Frontend uses this permission to show onboarding self reports sp dashboard"
+  },
+  {
+    "name": "onboarding_staff_rt_dashboard",
+    "description": "Frontend uses this permission to show onboarding staff reports rt dashboard"
+  },
+  {
+    "name": "onboarding_staff_sp_dashboard",
+    "description": "Frontend uses this permission to show onboarding staff reports sp dashboard"
+  },
+  {
+    "name": "onboarding_overall_rt_dashboard",
+    "description": "Frontend uses this permission to show onboarding at glance reports rt dashboard"
+  },
+  {
+    "name": "onboarding_overall_sp_dashboard",
+    "description": "Frontend uses this permission to show onboarding at glance reports sp dashboard"
+  },
+  {
+    "name": "trend_analysis_rt",
+    "description": "Frontend uses this permission to show trend analysis rt dashboard"
+  },
+  {
+    "name": "trend_analysis_sp",
+    "description": "Frontend uses this permission to show trend analysis sp dashboard"
+  },
+  {
+    "name": "complaint_management",
+    "description": "Frontend uses this permission to show complaint management dashboard"
+  },
+  {
+    "name": "kyc_transaction",
+    "description": "Frontend uses this permission to show kyc transaction reports dashboard"
+  },
+  {
+    "name": "kyc_stage",
+    "description": "Frontend uses this permission to show kyc stage reports dashboard"
+  },
+  {
+    "name": "kyc_detailed",
+    "description": "Frontend uses this permission to show kyc detailed reports dashboard"
+  },
+  {
+    "name": "kyc_ageing",
+    "description": "Frontend uses this permission to show kyc ageing reports dashboard"
+  },
+  {
+    "name": "utility_campaign_details",
+    "description": "Frontend uses this permission to show campaign utility reports dashboard"
+  },
+  {
+    "name": "marketing_campaign_details",
+    "description": "Frontend uses this permission to show campaign marketing reports dashboard"
+  },
+  {
+    "name": "vision_face",
+    "description": "Frontend uses this permission to show vision face reports dashboard"
+  },
+  {
+    "name": "vision_forgery",
+    "description": "Frontend uses this permission to show vision forgery reports dashboard"
+  },
+  {
+    "name": "vision_ocr",
+    "description": "Frontend uses this permission to show vision ocr reports dashboard"
+  },
+  {
+    "name": "wallet_customer_app",
+    "description": "Frontend uses this permission to show wallet customer analytics dashboard"
+  },
+  {
+    "name": "merchant_qr_report",
+    "description": "Frontend uses this permission to show merchant QR analytics dashboard"
+  },
+  {
+    "name": "llm_report",
+    "description": "Frontend uses this permission to show LLM reports analytics dashboard"
+  },
+  {
+    "name": "merchant_transaction_report",
+    "description": "Frontend uses this permission to show merchant transaction analytics dashboard"
+  },
+  {
+    "name": "merchant_profit_segment",
+    "description": "Frontend uses this permission to show merchant profit segment analytics dashboard"
+  },
+  {
+    "name": "service_status_dashboard",
+    "description": "Frontend uses this permission to show service_status_dashboard analytics dashboard"
+  },
+  {
+    "name": "wallet_transactions_dashboard",
+    "description": "Frontend uses this permission to show wallet_transactions_dashboard analytics dashboard"
+  },
+  {
+    "name": "profile_details_dashboard",
+    "description": "Frontend uses this permission to show profile_details_dashboard analytics dashboard"
+  },
+  {
+    "name": "profile_interactions_dashboard",
+    "description": "Frontend uses this permission to show profile_interactions_dashboard analytics dashboard"
+  },
+  {
+    "name": "kinaechange_users_signups",
+    "description": "Frontend uses this permission to show kinaechange_users_signups analytics_dashboard"
+  },
+  {
+    "name": "campaign_dynamic_dashboard",
+    "description": "Frontend uses this permission to show kinaechange_users_signups analytics_dashboard"
+  },
+  {
+    "name": "wallet_admin_transactions_status",
+    "description": "Frontend uses this permission to show kinaechange_users_signups analytics_dashboard"
+  },
+  {
+    "name": "wallet_admin_transactions_logs",
+    "description": "Frontend uses this permission to show kinaechange_users_signups analytics_dashboard"
+  },
+  {
+    "name": "wallet_admin_reconciliation_report",
+    "description": "Frontend uses this permission to show kinaechange_users_signups analytics_dashboard"
+  },
+  {
+    "name": "stock_management_dashboard",
+    "description": "Frontend uses this permission to show stock_management analytics_dashboard"
+  },
+  {
+    "name": "card_management_dashboard",
+    "description": "Frontend uses this permission to show card_management analytics_dashboard"
+  },
+  {
+    "name": "onboarding_audit_report_dashboard",
+    "description": "Frontend uses this permission to show the kina onboarding audit dashboard"
+  },
+  {
+    "name": "subscription_dashboard",
+    "description": "Frontend uses this permission to show the subscription dashboard"
+  },
+  {
+    "name": "leads_dashboard",
+    "description": "Frontend uses this permission to show the subscription dashboard"
+  }
+]

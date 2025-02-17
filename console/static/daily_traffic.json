@@ -1,0 +1,1134 @@
+{
+  "common": {
+    "chart_title": "Traffic at a Glance",
+    "screenshot": true,
+    "charts": [
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Total Users(Periodic)",
+        "screenshot": true,
+        "color": 0,
+        "cols": 3,
+        "rows": 1,
+        "Property": {},
+        "path": "console.views.daily_traffic_views/DailyTrafficViewSet/total_users_periodic_export_csv",
+        "description": "The numeric value represents the total number of users who interacted with the bot during a specific period of time.",
+        "chart_api_url": "dailytraffic-charts/bot_daily_total_users_periodic/",
+        "chart_report_api": "dailytraffic-charts/bot_daily_total_users_periodic_export_csv/",
+        "chart_report_pdf_api": "dailytraffic-charts/bot_daily_total_users_periodic_export_pdf/"
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Total Sessions(Periodic)",
+        "screenshot": true,
+        "color": 0,
+        "cols": 3,
+        "rows": 1,
+        "Property": {},
+        "path": "console.views.daily_traffic_views/DailyTrafficViewSet/total_sessions_periodic_export_csv",
+        "description": "The numerical value represents the number of interactions that have taken place between users and the bot during a particular period of time.",
+        "chart_api_url": "dailytraffic-charts/bot_daily_total_sessions_periodic/",
+        "chart_report_api": "dailytraffic-charts/bot_daily_total_sessions_periodic_export_csv/",
+        "chart_report_pdf_api": "dailytraffic-charts/bot_daily_total_sessions_periodic_export_pdf/"
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Sessions Per User(Periodic)",
+        "screenshot": true,
+        "color": 0,
+        "cols": 3,
+        "rows": 1,
+        "Property": {},
+        "path": "console.views.daily_traffic_views/DailyTrafficViewSet/sessions_per_users_periodic_export_csv",
+        "description": "The numeric value represents average number of interactions or sessions a single user has with the bot over a specified time period.",
+        "chart_api_url": "dailytraffic-charts/bot_daily_sessions_per_users_periodic/",
+        "chart_report_api": "dailytraffic-charts/bot_daily_sessions_per_users_periodic_export_csv/",
+        "chart_report_pdf_api": "dailytraffic-charts/bot_daily_sessions_per_users_periodic_export_pdf/"
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Messages per Session(Periodic)",
+        "screenshot": true,
+        "color": 0,
+        "cols": 3,
+        "rows": 1,
+        "Property": {},
+        "path": "console.views.daily_traffic_views/DailyTrafficViewSet/message_per_session_periodic_export_csv",
+        "description": "The numeric value represents the average number of messages exchanged between the user and the bot during a single session.",
+        "chart_api_url": "dailytraffic-charts/bot_daily_message_per_session_periodic/",
+        "chart_report_api": "dailytraffic-charts/bot_daily_message_per_session_periodic_export_csv/",
+        "chart_report_pdf_api": "dailytraffic-charts/bot_daily_message_per_session_periodic_export_pdf/"
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Total Users(Daily)",
+        "screenshot": true,
+        "color": 0,
+        "cols": 3,
+        "rows": 2,
+        "Property": {
+          "trend_line": true
+        },
+        "path": "console.views.daily_traffic_views/DailyTrafficViewSet/total_users_export_csv",
+        "description": "The numeric value shows the total number of users who have interacted with the bot.",
+        "chart_api_url": "dailytraffic-charts/bot_daily_total_users_daily/",
+        "chart_report_api": "dailytraffic-charts/bot_daily_total_users_daily_export_csv/",
+        "chart_report_pdf_api": "dailytraffic-charts/bot_daily_total_users_daily_export_pdf/"
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Total Sessions(Daily)",
+        "screenshot": true,
+        "color": 0,
+        "cols": 3,
+        "rows": 2,
+        "Property": {
+          "trend_line": true
+        },
+        "path": "console.views.daily_traffic_views/DailyTrafficViewSet/total_sessions_export_csv",
+        "description": "The numeric value shows total number of sessions initiated by users during a specific time period.",
+        "chart_api_url": "dailytraffic-charts/bot_daily_total_sessions_daily/",
+        "chart_report_api": "dailytraffic-charts/bot_daily_total_sessions_daily_export_csv/",
+        "chart_report_pdf_api": "dailytraffic-charts/bot_daily_total_sessions_daily_export_pdf/"
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Sessions per User(Daily)",
+        "screenshot": true,
+        "color": 0,
+        "cols": 3,
+        "rows": 2,
+        "Property": {
+          "trend_line": true
+        },
+        "path": "console.views.daily_traffic_views/DailyTrafficViewSet/sessions_per_user_export_csv",
+        "description": "The numeric value represents average number of interactions a single user has with the bot over a specified time period.",
+        "chart_api_url": "dailytraffic-charts/bot_daily_sessions_per_users/",
+        "chart_report_api": "dailytraffic-charts/bot_daily_sessions_per_users_export_csv/",
+        "chart_report_pdf_api": "dailytraffic-charts/bot_daily_sessions_per_users_export_pdf/"
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Messages per Session(Daily)",
+        "screenshot": true,
+        "color": 0,
+        "cols": 3,
+        "rows": 2,
+        "Property": {
+          "trend_line": true
+        },
+        "path": "console.views.daily_traffic_views/DailyTrafficViewSet/message_per_session_export_csv",
+        "description": "The numeric value shows the average number of messages sent by the user to the bot during a single session.",
+        "chart_api_url": "dailytraffic-charts/bot_daily_message_per_session/",
+        "chart_report_api": "dailytraffic-charts/bot_daily_message_per_session_export_csv/",
+        "chart_report_pdf_api": "dailytraffic-charts/bot_daily_message_per_session_export_pdf/"
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Total Session Time(Periodic)",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "path": "console.views.daily_traffic_views/DailyTrafficViewSet/total_session_time_periodic_export_csv",
+        "description": "The numeric value displays the total duration of all the sessions between the user and the bot, during a specified time period.",
+        "chart_api_url": "dailytraffic-charts/bot_daily_total_session_time_periodic/",
+        "chart_report_api": "dailytraffic-charts/bot_daily_total_session_time_periodic_export_csv/",
+        "chart_report_pdf_api": "dailytraffic-charts/bot_daily_total_session_time_periodic_export_pdf/"
+      },
+      {
+        "type": "donut_chart",
+        "chartType": "group",
+        "title": "Handled or Not",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "The donut chart shows the messages that the bot was able to comprehend and those that it could not handle during user interactions.",
+        "chart_api_url": "dailytraffic-charts/bot_daily_handled_or_not/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "calendar_heatmap",
+        "chartType": "group",
+        "title": "User Messages Heat Map",
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "The heatmap displays the number of messages sent by users per day",
+        "chart_api_url": "bot-charts/bot_daily_user_messages_heatmap/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Total Session Time(Daily)",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1.5,
+        "Property": {
+          "trend_line": true,
+          "alias": true
+        },
+        "path": "console.views.daily_traffic_views/DailyTrafficViewSet/total_session_time_export_csv",
+        "description": "The numeric value shows the overall duration of all user sessions, for a specific time period.",
+        "chart_api_url": "dailytraffic-charts/bot_daily_total_session_time/",
+        "chart_report_api": "dailytraffic-charts/bot_daily_total_session_time_export_csv/",
+        "chart_report_pdf_api": "dailytraffic-charts/bot_daily_total_session_time_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Top 5 Handled Messages",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1.5,
+        "Property": {},
+        "path": "console.views.daily_traffic_views/DailyTrafficViewSet/handled_msg_export_csv",
+        "description": "This table lists the top 5 messages that were understood and responded to correctly by the bot during interactions with users.",
+        "chart_api_url": "dailytraffic-charts/bot_daily_top5_handled_msg/",
+        "chart_report_api": "dailytraffic-charts/bot_daily_top5_handled_msg_export_csv/",
+        "chart_report_pdf_api": "dailytraffic-charts/bot_daily_top5_handled_msg_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Top 5 Unhandled Messages",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1.5,
+        "Property": {},
+        "path": "console.views.daily_traffic_views/DailyTrafficViewSet/unhandled_msg_export_csv",
+        "description": "The table presents the top 5 messages that the bot could not comprehend and respond to during interactions with users",
+        "chart_api_url": "dailytraffic-charts/bot_daily_top5_unhandled_msg/",
+        "chart_report_api": "dailytraffic-charts/bot_daily_top5_unhandled_msg_export_csv/",
+        "chart_report_pdf_api": "dailytraffic-charts/bot_daily_top5_unhandled_msg_export_pdf/"
+      }
+    ],
+    "filters": [
+      {
+        "api_url": "get_channels/",
+        "request_method": "GET",
+        "return_key": "channel",
+        "service": "analytics",
+        "filter_type": "select",
+        "filter_title": "Channel"
+      },
+      {
+        "return_key": "timestamp__range",
+        "service": "analytics",
+        "filter_type": "timestamp",
+        "filter_title": "Time Range"
+      }
+    ]
+  },
+  "stanbic": {
+    "chart_title": "Traffic at a Glance",
+    "screenshot": true,
+    "charts": [
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Total Users(Periodic)",
+        "screenshot": true,
+        "color": 0,
+        "cols": 3,
+        "rows": 1,
+        "Property": {},
+        "path": "console.views.daily_traffic_views/DailyTrafficViewSet/total_users_periodic_export_csv",
+        "description": "The numeric value represents the total number of users who interacted with the bot during a specific period of time.",
+        "chart_api_url": "dailytraffic-charts/bot_daily_total_users_periodic/",
+        "chart_report_api": "dailytraffic-charts/bot_daily_total_users_periodic_export_csv/",
+        "chart_report_pdf_api": "dailytraffic-charts/bot_daily_total_users_periodic_export_pdf/"
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Total Sessions(Periodic)",
+        "screenshot": true,
+        "color": 0,
+        "cols": 3,
+        "rows": 1,
+        "Property": {},
+        "path": "console.views.daily_traffic_views/DailyTrafficViewSet/total_sessions_periodic_export_csv",
+        "description": "The numerical value represents the number of interactions that have taken place between users and the bot during a particular period of time.",
+        "chart_api_url": "dailytraffic-charts/bot_daily_total_sessions_periodic/",
+        "chart_report_api": "dailytraffic-charts/bot_daily_total_sessions_periodic_export_csv/",
+        "chart_report_pdf_api": "dailytraffic-charts/bot_daily_total_sessions_periodic_export_pdf/"
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Sessions Per User(Periodic)",
+        "screenshot": true,
+        "color": 0,
+        "cols": 3,
+        "rows": 1,
+        "Property": {},
+        "path": "console.views.daily_traffic_views/DailyTrafficViewSet/sessions_per_users_periodic_export_csv",
+        "description": "The numeric value represents average number of interactions or sessions a single user has with the bot over a specified time period.",
+        "chart_api_url": "dailytraffic-charts/bot_daily_sessions_per_users_periodic/",
+        "chart_report_api": "dailytraffic-charts/bot_daily_sessions_per_users_periodic_export_csv/",
+        "chart_report_pdf_api": "dailytraffic-charts/bot_daily_sessions_per_users_periodic_export_pdf/"
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Messages per Session(Periodic)",
+        "screenshot": true,
+        "color": 0,
+        "cols": 3,
+        "rows": 1,
+        "Property": {},
+        "path": "console.views.daily_traffic_views/DailyTrafficViewSet/message_per_session_periodic_export_csv",
+        "description": "The numeric value represents the average number of messages exchanged between the user and the bot during a single session.",
+        "chart_api_url": "dailytraffic-charts/bot_daily_message_per_session_periodic/",
+        "chart_report_api": "dailytraffic-charts/bot_daily_message_per_session_periodic_export_csv/",
+        "chart_report_pdf_api": "dailytraffic-charts/bot_daily_message_per_session_periodic_export_pdf/"
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Total Users(Daily)",
+        "screenshot": true,
+        "color": 0,
+        "cols": 3,
+        "rows": 2,
+        "Property": {
+          "trend_line": true
+        },
+        "path": "console.views.daily_traffic_views/DailyTrafficViewSet/total_users_export_csv",
+        "description": "The numeric value shows the total number of users who have interacted with the bot.",
+        "chart_api_url": "dailytraffic-charts/bot_daily_total_users_daily/",
+        "chart_report_api": "dailytraffic-charts/bot_daily_total_users_daily_export_csv/",
+        "chart_report_pdf_api": "dailytraffic-charts/bot_daily_total_users_daily_export_pdf/"
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Total Sessions(Daily)",
+        "screenshot": true,
+        "color": 0,
+        "cols": 3,
+        "rows": 2,
+        "Property": {
+          "trend_line": true
+        },
+        "path": "console.views.daily_traffic_views/DailyTrafficViewSet/total_sessions_export_csv",
+        "description": "The numeric value shows total number of sessions initiated by users during a specific time period.",
+        "chart_api_url": "dailytraffic-charts/bot_daily_total_sessions_daily/",
+        "chart_report_api": "dailytraffic-charts/bot_daily_total_sessions_daily_export_csv/",
+        "chart_report_pdf_api": "dailytraffic-charts/bot_daily_total_sessions_daily_export_pdf/"
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Sessions per User(Daily)",
+        "screenshot": true,
+        "color": 0,
+        "cols": 3,
+        "rows": 2,
+        "Property": {
+          "trend_line": true
+        },
+        "path": "console.views.daily_traffic_views/DailyTrafficViewSet/sessions_per_user_export_csv",
+        "description": "The numeric value represents average number of interactions a single user has with the bot over a specified time period.",
+        "chart_api_url": "dailytraffic-charts/bot_daily_sessions_per_users/",
+        "chart_report_api": "dailytraffic-charts/bot_daily_sessions_per_users_export_csv/",
+        "chart_report_pdf_api": "dailytraffic-charts/bot_daily_sessions_per_users_export_pdf/"
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Messages per Session(Daily)",
+        "screenshot": true,
+        "color": 0,
+        "cols": 3,
+        "rows": 2,
+        "Property": {
+          "trend_line": true
+        },
+        "path": "console.views.daily_traffic_views/DailyTrafficViewSet/message_per_session_export_csv",
+        "description": "The numeric value shows the average number of messages sent by the user to the bot during a single session.",
+        "chart_api_url": "dailytraffic-charts/bot_daily_message_per_session/",
+        "chart_report_api": "dailytraffic-charts/bot_daily_message_per_session_export_csv/",
+        "chart_report_pdf_api": "dailytraffic-charts/bot_daily_message_per_session_export_pdf/"
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Total Session Time(Periodic)",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "path": "console.views.daily_traffic_views/DailyTrafficViewSet/total_session_time_periodic_export_csv",
+        "description": "The numeric value displays the total duration of all the sessions between the user and the bot, during a specified time period.",
+        "chart_api_url": "dailytraffic-charts/bot_daily_total_session_time_periodic/",
+        "chart_report_api": "dailytraffic-charts/bot_daily_total_session_time_periodic_export_csv/",
+        "chart_report_pdf_api": "dailytraffic-charts/bot_daily_total_session_time_periodic_export_pdf/"
+      },
+      {
+        "type": "donut_chart",
+        "chartType": "group",
+        "title": "Handled or Not",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "The donut chart shows the messages that the bot was able to comprehend and those that it could not handle during user interactions.",
+        "chart_api_url": "dailytraffic-charts/bot_daily_handled_or_not/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "calendar_heatmap",
+        "chartType": "group",
+        "title": "User Messages Heat Map",
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "The heatmap displays the number of messages sent by users per day",
+        "chart_api_url": "bot-charts/bot_daily_user_messages_heatmap/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Total Session Time(Daily)",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1.5,
+        "Property": {
+          "trend_line": true,
+          "alias": true
+        },
+        "path": "console.views.daily_traffic_views/DailyTrafficViewSet/total_session_time_export_csv",
+        "description": "The numeric value shows the overall duration of all user sessions, for a specific time period.",
+        "chart_api_url": "dailytraffic-charts/bot_daily_total_session_time/",
+        "chart_report_api": "dailytraffic-charts/bot_daily_total_session_time_export_csv/",
+        "chart_report_pdf_api": "dailytraffic-charts/bot_daily_total_session_time_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Top 5 Handled Messages",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1.5,
+        "Property": {},
+        "path": "console.views.daily_traffic_views/DailyTrafficViewSet/handled_msg_export_csv",
+        "description": "This table lists the top 5 messages that were understood and responded to correctly by the bot during interactions with users.",
+        "chart_api_url": "dailytraffic-charts/bot_daily_top5_handled_msg/",
+        "chart_report_api": "dailytraffic-charts/bot_daily_top5_handled_msg_export_csv/",
+        "chart_report_pdf_api": "dailytraffic-charts/bot_daily_top5_handled_msg_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Top 5 Unhandled Messages",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1.5,
+        "Property": {},
+        "path": "console.views.daily_traffic_views/DailyTrafficViewSet/unhandled_msg_export_csv",
+        "description": "The table presents the top 5 messages that the bot could not comprehend and respond to during interactions with users",
+        "chart_api_url": "dailytraffic-charts/bot_daily_top5_unhandled_msg/",
+        "chart_report_api": "dailytraffic-charts/bot_daily_top5_unhandled_msg_export_csv/",
+        "chart_report_pdf_api": "dailytraffic-charts/bot_daily_top5_unhandled_msg_export_pdf/"
+      }
+    ],
+    "filters": [
+      {
+        "api_url": "get_channels/",
+        "request_method": "GET",
+        "return_key": "channel",
+        "service": "analytics",
+        "filter_type": "select",
+        "filter_title": "Channel"
+      },
+      {
+        "return_key": "timestamp__range",
+        "service": "analytics",
+        "filter_type": "timestamp",
+        "filter_title": "Time Range"
+      }
+    ]
+  },
+  "nbf": {
+    "chart_title": "Daily Traffic",
+    "screenshot": true,
+    "charts": [
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Total Users",
+        "screenshot": true,
+        "color": 0,
+        "cols": 3,
+        "rows": 2,
+        "Property": {
+          "trend_line": true
+        },
+        "path": "console.views.daily_traffic_views/DailyTrafficViewSet/total_users_export_csv",
+        "description": "The numeric value shows the total number of users who have interacted with the bot.",
+        "chart_api_url": "dailytraffic-charts/bot_daily_total_users_daily/",
+        "chart_report_api": "dailytraffic-charts/bot_daily_total_users_daily_export_csv/",
+        "chart_report_pdf_api": "dailytraffic-charts/bot_daily_total_users_daily_export_pdf/"
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Total Sessions",
+        "screenshot": true,
+        "color": 0,
+        "cols": 3,
+        "rows": 2,
+        "Property": {
+          "trend_line": true
+        },
+        "path": "console.views.daily_traffic_views/DailyTrafficViewSet/total_sessions_export_csv",
+        "description": "The numeric value shows total number of sessions initiated by users during a specific time period.",
+        "chart_api_url": "dailytraffic-charts/bot_daily_total_sessions_daily/",
+        "chart_report_api": "dailytraffic-charts/bot_daily_total_sessions_daily_export_csv/",
+        "chart_report_pdf_api": "dailytraffic-charts/bot_daily_total_sessions_daily_export_pdf/"
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Sessions per User",
+        "screenshot": true,
+        "color": 0,
+        "cols": 3,
+        "rows": 2,
+        "Property": {
+          "trend_line": true
+        },
+        "path": "console.views.daily_traffic_views/DailyTrafficViewSet/sessions_per_user_export_csv",
+        "description": "The numeric value represents average number of interactions a single user has with the bot over a specified time period.",
+        "chart_api_url": "dailytraffic-charts/bot_daily_sessions_per_users/",
+        "chart_report_api": "dailytraffic-charts/bot_daily_sessions_per_users_export_csv/",
+        "chart_report_pdf_api": "dailytraffic-charts/bot_daily_sessions_per_users_export_pdf/"
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Messages per Session",
+        "screenshot": true,
+        "color": 0,
+        "cols": 3,
+        "rows": 2,
+        "Property": {
+          "trend_line": true
+        },
+        "path": "console.views.daily_traffic_views/DailyTrafficViewSet/message_per_session_export_csv",
+        "description": "The numeric value shows the average number of messages sent by the user to the bot during a single session.",
+        "chart_api_url": "dailytraffic-charts/bot_daily_message_per_session/",
+        "chart_report_api": "dailytraffic-charts/bot_daily_message_per_session_export_csv/",
+        "chart_report_pdf_api": "dailytraffic-charts/bot_daily_message_per_session_export_pdf/"
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Total Session Time",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 2,
+        "Property": {
+          "trend_line": true
+        },
+        "path": "console.views.daily_traffic_views/DailyTrafficViewSet/total_session_time_periodic_export_csv",
+        "description": "The numeric value displays the total duration of all the sessions between the user and the bot, during a specified time period.",
+        "chart_api_url": "dailytraffic-charts/bot_daily_total_session_time_periodic/",
+        "chart_report_api": "dailytraffic-charts/bot_daily_total_session_time_periodic_export_csv/",
+        "chart_report_pdf_api": "dailytraffic-charts/bot_daily_total_session_time_periodic_export_pdf/"
+      },
+      {
+        "type": "donut_chart",
+        "chartType": "group",
+        "title": "Handled or Not",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "The donut chart shows the messages that the bot was able to comprehend and those that it could not handle during user interactions.",
+        "chart_api_url": "dailytraffic-charts/bot_daily_handled_or_not/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "calendar_heatmap",
+        "chartType": "group",
+        "title": "User Messages Heat Map",
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "The heatmap displays the number of messages sent by users per day",
+        "chart_api_url": "bot-charts/bot_daily_user_messages_heatmap/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Top 5 Handled Messages",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "path": "console.views.daily_traffic_views/DailyTrafficViewSet/handled_msg_export_csv",
+        "description": "This table lists the top 5 messages that were understood and responded to correctly by the bot during interactions with users.",
+        "chart_api_url": "dailytraffic-charts/bot_daily_top5_handled_msg/",
+        "chart_report_api": "dailytraffic-charts/bot_daily_top5_handled_msg_export_csv/",
+        "chart_report_pdf_api": "dailytraffic-charts/bot_daily_top5_handled_msg_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Top 5 Unhandled Messages",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "path": "console.views.daily_traffic_views/DailyTrafficViewSet/unhandled_msg_export_csv",
+        "description": "The table presents the top 5 messages that the bot could not comprehend and respond to during interactions with users",
+        "chart_api_url": "dailytraffic-charts/bot_daily_top5_unhandled_msg/",
+        "chart_report_api": "dailytraffic-charts/bot_daily_top5_unhandled_msg_export_csv/",
+        "chart_report_pdf_api": "dailytraffic-charts/bot_daily_top5_unhandled_msg_export_pdf/"
+      }
+    ],
+    "filters": [
+      {
+        "api_url": "get_channels/",
+        "request_method": "GET",
+        "return_key": "channel",
+        "service": "analytics",
+        "filter_type": "select",
+        "filter_title": "Channel"
+      },
+      {
+        "return_key": "timestamp__range",
+        "service": "analytics",
+        "filter_type": "timestamp",
+        "filter_title": "Time Range"
+      }
+    ]
+  },
+  "dashboard": {
+    "chart_title": "Traffic at a Glance",
+    "screenshot": true,
+    "charts": [
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Total Users(Periodic)",
+        "screenshot": true,
+        "color": 0,
+        "cols": 3,
+        "rows": 1,
+        "Property": {},
+        "path": "console.views.daily_traffic_views/DailyTrafficViewSet/total_users_periodic_export_csv",
+        "description": "The numeric value represents the total number of users who interacted with the bot during a specific period of time.",
+        "chart_api_url": "dailytraffic-charts/bot_daily_total_users_periodic/",
+        "chart_report_api": "dailytraffic-charts/bot_daily_total_users_periodic_export_csv/",
+        "chart_report_pdf_api": "dailytraffic-charts/bot_daily_total_users_periodic_export_pdf/"
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Total Sessions(Periodic)",
+        "screenshot": true,
+        "color": 0,
+        "cols": 3,
+        "rows": 1,
+        "Property": {},
+        "path": "console.views.daily_traffic_views/DailyTrafficViewSet/total_sessions_periodic_export_csv",
+        "description": "The numerical value represents the number of interactions that have taken place between users and the bot during a particular period of time.",
+        "chart_api_url": "dailytraffic-charts/bot_daily_total_sessions_periodic/",
+        "chart_report_api": "dailytraffic-charts/bot_daily_total_sessions_periodic_export_csv/",
+        "chart_report_pdf_api": "dailytraffic-charts/bot_daily_total_sessions_periodic_export_pdf/"
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Sessions Per User(Periodic)",
+        "screenshot": true,
+        "color": 0,
+        "cols": 3,
+        "rows": 1,
+        "Property": {},
+        "path": "console.views.daily_traffic_views/DailyTrafficViewSet/sessions_per_users_periodic_export_csv",
+        "description": "The numeric value represents average number of interactions or sessions a single user has with the bot over a specified time period.",
+        "chart_api_url": "dailytraffic-charts/bot_daily_sessions_per_users_periodic/",
+        "chart_report_api": "dailytraffic-charts/bot_daily_sessions_per_users_periodic_export_csv/",
+        "chart_report_pdf_api": "dailytraffic-charts/bot_daily_sessions_per_users_periodic_export_pdf/"
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Messages per Session(Periodic)",
+        "screenshot": true,
+        "color": 0,
+        "cols": 3,
+        "rows": 1,
+        "Property": {},
+        "path": "console.views.daily_traffic_views/DailyTrafficViewSet/message_per_session_periodic_export_csv",
+        "description": "The numeric value represents the average number of messages exchanged between the user and the bot during a single session.",
+        "chart_api_url": "dailytraffic-charts/bot_daily_message_per_session_periodic/",
+        "chart_report_api": "dailytraffic-charts/bot_daily_message_per_session_periodic_export_csv/",
+        "chart_report_pdf_api": "dailytraffic-charts/bot_daily_message_per_session_periodic_export_pdf/"
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Total Users(Daily)",
+        "screenshot": true,
+        "color": 0,
+        "cols": 3,
+        "rows": 2,
+        "Property": {
+          "trend_line": true
+        },
+        "path": "console.views.daily_traffic_views/DailyTrafficViewSet/total_users_export_csv",
+        "description": "The numeric value shows the total number of users who have interacted with the bot.",
+        "chart_api_url": "dailytraffic-charts/bot_daily_total_users_daily/",
+        "chart_report_api": "dailytraffic-charts/bot_daily_total_users_daily_export_csv/",
+        "chart_report_pdf_api": "dailytraffic-charts/bot_daily_total_users_daily_export_pdf/"
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Total Sessions(Daily)",
+        "screenshot": true,
+        "color": 0,
+        "cols": 3,
+        "rows": 2,
+        "Property": {
+          "trend_line": true
+        },
+        "path": "console.views.daily_traffic_views/DailyTrafficViewSet/total_sessions_export_csv",
+        "description": "The numeric value shows total number of sessions initiated by users during a specific time period.",
+        "chart_api_url": "dailytraffic-charts/bot_daily_total_sessions_daily/",
+        "chart_report_api": "dailytraffic-charts/bot_daily_total_sessions_daily_export_csv/",
+        "chart_report_pdf_api": "dailytraffic-charts/bot_daily_total_sessions_daily_export_pdf/"
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Sessions per User(Daily)",
+        "screenshot": true,
+        "color": 0,
+        "cols": 3,
+        "rows": 2,
+        "Property": {
+          "trend_line": true
+        },
+        "path": "console.views.daily_traffic_views/DailyTrafficViewSet/sessions_per_user_export_csv",
+        "description": "The numeric value represents average number of interactions a single user has with the bot over a specified time period.",
+        "chart_api_url": "dailytraffic-charts/bot_daily_sessions_per_users/",
+        "chart_report_api": "dailytraffic-charts/bot_daily_sessions_per_users_export_csv/",
+        "chart_report_pdf_api": "dailytraffic-charts/bot_daily_sessions_per_users_export_pdf/"
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Messages per Session(Daily)",
+        "screenshot": true,
+        "color": 0,
+        "cols": 3,
+        "rows": 2,
+        "Property": {
+          "trend_line": true
+        },
+        "path": "console.views.daily_traffic_views/DailyTrafficViewSet/message_per_session_export_csv",
+        "description": "The numeric value shows the average number of messages sent by the user to the bot during a single session.",
+        "chart_api_url": "dailytraffic-charts/bot_daily_message_per_session/",
+        "chart_report_api": "dailytraffic-charts/bot_daily_message_per_session_export_csv/",
+        "chart_report_pdf_api": "dailytraffic-charts/bot_daily_message_per_session_export_pdf/"
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Total Session Time(Periodic)",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "path": "console.views.daily_traffic_views/DailyTrafficViewSet/total_session_time_periodic_export_csv",
+        "description": "The numeric value displays the total duration of all the sessions between the user and the bot, during a specified time period.",
+        "chart_api_url": "dailytraffic-charts/bot_daily_total_session_time_periodic/",
+        "chart_report_api": "dailytraffic-charts/bot_daily_total_session_time_periodic_export_csv/",
+        "chart_report_pdf_api": "dailytraffic-charts/bot_daily_total_session_time_periodic_export_pdf/"
+      },
+      {
+        "type": "donut_chart",
+        "chartType": "group",
+        "title": "Handled or Not",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "The donut chart shows the messages that the bot was able to comprehend and those that it could not handle during user interactions.",
+        "chart_api_url": "dailytraffic-charts/bot_daily_handled_or_not/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "calendar_heatmap",
+        "chartType": "group",
+        "title": "User Messages Heat Map",
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "The heatmap displays the number of messages sent by users per day",
+        "chart_api_url": "bot-charts/bot_daily_user_messages_heatmap/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Total Session Time(Daily)",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1.5,
+        "Property": {
+          "trend_line": true,
+          "alias": true
+        },
+        "path": "console.views.daily_traffic_views/DailyTrafficViewSet/total_session_time_export_csv",
+        "description": "The numeric value shows the overall duration of all user sessions, for a specific time period.",
+        "chart_api_url": "dailytraffic-charts/bot_daily_total_session_time/",
+        "chart_report_api": "dailytraffic-charts/bot_daily_total_session_time_export_csv/",
+        "chart_report_pdf_api": "dailytraffic-charts/bot_daily_total_session_time_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Top 5 Handled Messages",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1.5,
+        "Property": {},
+        "path": "console.views.daily_traffic_views/DailyTrafficViewSet/handled_msg_export_csv",
+        "description": "This table lists the top 5 messages that were understood and responded to correctly by the bot during interactions with users.",
+        "chart_api_url": "dailytraffic-charts/bot_daily_top5_handled_msg/",
+        "chart_report_api": "dailytraffic-charts/bot_daily_top5_handled_msg_export_csv/",
+        "chart_report_pdf_api": "dailytraffic-charts/bot_daily_top5_handled_msg_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Top 5 Unhandled Messages",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1.5,
+        "Property": {},
+        "path": "console.views.daily_traffic_views/DailyTrafficViewSet/unhandled_msg_export_csv",
+        "description": "The table presents the top 5 messages that the bot could not comprehend and respond to during interactions with users",
+        "chart_api_url": "dailytraffic-charts/bot_daily_top5_unhandled_msg/",
+        "chart_report_api": "dailytraffic-charts/bot_daily_top5_unhandled_msg_export_csv/",
+        "chart_report_pdf_api": "dailytraffic-charts/bot_daily_top5_unhandled_msg_export_pdf/"
+      }
+    ],
+    "filters": [
+      {
+        "api_url": "get_channels/",
+        "request_method": "GET",
+        "return_key": "channel",
+        "service": "analytics",
+        "filter_type": "select",
+        "filter_title": "Channel"
+      },
+      {
+        "return_key": "timestamp__range",
+        "service": "analytics",
+        "filter_type": "timestamp",
+        "filter_title": "Time Range"
+      }
+    ]
+  },
+  "dib": {
+    "chart_title": "Traffic at a Glance",
+    "screenshot": true,
+    "charts": [
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Total Users(Periodic)",
+        "screenshot": true,
+        "color": 0,
+        "cols": 3,
+        "rows": 1,
+        "Property": {},
+        "path": "console.views.daily_traffic_views/DailyTrafficViewSet/total_users_periodic_export_csv",
+        "description": "The numeric value represents the total number of users who interacted with the bot during a specific period of time.",
+        "chart_api_url": "dailytraffic-charts/bot_daily_total_users_periodic/",
+        "chart_report_api": "dailytraffic-charts/bot_daily_total_users_periodic_export_csv/",
+        "chart_report_pdf_api": "dailytraffic-charts/bot_daily_total_users_periodic_export_pdf/"
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Total Sessions(Periodic)",
+        "screenshot": true,
+        "color": 0,
+        "cols": 3,
+        "rows": 1,
+        "Property": {},
+        "path": "console.views.daily_traffic_views/DailyTrafficViewSet/total_sessions_periodic_export_csv",
+        "description": "The numerical value represents the number of interactions that have taken place between users and the bot during a particular period of time.",
+        "chart_api_url": "dailytraffic-charts/bot_daily_total_sessions_periodic/",
+        "chart_report_api": "dailytraffic-charts/bot_daily_total_sessions_periodic_export_csv/",
+        "chart_report_pdf_api": "dailytraffic-charts/bot_daily_total_sessions_periodic_export_pdf/"
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Sessions Per User(Periodic)",
+        "screenshot": true,
+        "color": 0,
+        "cols": 3,
+        "rows": 1,
+        "Property": {},
+        "path": "console.views.daily_traffic_views/DailyTrafficViewSet/sessions_per_users_periodic_export_csv",
+        "description": "The numeric value represents average number of interactions or sessions a single user has with the bot over a specified time period.",
+        "chart_api_url": "dailytraffic-charts/bot_daily_sessions_per_users_periodic/",
+        "chart_report_api": "dailytraffic-charts/bot_daily_sessions_per_users_periodic_export_csv/",
+        "chart_report_pdf_api": "dailytraffic-charts/bot_daily_sessions_per_users_periodic_export_pdf/"
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Messages per Session(Periodic)",
+        "screenshot": true,
+        "color": 0,
+        "cols": 3,
+        "rows": 1,
+        "Property": {},
+        "path": "console.views.daily_traffic_views/DailyTrafficViewSet/message_per_session_periodic_export_csv",
+        "description": "The numeric value represents the average number of messages exchanged between the user and the bot during a single session.",
+        "chart_api_url": "dailytraffic-charts/bot_daily_message_per_session_periodic/",
+        "chart_report_api": "dailytraffic-charts/bot_daily_message_per_session_periodic_export_csv/",
+        "chart_report_pdf_api": "dailytraffic-charts/bot_daily_message_per_session_periodic_export_pdf/"
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Total Users(Daily)",
+        "screenshot": true,
+        "color": 0,
+        "cols": 3,
+        "rows": 2,
+        "Property": {
+          "trend_line": true
+        },
+        "path": "console.views.daily_traffic_views/DailyTrafficViewSet/total_users_export_csv",
+        "description": "The numeric value shows the total number of users who have interacted with the bot.",
+        "chart_api_url": "dailytraffic-charts/bot_daily_total_users_daily/",
+        "chart_report_api": "dailytraffic-charts/bot_daily_total_users_daily_export_csv/",
+        "chart_report_pdf_api": "dailytraffic-charts/bot_daily_total_users_daily_export_pdf/"
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Total Sessions(Daily)",
+        "screenshot": true,
+        "color": 0,
+        "cols": 3,
+        "rows": 2,
+        "Property": {
+          "trend_line": true
+        },
+        "path": "console.views.daily_traffic_views/DailyTrafficViewSet/total_sessions_export_csv",
+        "description": "The numeric value shows total number of sessions initiated by users during a specific time period.",
+        "chart_api_url": "dailytraffic-charts/bot_daily_total_sessions_daily/",
+        "chart_report_api": "dailytraffic-charts/bot_daily_total_sessions_daily_export_csv/",
+        "chart_report_pdf_api": "dailytraffic-charts/bot_daily_total_sessions_daily_export_pdf/"
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Sessions per User(Daily)",
+        "screenshot": true,
+        "color": 0,
+        "cols": 3,
+        "rows": 2,
+        "Property": {
+          "trend_line": true
+        },
+        "path": "console.views.daily_traffic_views/DailyTrafficViewSet/sessions_per_user_export_csv",
+        "description": "The numeric value represents average number of interactions a single user has with the bot over a specified time period.",
+        "chart_api_url": "dailytraffic-charts/bot_daily_sessions_per_users/",
+        "chart_report_api": "dailytraffic-charts/bot_daily_sessions_per_users_export_csv/",
+        "chart_report_pdf_api": "dailytraffic-charts/bot_daily_sessions_per_users_export_pdf/"
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Messages per Session(Daily)",
+        "screenshot": true,
+        "color": 0,
+        "cols": 3,
+        "rows": 2,
+        "Property": {
+          "trend_line": true
+        },
+        "path": "console.views.daily_traffic_views/DailyTrafficViewSet/message_per_session_export_csv",
+        "description": "The numeric value shows the average number of messages sent by the user to the bot during a single session.",
+        "chart_api_url": "dailytraffic-charts/bot_daily_message_per_session/",
+        "chart_report_api": "dailytraffic-charts/bot_daily_message_per_session_export_csv/",
+        "chart_report_pdf_api": "dailytraffic-charts/bot_daily_message_per_session_export_pdf/"
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Total Session Time(Periodic)",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "path": "console.views.daily_traffic_views/DailyTrafficViewSet/total_session_time_periodic_export_csv",
+        "description": "The numeric value displays the total duration of all the sessions between the user and the bot, during a specified time period.",
+        "chart_api_url": "dailytraffic-charts/bot_daily_total_session_time_periodic/",
+        "chart_report_api": "dailytraffic-charts/bot_daily_total_session_time_periodic_export_csv/",
+        "chart_report_pdf_api": "dailytraffic-charts/bot_daily_total_session_time_periodic_export_pdf/"
+      },
+      {
+        "type": "donut_chart",
+        "chartType": "group",
+        "title": "Handled or Not",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "The donut chart shows the messages that the bot was able to comprehend and those that it could not handle during user interactions.",
+        "chart_api_url": "dailytraffic-charts/bot_daily_handled_or_not/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "calendar_heatmap",
+        "chartType": "group",
+        "title": "User Messages Heat Map",
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "The heatmap displays the number of messages sent by users per day",
+        "chart_api_url": "bot-charts/bot_daily_user_messages_heatmap/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Total Session Time(Daily)",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1.5,
+        "Property": {
+          "trend_line": true,
+          "alias": true
+        },
+        "path": "console.views.daily_traffic_views/DailyTrafficViewSet/total_session_time_export_csv",
+        "description": "The numeric value shows the overall duration of all user sessions, for a specific time period.",
+        "chart_api_url": "dailytraffic-charts/bot_daily_total_session_time/",
+        "chart_report_api": "dailytraffic-charts/bot_daily_total_session_time_export_csv/",
+        "chart_report_pdf_api": "dailytraffic-charts/bot_daily_total_session_time_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Top 5 Handled Messages",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1.5,
+        "Property": {},
+        "path": "console.views.daily_traffic_views/DailyTrafficViewSet/handled_msg_export_csv",
+        "description": "This table lists the top 5 messages that were understood and responded to correctly by the bot during interactions with users.",
+        "chart_api_url": "dailytraffic-charts/bot_daily_top5_handled_msg/",
+        "chart_report_api": "dailytraffic-charts/bot_daily_top5_handled_msg_export_csv/",
+        "chart_report_pdf_api": "dailytraffic-charts/bot_daily_top5_handled_msg_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Top 5 Unhandled Messages",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1.5,
+        "Property": {},
+        "path": "console.views.daily_traffic_views/DailyTrafficViewSet/unhandled_msg_export_csv",
+        "description": "The table presents the top 5 messages that the bot could not comprehend and respond to during interactions with users",
+        "chart_api_url": "dailytraffic-charts/bot_daily_top5_unhandled_msg/",
+        "chart_report_api": "dailytraffic-charts/bot_daily_top5_unhandled_msg_export_csv/",
+        "chart_report_pdf_api": "dailytraffic-charts/bot_daily_top5_unhandled_msg_export_pdf/"
+      }
+    ],
+    "filters": [
+      {
+        "api_url": "get_channels/",
+        "request_method": "GET",
+        "return_key": "channel",
+        "service": "analytics",
+        "filter_type": "select",
+        "filter_title": "Channel"
+      },
+      {
+        "return_key": "timestamp__range",
+        "service": "analytics",
+        "filter_type": "timestamp",
+        "filter_title": "Time Range"
+      },
+      {
+        "api_url": "get_customer_types/",
+        "request_method": "GET",
+        "return_key": "customer_type",
+        "service": "analytics",
+        "filter_type": "select",
+        "filter_title": "Customer Type"
+      }
+    ]
+  }
+}

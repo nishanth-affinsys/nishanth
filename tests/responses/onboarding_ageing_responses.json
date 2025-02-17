@@ -1,0 +1,173 @@
+{
+  "ageing_rt": {
+    "count": 3,
+    "next": null,
+    "previous": null,
+    "results": [
+      {
+        "Application_number": "20230526113943483087",
+        "Customer_name": "Emily L Irene",
+        "Stage": "Exception",
+        "Ageing(in days)": "55",
+        "Mode": "Agent",
+        "Application_present_with": null,
+        "Created_timestamp": "2023-04-28 14:31:20+00:00"
+      },
+      {
+        "Application_number": "20230609102903836131",
+        "Customer_name": "Chris  Hemsworth",
+        "Stage": "Pending for approval",
+        "Ageing(in days)": "106",
+        "Mode": "Self",
+        "Application_present_with": null,
+        "Created_timestamp": "2023-03-08 16:01:20+00:00"
+      },
+      {
+        "Application_number": "20230526113943483019",
+        "Customer_name": "Verli L V",
+        "Stage": "verify",
+        "Ageing(in days)": "152",
+        "Mode": "Self",
+        "Application_present_with": null,
+        "Created_timestamp": "2023-01-21 11:11:20+00:00"
+      }
+    ]
+  },
+  "ageing_sp": {
+    "count": 2,
+    "next": null,
+    "previous": null,
+    "results": [
+      {
+        "Application_number": "20230606070857293152",
+        "Business_name": "Telecom",
+        "Stage": "Pending for Approval",
+        "Ageing(in days)": "66",
+        "Mode": "Agent",
+        "Application_present_with": null,
+        "Created_timestamp": "2023-04-18 05:01:20+00:00"
+      },
+      {
+        "Application_number": "20230606070857293932",
+        "Business_name": "Tech",
+        "Stage": "Pending for Verification",
+        "Ageing(in days)": "107",
+        "Mode": "Staff",
+        "Application_present_with": null,
+        "Created_timestamp": "2023-03-08 06:01:20+00:00"
+      }
+    ]
+  },
+  "agent_rt": {
+    "count": 1,
+    "next": null,
+    "previous": null,
+    "results": [
+      {
+        "Application_number": "20230526113943483087",
+        "Application_type": "Retail Secondary",
+        "Application_source": "AGENT-ASSISTED",
+        "Application_status": "Pending for review",
+        "Agent_email": "tushar",
+        "Ageing(in days)": "55",
+        "Branch_code": "2034",
+        "CIF": "1234562890287",
+        "Account_number_1": "23456542212344",
+        "Account_number_2": null,
+        "Customer_type": "RT-EXT",
+        "Created_by": "tushar",
+        "Created_date": "2023-04-28"
+      }
+    ]
+  },
+  "self_rt": {
+    "count": 2,
+    "next": null,
+    "previous": null,
+    "results": [
+      {
+        "Application_number": "20230609102903836131",
+        "Application_type": "Retail New",
+        "Application_source": "SELF-SERVICE",
+        "Application_status": "Pending for Approval",
+        "Ageing(in days)": "106",
+        "Branch_code": "2034",
+        "CIF": "1234567890987",
+        "Account_number_1": "23456543212345",
+        "Account_number_2": null,
+        "Customer_type": "RT-NEW",
+        "Created_by": "anvesh_affinsys",
+        "Created_date": "2023-03-08"
+      },
+      {
+        "Application_number": "20230526113943483019",
+        "Application_type": "Retail Secondary",
+        "Application_source": "SELF-SERVICE",
+        "Application_status": "Pending for Verification",
+        "Ageing(in days)": "152",
+        "Branch_code": "2034",
+        "CIF": "234544677643",
+        "Account_number_1": "3456543456765",
+        "Account_number_2": null,
+        "Customer_type": "RT-EXT",
+        "Created_by": "tushar",
+        "Created_date": "2023-01-21"
+      }
+    ]
+  },
+  "agent_sp": {
+    "count": 1,
+    "next": null,
+    "previous": null,
+    "results": [
+      {
+        "Application_number": "20230606070857293152",
+        "Application_type": "SP Secondary",
+        "Application_source": "AGENT-ASSISTED",
+        "Application_status": "Pending for Approval",
+        "Agent_email": "amogha",
+        "Ageing(in days)": "66",
+        "Branch_code": "2114",
+        "CIF": "1234567890987",
+        "Account_number_1": "23456543212345",
+        "Account_number_2": "23456543212349",
+        "Customer_type": "SP-EXT",
+        "Created_by": "amogha",
+        "Created_date": "2023-04-18"
+      }
+    ]
+  },
+  "staff_sp": {
+    "count": 1,
+    "next": null,
+    "previous": null,
+    "results": [
+      {
+        "Application_number": "20230606070857293932",
+        "Application_type": "SP New",
+        "Application_source": "STAFF-ASSISTED",
+        "Application_status": "Pending for Verification",
+        "Ageing(in days)": "107",
+        "Branch_code": "2014",
+        "CIF": "99234567890987",
+        "Account_number_1": "5754324565435",
+        "Account_number_2": "5754324565432",
+        "Customer_type": "SP-NEW",
+        "Created_by": "tushar",
+        "Created_date": "2023-03-08"
+      }
+    ]
+  },
+  "staff_rt": {
+    "count": 0,
+    "next": null,
+    "previous": null,
+    "results": []
+  },
+  "self_sp": {
+    "count": 0,
+    "next": null,
+    "previous": null,
+    "results": []
+  }
+}

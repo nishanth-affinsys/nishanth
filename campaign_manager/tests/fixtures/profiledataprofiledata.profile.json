@@ -1,0 +1,122 @@
+[
+  {
+    "model": "campaign_manager.profiledataprofiledata",
+    "pk": "61fd2a72-8c9b-4c33-ab54-2a3c430e7563",
+    "fields": {
+      "external_identifier": null,
+      "email_id": null,
+      "rmn": null,
+      "country": null,
+      "created_timestamp": "2023-09-19T09:37:32.271Z",
+      "modified_timestamp": "2023-09-19T09:37:32.271Z",
+      "is_deprecated": false,
+      "tenant": "lebacampaign",
+      "profile_name": "Abhinav Nair"
+    }
+  },
+  {
+    "model": "campaign_manager.profiledataprofiledata",
+    "pk": "7f2dabab-c191-4910-bd8a-9ac06e8859d6",
+    "fields": {
+      "external_identifier": null,
+      "email_id": null,
+      "rmn": null,
+      "country": null,
+      "created_timestamp": "2023-09-19T09:37:32.390Z",
+      "modified_timestamp": "2023-09-19T09:37:32.390Z",
+      "is_deprecated": false,
+      "tenant": "lebacampaign",
+      "profile_name": "Abhinav Nair 658"
+    }
+  },
+  {
+    "model": "campaign_manager.profiledataprofiledata",
+    "pk": "5775367e-38ae-48fb-bace-c9ef368d90d3",
+    "fields": {
+      "external_identifier": null,
+      "email_id": "yashika@affinsys.com",
+      "rmn": "919915532020",
+      "country": null,
+      "created_timestamp": "2023-09-19T10:41:51.501Z",
+      "modified_timestamp": "2023-09-19T10:41:51.548Z",
+      "is_deprecated": false,
+      "tenant": "lebacampaign",
+      "profile_name": "Abhinav Nair 661"
+    }
+  },
+  {
+    "model": "campaign_manager.profiledataprofiledata",
+    "pk": "fef9d12d-a613-4030-9891-3b2360654239",
+    "fields": {
+      "external_identifier": null,
+      "email_id": null,
+      "rmn": null,
+      "country": null,
+      "created_timestamp": "2023-09-19T11:17:22.144Z",
+      "modified_timestamp": "2023-09-19T11:17:22.144Z",
+      "is_deprecated": false,
+      "tenant": "lebacampaign",
+      "profile_name": "Abhinav Nair 662"
+    }
+  },
+  {
+    "model": "campaign_manager.profiledataprofiledata",
+    "pk": "858b1bdf-34e1-4d4e-b618-832213b75d5f",
+    "fields": {
+      "external_identifier": null,
+      "email_id": null,
+      "rmn": null,
+      "country": null,
+      "created_timestamp": "2023-09-19T11:22:34.499Z",
+      "modified_timestamp": "2023-09-19T11:22:34.499Z",
+      "is_deprecated": false,
+      "tenant": "lebacampaign",
+      "profile_name": "Abhinav Nair 665"
+    }
+  },
+   {
+    "model": "campaign_manager.profiledataprofiledata",
+    "pk": "fd612b41-acbf-478b-a9a9-68ea5b198550",
+    "fields": {
+      "external_identifier": null,
+      "email_id": null,
+      "rmn": null,
+      "country": null,
+      "created_timestamp": "2023-09-19T11:17:22.144Z",
+      "modified_timestamp": "2023-09-19T11:17:22.144Z",
+      "is_deprecated": false,
+      "tenant": "lebacampaign",
+      "profile_name": "Abhinav Nair 662"
+    }
+  },
+  {
+    "model": "campaign_manager.profiledataprofiledata",
+    "pk": "9d586b32-b112-4306-9188-90cb0591ad6f",
+    "fields": {
+      "external_identifier": null,
+      "email_id": null,
+      "rmn": null,
+      "country": null,
+      "created_timestamp": "2023-09-19T11:17:22.144Z",
+      "modified_timestamp": "2023-09-19T11:17:22.144Z",
+      "is_deprecated": false,
+      "tenant": "lebacampaign",
+      "profile_name": "Abhinav Nair 662"
+    }
+  },
+   {
+    "model": "campaign_manager.profiledataprofiledata",
+    "pk": "ce45b801-f4c2-4822-9a77-b6d8765082b6",
+    "fields": {
+      "external_identifier": null,
+      "email_id": null,
+      "rmn": null,
+      "country": null,
+      "created_timestamp": "2023-09-19T11:17:22.144Z",
+      "modified_timestamp": "2023-09-19T11:17:22.144Z",
+      "is_deprecated": false,
+      "tenant": "lebacampaign",
+      "profile_name": "Abhinav Nair 662"
+    }
+  }
+]

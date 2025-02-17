@@ -1,0 +1,117 @@
+{
+  "successful_transaction": {
+    "count": 1,
+    "next": null,
+    "previous": null,
+    "results": [
+      {
+        "Customer_id": "ef22d0f5b557631266d309a1a54c5407",
+        "Transaction_id": "e9e9351896f64068bd37e56e6a87ee30",
+        "Transaction_intent": "checkBalance",
+        "Stage": "Final Response",
+        "Stage_result": "Goal Completed",
+        "Remarks": "",
+        "Channel": "webchat",
+        "Timestamp": "2023-01-03 06:35:58+00:00"
+      }
+    ]
+  },
+  "failed_transaction": {
+    "count": 2,
+    "next": null,
+    "previous": null,
+    "results": [
+      {
+        "Customer_id": "d27d56078a7a2f96d4586c3d735a150f",
+        "Transaction_id": "5e9727c35b704d158b822c0832a94c1a",
+        "Transaction_intent": "account",
+        "Stage": "Final Response",
+        "Stage_result": "User Aborted",
+        "Remarks": "User Cancelled",
+        "Channel": "webchat",
+        "Timestamp": "2023-01-05 10:18:57+00:00"
+      },
+      {
+        "Customer_id": "271a984a0b7248f9238254200e5244db",
+        "Transaction_id": "04e85ad144424412b0387e5e7555f48d",
+        "Transaction_intent": "account",
+        "Stage": "Final Response",
+        "Stage_result": "User Aborted",
+        "Remarks": "User Cancelled",
+        "Channel": "webchat",
+        "Timestamp": "2023-01-05 07:42:23+00:00"
+      }
+    ]
+  },
+  "multiline_chart": [
+    {
+      "Date": "2023-01-05",
+      "Successfull_transactions": 0,
+      "Failed_transactions": 2
+    },
+    {
+      "Date": "2023-01-03",
+      "Successfull_transactions": 1,
+      "Failed_transactions": 0
+    }
+  ],
+  "success_partition": {
+    "level": 2,
+    "value": [
+      {
+        "name": "Goal Completed",
+        "value": 1,
+        "children": [
+          {
+            "name": "checkBalance",
+            "value": 1,
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  "failed_partition": {
+    "level": 2,
+    "value": [
+      {
+        "name": "User Aborted",
+        "value": 2,
+        "children": [
+          {
+            "name": "account",
+            "value": 2,
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  "all_transactions_partition": {
+    "level": 2,
+    "value": [
+      {
+        "name": "Successful Transactions",
+        "value": 1,
+        "children": [
+          {
+            "name": "Goal Completed",
+            "value": 1,
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Failed Transactions",
+        "value": 2,
+        "children": [
+          {
+            "name": "User Aborted",
+            "value": 2,
+            "children": []
+          }
+        ]
+      }
+    ]
+  }
+}

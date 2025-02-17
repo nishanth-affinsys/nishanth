@@ -1,0 +1,77 @@
+[
+  {
+    "model": "console.stagelogauth",
+    "pk": 12,
+    "fields": {
+      "user_id": "prakhar",
+      "user_name": "test",
+      "mobile_number": "919876543214",
+      "action": "test",
+      "result": "positive",
+      "result_detail": "check",
+      "ip_info": "12.3.55",
+      "timestamp": "2022-08-04T07:51:24.441Z",
+      "tenant": "mw"
+    }
+  },
+  {
+    "model": "console.stagelogauth",
+    "pk": 1,
+    "fields": {
+      "user_id": "2",
+      "user_name": "krishna",
+      "mobile_number": "+919884985185",
+      "action": "login",
+      "result": "successful",
+      "result_detail": null,
+      "ip_info": "106.51.80.123",
+      "timestamp": "2023-03-30T13:53:20.628Z",
+      "tenant": "sbkexistingone"
+    }
+  },
+  {
+    "model": "console.stagelogauth",
+    "pk": 2,
+    "fields": {
+      "user_id": null,
+      "user_name": null,
+      "mobile_number": null,
+      "action": "deregister",
+      "result": "failed",
+      "result_detail": "{'errors': [{'code': 'ER-0015', 'detail': 'User does not exist', 'attr': None}]}",
+      "ip_info": "127.0.0.1",
+      "timestamp": "2023-03-30T13:47:30.743Z",
+      "tenant": "ac"
+    }
+  },
+  {
+    "model": "console.stagelogauth",
+    "pk": 3,
+    "fields": {
+      "user_id": "2",
+      "user_name": "krishna",
+      "mobile_number": "+919884985185",
+      "action": "login",
+      "result": "successful",
+      "result_detail": null,
+      "ip_info": "106.51.80.123",
+      "timestamp": "2023-03-30T13:55:44.407Z",
+      "tenant": "sbkexistingone"
+    }
+  },
+  {
+    "model": "console.stagelogauth",
+    "pk": 4,
+    "fields": {
+      "user_id": null,
+      "user_name": null,
+      "mobile_number": null,
+      "action": "login",
+      "result": "failed",
+      "result_detail": "{'errors': [{'code': 'ER-0002', 'detail': 'Invalid username or password provided', 'attr': None}]}",
+      "ip_info": "106.51.80.123",
+      "timestamp": "2023-03-30T14:05:11.704Z",
+      "tenant": "sbkexistingone"
+    }
+  }
+]

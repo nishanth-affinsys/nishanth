@@ -1,0 +1,62 @@
+{
+  "common": {
+    "chart_title": "Reconciliation Report",
+    "screenshot": true,
+    "charts": [
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Wallet Accounting Entry",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "wallet.views.admin_transaction_logs_views/AdminReconciliationReportViewSet/wallet_admin_reconciliation_report_export_csv",
+        "description": "The table is used for displaying the data of Reconciliation Report",
+        "chart_api_url": "wallet_admin_reconciliation_report/wallet_admin_reconciliation_report_details/",
+        "chart_report_api": "wallet_admin_reconciliation_report/wallet_admin_reconciliation_report_export_csv/",
+        "chart_report_pdf_api": "wallet_admin_reconciliation_report/wallet_admin_reconciliation_report_export_pdf/",
+        "chart_report_xlsx_api": "wallet_admin_reconciliation_report/wallet_admin_reconciliation_report_export_excel/"
+      }
+    ],
+    "filters": [
+      {
+        "return_key": "timestamp__range",
+        "service": "analytics",
+        "filter_type": "timestamp",
+        "filter_title": "Time Range"
+      }
+    ]
+  },
+  "dashboard": {
+    "chart_title": "Reconciliation Report",
+    "screenshot": true,
+    "charts": [
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Wallet Accounting Entry",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "wallet.views.admin_transaction_logs_views/AdminReconciliationReportViewSet/wallet_admin_reconciliation_report_export_csv",
+        "description": "The table is used for displaying the data of Reconciliation Report",
+        "chart_api_url": "wallet_admin_reconciliation_report/wallet_admin_reconciliation_report_details/",
+        "chart_report_api": "wallet_admin_reconciliation_report/wallet_admin_reconciliation_report_export_csv/",
+        "chart_report_pdf_api": "wallet_admin_reconciliation_report/wallet_admin_reconciliation_report_export_pdf/",
+        "chart_report_xlsx_api": "wallet_admin_reconciliation_report/wallet_admin_reconciliation_report_export_excel/"
+      }
+    ],
+    "filters": [
+      {
+        "return_key": "timestamp__range",
+        "service": "analytics",
+        "filter_type": "timestamp",
+        "filter_title": "Time Range"
+      }
+    ]
+  }
+}

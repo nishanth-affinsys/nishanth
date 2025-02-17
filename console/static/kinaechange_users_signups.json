@@ -1,0 +1,88 @@
+{
+  "common": {
+    "chart_title": "User Signup Report",
+    "screenshot": true,
+    "charts": [
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Total User Registrations",
+        "screenshot": true,
+        "color": 0,
+        "cols": 3,
+        "rows": 1.2,
+        "Property": {},
+        "description": "The numeric value represents the number of successful user registrations",
+        "chart_api_url": "user-signups/users_signups_register_bigNo/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Total User Registrations",
+        "screenshot": true,
+        "color": 0,
+        "cols": 9,
+        "rows": 1.2,
+        "Property": {},
+        "path": "console.views.kinaechange_signups_views/KINASignupsViewSet/users_signups_register_export_csv",
+        "description": "The numeric value represents the details of successful user registrations.",
+        "chart_api_url": "user-signups/users_signups_register/",
+        "chart_report_api": "user-signups/users_signups_register_export_csv/",
+        "chart_report_pdf_api": "user-signups/users_signups_register_export_pdf/"
+      }
+    ],
+    "filters": [
+      {
+        "return_key": "timestamp__range",
+        "service": "analytics",
+        "filter_type": "timestamp",
+        "filter_title": "Time Range"
+      }
+    ]
+  },
+  "dashboard": {
+    "chart_title": "User Signup Report",
+    "screenshot": true,
+    "charts": [
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Total User Registrations",
+        "screenshot": true,
+        "color": 0,
+        "cols": 3,
+        "rows": 1.2,
+        "Property": {},
+        "description": "The numeric value represents the number of successful user registrations",
+        "chart_api_url": "user-signups/users_signups_register_bigNo/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Total User Registrations",
+        "screenshot": true,
+        "color": 0,
+        "cols": 9,
+        "rows": 1.2,
+        "Property": {},
+        "path": "console.views.kinaechange_signups_views/KINASignupsViewSet/users_signups_register_export_csv",
+        "description": "The numeric value represents the details of successful user registrations.",
+        "chart_api_url": "user-signups/users_signups_register/",
+        "chart_report_api": "user-signups/users_signups_register_export_csv/",
+        "chart_report_pdf_api": "user-signups/users_signups_register_export_pdf/"
+      }
+    ],
+    "filters": [
+      {
+        "return_key": "timestamp__range",
+        "service": "analytics",
+        "filter_type": "timestamp",
+        "filter_title": "Time Range"
+      }
+    ]
+  }
+}

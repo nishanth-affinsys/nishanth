@@ -1,0 +1,72 @@
+[
+  {
+    "model": "handoff.agentproductivity",
+    "pk": 81,
+    "fields": {
+      "username": "yes",
+      "agent_routed": "['Aswin']",
+      "session_id": "c2693090-3010-48ec-b21d-9628e4080c4f",
+      "channel": "webchat",
+      "agent_accept": "['Aswin']",
+      "accept_time": "00:00:04.073790",
+      "initial_time": "2023-04-04T06:03:54.286Z",
+      "tenant": "lebahandofffive"
+    }
+  },
+  {
+    "model": "handoff.agentproductivity",
+    "pk": 82,
+    "fields": {
+      "username": "yes",
+      "agent_routed": "['Aswin']",
+      "session_id": "c2a8d831-6331-4648-b3e1-052fc4f6e44e",
+      "channel": "webchat",
+      "agent_accept": "['Aswin']",
+      "accept_time": "00:00:02.954290",
+      "initial_time": "2023-04-01T05:09:12.659Z",
+      "tenant": "lebahandofffive"
+    }
+  },
+  {
+    "model": "handoff.agentproductivity",
+    "pk": 83,
+    "fields": {
+      "username": "yes",
+      "agent_routed": "['Srujan-Affinsys']",
+      "session_id": "089b0a85-c6aa-4b5d-9d56-183b74abe308",
+      "channel": "webchat",
+      "agent_accept": "['Srujan-Affinsys']",
+      "accept_time": "00:00:05.357571",
+      "initial_time": "2023-03-24T10:32:50.335Z",
+      "tenant": "lebahandofffive"
+    }
+  },
+  {
+    "model": "handoff.agentproductivity",
+    "pk": 84,
+    "fields": {
+      "username": "yes",
+      "agent_routed": "['Srujan-Affinsys']",
+      "session_id": "e26b8cb5-dd2f-444e-b6f4-559484b7427b",
+      "channel": "webchat",
+      "agent_accept": "[]",
+      "accept_time": "00:00:00",
+      "initial_time": "2023-03-31T06:46:19.249Z",
+      "tenant": "lebahandofffive"
+    }
+  },
+  {
+    "model": "handoff.agentproductivity",
+    "pk": 85,
+    "fields": {
+      "username": "yes",
+      "agent_routed": "[None]",
+      "session_id": "af1e734f-69e6-4072-9ab2-1207927c8af7",
+      "channel": "webchat",
+      "agent_accept": "[None]",
+      "accept_time": "00:00:05.435371",
+      "initial_time": "2023-03-29T13:31:54.693Z",
+      "tenant": "lebahandofffive"
+    }
+  }
+]

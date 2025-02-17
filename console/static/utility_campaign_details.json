@@ -1,0 +1,167 @@
+{
+  "common": {
+    "chart_title": "Utility Campaign Details",
+    "screenshot": true,
+    "charts": [
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Aggregate Analysis",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1,
+        "Property": {},
+        "path": "campaign_manager.views.campaign_views/CampaignViewSet/total_utility_users_by_channel_export_csv",
+        "description": "The table chart shows the count of total users in each channel and the count of opt in and opt out users for utility campaign.",
+        "chart_api_url": "campaign-charts/campaign_total_utility_users_by_channel/",
+        "chart_report_api": "campaign-charts/campaign_total_utility_users_by_channel_export_csv/",
+        "chart_report_pdf_api": "campaign-charts/campaign_total_utility_users_by_channel_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "User Status",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "campaign_manager.views.campaign_views/CampaignViewSet/opted_in_out_details_utility_export_csv",
+        "description": "The table chart shows the details of users of utility campaign and their status.",
+        "chart_api_url": "campaign-charts/campaign_opted_in_out_details_utility/",
+        "chart_report_api": "campaign-charts/campaign_opted_in_out_details_utility_export_csv/",
+        "chart_report_pdf_api": "campaign-charts/campaign_opted_in_out_details_utility_export_pdf/"
+      }
+    ],
+    "filters": [
+      {
+        "return_key": "timestamp__range",
+        "service": "analytics",
+        "filter_type": "timestamp",
+        "filter_title": "Time Range"
+      },
+      {
+        "api_url": "get_campaigns/",
+        "request_method": "POST",
+        "dependency": [
+          "timestamp__range"
+        ],
+        "return_key": "campaign_variants",
+        "service": "analytics",
+        "filter_type": "multiselect",
+        "filter_title": "Campaign Name"
+      }
+    ]
+  },
+  "dashboard": {
+    "chart_title": "Utility Campaign Details",
+    "screenshot": true,
+    "charts": [
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Aggregate Analysis",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1,
+        "Property": {},
+        "path": "campaign_manager.views.campaign_views/CampaignViewSet/total_utility_users_by_channel_export_csv",
+        "description": "The table chart shows the count of total users in each channel and the count of opt in and opt out users for utility campaign.",
+        "chart_api_url": "campaign-charts/campaign_total_utility_users_by_channel/",
+        "chart_report_api": "campaign-charts/campaign_total_utility_users_by_channel_export_csv/",
+        "chart_report_pdf_api": "campaign-charts/campaign_total_utility_users_by_channel_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "User Status",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "campaign_manager.views.campaign_views/CampaignViewSet/opted_in_out_details_utility_export_csv",
+        "description": "The table chart shows the details of users of utility campaign and their status.",
+        "chart_api_url": "campaign-charts/campaign_opted_in_out_details_utility/",
+        "chart_report_api": "campaign-charts/campaign_opted_in_out_details_utility_export_csv/",
+        "chart_report_pdf_api": "campaign-charts/campaign_opted_in_out_details_utility_export_pdf/"
+      }
+    ],
+    "filters": [
+      {
+        "return_key": "timestamp__range",
+        "service": "analytics",
+        "filter_type": "timestamp",
+        "filter_title": "Time Range"
+      },
+      {
+        "api_url": "get_campaigns/",
+        "request_method": "POST",
+        "dependency": [
+          "timestamp__range"
+        ],
+        "return_key": "campaign_variants",
+        "service": "analytics",
+        "filter_type": "multiselect",
+        "filter_title": "Campaign Name"
+      }
+    ]
+  },
+  "stanbic": {
+    "chart_title": "Utility Campaign Details",
+    "screenshot": true,
+    "charts": [
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Aggregate Analysis",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1,
+        "Property": {},
+        "path": "campaign_manager.views.campaign_views/CampaignViewSet/total_utility_users_by_channel_export_csv",
+        "description": "The table chart shows the count of total users in each channel and the count of opt in and opt out users for utility campaign.",
+        "chart_api_url": "campaign-charts/campaign_total_utility_users_by_channel/",
+        "chart_report_api": "campaign-charts/campaign_total_utility_users_by_channel_export_csv/",
+        "chart_report_pdf_api": "campaign-charts/campaign_total_utility_users_by_channel_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "User Status",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "campaign_manager.views.campaign_views/CampaignViewSet/opted_in_out_details_utility_export_csv",
+        "description": "The table chart shows the details of users of utility campaign and their status.",
+        "chart_api_url": "campaign-charts/campaign_opted_in_out_details_utility/",
+        "chart_report_api": "campaign-charts/campaign_opted_in_out_details_utility_export_csv/",
+        "chart_report_pdf_api": "campaign-charts/campaign_opted_in_out_details_utility_export_pdf/"
+      }
+    ],
+    "filters": [
+      {
+        "return_key": "timestamp__range",
+        "service": "analytics",
+        "filter_type": "timestamp",
+        "filter_title": "Time Range"
+      },
+      {
+        "api_url": "get_campaigns/",
+        "request_method": "POST",
+        "dependency": [
+          "timestamp__range"
+        ],
+        "return_key": "campaign_variants",
+        "service": "analytics",
+        "filter_type": "multiselect",
+        "filter_title": "Campaign Name"
+      }
+    ]
+  }
+}

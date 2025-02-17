@@ -1,0 +1,57 @@
+[
+  {
+    "model": "handoff.agentlastactivitytime",
+    "pk": 28,
+    "fields": {
+      "dt": "2023-03-15",
+      "diff": "2023-03-15T12:27:02.439Z",
+      "user_id": 4,
+      "username": "Srujan-Affinsys",
+      "tenant": "lebahandoff"
+    }
+  },
+  {
+    "model": "handoff.agentlastactivitytime",
+    "pk": 22,
+    "fields": {
+      "dt": "2023-03-14",
+      "diff": "2023-03-14T10:11:08.752Z",
+      "user_id": 4,
+      "username": "Srujan-Affinsys",
+      "tenant": "lebahandoff"
+    }
+  },
+  {
+    "model": "handoff.agentlastactivitytime",
+    "pk": 2,
+    "fields": {
+      "dt": "2023-03-13",
+      "diff": "2023-03-13T05:54:22.261Z",
+      "user_id": 5,
+      "username": "srujangowda",
+      "tenant": "lebahandoff"
+    }
+  },
+  {
+    "model": "handoff.agentlastactivitytime",
+    "pk": 29,
+    "fields": {
+      "dt": "2023-03-11",
+      "diff": "2023-03-11T09:56:01.636Z",
+      "user_id": 4,
+      "username": "Srujan-Affinsys",
+      "tenant": "lebahandoff"
+    }
+  },
+  {
+    "model": "handoff.agentlastactivitytime",
+    "pk": 4,
+    "fields": {
+      "dt": "2023-03-11",
+      "diff": "2023-03-11T06:42:40.577Z",
+      "user_id": 5,
+      "username": "srujangowda",
+      "tenant": "lebahandoff"
+    }
+  }
+]

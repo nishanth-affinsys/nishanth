@@ -1,0 +1,1167 @@
+{
+  "common": {
+    "chart_title": "Transaction Status Report",
+    "screenshot": true,
+    "charts": [
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Total Successful Transactions",
+        "screenshot": true,
+        "color": "#91CD76",
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "The numeric value represents the number of total successful transactions in the selected time range",
+        "chart_api_url": "transaction-charts/transaction_successful/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Successful Transactions (Goal Completed)",
+        "screenshot": true,
+        "color": "#91CD76",
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "The numeric value shows the total successful transcations that was completed end to end.",
+        "chart_api_url": "transaction-charts/transaction_successful_goal_completed/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Successful Transactions (Goal Not Completed)",
+        "screenshot": true,
+        "color": "#F2BED1",
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "The numeric value shows the total successful transaction where the goal could not be completed but there was no failure from the system.",
+        "chart_api_url": "transaction-charts/transaction_successful_goal_not_completed/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Total Failed Transactions",
+        "screenshot": true,
+        "color": "#E11237",
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "The numerical value represents the combined count of unsuccessful transactions caused by system errors and user errors. ",
+        "chart_api_url": "transaction-charts/transaction_failed/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Failed Transactions (System Error)",
+        "screenshot": true,
+        "color": "#FFD3A3",
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "TThe numeric value displays the total number of failed transactions due to system error.",
+        "chart_api_url": "transaction-charts/transaction_system_aborted/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Failed Transactions (User Error)",
+        "screenshot": true,
+        "color": "#E11237",
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "The numeric values displays the total number of failed transactions due to user error. ",
+        "chart_api_url": "transaction-charts/transaction_user_aborted/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Successful Transactions Report",
+        "screenshot": true,
+        "color": [
+          "#91CD76",
+          "#F2BED1"
+        ],
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {
+          "column": "Stage_result",
+          "values": [
+            "Goal Completed",
+            "Goal Not Completed"
+          ]
+        },
+        "path": "console.views.transactions_reports_views/TransactionChartsViewSet/successful_transaction_export",
+        "description": "The table displays the details of the successful transactions.",
+        "chart_api_url": "transaction-charts/transaction_successful_transaction_rpt/",
+        "chart_report_api": "transaction-charts/transaction_successful_transaction_rpt_export_csv/",
+        "chart_report_pdf_api": "transaction-charts/transaction_successful_transaction_rpt_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Failed Transactions Report",
+        "screenshot": true,
+        "color": [
+          "#FFD3A3",
+          "#E11237"
+        ],
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {
+          "column": "Stage_result",
+          "values": [
+            "User Aborted",
+            "System Aborted"
+          ]
+        },
+        "path": "console.views.transactions_reports_views/TransactionChartsViewSet/failed_transaction_export",
+        "description": "The table displays the details of the failed transactions due to system or user error.",
+        "chart_api_url": "transaction-charts/transaction_report_failed_rpt/",
+        "chart_report_api": "transaction-charts/transaction_report_failed_rpt_export_csv/",
+        "chart_report_pdf_api": "transaction-charts/transaction_report_failed_rpt_export_pdf/"
+      },
+      {
+        "type": "partition_chart",
+        "chartType": "group",
+        "title": "Successful Transactions",
+        "screenshot": true,
+        "color": [
+          "#91cc75",
+          "#B9E19A"
+        ],
+        "cols": 6,
+        "rows": 1.5,
+        "Property": {
+          "values": [
+            "Goal Completed",
+            "Goal Not Completed"
+          ]
+        },
+        "description": "The partition chart illustrates the breakdown of successful transactions, showcasing specific transaction types and its intents.",
+        "chart_api_url": "transaction-charts/transaction_successful_partition/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "partition_chart",
+        "chartType": "group",
+        "title": "Failed Transactions",
+        "screenshot": true,
+        "color": [
+          "#F29089",
+          "#ef6766"
+        ],
+        "cols": 6,
+        "rows": 1.5,
+        "Property": {
+          "values": [
+            "System Aborted",
+            "User Aborted"
+          ]
+        },
+        "description": "The partition chart illustrates the breakdown of failed transactions, showcasing specific transaction types and their intents.",
+        "chart_api_url": "transaction-charts/transaction_failed_partition/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "partition_chart",
+        "chartType": "group",
+        "title": "All Transactions Breakdown",
+        "screenshot": true,
+        "color": [
+          "#91CD76",
+          "#EF6766"
+        ],
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {
+          "values": [
+            "Successful Transactions",
+            "Failed Transactions"
+          ]
+        },
+        "description": "The partition chart visually summarizes transaction outcomes, differentiating between successful and failed transactions ",
+        "chart_api_url": "transaction-charts/transaction_breakdown_sunburst/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "line_chart",
+        "chartType": "group",
+        "title": "Aggregate Transaction Analysis ",
+        "screenshot": true,
+        "color": [
+          "#91CD76",
+          "#E11237"
+        ],
+        "cols": 12,
+        "rows": 1,
+        "Property": {
+          "x": "Date",
+          "y": [
+            "Successfull_transactions",
+            "Failed_transactions"
+          ]
+        },
+        "description": "The line chart shows the comparison between the successful and failed transactions. ",
+        "chart_api_url": "transaction-charts/transactions_linechart/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      }
+    ],
+    "filters": [
+      {
+        "api_url": "get_channels/",
+        "request_method": "GET",
+        "return_key": "channel",
+        "service": "analytics",
+        "filter_type": "select",
+        "filter_title": "Channel"
+      },
+      {
+        "return_key": "timestamp__range",
+        "service": "analytics",
+        "filter_type": "timestamp",
+        "filter_title": "Time Range"
+      }
+    ]
+  },
+  "dashboard": {
+    "chart_title": "Transaction Status Report",
+    "screenshot": true,
+    "charts": [
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Total Successful Transactions",
+        "screenshot": true,
+        "color": "#91CD76",
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "The numeric value represents the number of total successful transactions in the selected time range",
+        "chart_api_url": "transaction-charts/transaction_successful/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Successful Transactions (Goal Completed)",
+        "screenshot": true,
+        "color": "#91CD76",
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "The numeric value shows the total successful transcations that was completed end to end.",
+        "chart_api_url": "transaction-charts/transaction_successful_goal_completed/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Successful Transactions (Goal Not Completed)",
+        "screenshot": true,
+        "color": "#F2BED1",
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "The numeric value shows the total successful transaction where the goal could not be completed but there was no failure from the system.",
+        "chart_api_url": "transaction-charts/transaction_successful_goal_not_completed/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Total Failed Transactions",
+        "screenshot": true,
+        "color": "#E11237",
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "The numerical value represents the combined count of unsuccessful transactions caused by system errors and user errors. ",
+        "chart_api_url": "transaction-charts/transaction_failed/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Failed Transactions (System Error)",
+        "screenshot": true,
+        "color": "#FFD3A3",
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "TThe numeric value displays the total number of failed transactions due to system error.",
+        "chart_api_url": "transaction-charts/transaction_system_aborted/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Failed Transactions (User Error)",
+        "screenshot": true,
+        "color": "#E11237",
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "The numeric values displays the total number of failed transactions due to user error. ",
+        "chart_api_url": "transaction-charts/transaction_user_aborted/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Successful Transactions Report",
+        "screenshot": true,
+        "color": [
+          "#91CD76",
+          "#F2BED1"
+        ],
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {
+          "column": "Stage_result",
+          "values": [
+            "Goal Completed",
+            "Goal Not Completed"
+          ]
+        },
+        "path": "console.views.transactions_reports_views/TransactionChartsViewSet/successful_transaction_export",
+        "description": "The table displays the details of the successful transactions.",
+        "chart_api_url": "transaction-charts/transaction_successful_transaction_rpt/",
+        "chart_report_api": "transaction-charts/transaction_successful_transaction_rpt_export_csv/",
+        "chart_report_pdf_api": "transaction-charts/transaction_successful_transaction_rpt_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Failed Transactions Report",
+        "screenshot": true,
+        "color": [
+          "#FFD3A3",
+          "#E11237"
+        ],
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {
+          "column": "Stage_result",
+          "values": [
+            "User Aborted",
+            "System Aborted"
+          ]
+        },
+        "path": "console.views.transactions_reports_views/TransactionChartsViewSet/failed_transaction_export",
+        "description": "The table displays the details of the failed transactions due to system or user error.",
+        "chart_api_url": "transaction-charts/transaction_report_failed_rpt/",
+        "chart_report_api": "transaction-charts/transaction_report_failed_rpt_export_csv/",
+        "chart_report_pdf_api": "transaction-charts/transaction_report_failed_rpt_export_pdf/"
+      },
+      {
+        "type": "partition_chart",
+        "chartType": "group",
+        "title": "Successful Transactions",
+        "screenshot": true,
+        "color": [
+          "#91cc75",
+          "#B9E19A"
+        ],
+        "cols": 6,
+        "rows": 1.5,
+        "Property": {
+          "values": [
+            "Goal Completed",
+            "Goal Not Completed"
+          ]
+        },
+        "description": "The partition chart illustrates the breakdown of successful transactions, showcasing specific transaction types and its intents.",
+        "chart_api_url": "transaction-charts/transaction_successful_partition/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "partition_chart",
+        "chartType": "group",
+        "title": "Failed Transactions",
+        "screenshot": true,
+        "color": [
+          "#F29089",
+          "#ef6766"
+        ],
+        "cols": 6,
+        "rows": 1.5,
+        "Property": {
+          "values": [
+            "System Aborted",
+            "User Aborted"
+          ]
+        },
+        "description": "The partition chart illustrates the breakdown of failed transactions, showcasing specific transaction types and their intents.",
+        "chart_api_url": "transaction-charts/transaction_failed_partition/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "partition_chart",
+        "chartType": "group",
+        "title": "All Transactions Breakdown",
+        "screenshot": true,
+        "color": [
+          "#91CD76",
+          "#EF6766"
+        ],
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {
+          "values": [
+            "Successful Transactions",
+            "Failed Transactions"
+          ]
+        },
+        "description": "The partition chart visually summarizes transaction outcomes, differentiating between successful and failed transactions ",
+        "chart_api_url": "transaction-charts/transaction_breakdown_sunburst/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "line_chart",
+        "chartType": "group",
+        "title": "Aggregate Transaction Analysis ",
+        "screenshot": true,
+        "color": [
+          "#91CD76",
+          "#E11237"
+        ],
+        "cols": 12,
+        "rows": 1,
+        "Property": {
+          "x": "Date",
+          "y": [
+            "Successfull_transactions",
+            "Failed_transactions"
+          ]
+        },
+        "description": "The line chart shows the comparison between the successful and failed transactions. ",
+        "chart_api_url": "transaction-charts/transactions_linechart/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      }
+    ],
+    "filters": [
+      {
+        "api_url": "get_channels/",
+        "request_method": "GET",
+        "return_key": "channel",
+        "service": "analytics",
+        "filter_type": "select",
+        "filter_title": "Channel"
+      },
+      {
+        "return_key": "timestamp__range",
+        "service": "analytics",
+        "filter_type": "timestamp",
+        "filter_title": "Time Range"
+      }
+    ]
+  },
+  "stanbic": {
+    "chart_title": "Transaction Status Report",
+    "screenshot": true,
+    "charts": [
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Total Successful Transactions",
+        "screenshot": true,
+        "color": "#91CD76",
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "The numeric value represents the number of total successful transactions in the selected time range",
+        "chart_api_url": "transaction-charts/transaction_successful/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Successful Transactions (Goal Completed)",
+        "screenshot": true,
+        "color": "#91CD76",
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "The numeric value shows the total successful transcations that was completed end to end.",
+        "chart_api_url": "transaction-charts/transaction_successful_goal_completed/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Successful Transactions (Goal Not Completed)",
+        "screenshot": true,
+        "color": "#F2BED1",
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "The numeric value shows the total successful transaction where the goal could not be completed but there was no failure from the system.",
+        "chart_api_url": "transaction-charts/transaction_successful_goal_not_completed/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Total Failed Transactions",
+        "screenshot": true,
+        "color": "#E11237",
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "The numerical value represents the combined count of unsuccessful transactions caused by system errors and user errors. ",
+        "chart_api_url": "transaction-charts/transaction_failed/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Failed Transactions (System Error)",
+        "screenshot": true,
+        "color": "#FFD3A3",
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "TThe numeric value displays the total number of failed transactions due to system error.",
+        "chart_api_url": "transaction-charts/transaction_system_aborted/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Failed Transactions (User Error)",
+        "screenshot": true,
+        "color": "#E11237",
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "The numeric values displays the total number of failed transactions due to user error. ",
+        "chart_api_url": "transaction-charts/transaction_user_aborted/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Successful Transactions Report",
+        "screenshot": true,
+        "color": [
+          "#91CD76",
+          "#F2BED1"
+        ],
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {
+          "column": "Stage_result",
+          "values": [
+            "Goal Completed",
+            "Goal Not Completed"
+          ]
+        },
+        "path": "console.views.transactions_reports_views/TransactionChartsViewSet/successful_transaction_export",
+        "description": "The table displays the details of the successful transactions.",
+        "chart_api_url": "transaction-charts/transaction_successful_transaction_rpt/",
+        "chart_report_api": "transaction-charts/transaction_successful_transaction_rpt_export_csv/",
+        "chart_report_pdf_api": "transaction-charts/transaction_successful_transaction_rpt_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Failed Transactions Report",
+        "screenshot": true,
+        "color": [
+          "#FFD3A3",
+          "#E11237"
+        ],
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {
+          "column": "Stage_result",
+          "values": [
+            "User Aborted",
+            "System Aborted"
+          ]
+        },
+        "path": "console.views.transactions_reports_views/TransactionChartsViewSet/failed_transaction_export",
+        "description": "The table displays the details of the failed transactions due to system or user error.",
+        "chart_api_url": "transaction-charts/transaction_report_failed_rpt/",
+        "chart_report_api": "transaction-charts/transaction_report_failed_rpt_export_csv/",
+        "chart_report_pdf_api": "transaction-charts/transaction_report_failed_rpt_export_pdf/"
+      },
+      {
+        "type": "partition_chart",
+        "chartType": "group",
+        "title": "Successful Transactions",
+        "screenshot": true,
+        "color": [
+          "#91cc75",
+          "#B9E19A"
+        ],
+        "cols": 6,
+        "rows": 1.5,
+        "Property": {
+          "values": [
+            "Goal Completed",
+            "Goal Not Completed"
+          ]
+        },
+        "description": "The partition chart illustrates the breakdown of successful transactions, showcasing specific transaction types and its intents.",
+        "chart_api_url": "transaction-charts/transaction_successful_partition/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "partition_chart",
+        "chartType": "group",
+        "title": "Failed Transactions",
+        "screenshot": true,
+        "color": [
+          "#F29089",
+          "#ef6766"
+        ],
+        "cols": 6,
+        "rows": 1.5,
+        "Property": {
+          "values": [
+            "System Aborted",
+            "User Aborted"
+          ]
+        },
+        "description": "The partition chart illustrates the breakdown of failed transactions, showcasing specific transaction types and their intents.",
+        "chart_api_url": "transaction-charts/transaction_failed_partition/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "partition_chart",
+        "chartType": "group",
+        "title": "All Transactions Breakdown",
+        "screenshot": true,
+        "color": [
+          "#91CD76",
+          "#EF6766"
+        ],
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {
+          "values": [
+            "Successful Transactions",
+            "Failed Transactions"
+          ]
+        },
+        "description": "The partition chart visually summarizes transaction outcomes, differentiating between successful and failed transactions ",
+        "chart_api_url": "transaction-charts/transaction_breakdown_sunburst/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "line_chart",
+        "chartType": "group",
+        "title": "Aggregate Transaction Analysis ",
+        "screenshot": true,
+        "color": [
+          "#91CD76",
+          "#E11237"
+        ],
+        "cols": 12,
+        "rows": 1,
+        "Property": {
+          "x": "Date",
+          "y": [
+            "Successfull_transactions",
+            "Failed_transactions"
+          ]
+        },
+        "description": "The line chart shows the comparison between the successful and failed transactions. ",
+        "chart_api_url": "transaction-charts/transactions_linechart/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      }
+    ],
+    "filters": [
+      {
+        "api_url": "get_channels/",
+        "request_method": "GET",
+        "return_key": "channel",
+        "service": "analytics",
+        "filter_type": "select",
+        "filter_title": "Channel"
+      },
+      {
+        "return_key": "timestamp__range",
+        "service": "analytics",
+        "filter_type": "timestamp",
+        "filter_title": "Time Range"
+      }
+    ]
+  },
+  "nbf": {
+    "chart_title": "Transaction Status Report",
+    "screenshot": true,
+    "charts": [
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Total Successful Transactions",
+        "screenshot": true,
+        "color": "#91CD76",
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "The numeric value represents the number of total successful transactions in the selected time range",
+        "chart_api_url": "transaction-charts/transaction_successful/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Successful Transactions (Goal Completed)",
+        "screenshot": true,
+        "color": "#91CD76",
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "The numeric value shows the total successful transactions that was completed end to end.",
+        "chart_api_url": "transaction-charts/transaction_successful_goal_completed/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Successful Transactions (Goal Not Completed)",
+        "screenshot": true,
+        "color": "#F2BED1",
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "The numeric value shows the total successful transaction where the goal could not be completed but there was no failure from the system.",
+        "chart_api_url": "transaction-charts/transaction_successful_goal_not_completed/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Total Failed Transactions",
+        "screenshot": true,
+        "color": "#E11237",
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "The numerical value represents the combined count of unsuccessful transactions caused by system errors and user errors. ",
+        "chart_api_url": "transaction-charts/transaction_failed/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Failed Transactions (System Error)",
+        "screenshot": true,
+        "color": "#FFD3A3",
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "TThe numeric value displays the total number of failed transactions due to system error.",
+        "chart_api_url": "transaction-charts/transaction_system_aborted/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Failed Transactions (User Error)",
+        "screenshot": true,
+        "color": "#E11237",
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "The numeric values displays the total number of failed transactions due to user error. ",
+        "chart_api_url": "transaction-charts/transaction_user_aborted/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Successful Transactions Report",
+        "screenshot": true,
+        "color": [
+          "#91CD76",
+          "#F2BED1"
+        ],
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {
+          "column": "Stage_result",
+          "values": [
+            "Goal Completed",
+            "Goal Not Completed"
+          ]
+        },
+        "path": "console.views.transactions_reports_views/TransactionChartsViewSet/successful_transaction_export",
+        "description": "The table displays the details of the successful transactions.",
+        "chart_api_url": "transaction-charts/transaction_successful_transaction_rpt/",
+        "chart_report_api": "transaction-charts/transaction_successful_transaction_rpt_export_csv/",
+        "chart_report_pdf_api": "transaction-charts/transaction_successful_transaction_rpt_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Failed Transactions Report",
+        "screenshot": true,
+        "color": [
+          "#FFD3A3",
+          "#E11237"
+        ],
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {
+          "column": "Stage_result",
+          "values": [
+            "User Aborted",
+            "System Aborted"
+          ]
+        },
+        "path": "console.views.transactions_reports_views/TransactionChartsViewSet/failed_transaction_export",
+        "description": "The table displays the details of the failed transactions due to system or user error.",
+        "chart_api_url": "transaction-charts/transaction_report_failed_rpt/",
+        "chart_report_api": "transaction-charts/transaction_report_failed_rpt_export_csv/",
+        "chart_report_pdf_api": "transaction-charts/transaction_report_failed_rpt_export_pdf/"
+      },
+      {
+        "type": "line_chart",
+        "chartType": "group",
+        "title": "Aggregate Transaction Analysis ",
+        "screenshot": true,
+        "color": [
+          "#91CD76",
+          "#E11237"
+        ],
+        "cols": 12,
+        "rows": 1,
+        "Property": {
+          "x": "Date",
+          "y": [
+            "Successfull_transactions",
+            "Failed_transactions"
+          ]
+        },
+        "description": "The line chart shows the comparison between the successful and failed transactions. ",
+        "chart_api_url": "transaction-charts/transactions_linechart/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      }
+    ],
+    "filters": [
+      {
+        "api_url": "get_channels/",
+        "request_method": "GET",
+        "return_key": "channel",
+        "service": "analytics",
+        "filter_type": "select",
+        "filter_title": "Channel"
+      },
+      {
+        "return_key": "timestamp__range",
+        "service": "analytics",
+        "filter_type": "timestamp",
+        "filter_title": "Time Range"
+      }
+    ]
+  },
+  "dib": {
+    "chart_title": "Transaction Status Report",
+    "screenshot": true,
+    "charts": [
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Total Successful Transactions",
+        "screenshot": true,
+        "color": "#91CD76",
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "The numeric value represents the number of total successful transactions in the selected time range",
+        "chart_api_url": "transaction-charts/transaction_successful/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Successful Transactions (Goal Completed)",
+        "screenshot": true,
+        "color": "#91CD76",
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "The numeric value shows the total successful transcations that was completed end to end.",
+        "chart_api_url": "transaction-charts/transaction_successful_goal_completed/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Successful Transactions (Goal Not Completed)",
+        "screenshot": true,
+        "color": "#F2BED1",
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "The numeric value shows the total successful transaction where the goal could not be completed but there was no failure from the system.",
+        "chart_api_url": "transaction-charts/transaction_successful_goal_not_completed/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Total Failed Transactions",
+        "screenshot": true,
+        "color": "#E11237",
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "The numerical value represents the combined count of unsuccessful transactions caused by system errors and user errors. ",
+        "chart_api_url": "transaction-charts/transaction_failed/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Failed Transactions (System Error)",
+        "screenshot": true,
+        "color": "#FFD3A3",
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "TThe numeric value displays the total number of failed transactions due to system error.",
+        "chart_api_url": "transaction-charts/transaction_system_aborted/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Failed Transactions (User Error)",
+        "screenshot": true,
+        "color": "#E11237",
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "The numeric values displays the total number of failed transactions due to user error. ",
+        "chart_api_url": "transaction-charts/transaction_user_aborted/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Successful Transactions Report",
+        "screenshot": true,
+        "color": [
+          "#91CD76",
+          "#F2BED1"
+        ],
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {
+          "column": "Stage_result",
+          "values": [
+            "Goal Completed",
+            "Goal Not Completed"
+          ]
+        },
+        "path": "console.views.transactions_reports_views/TransactionChartsViewSet/successful_transaction_export",
+        "description": "The table displays the details of the successful transactions.",
+        "chart_api_url": "transaction-charts/transaction_successful_transaction_rpt/",
+        "chart_report_api": "transaction-charts/transaction_successful_transaction_rpt_export_csv/",
+        "chart_report_pdf_api": "transaction-charts/transaction_successful_transaction_rpt_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Failed Transactions Report",
+        "screenshot": true,
+        "color": [
+          "#FFD3A3",
+          "#E11237"
+        ],
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {
+          "column": "Stage_result",
+          "values": [
+            "User Aborted",
+            "System Aborted"
+          ]
+        },
+        "path": "console.views.transactions_reports_views/TransactionChartsViewSet/failed_transaction_export",
+        "description": "The table displays the details of the failed transactions due to system or user error.",
+        "chart_api_url": "transaction-charts/transaction_report_failed_rpt/",
+        "chart_report_api": "transaction-charts/transaction_report_failed_rpt_export_csv/",
+        "chart_report_pdf_api": "transaction-charts/transaction_report_failed_rpt_export_pdf/"
+      },
+      {
+        "type": "partition_chart",
+        "chartType": "group",
+        "title": "Successful Transactions",
+        "screenshot": true,
+        "color": [
+          "#91cc75",
+          "#B9E19A"
+        ],
+        "cols": 6,
+        "rows": 1.5,
+        "Property": {
+          "values": [
+            "Goal Completed",
+            "Goal Not Completed"
+          ]
+        },
+        "description": "The partition chart illustrates the breakdown of successful transactions, showcasing specific transaction types and its intents.",
+        "chart_api_url": "transaction-charts/transaction_successful_partition/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "partition_chart",
+        "chartType": "group",
+        "title": "Failed Transactions",
+        "screenshot": true,
+        "color": [
+          "#F29089",
+          "#ef6766"
+        ],
+        "cols": 6,
+        "rows": 1.5,
+        "Property": {
+          "values": [
+            "System Aborted",
+            "User Aborted"
+          ]
+        },
+        "description": "The partition chart illustrates the breakdown of failed transactions, showcasing specific transaction types and their intents.",
+        "chart_api_url": "transaction-charts/transaction_failed_partition/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "partition_chart",
+        "chartType": "group",
+        "title": "All Transactions Breakdown",
+        "screenshot": true,
+        "color": [
+          "#91CD76",
+          "#EF6766"
+        ],
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {
+          "values": [
+            "Successful Transactions",
+            "Failed Transactions"
+          ]
+        },
+        "description": "The partition chart visually summarizes transaction outcomes, differentiating between successful and failed transactions ",
+        "chart_api_url": "transaction-charts/transaction_breakdown_sunburst/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "line_chart",
+        "chartType": "group",
+        "title": "Aggregate Transaction Analysis ",
+        "screenshot": true,
+        "color": [
+          "#91CD76",
+          "#E11237"
+        ],
+        "cols": 12,
+        "rows": 1,
+        "Property": {
+          "x": "Date",
+          "y": [
+            "Successfull_transactions",
+            "Failed_transactions"
+          ]
+        },
+        "description": "The line chart shows the comparison between the successful and failed transactions. ",
+        "chart_api_url": "transaction-charts/transactions_linechart/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      }
+    ],
+    "filters": [
+      {
+        "api_url": "get_channels/",
+        "request_method": "GET",
+        "return_key": "channel",
+        "service": "analytics",
+        "filter_type": "select",
+        "filter_title": "Channel"
+      },
+      {
+        "return_key": "timestamp__range",
+        "service": "analytics",
+        "filter_type": "timestamp",
+        "filter_title": "Time Range"
+      },
+      {
+        "api_url": "get_customer_types/",
+        "request_method": "GET",
+        "return_key": "customer_type",
+        "service": "analytics",
+        "filter_type": "select",
+        "filter_title": "Customer Type"
+      },
+      {
+        "api_url": "get_intents/",
+        "request_method": "GET",
+        "return_key": "intents",
+        "service": "analytics",
+        "filter_type": "multiselect",
+        "filter_title": "Intents"
+      }
+    ]
+  }
+}

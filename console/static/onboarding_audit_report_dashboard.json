@@ -1,0 +1,60 @@
+{
+  "common": {
+    "chart_title": "Audit Report",
+    "screenshot": true,
+    "charts": [
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Onboarding Audit Trail",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "client_specific.views.kina/OnboardingAuditViewSet/onboarding_audit_trail_export_csv",
+        "description": "The table displays an audit trail for the applications modified in a certain time period. it shows all the information regarding a particular application.",
+        "chart_api_url": "onboarding_audit_report/onboarding_audit_trail/",
+        "chart_report_api": "onboarding_audit_report/onboarding_audit_trail_export_csv/",
+        "chart_report_pdf_api": "onboarding_audit_report/onboarding_audit_trail_export_pdf/"
+      }
+    ],
+    "filters": [
+      {
+        "return_key": "timestamp__range",
+        "service": "analytics",
+        "filter_type": "timestamp",
+        "filter_title": "Time Range"
+      }
+    ]
+  },
+  "dashboard": {
+    "chart_title": "Audit Report",
+    "screenshot": true,
+    "charts": [
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Onboarding Audit Trail",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "client_specific.views.kina/OnboardingAuditViewSet/onboarding_audit_trail_export_csv",
+        "description": "The table displays an audit trail for the applications modified in a certain time period. it shows all the information regarding a particular application.",
+        "chart_api_url": "onboarding_audit_report/onboarding_audit_trail/",
+        "chart_report_api": "onboarding_audit_report/onboarding_audit_trail_export_csv/",
+        "chart_report_pdf_api": "onboarding_audit_report/onboarding_audit_trail_export_pdf/"
+      }
+    ],
+    "filters": [
+      {
+        "return_key": "timestamp__range",
+        "service": "analytics",
+        "filter_type": "timestamp",
+        "filter_title": "Time Range"
+      }
+    ]
+  }
+}

@@ -1,0 +1,178 @@
+{
+  "common": {
+    "chart_title": "Ageing KYC Report",
+    "screenshot": true,
+    "charts": [
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Ageing Details",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "description": "",
+        "path": "onboarding.views.kyc_ageing_report_views/KYCAgeingReportViewSet/kyc_ageing_report_export_csv",
+        "chart_api_url": "kyc_ageing_charts/kyc_ageing_report/",
+        "chart_report_api": "kyc_ageing_charts/kyc_ageing_report_export_csv/",
+        "chart_report_pdf_api": "kyc_ageing_charts/kyc_ageing_report_export_pdf/"
+      }
+    ],
+    "filters": [
+      {
+        "return_key": "timestamp__range",
+        "service": "analytics",
+        "filter_type": "timestamp",
+        "filter_title": "Time Range"
+      }
+    ]
+  },
+  "dashboard": {
+    "chart_title": "Ageing KYC Report",
+    "screenshot": true,
+    "charts": [
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Ageing Details",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "description": "",
+        "path": "onboarding.views.kyc_ageing_report_views/KYCAgeingReportViewSet/kyc_ageing_report_export_csv",
+        "chart_api_url": "kyc_ageing_charts/kyc_ageing_report/",
+        "chart_report_api": "kyc_ageing_charts/kyc_ageing_report_export_csv/",
+        "chart_report_pdf_api": "kyc_ageing_charts/kyc_ageing_report_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Applications in KYC Exception (more than 2 days) - Live Data",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "onboarding.views.kyc_ageing_report_views/KYCAgeingReportViewSet/onboarding_short_kyc_exception_export_csv",
+        "description": "The table is used to show report email containing applications in the KYC Exception queue for more than 2 days.",
+        "chart_api_url": "kyc_ageing_charts/onboarding_short_kyc_exception/",
+        "chart_report_api": "kyc_ageing_charts/onboarding_short_kyc_exception_export_csv/",
+        "chart_report_pdf_api": "kyc_ageing_charts/onboarding_short_kyc_exception_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Applications in KYC Exception (more than 5 days) - Live Data",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "onboarding.views.kyc_ageing_report_views/KYCAgeingReportViewSet/onboarding_kyc_exception_export_csv",
+        "description": "The table is used to show report email containing applications in the KYC Exception queue for more than 5 days.",
+        "chart_api_url": "kyc_ageing_charts/onboarding_kyc_exception/",
+        "chart_report_api": "kyc_ageing_charts/onboarding_kyc_exception_export_csv/",
+        "chart_report_pdf_api": "kyc_ageing_charts/onboarding_kyc_exception_export_pdf/"
+      }
+    ],
+    "filters": [
+      {
+        "return_key": "timestamp__range",
+        "service": "analytics",
+        "filter_type": "timestamp",
+        "filter_title": "Time Range"
+      }
+    ]
+  },
+  "stanbic": {
+    "chart_title": "Ageing KYC Report",
+    "screenshot": true,
+    "charts": [
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Ageing Details",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "description": "",
+        "path": "onboarding.views.kyc_ageing_report_views/KYCAgeingReportViewSet/kyc_ageing_report_export_csv",
+        "chart_api_url": "kyc_ageing_charts/kyc_ageing_report/",
+        "chart_report_api": "kyc_ageing_charts/kyc_ageing_report_export_csv/",
+        "chart_report_pdf_api": "kyc_ageing_charts/kyc_ageing_report_export_pdf/"
+      }
+    ],
+    "filters": [
+      {
+        "return_key": "timestamp__range",
+        "service": "analytics",
+        "filter_type": "timestamp",
+        "filter_title": "Time Range"
+      }
+    ]
+  },
+  "kina": {
+    "chart_title": "Ageing KYC Report",
+    "screenshot": true,
+    "charts": [
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Ageing Details",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "description": "",
+        "path": "onboarding.views.kyc_ageing_report_views/KYCAgeingReportViewSet/kyc_ageing_report_export_csv",
+        "chart_api_url": "kyc_ageing_charts/kyc_ageing_report/",
+        "chart_report_api": "kyc_ageing_charts/kyc_ageing_report_export_csv/",
+        "chart_report_pdf_api": "kyc_ageing_charts/kyc_ageing_report_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Ageing Reports (2 days)",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "onboarding.views.kyc_ageing_report_views/KYCAgeingReportViewSet/onboarding_short_kyc_exception_export_csv",
+        "description": "The table is used to show report email containing applications in the KYC Exception queue for more than 2 days.",
+        "chart_api_url": "kyc_ageing_charts/onboarding_short_kyc_exception/",
+        "chart_report_api": "kyc_ageing_charts/onboarding_short_kyc_exception_export_csv/",
+        "chart_report_pdf_api": "kyc_ageing_charts/onboarding_short_kyc_exception_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Ageing Reports (5 days)",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "onboarding.views.kyc_ageing_report_views/KYCAgeingReportViewSet/onboarding_kyc_exception_export_csv",
+        "description": "The table is used to show report email containing applications in the KYC Exception queue for more than 5 days.",
+        "chart_api_url": "kyc_ageing_charts/onboarding_kyc_exception/",
+        "chart_report_api": "kyc_ageing_charts/onboarding_kyc_exception_export_csv/",
+        "chart_report_pdf_api": "kyc_ageing_charts/onboarding_kyc_exception_export_pdf/"
+      }
+    ],
+    "filters": [
+      {
+        "return_key": "timestamp__range",
+        "service": "analytics",
+        "filter_type": "timestamp",
+        "filter_title": "Time Range"
+      }
+    ]
+  }
+}

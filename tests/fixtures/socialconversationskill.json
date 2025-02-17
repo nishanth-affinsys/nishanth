@@ -1,0 +1,30 @@
+[
+  {
+    "model": "handoff.socialconversationskill",
+    "pk": 2,
+    "fields": {
+      "skill_name": "Loans"
+    }
+  },
+  {
+    "model": "handoff.socialconversationskill",
+    "pk": 3,
+    "fields": {
+      "skill_name": "Cards"
+    }
+  },
+  {
+    "model": "handoff.socialconversationskill",
+    "pk": 4,
+    "fields": {
+      "skill_name": "Hello World"
+    }
+  },
+  {
+    "model": "handoff.socialconversationskill",
+    "pk": 5,
+    "fields": {
+      "skill_name": "en"
+    }
+  }
+]

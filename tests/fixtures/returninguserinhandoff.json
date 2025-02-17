@@ -1,0 +1,72 @@
+[
+  {
+    "model": "handoff.returninguserinhandoff",
+    "pk": 6,
+    "fields": {
+      "social_id": 11,
+      "username": "yes",
+      "phone_number": "",
+      "email": "",
+      "tenant": "lebahandofffive",
+      "return_time": "2023-04-04T06:11:50.275Z",
+      "channel": "webchat",
+      "channel_id": "03259301b1bcebcacce87039831d5e9a"
+    }
+  },
+  {
+    "model": "handoff.returninguserinhandoff",
+    "pk": 7,
+    "fields": {
+      "social_id": 1,
+      "username": "ssss",
+      "phone_number": "",
+      "email": "",
+      "tenant": "lebahandoff",
+      "return_time": "2023-03-23T06:12:44.417Z",
+      "channel": "webchat",
+      "channel_id": "d403e5ed305e95326d65fb955eea1e08"
+    }
+  },
+  {
+    "model": "handoff.returninguserinhandoff",
+    "pk": 8,
+    "fields": {
+      "social_id": 22,
+      "username": "kavin",
+      "phone_number": "",
+      "email": "",
+      "tenant": "lebahandofffive",
+      "return_time": "2023-04-04T06:18:36.268Z",
+      "channel": "webchat",
+      "channel_id": "1a8a35e2f0737a924cd25a370a5702f3"
+    }
+  },
+  {
+    "model": "handoff.returninguserinhandoff",
+    "pk": 9,
+    "fields": {
+      "social_id": 23,
+      "username": "icecream",
+      "phone_number": "",
+      "email": "",
+      "tenant": "lebahandofffive",
+      "return_time": "2023-04-04T06:55:43.342Z",
+      "channel": "webchat",
+      "channel_id": "cafb04e054fdf09c40d4c1dc6dacd3b7"
+    }
+  },
+  {
+    "model": "handoff.returninguserinhandoff",
+    "pk": 10,
+    "fields": {
+      "social_id": 21,
+      "username": "april",
+      "phone_number": "",
+      "email": "",
+      "tenant": "lebahandofffive",
+      "return_time": "2023-04-04T07:05:12.410Z",
+      "channel": "webchat",
+      "channel_id": "3f471c56d601a25b32c207c5b46f44bf"
+    }
+  }
+]

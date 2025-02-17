@@ -1,0 +1,67 @@
+[
+  {
+    "model": "console.userflow",
+    "pk": 1,
+    "fields": {
+      "channel_id": "03259301b1bcebcacce87039831d5e9a",
+      "source": null,
+      "target": "/agent",
+      "channel": "webchat",
+      "timestamp": "2023-03-24T09:26:15.991Z",
+      "tenant": "lebahandofffive",
+      "rank": 1
+    }
+  },
+  {
+    "model": "console.userflow",
+    "pk": 2,
+    "fields": {
+      "channel_id": "03259301b1bcebcacce87039831d5e9a",
+      "source": "/agent",
+      "target": "hi",
+      "channel": "webchat",
+      "timestamp": "2023-03-24T09:53:49.795Z",
+      "tenant": "lebahandofffive",
+      "rank": 2
+    }
+  },
+  {
+    "model": "console.userflow",
+    "pk": 3,
+    "fields": {
+      "channel_id": "03259301b1bcebcacce87039831d5e9a",
+      "source": "hi",
+      "target": "International Bundles",
+      "channel": "webchat",
+      "timestamp": "2023-03-24T09:53:53.024Z",
+      "tenant": "lebahandofffive",
+      "rank": 3
+    }
+  },
+  {
+    "model": "console.userflow",
+    "pk": 4,
+    "fields": {
+      "channel_id": "03259301b1bcebcacce87039831d5e9a",
+      "source": "International Bundles",
+      "target": "/waterBillPayment",
+      "channel": "webchat",
+      "timestamp": "2023-03-24T12:17:20.755Z",
+      "tenant": "inmrwmigr",
+      "rank": 1
+    }
+  },
+  {
+    "model": "console.userflow",
+    "pk": 5,
+    "fields": {
+      "channel_id": "03259301b1bcebcacce87039831d5e9a",
+      "source": "/waterBillPayment",
+      "target": "yes",
+      "channel": "webchat",
+      "timestamp": "2023-03-24T12:17:22.459Z",
+      "tenant": "inmrwmigr",
+      "rank": 2
+    }
+  }
+]

@@ -1,0 +1,365 @@
+{
+  "common": {
+    "chart_title": "OCR Analytics",
+    "screenshot": true,
+    "charts": [
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Total OCR",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "The table shows total number of ocr calls over a certain period of time filter",
+        "chart_api_url": "ocr-charts/total_ocr_calls_bigno/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Successful OCR",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "The table shows total number successful of ocr calls over a certain period of time filter",
+        "chart_api_url": "ocr-charts/total_successful_ocr_bigno/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Failed OCR",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "The table shows total number of failed ocr calls over a certain period of time filter",
+        "chart_api_url": "ocr-charts/total_failed_ocr_bigno/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Aggregate Analysis",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "description": "The table shows total number of ocr calls done over a certain  period of time filter",
+        "path": "vision.views.vision_ocr_views/VisionOCRViewSet/aggregate_ocr_details_export_csv",
+        "chart_api_url": "ocr-charts/aggregate_ocr_details/",
+        "chart_report_api": "ocr-charts/aggregate_ocr_details_export_csv/",
+        "chart_report_pdf_api": "ocr-charts/aggregate_ocr_details_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Successful OCR Details",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "description": "This table shows the details of all the successful OCR calls",
+        "path": "vision.views.vision_ocr_views/VisionOCRViewSet/successful_detailed_ocr_report_export_csv",
+        "chart_api_url": "ocr-charts/successful_detailed_ocr_report/",
+        "chart_report_api": "ocr-charts/successful_detailed_ocr_report_export_csv/",
+        "chart_report_pdf_api": "ocr-charts/successful_detailed_ocr_report_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Failed OCR Details",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "description": "This table shows the details of all the failed OCR calls",
+        "path": "vision.views.vision_ocr_views/VisionOCRViewSet/failed_detailed_ocr_report_export_csv",
+        "chart_api_url": "ocr-charts/failed_detailed_ocr_report/",
+        "chart_report_api": "ocr-charts/failed_detailed_ocr_report_export_csv/",
+        "chart_report_pdf_api": "ocr-charts/failed_detailed_ocr_report_export_pdf/"
+      },
+      {
+        "type": "line_chart",
+        "chartType": "group",
+        "title": "Successful VS Failed OCR",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {
+          "x": "Date",
+          "y": [
+            "Successful",
+            "Failed"
+          ]
+        },
+        "description": "This chart shows the relation between successful and failed OCR calls",
+        "chart_api_url": "ocr-charts/successful_vs_failed_trendline_ocr/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      }
+    ],
+    "filters": [
+      {
+        "return_key": "timestamp__range",
+        "service": "analytics",
+        "filter_type": "timestamp",
+        "filter_title": "Time Range"
+      }
+    ]
+  },
+  "dashboard": {
+    "chart_title": "OCR Analytics",
+    "screenshot": true,
+    "charts": [
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Total OCR",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "The table shows total number of ocr calls over a certain period of time filter",
+        "chart_api_url": "ocr-charts/total_ocr_calls_bigno/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Successful OCR",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "The table shows total number successful of ocr calls over a certain period of time filter",
+        "chart_api_url": "ocr-charts/total_successful_ocr_bigno/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Failed OCR",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "The table shows total number of failed ocr calls over a certain period of time filter",
+        "chart_api_url": "ocr-charts/total_failed_ocr_bigno/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Aggregate Analysis",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "description": "The table shows total number of ocr calls done over a certain  period of time filter",
+        "path": "vision.views.vision_ocr_views/VisionOCRViewSet/aggregate_ocr_details_export_csv",
+        "chart_api_url": "ocr-charts/aggregate_ocr_details/",
+        "chart_report_api": "ocr-charts/aggregate_ocr_details_export_csv/",
+        "chart_report_pdf_api": "ocr-charts/aggregate_ocr_details_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Successful OCR Details",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "description": "This table shows the details of all the successful OCR calls",
+        "path": "vision.views.vision_ocr_views/VisionOCRViewSet/successful_detailed_ocr_report_export_csv",
+        "chart_api_url": "ocr-charts/successful_detailed_ocr_report/",
+        "chart_report_api": "ocr-charts/successful_detailed_ocr_report_export_csv/",
+        "chart_report_pdf_api": "ocr-charts/successful_detailed_ocr_report_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Failed OCR Details",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "description": "This table shows the details of all the failed OCR calls",
+        "path": "vision.views.vision_ocr_views/VisionOCRViewSet/failed_detailed_ocr_report_export_csv",
+        "chart_api_url": "ocr-charts/failed_detailed_ocr_report/",
+        "chart_report_api": "ocr-charts/failed_detailed_ocr_report_export_csv/",
+        "chart_report_pdf_api": "ocr-charts/failed_detailed_ocr_report_export_pdf/"
+      },
+      {
+        "type": "line_chart",
+        "chartType": "group",
+        "title": "Successful VS Failed OCR",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {
+          "x": "Date",
+          "y": [
+            "Successful",
+            "Failed"
+          ]
+        },
+        "description": "This chart shows the relation between successful and failed OCR calls",
+        "chart_api_url": "ocr-charts/successful_vs_failed_trendline_ocr/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      }
+    ],
+    "filters": [
+      {
+        "return_key": "timestamp__range",
+        "service": "analytics",
+        "filter_type": "timestamp",
+        "filter_title": "Time Range"
+      }
+    ]
+  },
+  "stanbic": {
+    "chart_title": "OCR Analytics",
+    "screenshot": true,
+    "charts": [
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Total OCR",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "",
+        "chart_api_url": "ocr-charts/total_ocr_calls_bigno/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Successful OCR",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "",
+        "chart_api_url": "ocr-charts/total_successful_ocr_bigno/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Failed OCR",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "",
+        "chart_api_url": "ocr-charts/total_failed_ocr_bigno/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Aggregate Analysis",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "description": "",
+        "path": "vision.views.vision_ocr_views/VisionOCRViewSet/aggregate_ocr_details_export_csv",
+        "chart_api_url": "ocr-charts/aggregate_ocr_details/",
+        "chart_report_api": "ocr-charts/aggregate_ocr_details_export_csv/",
+        "chart_report_pdf_api": "ocr-charts/aggregate_ocr_details_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Successful OCR Details",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "description": "",
+        "path": "vision.views.vision_ocr_views/VisionOCRViewSet/successful_detailed_ocr_report_export_csv",
+        "chart_api_url": "ocr-charts/successful_detailed_ocr_report/",
+        "chart_report_api": "ocr-charts/successful_detailed_ocr_report_export_csv/",
+        "chart_report_pdf_api": "ocr-charts/successful_detailed_ocr_report_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Failed OCR Details",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "description": "",
+        "path": "vision.views.vision_ocr_views/VisionOCRViewSet/failed_detailed_ocr_report_export_csv",
+        "chart_api_url": "ocr-charts/failed_detailed_ocr_report/",
+        "chart_report_api": "ocr-charts/failed_detailed_ocr_report_export_csv/",
+        "chart_report_pdf_api": "ocr-charts/failed_detailed_ocr_report_export_pdf/"
+      },
+      {
+        "type": "line_chart",
+        "chartType": "group",
+        "title": "Successful VS Failed OCR",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {
+          "x": "Date",
+          "y": [
+            "Successful",
+            "Failed"
+          ]
+        },
+        "description": "",
+        "chart_api_url": "ocr-charts/successful_vs_failed_trendline_ocr/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      }
+    ],
+    "filters": [
+      {
+        "return_key": "timestamp__range",
+        "service": "analytics",
+        "filter_type": "timestamp",
+        "filter_title": "Time Range"
+      }
+    ]
+  }
+}

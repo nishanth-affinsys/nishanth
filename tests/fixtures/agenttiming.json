@@ -1,0 +1,47 @@
+[
+  {
+    "model": "handoff.agenttiming",
+    "pk": 3,
+    "fields": {
+      "working_day": "2",
+      "start_time": "08:30:00",
+      "end_time": "22:00:00"
+    }
+  },
+  {
+    "model": "handoff.agenttiming",
+    "pk": 10,
+    "fields": {
+      "working_day": "3",
+      "start_time": "08:30:00",
+      "end_time": "22:00:00"
+    }
+  },
+  {
+    "model": "handoff.agenttiming",
+    "pk": 13,
+    "fields": {
+      "working_day": "4",
+      "start_time": "08:32:51",
+      "end_time": "22:00:51"
+    }
+  },
+  {
+    "model": "handoff.agenttiming",
+    "pk": 6,
+    "fields": {
+      "working_day": "5",
+      "start_time": "08:30:00",
+      "end_time": "22:00:00"
+    }
+  },
+  {
+    "model": "handoff.agenttiming",
+    "pk": 7,
+    "fields": {
+      "working_day": "6",
+      "start_time": "08:30:00",
+      "end_time": "22:05:00"
+    }
+  }
+]

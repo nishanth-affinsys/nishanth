@@ -1,0 +1,455 @@
+{
+  "common": {
+    "chart_title": "Forgery Analytics",
+    "screenshot": true,
+    "charts": [
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Total Documents Checked",
+        "screenshot": true,
+        "color": 0,
+        "cols": 3,
+        "rows": 1,
+        "Property": {},
+        "description": "The table shows the total number of documents which are checked.",
+        "chart_api_url": "forgery-charts/total_forgery_check_big_no/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Genuine Documents",
+        "screenshot": true,
+        "color": 0,
+        "cols": 3,
+        "rows": 1,
+        "Property": {},
+        "description": "The table shows the total number of documents which are authentic.",
+        "chart_api_url": "forgery-charts/genuine_docs_detected_big_no/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Forged Documents",
+        "screenshot": true,
+        "color": 0,
+        "cols": 3,
+        "rows": 1,
+        "Property": {},
+        "description": "The table shows the total number of documents which are pirated.",
+        "chart_api_url": "forgery-charts/forged_docs_detected_big_no/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "System Error",
+        "screenshot": true,
+        "color": 0,
+        "cols": 3,
+        "rows": 1,
+        "Property": {},
+        "description": "This table shows the count of total API failures.",
+        "chart_api_url": "forgery-charts/forgery_system_error_big_no/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Aggregate Analysis",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "description": "This table shows the data of all the documents that have been submitted over a period of time (say datewise).",
+        "path": "vision.views.vision_forgery_views/VisionForgeryViewSet/aggregate_analysis_forgery_export_csv",
+        "chart_api_url": "forgery-charts/aggregate_analysis_forgery/",
+        "chart_report_api": "forgery-charts/aggregate_analysis_forgery_export_csv/",
+        "chart_report_pdf_api": "forgery-charts/aggregate_analysis_forgery_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Genuine Documents Details",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "description": "The table shows details of documents which are authentic.",
+        "path": "vision.views.vision_forgery_views/VisionForgeryViewSet/forgery_genuine_docs_details_export_csv",
+        "chart_api_url": "forgery-charts/forgery_genuine_docs_details/",
+        "chart_report_api": "forgery-charts/forgery_genuine_docs_details_export_csv/",
+        "chart_report_pdf_api": "forgery-charts/forgery_genuine_docs_details_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Forged Documents Details",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "description": "The table shows details of documents which are pirated.",
+        "path": "vision.views.vision_forgery_views/VisionForgeryViewSet/forgery_docs_details_export_csv",
+        "chart_api_url": "forgery-charts/forgery_docs_details/",
+        "chart_report_api": "forgery-charts/forgery_docs_details_export_csv/",
+        "chart_report_pdf_api": "forgery-charts/forgery_docs_details_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "System Error Details",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "description": "This table shows the details of API failures.",
+        "path": "vision.views.vision_forgery_views/VisionForgeryViewSet/forgery_system_error_details_export_csv",
+        "chart_api_url": "forgery-charts/forgery_system_error_details/",
+        "chart_report_api": "forgery-charts/forgery_system_error_details_export_csv/",
+        "chart_report_pdf_api": "forgery-charts/forgery_system_error_details_export_pdf/"
+      },
+      {
+        "type": "line_chart",
+        "chartType": "group",
+        "title": "Comparative Analysis",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {
+          "x": "Date",
+          "y": [
+            "Genuine",
+            "Forged",
+            "System_error"
+          ]
+        },
+        "description": "This chart shows the comparison between genuine, forged, and system error call cases.",
+        "chart_api_url": "forgery-charts/forgery_genuine_vs_forged_trendline/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      }
+    ],
+    "filters": [
+      {
+        "return_key": "timestamp__range",
+        "service": "analytics",
+        "filter_type": "timestamp",
+        "filter_title": "Time Range"
+      }
+    ]
+  },
+  "dashboard": {
+    "chart_title": "Forgery Analytics",
+    "screenshot": true,
+    "charts": [
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Total Documents Checked",
+        "screenshot": true,
+        "color": 0,
+        "cols": 3,
+        "rows": 1,
+        "Property": {},
+        "description": "The table shows the total number of documents which are checked.",
+        "chart_api_url": "forgery-charts/total_forgery_check_big_no/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Genuine Documents",
+        "screenshot": true,
+        "color": 0,
+        "cols": 3,
+        "rows": 1,
+        "Property": {},
+        "description": "The table shows the total number of documents which are authentic.",
+        "chart_api_url": "forgery-charts/genuine_docs_detected_big_no/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Forged Documents",
+        "screenshot": true,
+        "color": 0,
+        "cols": 3,
+        "rows": 1,
+        "Property": {},
+        "description": "The table shows the total number of documents which are pirated.",
+        "chart_api_url": "forgery-charts/forged_docs_detected_big_no/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "System Error",
+        "screenshot": true,
+        "color": 0,
+        "cols": 3,
+        "rows": 1,
+        "Property": {},
+        "description": "This table shows the count of total API failures.",
+        "chart_api_url": "forgery-charts/forgery_system_error_big_no/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Aggregate Analysis",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "description": "This table shows the data of all the documents that have been submitted over a period of time (say datewise).",
+        "path": "vision.views.vision_forgery_views/VisionForgeryViewSet/aggregate_analysis_forgery_export_csv",
+        "chart_api_url": "forgery-charts/aggregate_analysis_forgery/",
+        "chart_report_api": "forgery-charts/aggregate_analysis_forgery_export_csv/",
+        "chart_report_pdf_api": "forgery-charts/aggregate_analysis_forgery_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Genuine Documents Details",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "description": "The table shows details of documents which are authentic.",
+        "path": "vision.views.vision_forgery_views/VisionForgeryViewSet/forgery_genuine_docs_details_export_csv",
+        "chart_api_url": "forgery-charts/forgery_genuine_docs_details/",
+        "chart_report_api": "forgery-charts/forgery_genuine_docs_details_export_csv/",
+        "chart_report_pdf_api": "forgery-charts/forgery_genuine_docs_details_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Forged Documents Details",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "description": "The table shows details of documents which are pirated.",
+        "path": "vision.views.vision_forgery_views/VisionForgeryViewSet/forgery_docs_details_export_csv",
+        "chart_api_url": "forgery-charts/forgery_docs_details/",
+        "chart_report_api": "forgery-charts/forgery_docs_details_export_csv/",
+        "chart_report_pdf_api": "forgery-charts/forgery_docs_details_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "System Error Details",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "description": "This table shows the details of API failures.",
+        "path": "vision.views.vision_forgery_views/VisionForgeryViewSet/forgery_system_error_details_export_csv",
+        "chart_api_url": "forgery-charts/forgery_system_error_details/",
+        "chart_report_api": "forgery-charts/forgery_system_error_details_export_csv/",
+        "chart_report_pdf_api": "forgery-charts/forgery_system_error_details_export_pdf/"
+      },
+      {
+        "type": "line_chart",
+        "chartType": "group",
+        "title": "Comparative Analysis",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {
+          "x": "Date",
+          "y": [
+            "Genuine",
+            "Forged",
+            "System_error"
+          ]
+        },
+        "description": "This chart shows the comparison between genuine, forged, and system error call cases.",
+        "chart_api_url": "forgery-charts/forgery_genuine_vs_forged_trendline/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      }
+    ],
+    "filters": [
+      {
+        "return_key": "timestamp__range",
+        "service": "analytics",
+        "filter_type": "timestamp",
+        "filter_title": "Time Range"
+      }
+    ]
+  },
+  "stanbic": {
+    "chart_title": "Forgery Analytics",
+    "screenshot": true,
+    "charts": [
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Total Documents Checked",
+        "screenshot": true,
+        "color": 0,
+        "cols": 3,
+        "rows": 1,
+        "Property": {},
+        "description": "",
+        "chart_api_url": "forgery-charts/total_forgery_check_big_no/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Genuine Documents",
+        "screenshot": true,
+        "color": 0,
+        "cols": 3,
+        "rows": 1,
+        "Property": {},
+        "description": "",
+        "chart_api_url": "forgery-charts/genuine_docs_detected_big_no/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Forged Documents",
+        "screenshot": true,
+        "color": 0,
+        "cols": 3,
+        "rows": 1,
+        "Property": {},
+        "description": "",
+        "chart_api_url": "forgery-charts/forged_docs_detected_big_no/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "System Error",
+        "screenshot": true,
+        "color": 0,
+        "cols": 3,
+        "rows": 1,
+        "Property": {},
+        "description": "",
+        "chart_api_url": "forgery-charts/forgery_system_error_big_no/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Aggregate Analysis",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "description": "",
+        "path": "vision.views.vision_forgery_views/VisionForgeryViewSet/aggregate_analysis_forgery_export_csv",
+        "chart_api_url": "forgery-charts/aggregate_analysis_forgery/",
+        "chart_report_api": "forgery-charts/aggregate_analysis_forgery_export_csv/",
+        "chart_report_pdf_api": "forgery-charts/aggregate_analysis_forgery_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Genuine Documents Details",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "description": "",
+        "path": "vision.views.vision_forgery_views/VisionForgeryViewSet/forgery_genuine_docs_details_export_csv",
+        "chart_api_url": "forgery-charts/forgery_genuine_docs_details/",
+        "chart_report_api": "forgery-charts/forgery_genuine_docs_details_export_csv/",
+        "chart_report_pdf_api": "forgery-charts/forgery_genuine_docs_details_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Forged Documents Details",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "description": "",
+        "path": "vision.views.vision_forgery_views/VisionForgeryViewSet/forgery_docs_details_export_csv",
+        "chart_api_url": "forgery-charts/forgery_docs_details/",
+        "chart_report_api": "forgery-charts/forgery_docs_details_export_csv/",
+        "chart_report_pdf_api": "forgery-charts/forgery_docs_details_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "System Error Details",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "description": "",
+        "path": "vision.views.vision_forgery_views/VisionForgeryViewSet/forgery_system_error_details_export_csv",
+        "chart_api_url": "forgery-charts/forgery_system_error_details/",
+        "chart_report_api": "forgery-charts/forgery_system_error_details_export_csv/",
+        "chart_report_pdf_api": "forgery-charts/forgery_system_error_details_export_pdf/"
+      },
+      {
+        "type": "line_chart",
+        "chartType": "group",
+        "title": "Comparative Analysis",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {
+          "x": "Date",
+          "y": [
+            "Genuine",
+            "Forged",
+            "System_error"
+          ]
+        },
+        "description": "",
+        "chart_api_url": "forgery-charts/forgery_genuine_vs_forged_trendline/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      }
+    ],
+    "filters": [
+      {
+        "return_key": "timestamp__range",
+        "service": "analytics",
+        "filter_type": "timestamp",
+        "filter_title": "Time Range"
+      }
+    ]
+  }
+}

@@ -1,0 +1,448 @@
+{
+  "common": {
+    "chart_title": "Analytics",
+    "screenshot": false,
+    "charts": [
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Money Spent",
+        "screenshot": false,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "description": "The numeric value represents the amount spent.",
+        "chart_api_url": "wallet_customer/total_money_sent_cust/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Money Received",
+        "screenshot": false,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "description": "The numeric value represents the amount received.",
+        "chart_api_url": "wallet_customer/total_money_received_cust/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "donut_chart",
+        "chartType": "group",
+        "title": "QR Payments",
+        "screenshot": false,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "description": "The donut shows the comparison between the money received and the money spent.",
+        "chart_api_url": "wallet_customer/spent_received_qr_payments_cust/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "donut_chart",
+        "chartType": "group",
+        "title": "Categories Spent",
+        "screenshot": false,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "description": "The donut chart illustrates distinct spending categories.",
+        "chart_api_url": "wallet_customer/money_spent_categories_cust/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "line_chart",
+        "chartType": "group",
+        "title": "Income Vs Expenses",
+        "screenshot": false,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {
+          "x": "Date",
+          "y": [
+            "income",
+            "expenses"
+          ]
+        },
+        "description": "The multi-line shows the comparison between the money received and the money spent.",
+        "chart_api_url": "wallet_customer/income_vs_expenses_cust/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "line_chart",
+        "chartType": "group",
+        "title": "Transaction Status",
+        "screenshot": false,
+        "color": [
+          "#F4D03F",
+          "#3498DB",
+          "#2ECC71",
+          "#E74C3C",
+          "#95A5A6"
+        ],
+        "cols": 4,
+        "rows": 1,
+        "Property": {
+          "x": "Date",
+          "y": [
+            "Initiated",
+            "Inprogress",
+            "Successful",
+            "Failed",
+            "Abandoned"
+          ]
+        },
+        "description": "The multi-line chart shows the transaction status for all the transactions made.",
+        "chart_api_url": "wallet_customer/transaction_status_linechart_cust/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      }
+    ],
+    "filters": [
+      {
+        "return_key": "timestamp__range",
+        "service": "analytics",
+        "filter_type": "timestamp",
+        "filter_title": "Time Range"
+      }
+    ]
+  },
+  "dashboard": {
+    "chart_title": "Analytics",
+    "screenshot": false,
+    "charts": [
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Money Spent",
+        "screenshot": false,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "description": "The numeric value represents the amount spent.",
+        "chart_api_url": "wallet_customer/total_money_sent_cust/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Money Received",
+        "screenshot": false,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "description": "The numeric value represents the amount received.",
+        "chart_api_url": "wallet_customer/total_money_received_cust/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "donut_chart",
+        "chartType": "group",
+        "title": "QR Payments",
+        "screenshot": false,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "description": "The donut shows the comparison between the money received and the money spent.",
+        "chart_api_url": "wallet_customer/spent_received_qr_payments_cust/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "donut_chart",
+        "chartType": "group",
+        "title": "Categories Spent",
+        "screenshot": false,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "description": "The donut chart illustrates distinct spending categories.",
+        "chart_api_url": "wallet_customer/money_spent_categories_cust/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "line_chart",
+        "chartType": "group",
+        "title": "Income Vs Expenses",
+        "screenshot": false,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {
+          "x": "Date",
+          "y": [
+            "income",
+            "expenses"
+          ]
+        },
+        "description": "The multi-line shows the comparison between the money received and the money spent.",
+        "chart_api_url": "wallet_customer/income_vs_expenses_cust/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "line_chart",
+        "chartType": "group",
+        "title": "Transaction Status",
+        "screenshot": false,
+        "color": [
+          "#F4D03F",
+          "#3498DB",
+          "#2ECC71",
+          "#E74C3C",
+          "#95A5A6"
+        ],
+        "cols": 4,
+        "rows": 1,
+        "Property": {
+          "x": "Date",
+          "y": [
+            "Initiated",
+            "Inprogress",
+            "Successful",
+            "Failed",
+            "Abandoned"
+          ]
+        },
+        "description": "The multi-line chart shows the transaction status for all the transactions made.",
+        "chart_api_url": "wallet_customer/transaction_status_linechart_cust/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      }
+    ],
+    "filters": [
+      {
+        "return_key": "timestamp__range",
+        "service": "analytics",
+        "filter_type": "timestamp",
+        "filter_title": "Time Range"
+      }
+    ]
+  },
+  "stanbic": {
+    "chart_title": "Analytics",
+    "screenshot": false,
+    "charts": [
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Money Spent",
+        "screenshot": false,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "description": "The numeric value represents the amount spent.",
+        "chart_api_url": "wallet_customer/total_money_sent_cust/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Money Received",
+        "screenshot": false,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "description": "The numeric value represents the amount received.",
+        "chart_api_url": "wallet_customer/total_money_received_cust/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "donut_chart",
+        "chartType": "group",
+        "title": "QR Payments",
+        "screenshot": false,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "description": "The donut shows the comparison between the money received and the money spent.",
+        "chart_api_url": "wallet_customer/spent_received_qr_payments_cust/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "donut_chart",
+        "chartType": "group",
+        "title": "Categories Spent",
+        "screenshot": false,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "description": "The donut chart illustrates distinct spending categories.",
+        "chart_api_url": "wallet_customer/money_spent_categories_cust/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "line_chart",
+        "chartType": "group",
+        "title": "Income Vs Expenses",
+        "screenshot": false,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {
+          "x": "Date",
+          "y": [
+            "income",
+            "expenses"
+          ]
+        },
+        "description": "The multi-line shows the comparison between the money received and the money spent.",
+        "chart_api_url": "wallet_customer/income_vs_expenses_cust/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "line_chart",
+        "chartType": "group",
+        "title": "Transaction Status",
+        "screenshot": false,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {
+          "x": "Date",
+          "y": [
+            "Initiated",
+            "Inprogress",
+            "Successful",
+            "Failed"
+          ]
+        },
+        "description": "The multi-line chart shows the transaction status for all the transactions made.",
+        "chart_api_url": "wallet_customer/transaction_status_linechart_cust/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      }
+    ],
+    "filters": [
+      {
+        "return_key": "timestamp__range",
+        "service": "analytics",
+        "filter_type": "timestamp",
+        "filter_title": "Time Range"
+      }
+    ]
+  },
+  "wallet": {
+    "chart_title": "Wallet Analytics",
+    "screenshot": false,
+    "charts": [
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Money Spent",
+        "screenshot": false,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "description": "The numeric value represents the amount spent.",
+        "chart_api_url": "wallet_customer/total_money_sent_cust/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Money Received",
+        "screenshot": false,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "description": "The numeric value represents the amount received.",
+        "chart_api_url": "wallet_customer/total_money_received_cust/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "donut_chart",
+        "chartType": "group",
+        "title": "QR Payments",
+        "screenshot": false,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "description": "The donut shows the comparison between the money received and the money spent.",
+        "chart_api_url": "wallet_customer/spent_received_qr_payments_cust/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "donut_chart",
+        "chartType": "group",
+        "title": "Categories Spent",
+        "screenshot": false,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "description": "The donut chart illustrates distinct spending categories.",
+        "chart_api_url": "wallet_customer/money_spent_categories_cust/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "line_chart",
+        "chartType": "group",
+        "title": "Income Vs Expenses",
+        "screenshot": false,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {
+          "x": "Date",
+          "y": [
+            "income",
+            "expenses"
+          ]
+        },
+        "description": "The multi-line shows the comparison between the money received and the money spent.",
+        "chart_api_url": "wallet_customer/income_vs_expenses_cust/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "line_chart",
+        "chartType": "group",
+        "title": "Transaction Status",
+        "screenshot": false,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {
+          "x": "Date",
+          "y": [
+            "Initiated",
+            "Inprogress",
+            "Successful",
+            "Failed"
+          ]
+        },
+        "description": "The multi-line chart shows the transaction status for all the transactions made.",
+        "chart_api_url": "wallet_customer/transaction_status_linechart_cust/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      }
+    ],
+    "filters": [
+      {
+        "return_key": "timestamp__range",
+        "service": "analytics",
+        "filter_type": "timestamp",
+        "filter_title": "Time Range"
+      }
+    ]
+  }
+}

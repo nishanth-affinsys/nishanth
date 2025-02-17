@@ -1,0 +1,224 @@
+{
+  "onboarding": {
+    "chart_title": "Sole Proprietor Ageing Report",
+    "screenshot": true,
+    "charts": [
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Ageing Report",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "onboarding.views.onboarding_ageing_report_views/AgeingReportViewSet/application_ageing_report_sp_export_csv",
+        "description": "This table lists the ageing report for sole proprietor customer applications, where customers are onboarded from various channels.",
+        "chart_api_url": "onboarding_ageing_charts/application_ageing_report_sp/",
+        "chart_report_api": "onboarding_ageing_charts/application_ageing_report_sp_export_csv/",
+        "chart_report_pdf_api": "onboarding_ageing_charts/application_ageing_report_sp_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Agent Report",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "onboarding.views.onboarding_ageing_report_views/AgeingReportViewSet/scheduled_ageing_report_agent_sp_csv",
+        "description": "The table lists the ageing report for sole proprietor  customer applications, where customers are onboarded from agent channel.",
+        "chart_api_url": "onboarding_ageing_charts/scheduled_ageing_report_agent_sp/",
+        "chart_report_api": "onboarding_ageing_charts/scheduled_ageing_report_agent_sp_csv/",
+        "chart_report_pdf_api": "onboarding_ageing_charts/scheduled_ageing_report_agent_sp_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Staff Report",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "onboarding.views.onboarding_ageing_report_views/AgeingReportViewSet/scheduled_ageing_report_staff_sp_csv",
+        "description": "The table lists the ageing report for sole proprietor customer applications, where customers are onboarded from staff channel.",
+        "chart_api_url": "onboarding_ageing_charts/scheduled_ageing_report_staff_sp/",
+        "chart_report_api": "onboarding_ageing_charts/scheduled_ageing_report_staff_sp_csv/",
+        "chart_report_pdf_api": "onboarding_ageing_charts/scheduled_ageing_report_staff_sp_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Self Report",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "onboarding.views.onboarding_ageing_report_views/AgeingReportViewSet/scheduled_ageing_report_self_sp_csv",
+        "description": "The table lists the ageing report for sole proprietor customer applications, where customers are onboarded from self channel.",
+        "chart_api_url": "onboarding_ageing_charts/scheduled_ageing_report_self_sp/",
+        "chart_report_api": "onboarding_ageing_charts/scheduled_ageing_report_self_sp_csv/",
+        "chart_report_pdf_api": "onboarding_ageing_charts/scheduled_ageing_report_self_sp_pdf/"
+      }
+    ],
+    "filters": [
+      {
+        "return_key": "timestamp__range",
+        "service": "analytics",
+        "filter_type": "timestamp",
+        "filter_title": "Time Range"
+      }
+    ]
+  },
+  "common": {
+    "chart_title": "Sole Proprietor Ageing Report",
+    "screenshot": true,
+    "charts": [
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Ageing Report",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "onboarding.views.onboarding_ageing_report_views/AgeingReportViewSet/application_ageing_report_sp_export_csv",
+        "description": "This table lists the ageing report for sole proprietor customer applications, where customers are onboarded from various channels.",
+        "chart_api_url": "onboarding_ageing_charts/application_ageing_report_sp/",
+        "chart_report_api": "onboarding_ageing_charts/application_ageing_report_sp_export_csv/",
+        "chart_report_pdf_api": "onboarding_ageing_charts/application_ageing_report_sp_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Agent Report",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "onboarding.views.onboarding_ageing_report_views/AgeingReportViewSet/scheduled_ageing_report_agent_sp_csv",
+        "description": "The table lists the ageing report for sole proprietor  customer applications, where customers are onboarded from agent channel.",
+        "chart_api_url": "onboarding_ageing_charts/scheduled_ageing_report_agent_sp/",
+        "chart_report_api": "onboarding_ageing_charts/scheduled_ageing_report_agent_sp_csv/",
+        "chart_report_pdf_api": "onboarding_ageing_charts/scheduled_ageing_report_agent_sp_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Staff Report",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "onboarding.views.onboarding_ageing_report_views/AgeingReportViewSet/scheduled_ageing_report_staff_sp_csv",
+        "description": "The table lists the ageing report for sole proprietor customer applications, where customers are onboarded from staff channel.",
+        "chart_api_url": "onboarding_ageing_charts/scheduled_ageing_report_staff_sp/",
+        "chart_report_api": "onboarding_ageing_charts/scheduled_ageing_report_staff_sp_csv/",
+        "chart_report_pdf_api": "onboarding_ageing_charts/scheduled_ageing_report_staff_sp_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Self Report",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "onboarding.views.onboarding_ageing_report_views/AgeingReportViewSet/scheduled_ageing_report_self_sp_csv",
+        "description": "The table lists the ageing report for sole proprietor customer applications, where customers are onboarded from self channel.",
+        "chart_api_url": "onboarding_ageing_charts/scheduled_ageing_report_self_sp/",
+        "chart_report_api": "onboarding_ageing_charts/scheduled_ageing_report_self_sp_csv/",
+        "chart_report_pdf_api": "onboarding_ageing_charts/scheduled_ageing_report_self_sp_pdf/"
+      }
+    ],
+    "filters": [
+      {
+        "return_key": "timestamp__range",
+        "service": "analytics",
+        "filter_type": "timestamp",
+        "filter_title": "Time Range"
+      }
+    ]
+  },
+  "dashboard": {
+    "chart_title": "Sole Proprietor Ageing Report",
+    "screenshot": true,
+    "charts": [
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Ageing Report",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "onboarding.views.onboarding_ageing_report_views/AgeingReportViewSet/application_ageing_report_sp_export_csv",
+        "description": "This table lists the ageing report for sole proprietor customer applications, where customers are onboarded from various channels.",
+        "chart_api_url": "onboarding_ageing_charts/application_ageing_report_sp/",
+        "chart_report_api": "onboarding_ageing_charts/application_ageing_report_sp_export_csv/",
+        "chart_report_pdf_api": "onboarding_ageing_charts/application_ageing_report_sp_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Agent Report",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "onboarding.views.onboarding_ageing_report_views/AgeingReportViewSet/scheduled_ageing_report_agent_sp_csv",
+        "description": "The table lists the ageing report for sole proprietor  customer applications, where customers are onboarded from agent channel.",
+        "chart_api_url": "onboarding_ageing_charts/scheduled_ageing_report_agent_sp/",
+        "chart_report_api": "onboarding_ageing_charts/scheduled_ageing_report_agent_sp_csv/",
+        "chart_report_pdf_api": "onboarding_ageing_charts/scheduled_ageing_report_agent_sp_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Staff Report",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "onboarding.views.onboarding_ageing_report_views/AgeingReportViewSet/scheduled_ageing_report_staff_sp_csv",
+        "description": "The table lists the ageing report for sole proprietor customer applications, where customers are onboarded from staff channel.",
+        "chart_api_url": "onboarding_ageing_charts/scheduled_ageing_report_staff_sp/",
+        "chart_report_api": "onboarding_ageing_charts/scheduled_ageing_report_staff_sp_csv/",
+        "chart_report_pdf_api": "onboarding_ageing_charts/scheduled_ageing_report_staff_sp_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Self Report",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "onboarding.views.onboarding_ageing_report_views/AgeingReportViewSet/scheduled_ageing_report_self_sp_csv",
+        "description": "The table lists the ageing report for sole proprietor customer applications, where customers are onboarded from self channel.",
+        "chart_api_url": "onboarding_ageing_charts/scheduled_ageing_report_self_sp/",
+        "chart_report_api": "onboarding_ageing_charts/scheduled_ageing_report_self_sp_csv/",
+        "chart_report_pdf_api": "onboarding_ageing_charts/scheduled_ageing_report_self_sp_pdf/"
+      }
+    ],
+    "filters": [
+      {
+        "return_key": "timestamp__range",
+        "service": "analytics",
+        "filter_type": "timestamp",
+        "filter_title": "Time Range"
+      }
+    ]
+  }
+}

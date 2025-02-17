@@ -1,0 +1,467 @@
+{
+  "common": {
+    "chart_title": "Agent Transfer",
+    "screenshot": true,
+    "charts": [
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Total Transfers Initiated",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "The numeric value represents the total number of customer interactions that have been initiated for transfer from one agent to another.",
+        "chart_api_url": "agent_transfer_charts/agent_transfer_total_transfer_initiated/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Total Successful Transfers",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "The numeric value represents the total number of customer interactions that have been successfully transferred from one agent to another.",
+        "chart_api_url": "agent_transfer_charts/agent_transfer_total_successful/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Total Failed Transfers",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "The numeric value represents the total number of customer interactions that were initiated for transfer but ultimately failed to transfer to the respective agent.",
+        "chart_api_url": "agent_transfer_charts/agent_transfer_total_failed/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "line_chart",
+        "chartType": "group",
+        "title": "Transfers Initiated",
+        "screenshot": true,
+        "color": 0,
+        "cols": 6,
+        "rows": 1,
+        "Property": {
+          "x": "Date",
+          "y": [
+            "transfers_initiated"
+          ]
+        },
+        "description": "The linechart represents total number of customer interactions that have been initiated for transfers in each day",
+        "chart_api_url": "agent_transfer_charts/agent_transfer_initiated_linechart/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "bar_chart",
+        "chartType": "group",
+        "title": "Transfers Agent Initiated",
+        "screenshot": true,
+        "color": 0,
+        "cols": 6,
+        "rows": 1,
+        "Property": {
+          "x": "Agent_Name",
+          "y": [
+            "count"
+          ]
+        },
+        "description": "The barchart represents the count of total transfers initiated by each agent",
+        "chart_api_url": "agent_transfer_charts/agent_transfer_initiated_transfer/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "line_chart",
+        "chartType": "group",
+        "title": "Successful Transfers ",
+        "screenshot": true,
+        "color": 0,
+        "cols": 6,
+        "rows": 1,
+        "Property": {
+          "x": "Date",
+          "y": [
+            "transfers_accepted"
+          ]
+        },
+        "description": "The linechart represent the total number of customer interactions that have been successfully transferred from one agent to another on each day.",
+        "chart_api_url": "agent_transfer_charts/agent_transfer_successful_linechart/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "line_chart",
+        "chartType": "group",
+        "title": "Failed Transfers",
+        "screenshot": true,
+        "color": 0,
+        "cols": 6,
+        "rows": 1,
+        "Property": {
+          "x": "Date",
+          "y": [
+            "transfers_failed"
+          ]
+        },
+        "description": "The linechart represents the count of transfers that have failed during a specific period of time.",
+        "chart_api_url": "agent_transfer_charts/agent_transfer_failed_linechart/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Transfer Details",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "handoff.views.agent_transfer_views/AgentTransferViewSet/only_transfer_details_export",
+        "description": "The table shows the holistic view of the agent transfer process and its duration.",
+        "chart_api_url": "agent_transfer_charts/agent_transfer_details_only/",
+        "chart_report_api": "agent_transfer_charts/agent_transfer_details_only_export_csv/",
+        "chart_report_pdf_api": "agent_transfer_charts/agent_transfer_details_only_export_pdf/"
+      }
+    ],
+    "filters": [
+      {
+        "api_url": "get_channels/",
+        "request_method": "GET",
+        "return_key": "channel",
+        "service": "analytics",
+        "filter_type": "select",
+        "filter_title": "Channel"
+      },
+      {
+        "return_key": "timestamp__range",
+        "service": "analytics",
+        "filter_type": "timestamp",
+        "filter_title": "Time Range"
+      }
+    ]
+  },
+  "stanbic": {
+    "chart_title": "Agent Transfer",
+    "screenshot": true,
+    "charts": [
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Total Transfers Initiated",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "The numeric value represents the total number of customer interactions that have been initiated for transfer from one agent to another.",
+        "chart_api_url": "agent_transfer_charts/agent_transfer_total_transfer_initiated/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Total Successful Transfers",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "The numeric value represents the total number of customer interactions that have been successfully transferred from one agent to another.",
+        "chart_api_url": "agent_transfer_charts/agent_transfer_total_successful/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Total Failed Transfers",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "The numeric value represents the total number of customer interactions that were initiated for transfer but ultimately failed to transfer to the respective agent.",
+        "chart_api_url": "agent_transfer_charts/agent_transfer_total_failed/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "line_chart",
+        "chartType": "group",
+        "title": "Transfers Initiated",
+        "screenshot": true,
+        "color": 0,
+        "cols": 6,
+        "rows": 1,
+        "Property": {
+          "x": "Date",
+          "y": [
+            "transfers_initiated"
+          ]
+        },
+        "description": "The linechart represents total number of customer interactions that have been initiated for transfers in each day",
+        "chart_api_url": "agent_transfer_charts/agent_transfer_initiated_linechart/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "bar_chart",
+        "chartType": "group",
+        "title": "Transfers Agent Initiated",
+        "screenshot": true,
+        "color": 0,
+        "cols": 6,
+        "rows": 1,
+        "Property": {
+          "x": "Agent_Name",
+          "y": [
+            "count"
+          ]
+        },
+        "description": "The barchart represents the count of total transfers initiated by each agent",
+        "chart_api_url": "agent_transfer_charts/agent_transfer_initiated_transfer/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "line_chart",
+        "chartType": "group",
+        "title": "Successful Transfers ",
+        "screenshot": true,
+        "color": 0,
+        "cols": 6,
+        "rows": 1,
+        "Property": {
+          "x": "Date",
+          "y": [
+            "transfers_accepted"
+          ]
+        },
+        "description": "The linechart represent the total number of customer interactions that have been successfully transferred from one agent to another on each day.",
+        "chart_api_url": "agent_transfer_charts/agent_transfer_successful_linechart/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "line_chart",
+        "chartType": "group",
+        "title": "Failed Transfers",
+        "screenshot": true,
+        "color": 0,
+        "cols": 6,
+        "rows": 1,
+        "Property": {
+          "x": "Date",
+          "y": [
+            "transfers_failed"
+          ]
+        },
+        "description": "The linechart represents the count of transfers that have failed during a specific period of time.",
+        "chart_api_url": "agent_transfer_charts/agent_transfer_failed_linechart/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Transfer Details",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "handoff.views.agent_transfer_views/AgentTransferViewSet/only_transfer_details_export",
+        "description": "The table shows the holistic view of the agent transfer process and its duration.",
+        "chart_api_url": "agent_transfer_charts/agent_transfer_details_only/",
+        "chart_report_api": "agent_transfer_charts/agent_transfer_details_only_export_csv/",
+        "chart_report_pdf_api": "agent_transfer_charts/agent_transfer_details_only_export_pdf/"
+      }
+    ],
+    "filters": [
+      {
+        "api_url": "get_channels/",
+        "request_method": "GET",
+        "return_key": "channel",
+        "service": "analytics",
+        "filter_type": "select",
+        "filter_title": "Channel"
+      },
+      {
+        "return_key": "timestamp__range",
+        "service": "analytics",
+        "filter_type": "timestamp",
+        "filter_title": "Time Range"
+      }
+    ]
+  },
+  "dashboard": {
+    "chart_title": "Agent Transfer",
+    "screenshot": true,
+    "charts": [
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Total Transfers Initiated",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "The numeric value represents the total number of customer interactions that have been initiated for transfer from one agent to another.",
+        "chart_api_url": "agent_transfer_charts/agent_transfer_total_transfer_initiated/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Total Successful Transfers",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "The numeric value represents the total number of customer interactions that have been successfully transferred from one agent to another.",
+        "chart_api_url": "agent_transfer_charts/agent_transfer_total_successful/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Total Failed Transfers",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "The numeric value represents the total number of customer interactions that were initiated for transfer but ultimately failed to transfer to the respective agent.",
+        "chart_api_url": "agent_transfer_charts/agent_transfer_total_failed/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "line_chart",
+        "chartType": "group",
+        "title": "Transfers Initiated",
+        "screenshot": true,
+        "color": 0,
+        "cols": 6,
+        "rows": 1,
+        "Property": {
+          "x": "Date",
+          "y": [
+            "transfers_initiated"
+          ]
+        },
+        "description": "The linechart represents total number of customer interactions that have been initiated for transfers in each day",
+        "chart_api_url": "agent_transfer_charts/agent_transfer_initiated_linechart/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "bar_chart",
+        "chartType": "group",
+        "title": "Transfers Agent Initiated",
+        "screenshot": true,
+        "color": 0,
+        "cols": 6,
+        "rows": 1,
+        "Property": {
+          "x": "Agent_Name",
+          "y": [
+            "count"
+          ]
+        },
+        "description": "The barchart represents the count of total transfers initiated by each agent",
+        "chart_api_url": "agent_transfer_charts/agent_transfer_initiated_transfer/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "line_chart",
+        "chartType": "group",
+        "title": "Successful Transfers ",
+        "screenshot": true,
+        "color": 0,
+        "cols": 6,
+        "rows": 1,
+        "Property": {
+          "x": "Date",
+          "y": [
+            "transfers_accepted"
+          ]
+        },
+        "description": "The linechart represent the total number of customer interactions that have been successfully transferred from one agent to another on each day.",
+        "chart_api_url": "agent_transfer_charts/agent_transfer_successful_linechart/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "line_chart",
+        "chartType": "group",
+        "title": "Failed Transfers",
+        "screenshot": true,
+        "color": 0,
+        "cols": 6,
+        "rows": 1,
+        "Property": {
+          "x": "Date",
+          "y": [
+            "transfers_failed"
+          ]
+        },
+        "description": "The linechart represents the count of transfers that have failed during a specific period of time.",
+        "chart_api_url": "agent_transfer_charts/agent_transfer_failed_linechart/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Transfer Details",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "handoff.views.agent_transfer_views/AgentTransferViewSet/only_transfer_details_export",
+        "description": "The table shows the holistic view of the agent transfer process and its duration.",
+        "chart_api_url": "agent_transfer_charts/agent_transfer_details_only/",
+        "chart_report_api": "agent_transfer_charts/agent_transfer_details_only_export_csv/",
+        "chart_report_pdf_api": "agent_transfer_charts/agent_transfer_details_only_export_pdf/"
+      }
+    ],
+    "filters": [
+      {
+        "api_url": "get_channels/",
+        "request_method": "GET",
+        "return_key": "channel",
+        "service": "analytics",
+        "filter_type": "select",
+        "filter_title": "Channel"
+      },
+      {
+        "return_key": "timestamp__range",
+        "service": "analytics",
+        "filter_type": "timestamp",
+        "filter_title": "Time Range"
+      }
+    ]
+  }
+}

@@ -1,0 +1,173 @@
+[
+  {
+    "model": "console.stagelog",
+    "pk": 1,
+    "fields": {
+      "channel_id": "ef22d0f5b557631266d309a1a54c5407",
+      "channel": "webchat",
+      "session_id": "d4e45b31064644d398d67824758dc1e8",
+      "transaction_intent": "checkBalance",
+      "transaction_id": "e9e9351896f64068bd37e56e6a87ee30",
+      "stage": "Final Response",
+      "stage_result": "Goal Completed",
+      "remarks": "",
+      "timestamp": "2023-01-03T06:35:58.520Z",
+      "rmn": null,
+      "transaction_code": null,
+      "node_id": null,
+      "tenant": "lebacpsix"
+    }
+  },
+  {
+    "model": "console.stagelog",
+    "pk": 2,
+    "fields": {
+      "channel_id": "wIYRXxbpjegiCDzE",
+      "channel": "webchat",
+      "session_id": "87d244ae57584b74813525bc2d63638a",
+      "transaction_intent": "accountBalance",
+      "transaction_id": "4b4eef02196549139f49f59126fdb308",
+      "stage": "Fetch Transaction Data",
+      "stage_result": "Fetch Get CIF from mobile number API Failed",
+      "remarks": "",
+      "timestamp": "2022-12-30T10:58:21.134Z",
+      "rmn": null,
+      "transaction_code": null,
+      "node_id": null,
+      "tenant": "sbkcpseven"
+    }
+  },
+  {
+    "model": "console.stagelog",
+    "pk": 3,
+    "fields": {
+      "channel_id": "ef22d0f5b557631266d309a1a54c5407",
+      "channel": "webchat",
+      "session_id": "fc68c42fdf714509aabe42ad03045978",
+      "transaction_intent": "accountBalance",
+      "transaction_id": "499f294e854f4600bcd346af0cac71d8",
+      "stage": "Fetch Transaction Data",
+      "stage_result": "Fetch Get CIF from mobile number API Failed",
+      "remarks": "",
+      "timestamp": "2023-01-02T06:16:06.545Z",
+      "rmn": null,
+      "transaction_code": null,
+      "node_id": null,
+      "tenant": "sbkcpseven"
+    }
+  },
+  {
+    "model": "console.stagelog",
+    "pk": 4,
+    "fields": {
+      "channel_id": "271a984a0b7248f9238254200e5244db",
+      "channel": "webchat",
+      "session_id": "4ddcc45710484719916e5c53f8d671ad",
+      "transaction_intent": "account",
+      "transaction_id": "04e85ad144424412b0387e5e7555f48d",
+      "stage": "Final Response",
+      "stage_result": "User Aborted",
+      "remarks": "User Cancelled",
+      "timestamp": "2023-01-05T07:42:23.113Z",
+      "rmn": null,
+      "transaction_code": null,
+      "node_id": null,
+      "tenant": "lebacpsix"
+    }
+  },
+  {
+    "model": "console.stagelog",
+    "pk": 5,
+    "fields": {
+      "channel_id": "d27d56078a7a2f96d4586c3d735a150f",
+      "channel": "webchat",
+      "session_id": "f04107600bd341fe8f95a42d9deab599",
+      "transaction_intent": "account",
+      "transaction_id": "5e9727c35b704d158b822c0832a94c1a",
+      "stage": "Final Response",
+      "stage_result": "User Aborted",
+      "remarks": "User Cancelled",
+      "timestamp": "2023-01-05T10:18:57.136Z",
+      "rmn": null,
+      "transaction_code": null,
+      "node_id": null,
+      "tenant": "lebacpsix"
+    }
+  },
+  {
+    "model": "console.stagelog",
+    "pk": 6,
+    "fields": {
+      "channel_id": "d27d56078a7a2f96d4586c3d735a150u",
+      "channel": "webchat",
+      "session_id": "f04107600bd341fe8f95a42d9deab599",
+      "transaction_intent": "suggestCurrentAccount",
+      "transaction_id": "5e9727c35b704d158b822c0832a94c1b",
+      "stage": "User status",
+      "stage_result": "no",
+      "remarks": "User Cancelled",
+      "timestamp": "2023-01-05T10:18:57.136Z",
+      "rmn": null,
+      "transaction_code": null,
+      "node_id": null,
+      "tenant": "lebacpsix"
+    }
+  },
+  {
+    "model": "console.stagelog",
+    "pk": 7,
+    "fields": {
+      "channel_id": "d27d56078a7a2f96d4586j3d735a150u",
+      "channel": "webchat",
+      "session_id": "f04107600bd341fe8f95a42d9deab599",
+      "transaction_intent": "accountDepositFixed",
+      "transaction_id": "5e9727c35b704d158b822c0832a94c1b",
+      "stage": "User status",
+      "stage_result": "yes",
+      "remarks": "User Cancelled",
+      "timestamp": "2023-01-05T10:18:57.136Z",
+      "rmn": null,
+      "transaction_code": null,
+      "node_id": null,
+      "tenant": "lebacpsix"
+    }
+  },
+  {
+    "model": "console.stagelog",
+    "pk": 8,
+    "fields": {
+      "channel_id": "d27d56078a7a2f96d4586c3d735j150u",
+      "channel": "webchat",
+      "session_id": "f04107600bd341fe8f95a42d9deab599",
+      "transaction_intent": "suggestCurrentAccount",
+      "transaction_id": "5e9727c35b704d158b822c0832a94c1b",
+      "stage": "Call",
+      "stage_result": "yes",
+      "remarks": "User Cancelled",
+      "timestamp": "2023-01-05T10:18:57.136Z",
+      "rmn": null,
+      "transaction_code": null,
+      "node_id": null,
+      "tenant": "lebacpsix"
+    }
+  },
+  {
+    "model": "console.stagelog",
+    "pk": 9,
+    "fields": {
+      "channel_id": "d27d56078a7a2f96d4586c3d735a150i",
+      "channel": "webchat",
+      "session_id": "f04107600bd341fe8f95a42d9deab599",
+      "transaction_intent": "accountCurrent",
+      "transaction_id": "5e9727c35b704d158b822c0832a94c1b",
+      "stage": "Call",
+      "stage_result": "yes",
+      "remarks": "User Cancelled",
+      "timestamp": "2023-01-05T10:18:57.136Z",
+      "rmn": null,
+      "transaction_code": null,
+      "node_id": null,
+      "tenant": "lebacpsix"
+    }
+  }
+]

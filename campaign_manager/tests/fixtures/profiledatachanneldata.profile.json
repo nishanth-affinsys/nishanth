@@ -1,0 +1,57 @@
+[
+  {
+    "model": "campaign_manager.profiledatachanneldata",
+    "pk": 925,
+    "fields": {
+      "channel_id": "918762401907",
+      "channel_name": "whatsapp",
+      "is_opted": true,
+      "is_subscribed": true,
+      "tenant": "lebacampaign"
+    }
+  },
+  {
+    "model": "campaign_manager.profiledatachanneldata",
+    "pk": 914,
+    "fields": {
+      "channel_id": "bkrroy.bk@gmail.com",
+      "channel_name": "email",
+      "is_opted": true,
+      "is_subscribed": true,
+      "tenant": "lebacampaign"
+    }
+  },
+  {
+    "model": "campaign_manager.profiledatachanneldata",
+    "pk": 915,
+    "fields": {
+      "channel_id": "917827598718",
+      "channel_name": "whatsapp",
+      "is_opted": true,
+      "is_subscribed": true,
+      "tenant": "lebacampaign"
+    }
+  },
+  {
+    "model": "campaign_manager.profiledatachanneldata",
+    "pk": 949,
+    "fields": {
+      "channel_id": "7d703d3f763de85ee955c21f9bfae92f",
+      "channel_name": "whatsapp",
+      "is_opted": true,
+      "is_subscribed": true,
+      "tenant": "lebacampaign"
+    }
+  },
+  {
+    "model": "campaign_manager.profiledatachanneldata",
+    "pk": 950,
+    "fields": {
+      "channel_id": "abhinav.nair@affinsys.com",
+      "channel_name": "email",
+      "is_opted": true,
+      "is_subscribed": true,
+      "tenant": "lebacampaign"
+    }
+  }
+]

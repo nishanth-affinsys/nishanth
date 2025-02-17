@@ -1,0 +1,112 @@
+[
+  {
+    "model": "console.activity",
+    "pk": 1,
+    "fields": {
+      "provider": "auth_provider_internal",
+      "user_id": "3b9d5a50-595c-4e75-bcae-f53e30bd27c0",
+      "username": "ashupednekar",
+      "operation": "",
+      "endpoint": "/platform/botbuilder/intents/",
+      "result": "pass",
+      "status_code": "200",
+      "ip_address": null,
+      "location": null,
+      "status_code_description": "OK",
+      "request_timestamp": "2023-04-10T10:09:07.054Z",
+      "request_method": "GET",
+      "execution_time": "44",
+      "service_name": "studio",
+      "tenant": "prathambot",
+      "timestamp": "2023-04-10T10:09:07.101Z"
+    }
+  },
+  {
+    "model": "console.activity",
+    "pk": 2,
+    "fields": {
+      "provider": "auth_provider_internal",
+      "user_id": "3b9d5a50-595c-4e75-bcae-f53e30bd27c0",
+      "username": "ashupednekar",
+      "operation": "",
+      "endpoint": "/platform/botbuilder/project/193/",
+      "result": "pass",
+      "status_code": "200",
+      "ip_address": null,
+      "location": null,
+      "status_code_description": "OK",
+      "request_timestamp": "2023-04-10T10:09:07.029Z",
+      "request_method": "GET",
+      "execution_time": "32",
+      "service_name": "studio",
+      "tenant": "prathambot",
+      "timestamp": "2023-04-10T10:09:07.064Z"
+    }
+  },
+  {
+    "model": "console.activity",
+    "pk": 3,
+    "fields": {
+      "provider": "auth_provider_internal",
+      "user_id": "f8f27cba-aa91-4603-8b1e-f043d25ceca0",
+      "username": "manasi",
+      "operation": "",
+      "endpoint": "/platform/flowbuilder/function/",
+      "result": "pass",
+      "status_code": "200",
+      "ip_address": null,
+      "location": null,
+      "status_code_description": "OK",
+      "request_timestamp": "2023-04-10T10:10:50.124Z",
+      "request_method": "GET",
+      "execution_time": "29",
+      "service_name": "studio",
+      "tenant": "bottest",
+      "timestamp": "2023-04-10T10:10:50.154Z"
+    }
+  },
+  {
+    "model": "console.activity",
+    "pk": 4,
+    "fields": {
+      "provider": "auth_provider_internal",
+      "user_id": "f8f27cba-aa91-4603-8b1e-f043d25ceca0",
+      "username": "manasi",
+      "operation": "",
+      "endpoint": "/platform/flowbuilder/function/",
+      "result": "pass",
+      "status_code": "200",
+      "ip_address": null,
+      "location": null,
+      "status_code_description": "OK",
+      "request_timestamp": "2023-04-10T10:10:50.808Z",
+      "request_method": "GET",
+      "execution_time": "30",
+      "service_name": "studio",
+      "tenant": "bottest",
+      "timestamp": "2023-04-10T10:10:50.841Z"
+    }
+  },
+  {
+    "model": "console.activity",
+    "pk": 5,
+    "fields": {
+      "provider": "auth_provider_internal",
+      "user_id": "f8f27cba-aa91-4603-8b1e-f043d25ceca0",
+      "username": "manasi",
+      "operation": "",
+      "endpoint": "/platform/botbuilder/publish-github/",
+      "result": "pass",
+      "status_code": "200",
+      "ip_address": null,
+      "location": null,
+      "status_code_description": "OK",
+      "request_timestamp": "2023-04-10T10:11:58.991Z",
+      "request_method": "POST",
+      "execution_time": "68",
+      "service_name": "studio",
+      "tenant": "bottest",
+      "timestamp": "2023-04-10T10:11:59.062Z"
+    }
+  }
+]

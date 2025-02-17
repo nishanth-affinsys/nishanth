@@ -1,0 +1,96 @@
+{
+  "common": {
+    "chart_title": "Lead Generated",
+    "screenshot": true,
+    "charts": [
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Leads generated (total)",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1.5,
+        "Property": {},
+        "description": "The count illustrates the precise count of new leads generated.",
+        "chart_api_url": "leads_dashboard/leads_generated_count/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Leads Generated Details",
+        "screenshot": true,
+        "color": 0,
+        "cols": 8,
+        "rows": 1.5,
+        "Property": {},
+        "path": "client_specific.views.dib_leads/DIBLeadsDashboard/leads_generated_details_export_csv",
+        "description": "The table illustrates the details of new leads generated.",
+        "chart_api_url": "leads_dashboard/leads_generated_details/",
+        "chart_report_api": "leads_dashboard/leads_generated_details_export_csv/",
+        "chart_report_pdf_api": "leads_dashboard/leads_generated_details_export_pdf/"
+      }
+    ],
+    "filters": [
+      {
+        "return_key": "timestamp__range",
+        "service": "analytics",
+        "filter_type": "timestamp",
+        "filter_title": "Time Range"
+      }
+    ]
+  },
+  "dib": {
+    "chart_title": "Lead Generated",
+    "screenshot": true,
+    "charts": [
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Leads generated (total)",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1.5,
+        "Property": {},
+        "description": "The count illustrates the precise count of new leads generated.",
+        "chart_api_url": "leads_dashboard/leads_generated_count/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Leads Generated Details",
+        "screenshot": true,
+        "color": 0,
+        "cols": 8,
+        "rows": 1.5,
+        "Property": {},
+        "path": "client_specific.views.dib_leads/DIBLeadsDashboard/leads_generated_details_export_csv",
+        "description": "The table illustrates the details of new leads generated.",
+        "chart_api_url": "leads_dashboard/leads_generated_details/",
+        "chart_report_api": "leads_dashboard/leads_generated_details_export_csv/",
+        "chart_report_pdf_api": "leads_dashboard/leads_generated_details_export_pdf/"
+      }
+    ],
+    "filters": [
+      {
+        "return_key": "timestamp__range",
+        "service": "analytics",
+        "filter_type": "timestamp",
+        "filter_title": "Time Range"
+      },
+      {
+        "api_url": "get_customer_types/",
+        "request_method": "GET",
+        "return_key": "customer_type",
+        "service": "analytics",
+        "filter_type": "select",
+        "filter_title": "Customer Type"
+      }
+    ]
+  }
+}

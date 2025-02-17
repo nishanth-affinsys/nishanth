@@ -1,0 +1,343 @@
+{
+  "common": {
+    "chart_title": "Transaction Report",
+    "screenshot": true,
+    "charts": [
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Successfully Submitted Transactions",
+        "screenshot": true,
+        "color": 0,
+        "cols": 3,
+        "rows": 1,
+        "Property": {},
+        "description": "The numeric value represents the number of successful transactions",
+        "chart_api_url": "wallet-transactions/wallet_successful_transaction/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Successfully Submitted Transactions (%)",
+        "screenshot": true,
+        "color": 0,
+        "cols": 3,
+        "rows": 1,
+        "Property": {},
+        "description": "The numeric value represents the number of successful transactions",
+        "chart_api_url": "wallet-transactions/wallet_successful_transaction_percentage/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Failed to Submit Transactions",
+        "screenshot": true,
+        "color": 0,
+        "cols": 3,
+        "rows": 1,
+        "Property": {},
+        "description": "The numeric value represents the number of failed transactions",
+        "chart_api_url": "wallet-transactions/wallet_failed_transaction/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Failed to Submit Transactions (%)",
+        "screenshot": true,
+        "color": 0,
+        "cols": 3,
+        "rows": 1,
+        "Property": {},
+        "description": "The numeric value represents the number of failed transactions",
+        "chart_api_url": "wallet-transactions/wallet_failed_transaction_percentage/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Successfully Submitted Transaction Details",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "console.views.kinaechange_transaction_views/KINATransactionViewSet/wallet_successful_transaction_details_export_csv",
+        "description": "The table displays the details of successful transactions",
+        "chart_api_url": "wallet-transactions/wallet_successful_transaction_details/",
+        "chart_report_api": "wallet-transactions/wallet_successful_transaction_details_export_csv/",
+        "chart_report_pdf_api": "wallet-transactions/wallet_successful_transaction_details_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Failed to Submit Transaction Details",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "console.views.kinaechange_transaction_views/KINATransactionViewSet/wallet_failed_transaction_details_export_csv",
+        "description": "The table displays the details of failed transaction",
+        "chart_api_url": "wallet-transactions/wallet_failed_transaction_details/",
+        "chart_report_api": "wallet-transactions/wallet_failed_transaction_details_export_csv/",
+        "chart_report_pdf_api": "wallet-transactions/wallet_failed_transaction_details_export_pdf/"
+      },
+      {
+        "type": "line_chart",
+        "chartType": "group",
+        "title": "Aggregate Transaction Analysis ",
+        "screenshot": true,
+        "color": [
+          "#91CD76",
+          "#E11237"
+        ],
+        "cols": 12,
+        "rows": 1,
+        "Property": {
+          "x": "Date",
+          "y": [
+            "Successful_transactions",
+            "Failed_transactions"
+          ]
+        },
+        "description": "The line chart shows the comparison between the successful and failed transactions. ",
+        "chart_api_url": "wallet-transactions/wallet_aggregate_transactions/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      }
+    ],
+    "filters": [
+      {
+        "return_key": "timestamp__range",
+        "service": "analytics",
+        "filter_type": "timestamp",
+        "filter_title": "Time Range"
+      }
+    ]
+  },
+  "dashboard": {
+    "chart_title": "Transaction Report",
+    "screenshot": true,
+    "charts": [
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Successfully Submitted Transactions",
+        "screenshot": true,
+        "color": 0,
+        "cols": 3,
+        "rows": 1,
+        "Property": {},
+        "description": "The numeric value represents the number of successful transactions",
+        "chart_api_url": "wallet-transactions/wallet_successful_transaction/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Successfully Submitted Transactions (%)",
+        "screenshot": true,
+        "color": 0,
+        "cols": 3,
+        "rows": 1,
+        "Property": {},
+        "description": "The numeric value represents the number of successful transactions",
+        "chart_api_url": "wallet-transactions/wallet_successful_transaction_percentage/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Failed to Submit Transactions",
+        "screenshot": true,
+        "color": 0,
+        "cols": 3,
+        "rows": 1,
+        "Property": {},
+        "description": "The numeric value represents the number of failed transactions",
+        "chart_api_url": "wallet-transactions/wallet_failed_transaction/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Failed to Submit Transactions (%)",
+        "screenshot": true,
+        "color": 0,
+        "cols": 3,
+        "rows": 1,
+        "Property": {},
+        "description": "The numeric value represents the number of failed transactions",
+        "chart_api_url": "wallet-transactions/wallet_failed_transaction_percentage/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Successfully Submitted Transaction Details",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "console.views.kinaechange_transaction_views/KINATransactionViewSet/wallet_successful_transaction_details_export_csv",
+        "description": "The table displays the details of successful transactions",
+        "chart_api_url": "wallet-transactions/wallet_successful_transaction_details/",
+        "chart_report_api": "wallet-transactions/wallet_successful_transaction_details_export_csv/",
+        "chart_report_pdf_api": "wallet-transactions/wallet_successful_transaction_details_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Failed to Submit Transaction Details",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "console.views.kinaechange_transaction_views/KINATransactionViewSet/wallet_failed_transaction_details_export_csv",
+        "description": "The table displays the details of failed transaction",
+        "chart_api_url": "wallet-transactions/wallet_failed_transaction_details/",
+        "chart_report_api": "wallet-transactions/wallet_failed_transaction_details_export_csv/",
+        "chart_report_pdf_api": "wallet-transactions/wallet_failed_transaction_details_export_pdf/"
+      },
+      {
+        "type": "line_chart",
+        "chartType": "group",
+        "title": "Aggregate Transaction Analysis ",
+        "screenshot": true,
+        "color": [
+          "#91CD76",
+          "#E11237"
+        ],
+        "cols": 12,
+        "rows": 1,
+        "Property": {
+          "x": "Date",
+          "y": [
+            "Successful_transactions",
+            "Failed_transactions"
+          ]
+        },
+        "description": "The line chart shows the comparison between the successful and failed transactions. ",
+        "chart_api_url": "wallet-transactions/wallet_aggregate_transactions/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      }
+    ],
+    "filters": [
+      {
+        "return_key": "timestamp__range",
+        "service": "analytics",
+        "filter_type": "timestamp",
+        "filter_title": "Time Range"
+      }
+    ]
+  },
+  "stanbic": {
+    "chart_title": "Transaction Report",
+    "screenshot": true,
+    "charts": [
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Successful Transactions",
+        "screenshot": true,
+        "color": 0,
+        "cols": 6,
+        "rows": 1,
+        "Property": {},
+        "description": "The numeric value represents the number of successful transactions",
+        "chart_api_url": "wallet-transactions/wallet_successful_transaction/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Failed Transactions",
+        "screenshot": true,
+        "color": 0,
+        "cols": 6,
+        "rows": 1,
+        "Property": {},
+        "description": "The numeric value represents the number of failed transactions",
+        "chart_api_url": "wallet-transactions/wallet_failed_transaction/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Successful Transaction Details",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "console.views.kinaechange_transaction_views/KINATransactionViewSet/wallet_successful_transaction_details_export_csv",
+        "description": "The table displays the details of successful transactions",
+        "chart_api_url": "wallet-transactions/wallet_successful_transaction_details/",
+        "chart_report_api": "wallet-transactions/wallet_successful_transaction_details_export_csv/",
+        "chart_report_pdf_api": "wallet-transactions/wallet_successful_transaction_details_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Failed Transaction Details",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "console.views.kinaechange_transaction_views/KINATransactionViewSet/wallet_failed_transaction_details_export_csv",
+        "description": "The table displays the details of failed transaction",
+        "chart_api_url": "wallet-transactions/wallet_failed_transaction_details/",
+        "chart_report_api": "wallet-transactions/wallet_failed_transaction_details_export_csv/",
+        "chart_report_pdf_api": "wallet-transactions/wallet_failed_transaction_details_export_pdf/"
+      },
+      {
+        "type": "line_chart",
+        "chartType": "group",
+        "title": "Aggregate Transaction Analysis ",
+        "screenshot": true,
+        "color": [
+          "#91CD76",
+          "#E11237"
+        ],
+        "cols": 12,
+        "rows": 1,
+        "Property": {
+          "x": "Date",
+          "y": [
+            "Successful_transactions",
+            "Failed_transactions"
+          ]
+        },
+        "description": "The line chart shows the comparison between the successful and failed transactions. ",
+        "chart_api_url": "wallet-transactions/wallet_aggregate_transactions/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      }
+    ],
+    "filters": [
+      {
+        "return_key": "timestamp__range",
+        "service": "analytics",
+        "filter_type": "timestamp",
+        "filter_title": "Time Range"
+      }
+    ]
+  }
+}

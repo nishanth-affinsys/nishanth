@@ -1,0 +1,122 @@
+[
+  {
+    "model": "console.campaignnotification",
+    "pk": 1,
+    "fields": {
+      "campaign_variants": 87,
+      "campaign_name": "campaign test admin",
+      "campaign_id": "1",
+      "sub_campaign_identifier": "1-A",
+      "sub_campaign_name": "campaign test admin",
+      "run_id": 1,
+      "created_timestamp": "2023-09-19T12:41:01.473+0530",
+      "last_modified": "2023-09-19T12:43:00.830+0530",
+      "batch_id": 76,
+      "batch_identifier": "campaign-83",
+      "channel_id": "918762401907",
+      "channel_name": "whatsapp",
+      "message_id": "wamid.HBgMOTE4NzYyNDAxOTA3FQIAERgSMzY1QzM4RTg2NDk5NjkxMjBBAA==",
+      "tenant": "lebacampaign",
+      "notification_status": "Success",
+      "status": "sent",
+      "message_timestamp": "2023-09-19T12:43:02.653+0530",
+      "profile_name": "malavika"
+    }
+  },
+  {
+    "model": "console.campaignnotification",
+    "pk": 2,
+    "fields": {
+      "campaign_variants": 87,
+      "campaign_name": "campaign test admin",
+      "campaign_id": "1",
+      "sub_campaign_identifier": "1-A",
+      "sub_campaign_name": "campaign test admin",
+      "run_id": 1,
+      "created_timestamp": "2023-09-19T12:41:01.473+0530",
+      "last_modified": "2023-09-19T12:43:00.830+0530",
+      "batch_id": 76,
+      "batch_identifier": "campaign-83",
+      "channel_id": "918762401907",
+      "channel_name": "whatsapp",
+      "message_id": "wamid.HBgMOTE4NzYyNDAxOTA3FQIAERgSMzY1QzM4RTg2NDk5NjkxMjBBAA==",
+      "tenant": "lebacampaign",
+      "notification_status": "Success",
+      "status": "delivered",
+      "message_timestamp": "2023-09-19T12:45:02.653+0530",
+      "profile_name": "pavan"
+    }
+  },
+  {
+    "model": "console.campaignnotification",
+    "pk": 3,
+    "fields": {
+      "campaign_variants": 87,
+      "campaign_name": "campaign test admin",
+      "campaign_id": "1",
+      "sub_campaign_identifier": "1-A",
+      "sub_campaign_name": "campaign test admin",
+      "run_id": 1,
+      "created_timestamp": "2023-09-19T12:41:01.473+0530",
+      "last_modified": "2023-09-19T12:43:00.830+0530",
+      "batch_id": 76,
+      "batch_identifier": "campaign-83",
+      "channel_id": "918762401907",
+      "channel_name": "whatsapp",
+      "message_id": "wamid.HBgMOTE4NzYyNDAxOTA3FQIAERgSMzY1QzM4RTg2NDk5NjkxMjBBAA==",
+      "tenant": "lebacampaign",
+      "notification_status": "Success",
+      "status": "read",
+      "message_timestamp": "2023-09-19T12:48:02.653+0530",
+      "profile_name": "pavan"
+    }
+  },
+  {
+    "model": "console.campaignnotification",
+    "pk": 4,
+    "fields": {
+      "campaign_variants": 86,
+      "campaign_name": "campaign test admin ",
+      "campaign_id": "2",
+      "sub_campaign_identifier": "2-A",
+      "sub_campaign_name": "campaign test admin",
+      "run_id": 1,
+      "created_timestamp": "2023-09-19T12:41:01.473+0530",
+      "last_modified": "2023-09-19T12:43:00.830+0530",
+      "batch_id": 76,
+      "batch_identifier": "campaign-83",
+      "channel_id": "917827598718",
+      "channel_name": "whatsapp",
+      "message_id": "wamid.HBgMOTE3ODI3NTk4NzE4FQIAERgSMzQ4MjdCQTA5QUExNjk4Rjk4AA==",
+      "tenant": "lebacampaign",
+      "notification_status": "Success",
+      "status": "sent",
+      "message_timestamp": "2023-09-19T12:43:01.841+0530",
+      "profile_name": "abhinav"
+    }
+  },
+  {
+    "model": "console.campaignnotification",
+    "pk": 5,
+    "fields": {
+      "campaign_variants": 85,
+      "campaign_name": "test marketing",
+      "campaign_id": "3",
+      "sub_campaign_identifier": "3-A",
+      "sub_campaign_name": "test marketing",
+      "run_id": 2,
+      "created_timestamp": "2023-09-12T15:24:09.500+0530",
+      "last_modified": "2023-09-12T15:33:05.196+0530",
+      "batch_id": 55,
+      "batch_identifier": "campaign-60",
+      "channel_id": "abhinav.nair@affinsys.com",
+      "channel_name": "email",
+      "message_id": "663f480dc4e744a9818102683ac97f30",
+      "tenant": "lebacampaign",
+      "notification_status": "Success",
+      "status": "sent",
+      "message_timestamp": "2023-09-12T15:34:05.233+0530",
+      "profile_name": "abhinav"
+    }
+  }
+]

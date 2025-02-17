@@ -1,0 +1,115 @@
+{
+  "notification_details": {
+    "count": 4,
+    "next": null,
+    "previous": null,
+    "results": [
+      {
+        "campaign_id": "1",
+        "campaign_name": "campaign test admin",
+        "sub_campaign_id": "1-A",
+        "run_id": 1,
+        "customer_name": "pavan",
+        "channel": "whatsapp",
+        "channel_id": "918762401907",
+        "sent": "19-09-2023 07:13:02",
+        "delivered": "19-09-2023 07:15:02",
+        "read": "19-09-2023 07:18:02"
+      },
+      {
+        "campaign_id": "1",
+        "campaign_name": "campaign test admin",
+        "sub_campaign_id": "1-A",
+        "run_id": 1,
+        "customer_name": "malavika",
+        "channel": "whatsapp",
+        "channel_id": "918762401907",
+        "sent": "19-09-2023 07:13:02",
+        "delivered": "19-09-2023 07:15:02",
+        "read": "19-09-2023 07:18:02"
+      },
+      {
+        "campaign_id": "2",
+        "campaign_name": "campaign test admin ",
+        "sub_campaign_id": "2-A",
+        "run_id": 1,
+        "customer_name": "abhinav",
+        "channel": "whatsapp",
+        "channel_id": "917827598718",
+        "sent": "19-09-2023 07:13:01",
+        "delivered": "",
+        "read": ""
+      },
+      {
+        "campaign_id": "3",
+        "campaign_name": "test marketing",
+        "sub_campaign_id": "3-A",
+        "run_id": 2,
+        "customer_name": "abhinav",
+        "channel": "email",
+        "channel_id": "abhinav.nair@affinsys.com",
+        "sent": "12-09-2023 10:04:05",
+        "delivered": "",
+        "read": ""
+      }
+    ]
+  },
+  "sent_notification": {
+    "count": 2,
+    "next": null,
+    "previous": null,
+    "results": [
+      {
+        "channel_name": "email",
+        "count": 1
+      },
+      {
+        "channel_name": "whatsapp",
+        "count": 2
+      }
+    ]
+  },
+  "delivered_notification": {
+    "count": 1,
+    "next": null,
+    "previous": null,
+    "results": [
+      {
+        "channel_name": "whatsapp",
+        "count": 1
+      }
+    ]
+  },
+  "read_notifications": {
+    "count": 1,
+    "next": null,
+    "previous": null,
+    "results": [
+      {
+        "channel_name": "whatsapp",
+        "count": 1
+      }
+    ]
+  },
+  "targeted_by_run": {
+    "count": 1,
+    "next": null,
+    "previous": null,
+    "results": [
+      {
+        "campaign_id": "5",
+        "campaign_name": "Affinsys Bill payments",
+        "sub_campaign_id": "1-A",
+        "sub_campaign_name": "campaign test admin",
+        "run_id": 1,
+        "targeted_users": 1
+      }
+    ]
+  },
+  "marketing_users": {
+    "count": 0,
+    "next": null,
+    "previous": null,
+    "results": []
+  }
+}

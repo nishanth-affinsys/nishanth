@@ -1,0 +1,43 @@
+{
+  "common": {
+    "chart_title": "Stock Management Dashboard",
+    "screenshot": true,
+    "charts": [
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Count of Linked Cards",
+        "color": 0,
+        "cols": 4,
+        "rows": 1.5,
+        "Property": {},
+        "description": "The big_number chart is used to display the count of linked cards.",
+        "chart_api_url": "stock_management/digibankr_stock_management_count/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Detailed report of Linked cards",
+        "color": 0,
+        "cols": 8,
+        "rows": 1.5,
+        "Property": {},
+        "path": "client_specific.views.digibankr/StockManagementViewSet/digibankr_stock_management_details_export",
+        "description": "The table is used to display the count of linked cards.",
+        "chart_api_url": "stock_management/digibankr_stock_management_details/",
+        "chart_report_api": "stock_management/digibankr_stock_management_details_export/",
+        "chart_report_pdf_api": "stock_management/digibankr_stock_management_details_export_pdf/"
+      }
+    ],
+    "filters": [
+      {
+        "return_key": "timestamp__range",
+        "service": "analytics",
+        "filter_type": "timestamp",
+        "filter_title": "Time Range"
+      }
+    ]
+  }
+}

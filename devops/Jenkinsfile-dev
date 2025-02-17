@@ -1,0 +1,239 @@
+def getActionDetails(message){
+    return message.contains('ci:true pkg:true') ? 0 :
+           message.contains('ci:true pkg:false') ? 1 :
+           2
+}
+
+def envUpdate(message){
+  return message.contains('env:true') ? "yes" : "no"
+}
+
+def getCommitID(message){
+  return message.tokenize()[0]
+}
+
+def requirementUpdate(){
+   String req_update_cmd = '/kaniko/executor \
+                      --build-arg "INDEX_URL=${INDEX_URL}"\
+                      --compressed-caching=true  --force \
+                      --verbosity=info \
+                      --dockerfile ./devops/Dockerfile-base \
+                      --context=git://${GIT_PASSWD}@github.com/BankBuddy/${REPOSITORY_NAME}.git \
+                      --git branch=${BRANCH} \
+                      --destination=${BASE_IMAGE_NAME}\
+                      --cleanup && mkdir /workspace'
+
+
+    return req_update_cmd
+
+}
+
+def reqBuildCmd(){
+   String req_update_cmd = '/kaniko/executor \
+                    --build-arg "INDEX_URL=${INDEX_URL}"\
+                    --compressed-caching=true  --force \
+                    --verbosity=info \
+                    --dockerfile ./devops/Dockerfile-with-base \
+                    --context=. \
+                    --git branch=${BRANCH} \
+                    --destination=${IMAGE} \
+                    --tar-path=/trivy/image.tar'
+
+
+    return req_update_cmd
+}
+
+def buildCmd(){
+   String req_update_cmd = '/kaniko/executor \
+                    --build-arg "INDEX_URL=${INDEX_URL}"\
+                    --compressed-caching=true  --force \
+                    --verbosity=info \
+                    --dockerfile ./devops/Dockerfile-with-base \
+                    --context=git://${GIT_PASSWD}@github.com/BankBuddy/${REPOSITORY_NAME}.git \
+                    --git branch=${BRANCH} \
+                    --destination=${IMAGE} \
+                    --tar-path=/trivy/image.tar'
+
+
+    return req_update_cmd
+}
+
+def generateDeployCommands(server_ip,server_uname,deploy_cmd){
+    String cmd = """ssh -o StrictHostKeyChecking=no ${server_uname}@${server_ip} ${deploy_cmd}"""
+    return cmd
+}
+
+String determineRepoName() {
+    String reponame = scm.getUserRemoteConfigs()[0].getUrl().tokenize('/').last().split("\\.")[0]
+    return reponame.toLowerCase();
+}
+
+
+
+node("kaniko-agent") {
+
+   checkout scm
+   env.GIT_MSG=sh(returnStdout: true, script: 'git log -1')
+   env.GIT_COMMIT=sh(returnStdout: true, script: 'git log -1 --oneline').trim()
+
+   env.TEAMS_WEBHOOK="https://affinsys.webhook.office.com/webhookb2/b8f1ee10-a1c2-41b2-9565-ae506ad2c257@ff6a797c-4692-4d8d-95cf-5f0481069b29/JenkinsCI/34756a6f3c144f509784e078201e3441/23d1354c-62e6-4d8d-b1ec-cbf1bd0430f5"
+
+   env.BRANCH="${env.BRANCH_NAME}"
+   env.ACTION = getActionDetails(env.GIT_MSG)
+   env.COMMIT = getCommitID(env.GIT_COMMIT)
+   env.UPDATE_ENV = envUpdate(env.GIT_MSG)
+   env.REPOSITORY_NAME=determineRepoName()
+   env.BASE_IMAGE_NAME="asia-south1-docker.pkg.dev/omega-scope-405709/docker/${REPOSITORY_NAME}:base"
+   env.IMAGE="asia-south1-docker.pkg.dev/omega-scope-405709/docker/${REPOSITORY_NAME}:${BRANCH}-${COMMIT}"
+
+
+   stage("Gcloud Setup"){
+    container('utilities'){
+      stage("LOGIN"){
+          catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
+              withCredentials([file(credentialsId: 'Jenkins-GCR-AR', variable: 'CRED-FILE')]) {
+                 sh '''
+                    echo ${CRED-FILE}
+                    /google-cloud-sdk/bin/gcloud auth login --cred-file ${CRED-FILE}
+                 '''
+            }
+          }
+         env.GCR_LOGIN_TOKEN = sh(script: '''/google-cloud-sdk/bin/gcloud auth print-access-token''', returnStdout: true).trim()
+         env.DOCKER_LOGIN_CRED_GCR = sh(script: '''export GCR_LOGIN_TOKEN=$(/google-cloud-sdk/bin/gcloud auth print-access-token) && echo oauth2accesstoken:${GCR_LOGIN_TOKEN} | base64''', returnStdout: true).trim()
+        withCredentials([usernamePassword(credentialsId: 'jenkins-login', passwordVariable: 'PASSWORD', usernameVariable: 'USERNAME')]) {
+          env.DOCKER_LOGIN_CRED_ACR = sh(script: '''echo ${USERNAME}:${PASSWORD} | base64''', returnStdout: true).trim()
+         }
+      }
+    }
+}
+    container('kaniko-ecr-gcr'){
+      stage('SETTING DOCKER CREDENTIALS') {
+      withCredentials([usernamePassword(credentialsId: 'jenkins-login', passwordVariable: 'PASSWORD', usernameVariable: 'USERNAME')]) {
+
+          sh "echo '{\"auths\":{\"asia-south1-docker.pkg.dev\":{\"auth\":\"${env.DOCKER_LOGIN_CRED_GCR}\"},\"bankbuddy.azurecr.io\":{\"auth\":\"${PASSWORD}\"}}}' | tr -d '\n' > /kaniko/.docker/config.json"
+        }
+      }
+    }
+
+
+
+
+
+    stage('Start Build Notifier') {
+        catchError {
+            script {
+                def teamsMessage = "started build ${env.BUILD_NUMBER}"
+                office365ConnectorSend(
+                    message: teamsMessage,
+                    webhookUrl: env.TEAMS_WEBHOOK
+                )
+            }
+        }
+    }
+
+    stage('SonarQube analysis') {
+    container('runtest') { 
+        def scannerHome = tool 'SonarScanner'; 
+        withSonarQubeEnv('SonarScanner') { 
+            withCredentials([string(credentialsId: 'sonar-dev', variable: 'SONAR_TOKEN')]) {
+                sh """
+                    ${scannerHome}/bin/sonar-scanner \
+                    -Dsonar.token=${SONAR_TOKEN} \
+                    
+                """
+            }
+        }
+    }
+}
+    stage("Quality Gate") {
+    timeout(time: 10, unit: 'MINUTES') { 
+        def qg = waitForQualityGate() 
+        if (qg.status != 'OK') {
+            error "Pipeline aborted due to quality gate failure: ${qg.status}"
+        }
+    }
+}
+
+
+
+
+    stage('Build Docker Image') {
+       container('kaniko-ecr-gcr') {
+       stage('Build a Docker project') {
+        sh """echo ${env.ACTION}"""
+       withCredentials([usernamePassword(credentialsId: 'Pratham-GH', passwordVariable: 'GIT_PASSWD', usernameVariable: 'GIT_UNAME')]) {
+            withCredentials([string(credentialsId: 'PACKAGES_SECRET', variable: 'INDEX_URL' )]) {
+             if(env.ACTION == "0"){
+              env.REQ_CMD = requirementUpdate()
+              env.CODE_CMD = reqBuildCmd()
+              sh "${env.REQ_CMD}"
+              sh "${env.CODE_CMD}"
+             }
+             else if(env.ACTION == "1")  {
+               env.CODE_UPDATE_CMD = buildCmd()
+               sh "${env.CODE_UPDATE_CMD}"
+             }
+             else {
+               sh "echo 'No Action required'"
+             }
+           }
+         }
+         }
+       }
+    }
+
+    stage("DEPLOYMENTS"){
+      def deployment_stages = [:]
+      deployment_stages["dev-studio-cluster"] = {
+        container("utilities"){
+          withCredentials([usernamePassword(credentialsId: 'Pratham-GH', passwordVariable: 'GIT_PASSWD', usernameVariable: 'GIT_UNAME')]) {
+             sh '''
+               /workdir/helm_update.py -rn=devstudio-cluster-deploy --branch=dev-gcp --file_path=devstudio-cluster-deploy/services/${REPOSITORY_NAME}/values.yaml -t=${BRANCH}-${COMMIT} -gt=${GIT_PASSWD} -cr=${REPOSITORY_NAME} --code_branch=${BRANCH} --update_env=${UPDATE_ENV}
+               rm -rf devstudio-cluster-deploy
+               /workdir/helm_update.py -rn=devstudio-cluster-deploy --branch=live-gcp --file_path=devstudio-cluster-deploy/services/${REPOSITORY_NAME}/values.yaml -t=${BRANCH}-${COMMIT} -gt=${GIT_PASSWD} -cr=${REPOSITORY_NAME} --code_branch=${BRANCH} --update_env=${UPDATE_ENV}
+            '''
+          }
+
+        }
+      }
+
+     if(env.ACTION == '0' || env.ACTION == '1'){
+            parallel(deployment_stages)
+     }else{
+         sh "echo 'NO DEPLOYMENT TOOK PLACE'"
+     }
+   }
+
+    stage("Trivy Scan"){
+      container("utilities"){
+        if(env.ACTION=='0' || env.ACTION=='1'){
+        env.TRIVY_REPORT=sh(returnStdout: true, script: 'trivy  image  --ignore-unfixed  --input /trivy/image.tar > /trivy/trivy.txt && cat /trivy/trivy.txt')
+        sh "cat /trivy/trivy.txt"
+        office365ConnectorSend(
+          color: '#FFFF00',
+          message: env.TRIVY_REPORT,
+          webhookUrl: env.TEAMS_WEBHOOK
+        )
+        }
+      }
+    }
+
+    stage("Build Notification"){
+      catchError {
+
+              script {
+                def status = currentBuild.currentResult == 'SUCCESS' ? 'Success' : 'FAILURE'
+                def color = currentBuild.currentResult == 'SUCCESS' ? '#00FF00' : '#FF0000'
+                def buildNumber = "Build-Number: ${env.BUILD_NUMBER}"
+
+                office365ConnectorSend(
+                    color: color,
+                    status: status,
+                    message: buildNumber,
+                    webhookUrl: env.TEAMS_WEBHOOK
+                )
+            }
+      }
+    }
+
+}

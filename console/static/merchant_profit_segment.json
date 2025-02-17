@@ -1,0 +1,224 @@
+{
+  "common": {
+    "chart_title": "Merchant Profitable Segment",
+    "screenshot": true,
+    "charts": [
+      {
+        "type": "bubble_chart",
+        "chartType": "group",
+        "title": "Customer Segment",
+        "screenshot": true,
+        "color": [
+          "#FF0000",
+          "#00FF00",
+          "#0000FF"
+        ],
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {
+          "x": "transactions",
+          "y": [
+            "average_amount"
+          ],
+          "values": [
+            "Pay to Phone number",
+            "QR Payment",
+            "Transfers",
+            "QR Referral",
+            "Utility Payments",
+            "OTT Subscription",
+            "Person to person",
+            "Subscription",
+            "Recharge",
+            "Electricity Bill",
+            "Water Bill",
+            "DTH Bill",
+            "Newspaper Subscription",
+            "Fastag Recharge"
+          ]
+        },
+        "description": "",
+        "chart_api_url": "wallet_merchant_profit/customer_segmentation_bubbles_merch/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "line_chart",
+        "chartType": "group",
+        "title": "Average Revenue",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {
+          "x": "Date",
+          "y": [
+            "amount"
+          ]
+        },
+        "description": "",
+        "chart_api_url": "wallet_merchant_profit/average_revenue_trendline_merch/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "line_chart",
+        "chartType": "group",
+        "title": "Peak Hours of Revenue",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {
+          "x": "Hour",
+          "y": [
+            "total_transaction_amount"
+          ]
+        },
+        "description": "",
+        "chart_api_url": "wallet_merchant_profit/merchant_hourly_trendline/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      }
+    ],
+    "filters": [
+      {
+        "return_key": "timestamp__range",
+        "service": "analytics",
+        "filter_type": "timestamp",
+        "filter_title": "Time Range"
+      }
+    ]
+  },
+  "dashboard": {
+    "chart_title": "Merchant Profitable Segment",
+    "screenshot": true,
+    "charts": [
+      {
+        "type": "line_chart",
+        "chartType": "group",
+        "title": "Average Revenue",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {
+          "x": "Date",
+          "y": [
+            "amount"
+          ]
+        },
+        "description": "",
+        "chart_api_url": "wallet_merchant_profit/average_revenue_trendline_merch/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "line_chart",
+        "chartType": "group",
+        "title": "Peak Hours of Revenue",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {
+          "x": "Hour",
+          "y": [
+            "total_transaction_amount"
+          ]
+        },
+        "description": "",
+        "chart_api_url": "wallet_merchant_profit/merchant_hourly_trendline/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      }
+    ],
+    "filters": [
+      {
+        "return_key": "timestamp__range",
+        "service": "analytics",
+        "filter_type": "timestamp",
+        "filter_title": "Time Range"
+      }
+    ]
+  },
+  "stanbic": {
+    "chart_title": "Merchant Profitable Segment",
+    "screenshot": true,
+    "charts": [
+      {
+        "type": "bubble_chart",
+        "chartType": "group",
+        "title": "Customer Segment",
+        "screenshot": true,
+        "color": [
+          "#FF0000",
+          "#00FF00"
+        ],
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {
+          "x": "transactions",
+          "y": [
+            "average_amount"
+          ],
+          "values": [
+            "Pay to Phone number",
+            "QR Payments",
+            "Transfers"
+          ]
+        },
+        "description": "",
+        "chart_api_url": "wallet_merchant_profit/customer_segmentation_bubbles_merch/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "line_chart",
+        "chartType": "group",
+        "title": "Average Revenue",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {
+          "x": "Date",
+          "y": [
+            "amount"
+          ]
+        },
+        "description": "",
+        "chart_api_url": "wallet_merchant_profit/average_revenue_trendline_merch/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "line_chart",
+        "chartType": "group",
+        "title": "Peak Hours of Revenue",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {
+          "x": "Hour",
+          "y": [
+            "total_transaction_amount"
+          ]
+        },
+        "description": "",
+        "chart_api_url": "wallet_merchant_profit/merchant_hourly_trendline/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      }
+    ],
+    "filters": [
+      {
+        "return_key": "timestamp__range",
+        "service": "analytics",
+        "filter_type": "timestamp",
+        "filter_title": "Time Range"
+      }
+    ]
+  }
+}

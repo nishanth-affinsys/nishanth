@@ -1,0 +1,135 @@
+[
+  {
+    "model": "console.messagelog",
+    "pk": 1,
+    "fields": {
+      "channel_id": "ef22d0f5b557631266d309a1a54c5407",
+      "session_id": "d4e45b31064644d398d67824758dc1e8",
+      "message": "hi",
+      "channel": "webchat",
+      "context": null,
+      "handled": "Y",
+      "timestamp": "2023-01-03T06:33:50.568Z",
+      "intent": "welcome",
+      "score": "0.999137222999999963235495670233",
+      "event": null,
+      "event_type": null,
+      "source": "user",
+      "tenant": "lebacpsix"
+    }
+  },
+  {
+    "model": "console.messagelog",
+    "pk": 2,
+    "fields": {
+      "channel_id": "ef22d0f5b557631266d309a1a54c5407",
+      "session_id": "d4e45b31064644d398d67824758dc1e8",
+      "message": "{'data': [{'id': 'card-0', 'title': None, 'subtitle': 'Hi, I am Leba! Got a question? I will be happy to assist. What can I do for you?', 'image_url': 'https://devbot.lebara.sa/images/generic/files/Lebara_welcome_card.png', 'file_url': None, 'video_url': None, 'frame_url': None, 'list': [], 'list_slot': None, 'postlisttext': None, 'buttons': []}], 'quick_replies': [{'title': 'Internet Packages', 'payload': 'Internet Packages', 'type': 'payload'}, {'title': 'Local Bundle', 'payload': 'Local Bundle', 'type': 'payload'}, {'title': 'International Bundles', 'payload': 'International Bundles', 'type': 'payload'}, {'title': 'Primary Packages', 'payload': 'Primary Packages', 'type': 'payload'}, {'title': 'My Account', 'payload': 'My Account', 'type': 'payload'}, {'title': 'Online Orders', 'payload': 'Online orders', 'type': 'payload'}, {'title': 'Store Locator', 'payload': 'Store Locator', 'type': 'payload'}, {'title': 'Other Services', 'payload': 'Other Services', 'type': 'payload'}], 'quick_replies_slot': None, 'internal_validation_steps': {}, 'flow_ended': True, 'intent': 'welcome', 'rtl': False, 'sender': 'ef22d0f5b557631266d309a1a54c5407', 'tts_needed': None, 'slot_lang': 'en'}",
+      "channel": "webchat",
+      "context": null,
+      "handled": "Y",
+      "timestamp": "2023-01-03T06:33:51.036Z",
+      "intent": "welcome",
+      "score": "0.999137222999999963235495670233",
+      "event": null,
+      "event_type": null,
+      "source": "bot",
+      "tenant": "lebacpsix"
+    }
+  },
+  {
+    "model": "console.messagelog",
+    "pk": 3,
+    "fields": {
+      "channel_id": "ef22d0f5b557631266d309a1a54c5407",
+      "session_id": "d4e45b31064644d398d67824758dc1e8",
+      "message": null,
+      "channel": "webchat",
+      "context": null,
+      "handled": "Y",
+      "timestamp": "2023-01-03T06:33:51.304Z",
+      "intent": "welcome",
+      "score": "0.999137222999999963235495670233",
+      "event": null,
+      "event_type": null,
+      "source": "user",
+      "tenant": "lebacpsix"
+    }
+  },
+  {
+    "model": "console.messagelog",
+    "pk": 4,
+    "fields": {
+      "channel_id": "ef22d0f5b557631266d309a1a54c5407",
+      "session_id": "d4e45b31064644d398d67824758dc1e8",
+      "message": "hi",
+      "channel": "webchat",
+      "context": null,
+      "handled": "Y",
+      "timestamp": "2023-01-03T06:35:50.697Z",
+      "intent": "welcome",
+      "score": "0.999137222999999963235495670233",
+      "event": null,
+      "event_type": null,
+      "source": "user",
+      "tenant": "lebacpsix"
+    }
+  },
+  {
+    "model": "console.messagelog",
+    "pk": 5,
+    "fields": {
+      "channel_id": "ef22d0f5b557631266d309a1a54c5407",
+      "session_id": "d4e45b31064644d398d67824758dc1e8",
+      "message": "{'data': [{'id': 'card-0', 'title': None, 'subtitle': 'Hi, I am Leba! Got a question? I will be happy to assist. What can I do for you?', 'image_url': 'https://devbot.lebara.sa/images/generic/files/Lebara_welcome_card.png', 'file_url': None, 'video_url': None, 'frame_url': None, 'list': [], 'list_slot': None, 'postlisttext': None, 'buttons': []}], 'quick_replies': [{'title': 'Internet Packages', 'payload': 'Internet Packages', 'type': 'payload'}, {'title': 'Local Bundle', 'payload': 'Local Bundle', 'type': 'payload'}, {'title': 'International Bundles', 'payload': 'International Bundles', 'type': 'payload'}, {'title': 'Primary Packages', 'payload': 'Primary Packages', 'type': 'payload'}, {'title': 'My Account', 'payload': 'My Account', 'type': 'payload'}, {'title': 'Online Orders', 'payload': 'Online orders', 'type': 'payload'}, {'title': 'Store Locator', 'payload': 'Store Locator', 'type': 'payload'}, {'title': 'Other Services', 'payload': 'Other Services', 'type': 'payload'}], 'quick_replies_slot': None, 'internal_validation_steps': {}, 'flow_ended': True, 'intent': 'welcome', 'rtl': False, 'sender': 'ef22d0f5b557631266d309a1a54c5407', 'tts_needed': None, 'slot_lang': 'en'}",
+      "channel": "webchat",
+      "context": null,
+      "handled": "Y",
+      "timestamp": "2023-01-03T06:35:51.014Z",
+      "intent": "welcome",
+      "score": "0.999137222999999963235495670233",
+      "event": null,
+      "event_type": null,
+      "source": "bot",
+      "tenant": "lebacpsix"
+    }
+  },
+  {
+    "model": "console.messagelog",
+    "pk": 6,
+    "fields": {
+      "channel_id": "ef22d0f5b557631266d309a1a54c5417",
+      "session_id": "d4e45b31064644d398d67824758dc119",
+      "message": "cards",
+      "channel": "webchat",
+      "context": null,
+      "handled": "Y",
+      "timestamp": "2023-01-03T06:36:50.697Z",
+      "intent": "card",
+      "score": "0.999137222999999963235495670233",
+      "event": null,
+      "event_type": null,
+      "source": "user",
+      "tenant": "lebacpsix"
+    }
+  },
+  {
+    "model": "console.messagelog",
+    "pk": 7,
+    "fields": {
+      "channel_id": "ef22d0f5b557631266d309a1a54c5227",
+      "session_id": "d4e45b31064644d398d67824758d9119",
+      "message": "heyy",
+      "channel": "webchat",
+      "context": null,
+      "handled": "Y",
+      "timestamp": "2023-01-03T05:36:50.697Z",
+      "intent": "fallback",
+      "score": "0.999137222999999963235495670233",
+      "event": null,
+      "event_type": null,
+      "source": "user",
+      "tenant": "lebacpsix"
+    }
+  }
+]

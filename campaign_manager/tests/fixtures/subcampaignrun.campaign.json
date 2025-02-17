@@ -1,0 +1,57 @@
+[
+  {
+    "model": "campaign_manager.subcampaignrun",
+    "pk": 83,
+    "fields": {
+      "timestamp": "2023-09-19T07:13:00.613Z",
+      "sub_campaign": 87,
+      "campaign": 87,
+      "run_id": 1,
+      "notification_id": "campaign-83"
+    }
+  },
+  {
+    "model": "campaign_manager.subcampaignrun",
+    "pk": 86,
+    "fields": {
+      "timestamp": "2023-09-19T09:39:01.159Z",
+      "sub_campaign": 85,
+      "campaign": 85,
+      "run_id": 1,
+      "notification_id": "campaign-86"
+    }
+  },
+  {
+    "model": "campaign_manager.subcampaignrun",
+    "pk": 85,
+    "fields": {
+      "timestamp": "2023-09-19T10:30:00.186Z",
+      "sub_campaign": 91,
+      "campaign": 91,
+      "run_id": 1,
+      "notification_id": "campaign-85"
+    }
+  },
+  {
+    "model": "campaign_manager.subcampaignrun",
+    "pk": 86,
+    "fields": {
+      "timestamp": "2023-09-19T10:45:02.131Z",
+      "sub_campaign": 91,
+      "campaign": 91,
+      "run_id": 1,
+      "notification_id": "campaign-86"
+    }
+  },
+  {
+    "model": "campaign_manager.subcampaignrun",
+    "pk": 87,
+    "fields": {
+      "timestamp": "2023-09-19T11:24:00.426Z",
+      "sub_campaign": 79,
+      "campaign": 79,
+      "run_id": 1,
+      "notification_id": "campaign-87"
+    }
+  }
+]

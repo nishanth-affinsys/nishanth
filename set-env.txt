@@ -1,0 +1,5 @@
+set -a
+. devops/config.env
+. config.env
+set +a
+python manage.py runserver

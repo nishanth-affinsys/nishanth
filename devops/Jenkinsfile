@@ -1,0 +1,130 @@
+pipeline{
+    agent any
+    environment {
+        WORK_IMAGE = "bankbuddy.azurecr.io/amigo-bot-platform-affinsys:dev-v1"
+
+        GIT_REPO = env.GIT_URL.replaceFirst(/^.*\/([^\/]+?).git$/, '$1')
+        GIT_BRANCH = "${env.GIT_BRANCH}"
+        COMMIT_ID = "${env.GIT_COMMIT}"
+        COMMITER_EMAIL = sh (script: 'git --no-pager show -s --format=\'%ae\'', returnStdout: true).trim()
+        ACR_URL = "bankbuddy.azurecr.io"
+
+        EMAIL_TO = "pratham.bhargava@affinsys.com,goutham.k@affinsys.com"
+    }
+    stages{
+        stage("Submodule_Update") {
+            when {
+                expression {
+                    return true
+                }
+            }
+            steps {
+                withCredentials([usernamePassword(credentialsId: 'Goutham-GH', passwordVariable: 'GIT_PASSWD', usernameVariable: 'GIT_UNAME')]) {
+                sh '''
+                echo submodules-steps
+                '''
+                }
+            }
+        }
+        stage("Security_Scans-CODE-PKG") {
+            when {
+                expression {
+                    return true
+                }
+            }
+            steps {
+                catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
+                    build job: 'SecurityScan_code_pkg', wait: true, parameters: [
+                            string(name: "PROJECT_GIT_URL", value: "${env.GIT_URL}"),
+                            string(name: "PROJECT_GIT_BRC", value: "${env.GIT_BRANCH}")]
+                }
+            }
+        }
+        stage("ACR login") {
+            when {
+                expression {
+                    return true
+                }
+            }
+            steps {
+                withCredentials([usernamePassword(credentialsId: 'ACR-cred', passwordVariable: 'ACR_PASSWD', usernameVariable: 'ACR_UNAME')]) {
+                sh "echo ==========LOGIN TO BANKBUDDY/ACR=========="
+                sh "docker login -u $ACR_UNAME -p $ACR_PASSWD $env.ACR_URL"
+                sh "echo ==========LOGIN SUCCESSFUL TO BANKBUDDY/ACR=========="
+                }
+            }
+        }
+        stage("Building_image") {
+            when {
+                expression {
+                    return true
+                }
+            }
+            steps {
+                sh "echo ==========BUILDING IMAGE=========="
+                sh "docker build -t ${env.WORK_IMAGE} ."
+                sh "echo ==========BUILD SUCCESS=========="
+            }
+        }
+        stage("Pushing Imageto ACR") {
+            steps {
+                sh "echo ==========PUSHING IMAGE TO ACR=========="
+                sh "docker push ${env.WORK_IMAGE}"
+                sh "echo ==========PUSH SUCCESS=========="
+            }
+        }
+        stage("Security_Scans-IMAGE") {
+            when {
+                expression {
+                    return true
+                }
+            }
+            steps {
+                catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE')
+                {
+                    build job: 'SecurityScan_image', wait: true, parameters: [
+                        string(name: "PROJECT_GIT_URL", value: "${env.GIT_URL}"),
+                        string(name: "PROJECT_GIT_BRC", value: "${env.GIT_BRANCH}"),
+                        string(name: "PROJECT_BUILT_IMAGE", value: "${IMAGE_NAME}")]
+                }
+            }
+        }
+        stage("logging") {
+            steps {
+                sh "echo =========== BUILD DETAILS ============="
+                sh "echo GIT REPO: ${env.GIT_REPO}"
+                sh "echo GIT BRANCH: ${env.GIT_BRANCH}"
+                sh "echo COMMIT ID: ${env.COMMIT_ID}"
+                sh "echo COMMITER: ${env.COMMITER_EMAIL}"
+                sh "echo ======================================"
+            }
+        }
+        // stage("Triggering Dev-Cluster-Deploy") {
+        //     when {
+        //         expression {
+        //             return true
+        //         }
+        //     }
+        //     steps {
+        //         sh "echo Trigger."
+        //         build job: 'Dev-Cluster-Deploy', propagate: true, wait: false
+        //     }
+        // }
+    }
+    post {
+        success {
+            //check it up
+            sh "echo =======SUCCESS====="
+        }
+        failure {
+            emailext body: 'Check console output at $BUILD_URL to view the results.', 
+                    to: "${EMAIL_TO}", 
+                    subject: 'Build FAILURE in Jenkins: $IMAGE_NAME'
+        }
+        always {
+            //cleaning up junk
+            sh "echo =====Cleaning up junk files====="
+            cleanWs()
+        }
+    }
+}

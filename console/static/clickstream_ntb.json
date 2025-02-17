@@ -1,0 +1,296 @@
+{
+  "common": {
+    "chart_title": "Clickstream NTB Details",
+    "screenshot": true,
+    "charts": [
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Number of NTB Sessions",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1,
+        "Property": {},
+        "description": "A numeric value is used to indicate the total number of interactions on the website by an new user.",
+        "chart_api_url": "clickstream_NTB/number_of_NTB_cust/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "NTB IP Information",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "description": "The table chart provides comprehensive information on the IP details of a new user visiting the website.",
+        "chart_api_url": "clickstream_NTB/uservice_ipinformation_NTB/",
+        "chart_report_api": "clickstream_NTB/uservice_ipinformation_NTB_export/",
+        "chart_report_pdf_api": "clickstream_NTB/uservice_ipinformation_NTB_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "NTB Device Information",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "description": "The table chart displays information regarding the devices used by new user to visit the website",
+        "chart_api_url": "clickstream_NTB/uservice_device_NTB/",
+        "chart_report_api": "clickstream_NTB/uservice_device_NTB_export/",
+        "chart_report_pdf_api": "clickstream_NTB/uservice_device_NTB_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "NTB Browser Information",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "description": "The table chart displays information regarding the various browsers used by new user to visit the website",
+        "chart_api_url": "clickstream_NTB/uservice_browser_NTB/",
+        "chart_report_api": "clickstream_NTB/uservice_browser_NTB_export/",
+        "chart_report_pdf_api": "clickstream_NTB/uservice_browser_NTB_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "NTB Complete Information",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "description": "The table chart shows the details of the new customers information like the geographical location, device and browser information",
+        "chart_api_url": "clickstream_NTB/complete_NTB_details/",
+        "chart_report_api": "clickstream_NTB/complete_NTB_details_export/",
+        "chart_report_pdf_api": "clickstream_NTB/complete_NTB_details_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Number of Clicks by NTB Customers",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "description": "The table chart presents the click frequency of new customer during a single session.",
+        "chart_api_url": "clickstream_NTB/uservice_clicks_count_NTB/",
+        "chart_report_api": "clickstream_NTB/uservice_clicks_count_NTB_export/",
+        "chart_report_pdf_api": "clickstream_NTB/uservice_clicks_count_NTB_export_pdf/"
+      }
+    ],
+    "filters": [
+      {
+        "return_key": "timestamp__range",
+        "service": "analytics",
+        "filter_type": "timestamp",
+        "filter_title": "Time Range"
+      }
+    ]
+  },
+  "stanbic": {
+    "chart_title": "Clickstream NTB Details",
+    "screenshot": true,
+    "charts": [
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Number of NTB Sessions",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1,
+        "Property": {},
+        "description": "A numeric value is used to indicate the total number of interactions on the website by an new user.",
+        "chart_api_url": "clickstream_NTB/number_of_NTB_cust/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "NTB IP Information",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "description": "The table chart provides comprehensive information on the IP details of a new user visiting the website.",
+        "chart_api_url": "clickstream_NTB/uservice_ipinformation_NTB/",
+        "chart_report_api": "clickstream_NTB/uservice_ipinformation_NTB_export/",
+        "chart_report_pdf_api": "clickstream_NTB/uservice_ipinformation_NTB_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "NTB Device Information",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "description": "The table chart displays information regarding the devices used by new user to visit the website",
+        "chart_api_url": "clickstream_NTB/uservice_device_NTB/",
+        "chart_report_api": "clickstream_NTB/uservice_device_NTB_export/",
+        "chart_report_pdf_api": "clickstream_NTB/uservice_device_NTB_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "NTB Browser Information",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "description": "The table chart displays information regarding the various browsers used by new user to visit the website",
+        "chart_api_url": "clickstream_NTB/uservice_browser_NTB/",
+        "chart_report_api": "clickstream_NTB/uservice_browser_NTB_export/",
+        "chart_report_pdf_api": "clickstream_NTB/uservice_browser_NTB_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "NTB Complete Information",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "description": "The table chart shows the details of the new customers information like the geographical location, device and browser information",
+        "chart_api_url": "clickstream_NTB/complete_NTB_details/",
+        "chart_report_api": "clickstream_NTB/complete_NTB_details_export/",
+        "chart_report_pdf_api": "clickstream_NTB/complete_NTB_details_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Number of Clicks by NTB Customers",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "description": "The table chart presents the click frequency of new customer during a single session.",
+        "chart_api_url": "clickstream_NTB/uservice_clicks_count_NTB/",
+        "chart_report_api": "clickstream_NTB/uservice_clicks_count_NTB_export/",
+        "chart_report_pdf_api": "clickstream_NTB/uservice_clicks_count_NTB_export_pdf/"
+      }
+    ],
+    "filters": [
+      {
+        "return_key": "timestamp__range",
+        "service": "analytics",
+        "filter_type": "timestamp",
+        "filter_title": "Time Range"
+      }
+    ]
+  },
+  "dashboard": {
+    "chart_title": "Clickstream NTB Details",
+    "screenshot": true,
+    "charts": [
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Number of NTB Sessions",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1,
+        "Property": {},
+        "description": "A numeric value is used to indicate the total number of interactions on the website by an new user.",
+        "chart_api_url": "clickstream_NTB/number_of_NTB_cust/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "NTB IP Information",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "description": "The table chart provides comprehensive information on the IP details of a new user visiting the website.",
+        "chart_api_url": "clickstream_NTB/uservice_ipinformation_NTB/",
+        "chart_report_api": "clickstream_NTB/uservice_ipinformation_NTB_export/",
+        "chart_report_pdf_api": "clickstream_NTB/uservice_ipinformation_NTB_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "NTB Device Information",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "description": "The table chart displays information regarding the devices used by new user to visit the website",
+        "chart_api_url": "clickstream_NTB/uservice_device_NTB/",
+        "chart_report_api": "clickstream_NTB/uservice_device_NTB_export/",
+        "chart_report_pdf_api": "clickstream_NTB/uservice_device_NTB_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "NTB Browser Information",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "description": "The table chart displays information regarding the various browsers used by new user to visit the website",
+        "chart_api_url": "clickstream_NTB/uservice_browser_NTB/",
+        "chart_report_api": "clickstream_NTB/uservice_browser_NTB_export/",
+        "chart_report_pdf_api": "clickstream_NTB/uservice_browser_NTB_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "NTB Complete Information",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "description": "The table chart shows the details of the new customers information like the geographical location, device and browser information",
+        "chart_api_url": "clickstream_NTB/complete_NTB_details/",
+        "chart_report_api": "clickstream_NTB/complete_NTB_details_export/",
+        "chart_report_pdf_api": "clickstream_NTB/complete_NTB_details_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Number of Clicks by NTB Customers",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "description": "The table chart presents the click frequency of new customer during a single session.",
+        "chart_api_url": "clickstream_NTB/uservice_clicks_count_NTB/",
+        "chart_report_api": "clickstream_NTB/uservice_clicks_count_NTB_export/",
+        "chart_report_pdf_api": "clickstream_NTB/uservice_clicks_count_NTB_export_pdf/"
+      }
+    ],
+    "filters": [
+      {
+        "return_key": "timestamp__range",
+        "service": "analytics",
+        "filter_type": "timestamp",
+        "filter_title": "Time Range"
+      }
+    ]
+  }
+}

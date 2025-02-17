@@ -1,0 +1,57 @@
+[
+  {
+    "model": "handoff.agentskill",
+    "pk": 52,
+    "fields": {
+      "agent_id": 18,
+      "skill_id": 4,
+      "skill_name": "Hello World",
+      "username": "Aswin",
+      "tenant": "lebahandofffive"
+    }
+  },
+  {
+    "model": "handoff.agentskill",
+    "pk": 53,
+    "fields": {
+      "agent_id": 18,
+      "skill_id": 5,
+      "skill_name": "en",
+      "username": "Aswin",
+      "tenant": "uno"
+    }
+  },
+  {
+    "model": "handoff.agentskill",
+    "pk": 54,
+    "fields": {
+      "agent_id": 18,
+      "skill_id": 5,
+      "skill_name": "en",
+      "username": "Aswin",
+      "tenant": "lebahandofffive"
+    }
+  },
+  {
+    "model": "handoff.agentskill",
+    "pk": 55,
+    "fields": {
+      "agent_id": 5,
+      "skill_id": 5,
+      "skill_name": "en",
+      "username": "srujangowda",
+      "tenant": "stanbickenya"
+    }
+  },
+  {
+    "model": "handoff.agentskill",
+    "pk": 56,
+    "fields": {
+      "agent_id": 5,
+      "skill_id": 5,
+      "skill_name": "en",
+      "username": "srujangowda",
+      "tenant": "lebahandoff"
+    }
+  }
+]

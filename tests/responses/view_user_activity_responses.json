@@ -1,0 +1,47 @@
+{
+  "activity": {
+    "count": 2,
+    "next": null,
+    "previous": null,
+    "results": [
+      {
+        "id": 1,
+        "provider": "auth_provider_internal",
+        "user_id": "3b9d5a50-595c-4e75-bcae-f53e30bd27c0",
+        "username": "ashupednekar",
+        "operation": "",
+        "endpoint": "/platform/botbuilder/intents/",
+        "result": "pass",
+        "status_code": "200",
+        "ip_address": null,
+        "location": null,
+        "status_code_description": "OK",
+        "request_timestamp": "2023-04-10 10:09:07+00:00",
+        "request_method": "GET",
+        "execution_time": "44",
+        "service_name": "studio",
+        "tenant": "prathambot",
+        "timestamp": "2023-04-10 10:09:07+00:00"
+      },
+      {
+        "id": 2,
+        "provider": "auth_provider_internal",
+        "user_id": "3b9d5a50-595c-4e75-bcae-f53e30bd27c0",
+        "username": "ashupednekar",
+        "operation": "",
+        "endpoint": "/platform/botbuilder/project/193/",
+        "result": "pass",
+        "status_code": "200",
+        "ip_address": null,
+        "location": null,
+        "status_code_description": "OK",
+        "request_timestamp": "2023-04-10 10:09:07+00:00",
+        "request_method": "GET",
+        "execution_time": "32",
+        "service_name": "studio",
+        "tenant": "prathambot",
+        "timestamp": "2023-04-10 10:09:07+00:00"
+      }
+    ]
+  }
+}

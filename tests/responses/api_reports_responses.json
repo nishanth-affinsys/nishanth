@@ -1,0 +1,75 @@
+{
+  "api_calls": {
+    "count": 2,
+    "next": null,
+    "previous": null,
+    "results": [
+      {
+        "API": "generate otp",
+        "count": 3
+      },
+      {
+        "API": "Validate OTP",
+        "count": 2
+      }
+    ]
+  },
+  "api_details": {
+    "count": 5,
+    "next": null,
+    "previous": null,
+    "results": [
+      {
+        "Internal_reference": "8dbe4fce2d364d328a186af8e3ca9c90",
+        "API": "generate otp",
+        "Stage": "Request",
+        "Status": "201",
+        "Endpoint": "http://localhost:8999/otp/generate",
+        "Channel": "webchat",
+        "Timestamp": "2023-01-03 11:34:44+00:00"
+      },
+      {
+        "Internal_reference": "5868e438cda643b19f4ffccfa7e178b9",
+        "API": "Validate OTP",
+        "Stage": "Request",
+        "Status": "201",
+        "Endpoint": "http://localhost:8999/otp/verify",
+        "Channel": "webchat",
+        "Timestamp": "2023-01-03 06:36:42+00:00"
+      },
+      {
+        "Internal_reference": "5868e438cda643b19f4ffccfa7e178b9",
+        "API": "Validate OTP",
+        "Stage": "Response",
+        "Status": "201",
+        "Endpoint": "http://localhost:8999/otp/verify",
+        "Channel": "webchat",
+        "Timestamp": "2023-01-03 06:36:42+00:00"
+      },
+      {
+        "Internal_reference": "5868e438cda643b19f4ffccfa7e178b9",
+        "API": "generate otp",
+        "Stage": "Request",
+        "Status": "201",
+        "Endpoint": "http://localhost:8999/otp/generate",
+        "Channel": "webchat",
+        "Timestamp": "2023-01-03 06:36:37+00:00"
+      },
+      {
+        "Internal_reference": "5868e438cda643b19f4ffccfa7e178b9",
+        "API": "generate otp",
+        "Stage": "Response",
+        "Status": "201",
+        "Endpoint": "http://localhost:8999/otp/generate",
+        "Channel": "webchat",
+        "Timestamp": "2023-01-03 06:36:37+00:00"
+      }
+    ]
+  },
+  "api_exceptions": {
+    "count": 0,
+    "next": null,
+    "previous": null,
+    "results": []
+  }
+}

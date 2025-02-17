@@ -1,0 +1,206 @@
+[
+  {
+    "model": "handoff.analyticssocialevent",
+    "pk": 1262,
+    "fields": {
+      "type": "handoff",
+      "event": "handoff-notification",
+      "session": "499f6ca9-cb4a-42d1-9cd4-f04016879343",
+      "timestamp": "2023-04-26T09:34:02.822Z",
+      "channel": "webchat",
+      "agent": 20,
+      "social": 29,
+      "supervisor": null,
+      "tenant": "lebahandofffive",
+      "bot_session_id": "8877c20d3d6d46faa91c5174ef30042d",
+      "parent_session_id": "499f6ca9-cb4a-42d1-9cd4-f04016879343"
+    }
+  },
+  {
+    "model": "handoff.analyticssocialevent",
+    "pk": 1263,
+    "fields": {
+      "type": "handoff",
+      "event": "handoff-initial",
+      "session": "38f04bba-91ef-4698-a5e9-ad570c9c009b",
+      "timestamp": "2023-04-26T09:34:02.911Z",
+      "channel": "webchat",
+      "agent": 5,
+      "social": 29,
+      "supervisor": null,
+      "tenant": "lebahandofffive",
+      "bot_session_id": "8877c20d3d6d46faa91c5174ef30042d",
+      "parent_session_id": "38f04bba-91ef-4698-a5e9-ad570c9c009b"
+    }
+  },
+  {
+    "model": "handoff.analyticssocialevent",
+    "pk": 1267,
+    "fields": {
+      "type": "handoff",
+      "event": "agent-unavailable",
+      "session": "38f04bba-91ef-4698-a5e9-ad570c9c009b",
+      "timestamp": "2023-04-26T09:34:04.922Z",
+      "channel": "webchat",
+      "agent": 5,
+      "social": 29,
+      "supervisor": null,
+      "tenant": "lebahandofffive",
+      "bot_session_id": "8877c20d3d6d46faa91c5174ef30042d",
+      "parent_session_id": "df7a7826-7ef9-42de-95bc-2519b596b737"
+    }
+  },
+  {
+    "model": "handoff.analyticssocialevent",
+    "pk": 1269,
+    "fields": {
+      "type": "handoff",
+      "event": "handoff-initial",
+      "session": "17471f20-c716-4d19-b3fa-030fc23c9a3b",
+      "timestamp": "2023-04-26T09:34:04.978Z",
+      "channel": "webchat",
+      "agent": 18,
+      "social": 30,
+      "supervisor": null,
+      "tenant": "lebahandofffive",
+      "bot_session_id": "8877c20d3d6d46faa91c5174ef30042d",
+      "parent_session_id": "17471f20-c716-4d19-b3fa-030fc23c9a3b"
+    }
+  },
+  {
+    "model": "handoff.analyticssocialevent",
+    "pk": 1270,
+    "fields": {
+      "type": "handoff",
+      "event": "agent-accept",
+      "session": "17471f20-c716-4d19-b3fa-030fc23c9a3b",
+      "timestamp": "2023-04-26T09:34:06.154Z",
+      "channel": "webchat",
+      "agent": 18,
+      "social": 29,
+      "supervisor": null,
+      "tenant": "lebahandofffive",
+      "bot_session_id": "8877c20d3d6d46faa91c5174ef30042d",
+      "parent_session_id": "17471f20-c716-4d19-b3fa-030fc23c9a3b"
+    }
+  },
+  {
+    "model": "handoff.analyticssocialevent",
+    "pk": 1274,
+    "fields": {
+      "type": "handoff",
+      "event": "chat-message",
+      "session": "17471f20-c716-4d19-b3fa-030fc23c9a3b",
+      "timestamp": "2023-04-26T09:34:06.154Z",
+      "channel": "webchat",
+      "agent": 18,
+      "social": 29,
+      "supervisor": null,
+      "tenant": "lebahandofffive",
+      "bot_session_id": "8877c20d3d6d46faa91c5174ef30042d",
+      "parent_session_id": "17471f20-c716-4d19-b3fa-030fc23c9a3b"
+    }
+  },
+  {
+    "model": "handoff.analyticssocialevent",
+    "pk": 1277,
+    "fields": {
+      "type": "handoff",
+      "event": "social-message",
+      "session": "17471f20-c716-4d19-b3fa-030fc23c9a3b",
+      "timestamp": "2023-04-26T09:34:06.154Z",
+      "channel": "webchat",
+      "agent": 18,
+      "social": 29,
+      "supervisor": null,
+      "tenant": "lebahandofffive",
+      "bot_session_id": "8877c20d3d6d46faa91c5174ef30042d",
+      "parent_session_id": "17471f20-c716-4d19-b3fa-030fc23c9a3b"
+    }
+  },
+  {
+    "model": "handoff.analyticssocialevent",
+    "pk": 1278,
+    "fields": {
+      "type": "handoff",
+      "event": "handoff-transfer-from",
+      "session": "17471f20-c716-4d19-b3fa-030fc23c9a3b",
+      "timestamp": "2023-04-26T09:34:06.154Z",
+      "channel": "webchat",
+      "agent": 18,
+      "social": 29,
+      "supervisor": null,
+      "tenant": "lebahandofffive",
+      "bot_session_id": "8877c20d3d6d46faa91c5174ef30042d",
+      "parent_session_id": "17471f20-c716-4d19-b3fa-030fc23c9a3b"
+    }
+  },
+  {
+    "model": "handoff.analyticssocialevent",
+    "pk": 1281,
+    "fields": {
+      "type": "handoff",
+      "event": "handoff-transfer-fail",
+      "session": "17471f20-c716-4d19-b3fa-030fc23c9a3b",
+      "timestamp": "2023-04-26T09:34:06.154Z",
+      "channel": "webchat",
+      "agent": 18,
+      "social": 29,
+      "supervisor": null,
+      "tenant": "lebahandofffive",
+      "bot_session_id": "8877c20d3d6d46faa91c5174ef30042d",
+      "parent_session_id": "17471f20-c716-4d19-b3fa-030fc23c9a3b"
+    }
+  },
+  {
+    "model": "handoff.analyticssocialevent",
+    "pk": 1280,
+    "fields": {
+      "type": "handoff",
+      "event": "handoff-transfer-to",
+      "session": "17471f20-c716-4d19-b3fa-030fc23c9a3b",
+      "timestamp": "2023-04-26T09:34:06.154Z",
+      "channel": "webchat",
+      "agent": 18,
+      "social": 29,
+      "supervisor": null,
+      "tenant": "lebahandofffive",
+      "bot_session_id": "8877c20d3d6d46faa91c5174ef30042d",
+      "parent_session_id": "17471f20-c716-4d19-b3fa-030fc23c9a3b"
+    }
+  },
+  {
+    "model": "handoff.analyticssocialevent",
+    "pk": 1279,
+    "fields": {
+      "type": "handoff",
+      "event": "user-end-confirm",
+      "session": "17471f20-c716-4d19-b3fa-030fc23c9a3b",
+      "timestamp": "2023-04-26T09:34:06.154Z",
+      "channel": "webchat",
+      "agent": 18,
+      "social": 29,
+      "supervisor": null,
+      "tenant": "lebahandofffive",
+      "bot_session_id": "8877c20d3d6d46faa91c5174ef30042d",
+      "parent_session_id": "17471f20-c716-4d19-b3fa-030fc23c9a3b"
+    }
+  },
+  {
+    "model": "handoff.analyticssocialevent",
+    "pk": 1265,
+    "fields": {
+      "type": "handoff",
+      "event": "user-fallout",
+      "session": "499f6ca9-cb4a-42d1-9cd4-f04016879343",
+      "timestamp": "2023-04-26T09:34:02.822Z",
+      "channel": "webchat",
+      "agent": 20,
+      "social": 29,
+      "supervisor": null,
+      "tenant": "lebahandofffive",
+      "bot_session_id": "8877c20d3d6d46faa91c5174ef30042d",
+      "parent_session_id": "499f6ca9-cb4a-42d1-9cd4-f04016879343"
+    }
+  }
+]

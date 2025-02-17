@@ -1,0 +1,13 @@
+FROM 400309783243.dkr.ecr.ap-south-1.amazonaws.com/bud-core-analytics-svc:base
+WORKDIR /backend
+
+COPY . /backend
+
+#sys envs 
+ENV LD_LIBRARY_PATH=/opt/oracle/instantclient_19_6
+ENV PYTHONPATH=/usr/local/lib/python3.9/site-packages
+ENV PYTHONUNBUFFERED=1
+
+WORKDIR /backend
+
+CMD ["/usr/local/bin/gunicorn", "-w", "4", "--bind", "0.0.0.0:8443", "main.asgi:application", "-k", "uvicorn.workers.UvicornWorker"]

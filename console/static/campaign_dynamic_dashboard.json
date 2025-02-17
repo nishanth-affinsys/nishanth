@@ -1,0 +1,256 @@
+{
+  "common": {
+    "chart_title": "Dynamic Campaign Details",
+    "screenshot": true,
+    "charts": [
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Aggregate Campaign Analysis",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "path": "campaign_manager.views.campaign_dynamic_views/CampaignDynamicDashboardViewSet/campaign_dynamic_campaign_aggregate_export_csv",
+        "Property": {},
+        "description": "The table is used for displaying aggregate analysis of dynamic campaign, including total targeted users per campaigns and CTA clicked.",
+        "chart_api_url": "campaign_dynamic_dashboard/campaign_dynamic_campaign_aggregate/",
+        "chart_report_api": "campaign_dynamic_dashboard/campaign_dynamic_campaign_aggregate_export_csv/",
+        "chart_report_pdf_api": "campaign_dynamic_dashboard/campaign_dynamic_campaign_aggregate_export_pdf/"
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Total Campaigns Rolled",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "The total count of campaigns rolled",
+        "chart_api_url": "campaign_dynamic_dashboard/campaign_rolled_bigNum/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Total CTA Clicked",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "The total number of CTA clicks including campaigns selected",
+        "chart_api_url": "campaign_dynamic_dashboard/campaign_cta_clicked_bigNum/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Total Targeted Users",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "The count of the total users targeted. ",
+        "chart_api_url": "campaign_dynamic_dashboard/campaign_targeted_users_bigNum/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Campaign Rolled Details",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "path": "campaign_manager.views.campaign_dynamic_views/CampaignDynamicDashboardViewSet/campaign_rolled_details_export_csv",
+        "Property": {},
+        "description": "The table chart gives details of all campaigns rolled.",
+        "chart_api_url": "campaign_dynamic_dashboard/campaign_rolled_details/",
+        "chart_report_api": "campaign_dynamic_dashboard/campaign_rolled_details_export_csv/",
+        "chart_report_pdf_api": "campaign_dynamic_dashboard/campaign_rolled_details_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "CTA Clicked",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "path": "campaign_manager.views.campaign_dynamic_views/CampaignDynamicDashboardViewSet/campaign_cta_clicked_export_csv",
+        "Property": {},
+        "description": "The table chart gives details of all CTA Clicks along with their profile data.",
+        "chart_api_url": "campaign_dynamic_dashboard/campaign_cta_clicked/",
+        "chart_report_api": "campaign_dynamic_dashboard/campaign_cta_clicked_export_csv/",
+        "chart_report_pdf_api": "campaign_dynamic_dashboard/campaign_cta_clicked_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Total Targeted Users",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "path": "campaign_manager.views.campaign_dynamic_views/CampaignDynamicDashboardViewSet/campaign_targeted_users_export_csv",
+        "Property": {},
+        "description": "The table chart gives details of all targeted users along with their profile data.",
+        "chart_api_url": "campaign_dynamic_dashboard/campaign_targeted_users/",
+        "chart_report_api": "campaign_dynamic_dashboard/campaign_targeted_users_export_csv/",
+        "chart_report_pdf_api": "campaign_dynamic_dashboard/campaign_targeted_users_export_pdf/"
+      }
+    ],
+    "filters": [
+      {
+        "return_key": "timestamp__range",
+        "service": "analytics",
+        "filter_type": "timestamp",
+        "filter_title": "Time Range"
+      },
+      {
+        "api_url": "get_campaigns/",
+        "request_method": "POST",
+        "dependency": [
+          "timestamp__range"
+        ],
+        "return_key": "campaign_variants",
+        "service": "analytics",
+        "filter_type": "multiselect",
+        "filter_title": "Campaign Name"
+      }
+    ]
+  },
+  "dashboard": {
+    "chart_title": "Dynamic Campaign Details",
+    "screenshot": true,
+    "charts": [
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Aggregate Campaign Analysis",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "path": "campaign_manager.views.campaign_dynamic_views/CampaignDynamicDashboardViewSet/campaign_dynamic_campaign_aggregate_export_csv",
+        "Property": {},
+        "description": "The table is used for displaying aggregate analysis of dynamic campaign, including total targeted users per campaigns and CTA clicked.",
+        "chart_api_url": "campaign_dynamic_dashboard/campaign_dynamic_campaign_aggregate/",
+        "chart_report_api": "campaign_dynamic_dashboard/campaign_dynamic_campaign_aggregate_export_csv/",
+        "chart_report_pdf_api": "campaign_dynamic_dashboard/campaign_dynamic_campaign_aggregate_export_pdf/"
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Total Campaigns Rolled",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "The total count of campaigns rolled",
+        "chart_api_url": "campaign_dynamic_dashboard/campaign_rolled_bigNum/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Total CTA Clicked",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "The total number of CTA clicks including campaigns selected",
+        "chart_api_url": "campaign_dynamic_dashboard/campaign_cta_clicked_bigNum/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Total Targeted Users",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "The count of the total users targeted. ",
+        "chart_api_url": "campaign_dynamic_dashboard/campaign_targeted_users_bigNum/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Campaign Rolled Details",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "path": "campaign_manager.views.campaign_dynamic_views/CampaignDynamicDashboardViewSet/campaign_rolled_details_export_csv",
+        "Property": {},
+        "description": "The table chart gives details of all campaigns rolled.",
+        "chart_api_url": "campaign_dynamic_dashboard/campaign_rolled_details/",
+        "chart_report_api": "campaign_dynamic_dashboard/campaign_rolled_details_export_csv/",
+        "chart_report_pdf_api": "campaign_dynamic_dashboard/campaign_rolled_details_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "CTA Clicked",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "path": "campaign_manager.views.campaign_dynamic_views/CampaignDynamicDashboardViewSet/campaign_cta_clicked_export_csv",
+        "Property": {},
+        "description": "The table chart gives details of all CTA Clicks along with their profile data.",
+        "chart_api_url": "campaign_dynamic_dashboard/campaign_cta_clicked/",
+        "chart_report_api": "campaign_dynamic_dashboard/campaign_cta_clicked_export_csv/",
+        "chart_report_pdf_api": "campaign_dynamic_dashboard/campaign_cta_clicked_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Total Targeted Users",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "path": "campaign_manager.views.campaign_dynamic_views/CampaignDynamicDashboardViewSet/campaign_targeted_users_export_csv",
+        "Property": {},
+        "description": "The table chart gives details of all targeted users along with their profile data.",
+        "chart_api_url": "campaign_dynamic_dashboard/campaign_targeted_users/",
+        "chart_report_api": "campaign_dynamic_dashboard/campaign_targeted_users_export_csv/",
+        "chart_report_pdf_api": "campaign_dynamic_dashboard/campaign_targeted_users_export_pdf/"
+      }
+    ],
+    "filters": [
+      {
+        "return_key": "timestamp__range",
+        "service": "analytics",
+        "filter_type": "timestamp",
+        "filter_title": "Time Range"
+      },
+      {
+        "api_url": "get_campaigns/",
+        "request_method": "POST",
+        "dependency": [
+          "timestamp__range"
+        ],
+        "return_key": "campaign_variants",
+        "service": "analytics",
+        "filter_type": "multiselect",
+        "filter_title": "Campaign Name"
+      }
+    ]
+  }
+}

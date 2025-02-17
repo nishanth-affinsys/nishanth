@@ -1,0 +1,533 @@
+{
+  "common": {
+    "chart_title": "Face Recognition",
+    "screenshot": true,
+    "charts": [
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Total Recognitions",
+        "screenshot": true,
+        "color": 0,
+        "cols": 3,
+        "rows": 1,
+        "Property": {},
+        "description": "This table shows the total number of face calls that happened within a particular time filter.",
+        "chart_api_url": "face-charts/total_face_detections_bigno/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Successful Recognitions",
+        "screenshot": true,
+        "color": 0,
+        "cols": 3,
+        "rows": 1,
+        "Property": {},
+        "description": "This table shows the total number of successful face detection or verification calls that happened within a particular time filter.",
+        "chart_api_url": "face-charts/total_success_detect_verification_bigno/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Successful Detections",
+        "screenshot": true,
+        "color": 0,
+        "cols": 3,
+        "rows": 1,
+        "Property": {},
+        "description": "This table shows the total number of successful face detection calls that happened within a particular time filter.",
+        "chart_api_url": "face-charts/total_success_detections_bigno/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Successful Verifications",
+        "screenshot": true,
+        "color": 0,
+        "cols": 3,
+        "rows": 1,
+        "Property": {},
+        "description": "This table shows the total number of successful face verification calls that happened within a particular time filter.",
+        "chart_api_url": "face-charts/total_success_verifications_bigno/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Failed Recognitions",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "This table shows the total number of failed face verification calls that happened within a particular time filter.",
+        "chart_api_url": "face-charts/failed_face_detections_bigno/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "System Error",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "This table shows the count of total API failures.",
+        "chart_api_url": "face-charts/system_error_face_detections_bigno/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "User Error",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "This table shows the total number of calls where there was an issue in face detection or verification due to user error like capturing in low light conditions, blur, or glare present on the face.",
+        "chart_api_url": "face-charts/user_error_face_detections_bigno/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Aggregate Analysis",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "description": "This table shows the data of all the face recognitions either failed or passed over a certain time filter.",
+        "path": "vision.views.vision_face_views/VisionFaceViewSet/aggregate_analysis_face_export_csv",
+        "chart_api_url": "face-charts/aggregate_analysis_face/",
+        "chart_report_api": "face-charts/aggregate_analysis_face_export_csv/",
+        "chart_report_pdf_api": "face-charts/aggregate_analysis_face_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Successful Detections details",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "description": "This table shows the data of all successful face recognitions within a certain time filter.",
+        "path": "vision.views.vision_face_views/VisionFaceViewSet/face_successful_detection_details_export_csv",
+        "chart_api_url": "face-charts/face_successful_detection_details/",
+        "chart_report_api": "face-charts/face_successful_detection_details_export_csv/",
+        "chart_report_pdf_api": "face-charts/face_successful_detection_details_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Failed details",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "description": "This table shows the data of all failed face recognitions within a certain time filter.",
+        "path": "vision.views.vision_face_views/VisionFaceViewSet/face_failed_details_export_csv",
+        "chart_api_url": "face-charts/face_failed_details/",
+        "chart_report_api": "face-charts/face_failed_details_export_csv/",
+        "chart_report_pdf_api": "face-charts/face_failed_details_export_pdf/"
+      },
+      {
+        "type": "line_chart",
+        "chartType": "group",
+        "title": "Comparative Analysis",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {
+          "x": "Date",
+          "y": [
+            "Successful",
+            "Failed"
+          ]
+        },
+        "description": "This graph shows the comparison between successful and failed face recognitions.",
+        "chart_api_url": "face-charts/successful_vs_failed_face_trendline/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      }
+    ],
+    "filters": [
+      {
+        "return_key": "timestamp__range",
+        "service": "analytics",
+        "filter_type": "timestamp",
+        "filter_title": "Time Range"
+      }
+    ]
+  },
+  "dashboard": {
+    "chart_title": "Face Recognition",
+    "screenshot": true,
+    "charts": [
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Total Recognitions",
+        "screenshot": true,
+        "color": 0,
+        "cols": 3,
+        "rows": 1,
+        "Property": {},
+        "description": "This table shows the total number of face calls that happened within a particular time filter.",
+        "chart_api_url": "face-charts/total_face_detections_bigno/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Successful Recognitions",
+        "screenshot": true,
+        "color": 0,
+        "cols": 3,
+        "rows": 1,
+        "Property": {},
+        "description": "This table shows the total number of successful face detection or verification calls that happened within a particular time filter.",
+        "chart_api_url": "face-charts/total_success_detect_verification_bigno/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Successful Detections",
+        "screenshot": true,
+        "color": 0,
+        "cols": 3,
+        "rows": 1,
+        "Property": {},
+        "description": "This table shows the total number of successful face detection calls that happened within a particular time filter.",
+        "chart_api_url": "face-charts/total_success_detections_bigno/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Successful Verifications",
+        "screenshot": true,
+        "color": 0,
+        "cols": 3,
+        "rows": 1,
+        "Property": {},
+        "description": "This table shows the total number of successful face verification calls that happened within a particular time filter.",
+        "chart_api_url": "face-charts/total_success_verifications_bigno/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Failed Recognitions",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "This table shows the total number of failed face verification calls that happened within a particular time filter.",
+        "chart_api_url": "face-charts/failed_face_detections_bigno/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "System Error",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "This table shows the count of total API failures.",
+        "chart_api_url": "face-charts/system_error_face_detections_bigno/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "User Error",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "This table shows the total number of calls where there was an issue in face detection or verification due to user error like capturing in low light conditions, blur, or glare present on the face.",
+        "chart_api_url": "face-charts/user_error_face_detections_bigno/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Aggregate Analysis",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "description": "This table shows the data of all the face recognitions either failed or passed over a certain time filter.",
+        "path": "vision.views.vision_face_views/VisionFaceViewSet/aggregate_analysis_face_export_csv",
+        "chart_api_url": "face-charts/aggregate_analysis_face/",
+        "chart_report_api": "face-charts/aggregate_analysis_face_export_csv/",
+        "chart_report_pdf_api": "face-charts/aggregate_analysis_face_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Successful Detections details",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "description": "This table shows the data of all successful face recognitions within a certain time filter.",
+        "path": "vision.views.vision_face_views/VisionFaceViewSet/face_successful_detection_details_export_csv",
+        "chart_api_url": "face-charts/face_successful_detection_details/",
+        "chart_report_api": "face-charts/face_successful_detection_details_export_csv/",
+        "chart_report_pdf_api": "face-charts/face_successful_detection_details_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Failed details",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "description": "This table shows the data of all failed face recognitions within a certain time filter.",
+        "path": "vision.views.vision_face_views/VisionFaceViewSet/face_failed_details_export_csv",
+        "chart_api_url": "face-charts/face_failed_details/",
+        "chart_report_api": "face-charts/face_failed_details_export_csv/",
+        "chart_report_pdf_api": "face-charts/face_failed_details_export_pdf/"
+      },
+      {
+        "type": "line_chart",
+        "chartType": "group",
+        "title": "Comparative Analysis",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {
+          "x": "Date",
+          "y": [
+            "Successful",
+            "Failed"
+          ]
+        },
+        "description": "This graph shows the comparison between successful and failed face recognitions.",
+        "chart_api_url": "face-charts/successful_vs_failed_face_trendline/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      }
+    ],
+    "filters": [
+      {
+        "return_key": "timestamp__range",
+        "service": "analytics",
+        "filter_type": "timestamp",
+        "filter_title": "Time Range"
+      }
+    ]
+  },
+  "stanbic": {
+    "chart_title": "Face Recognition",
+    "screenshot": true,
+    "charts": [
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Total Recognitions",
+        "screenshot": true,
+        "color": 0,
+        "cols": 3,
+        "rows": 1,
+        "Property": {},
+        "description": "",
+        "chart_api_url": "face-charts/total_face_detections_bigno/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Successful Recognitions",
+        "screenshot": true,
+        "color": 0,
+        "cols": 3,
+        "rows": 1,
+        "Property": {},
+        "description": "",
+        "chart_api_url": "face-charts/total_success_detect_verification_bigno/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Successful Detections",
+        "screenshot": true,
+        "color": 0,
+        "cols": 3,
+        "rows": 1,
+        "Property": {},
+        "description": "",
+        "chart_api_url": "face-charts/total_success_detections_bigno/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Successful Verifications",
+        "screenshot": true,
+        "color": 0,
+        "cols": 3,
+        "rows": 1,
+        "Property": {},
+        "description": "",
+        "chart_api_url": "face-charts/total_success_verifications_bigno/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Failed Recognitions",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "",
+        "chart_api_url": "face-charts/failed_face_detections_bigno/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "System Error",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "",
+        "chart_api_url": "face-charts/system_error_face_detections_bigno/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "User Error",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "",
+        "chart_api_url": "face-charts/user_error_face_detections_bigno/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Aggregate Analysis",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "description": "",
+        "path": "vision.views.vision_face_views/VisionFaceViewSet/aggregate_analysis_face_export_csv",
+        "chart_api_url": "face-charts/aggregate_analysis_face/",
+        "chart_report_api": "face-charts/aggregate_analysis_face_export_csv/",
+        "chart_report_pdf_api": "face-charts/aggregate_analysis_face_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Successful Detections details",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "description": "",
+        "path": "vision.views.vision_face_views/VisionFaceViewSet/face_successful_detection_details_export_csv",
+        "chart_api_url": "face-charts/face_successful_detection_details/",
+        "chart_report_api": "face-charts/face_successful_detection_details_export_csv/",
+        "chart_report_pdf_api": "face-charts/face_successful_detection_details_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Failed details",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "description": "",
+        "path": "vision.views.vision_face_views/VisionFaceViewSet/face_failed_details_export_csv",
+        "chart_api_url": "face-charts/face_failed_details/",
+        "chart_report_api": "face-charts/face_failed_details_export_csv/",
+        "chart_report_pdf_api": "face-charts/face_failed_details_export_pdf/"
+      },
+      {
+        "type": "line_chart",
+        "chartType": "group",
+        "title": "Comparative Analysis",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {
+          "x": "Date",
+          "y": [
+            "Successful",
+            "Failed"
+          ]
+        },
+        "description": "",
+        "chart_api_url": "face-charts/successful_vs_failed_face_trendline/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      }
+    ],
+    "filters": [
+      {
+        "return_key": "timestamp__range",
+        "service": "analytics",
+        "filter_type": "timestamp",
+        "filter_title": "Time Range"
+      }
+    ]
+  }
+}

@@ -1,0 +1,42 @@
+[
+  {
+    "model": "handoff.djangocontenttype",
+    "pk": 33,
+    "fields": {
+      "app_label": "socialconversation",
+      "model": "agenttenant"
+    }
+  },
+  {
+    "model": "handoff.djangocontenttype",
+    "pk": 34,
+    "fields": {
+      "app_label": "analytics",
+      "model": "socialevent"
+    }
+  },
+  {
+    "model": "handoff.djangocontenttype",
+    "pk": 35,
+    "fields": {
+      "app_label": "chat",
+      "model": "socialagentsession"
+    }
+  },
+  {
+    "model": "handoff.djangocontenttype",
+    "pk": 36,
+    "fields": {
+      "app_label": "chat",
+      "model": "messagesocialagent"
+    }
+  },
+  {
+    "model": "handoff.djangocontenttype",
+    "pk": 37,
+    "fields": {
+      "app_label": "auditlog",
+      "model": "logentry"
+    }
+  }
+]

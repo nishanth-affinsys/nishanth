@@ -1,0 +1,72 @@
+[
+  {
+    "model": "handoff.handoffduration",
+    "pk": 397,
+    "fields": {
+      "username": "srujangowda",
+      "timestamp": "2023-03-31T10:58:54.963Z",
+      "user_id": 5,
+      "session": "755fdbfb-0a8f-4924-8f59-8f11cc34f4f6",
+      "minutes": 0.0,
+      "agent_id": 5,
+      "social_id": 17,
+      "tenant": "lebahandofffive"
+    }
+  },
+  {
+    "model": "handoff.handoffduration",
+    "pk": 398,
+    "fields": {
+      "username": "Srujan-Affinsys",
+      "timestamp": "2023-03-11T06:35:24.751Z",
+      "user_id": 4,
+      "session": "40f5b262-f1d2-4429-a156-96744c953f7c",
+      "minutes": 0.0,
+      "agent_id": 4,
+      "social_id": 2,
+      "tenant": "lebahandoff"
+    }
+  },
+  {
+    "model": "handoff.handoffduration",
+    "pk": 399,
+    "fields": {
+      "username": "Srujan-Affinsys",
+      "timestamp": "2023-03-31T09:22:35.376Z",
+      "user_id": 4,
+      "session": "f93eaa9c-c6a9-40ce-bf79-3ff359af8feb",
+      "minutes": 0.0,
+      "agent_id": 4,
+      "social_id": 17,
+      "tenant": "lebahandofffive"
+    }
+  },
+  {
+    "model": "handoff.handoffduration",
+    "pk": 400,
+    "fields": {
+      "username": "Aswin",
+      "timestamp": "2023-04-01T06:27:43.510Z",
+      "user_id": 18,
+      "session": "e4db17ce-ab7e-496d-ac9a-23d0ab9e4c50",
+      "minutes": 0.0,
+      "agent_id": 18,
+      "social_id": 25,
+      "tenant": "lebahandofffive"
+    }
+  },
+  {
+    "model": "handoff.handoffduration",
+    "pk": 401,
+    "fields": {
+      "username": "Srujan-Affinsys",
+      "timestamp": "2023-04-07T10:25:42.805Z",
+      "user_id": 4,
+      "session": "2735ad45-c4da-4aab-bdcc-ac9b3c1e098c",
+      "minutes": 0.0,
+      "agent_id": 4,
+      "social_id": 17,
+      "tenant": "lebahandofffive"
+    }
+  }
+]

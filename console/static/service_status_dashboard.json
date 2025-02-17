@@ -1,0 +1,137 @@
+{
+  "common": {
+    "chart_title": "Service Status Report",
+    "screenshot": true,
+    "auto_refresh_timeout": 120,
+    "charts": [
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Service Status",
+        "screenshot": true,
+        "color": [
+          "#91CD76",
+          "#E11237",
+          "#E11237",
+          "#E11237",
+          "#E11237"
+        ],
+        "cols": 12,
+        "rows": 2,
+        "Property": {
+          "column": "Health_Status",
+          "values": [
+            "200",
+            "500",
+            "-1",
+            "404",
+            "503"
+          ]
+        },
+        "path": "console.views.service_status_views/ServiceStatusViewSet/service_status_export_csv",
+        "description": "The table chart provides information regarding the health status of each service.",
+        "chart_api_url": "service-status-reports/service_status/",
+        "chart_report_api": "service-status-reports/service_status_export_csv/",
+        "chart_report_pdf_api": "service-status-reports/service_status_export_pdf/"
+      }
+    ],
+    "filters": [
+      {
+        "return_key": "timestamp__range",
+        "service": "analytics",
+        "filter_type": "timestamp",
+        "filter_title": "Time Range"
+      }
+    ]
+  },
+  "dashboard": {
+    "chart_title": "Service Status Report",
+    "screenshot": true,
+    "auto_refresh_timeout": 120,
+    "charts": [
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Service Status",
+        "screenshot": true,
+        "color": [
+          "#91CD76",
+          "#E11237",
+          "#E11237",
+          "#E11237",
+          "#E11237"
+        ],
+        "cols": 12,
+        "rows": 2,
+        "Property": {
+          "column": "Health_Status",
+          "values": [
+            "200",
+            "500",
+            "-1",
+            "404",
+            "503"
+          ]
+        },
+        "path": "console.views.service_status_views/ServiceStatusViewSet/service_status_export_csv",
+        "description": "The table chart provides information regarding the health status of each service.",
+        "chart_api_url": "service-status-reports/service_status/",
+        "chart_report_api": "service-status-reports/service_status_export_csv/",
+        "chart_report_pdf_api": "service-status-reports/service_status_export_pdf/"
+      }
+    ],
+    "filters": [
+      {
+        "return_key": "timestamp__range",
+        "service": "analytics",
+        "filter_type": "timestamp",
+        "filter_title": "Time Range"
+      }
+    ]
+  },
+  "stanbic": {
+    "chart_title": "Service Status Report",
+    "screenshot": true,
+    "auto_refresh_timeout": 120,
+    "charts": [
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Service Status",
+        "screenshot": true,
+        "color": [
+          "#91CD76",
+          "#E11237",
+          "#E11237",
+          "#E11237",
+          "#E11237"
+        ],
+        "cols": 12,
+        "rows": 2,
+        "Property": {
+          "column": "Health_Status",
+          "values": [
+            "200",
+            "500",
+            "-1",
+            "404",
+            "503"
+          ]
+        },
+        "path": "console.views.service_status_views/ServiceStatusViewSet/service_status_export_csv",
+        "description": "The table chart provides information regarding the health status of each service.",
+        "chart_api_url": "service-status-reports/service_status/",
+        "chart_report_api": "service-status-reports/service_status_export_csv/",
+        "chart_report_pdf_api": "service-status-reports/service_status_export_pdf/"
+      }
+    ],
+    "filters": [
+      {
+        "return_key": "timestamp__range",
+        "service": "analytics",
+        "filter_type": "timestamp",
+        "filter_title": "Time Range"
+      }
+    ]
+  }
+}

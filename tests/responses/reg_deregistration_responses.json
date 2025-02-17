@@ -1,0 +1,64 @@
+{
+  "net_reg_activity": {
+    "count": 5,
+    "next": null,
+    "previous": null,
+    "results": [
+      {
+        "Date": "2023-04-02",
+        "Registrations": 1,
+        "DeRegistrations": 0
+      },
+      {
+        "Date": "2023-04-11",
+        "Registrations": 0,
+        "DeRegistrations": 1
+      },
+      {
+        "Date": "2023-04-12",
+        "Registrations": 1,
+        "DeRegistrations": 0
+      },
+      {
+        "Date": "2023-04-14",
+        "Registrations": 0,
+        "DeRegistrations": 1
+      },
+      {
+        "Date": "2023-05-05",
+        "Registrations": 0,
+        "DeRegistrations": 1
+      }
+    ]
+  },
+  "register_list": {
+    "count": 1,
+    "next": null,
+    "previous": null,
+    "results": [
+      {
+        "Mobile_Number": "+918328282071",
+        "Timestamp": "2023-05-06 06:03:48+00:00"
+      }
+    ]
+  },
+  "deregister_list": {
+    "count": 3,
+    "next": null,
+    "previous": null,
+    "results": [
+      {
+        "Mobile_Number": "+918806416267",
+        "Timestamp": "2023-05-05 12:20:46+00:00"
+      },
+      {
+        "Mobile_Number": "+919884985186",
+        "Timestamp": "2023-04-14 09:05:51+00:00"
+      },
+      {
+        "Mobile_Number": "+919884985185",
+        "Timestamp": "2023-04-14 06:57:01+00:00"
+      }
+    ]
+  }
+}

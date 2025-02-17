@@ -1,0 +1,43 @@
+{
+  "common": {
+    "chart_title": "Card Inventory Reports",
+    "screenshot": true,
+    "charts": [
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Count of Unused Cards",
+        "color": 0,
+        "cols": 4,
+        "rows": 1.5,
+        "Property": {},
+        "description": "The big_number chart shows the number of the all the unused cards.",
+        "chart_api_url": "card_management/digibankr_card_count/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Detailed Report of Unused Cards",
+        "color": 0,
+        "cols": 8,
+        "rows": 1.5,
+        "Property": {},
+        "path": "client_specific.views.digibankr/CardManagementViewSet/digibankr_card_management_details_export",
+        "description": "The table chart shows the response of the all the unused cards.",
+        "chart_api_url": "card_management/digibankr_card_management_details/",
+        "chart_report_api": "card_management/digibankr_card_management_details_export/",
+        "chart_report_pdf_api": "card_management/digibankr_card_management_details_export_pdf/"
+      }
+    ],
+    "filters": [
+      {
+        "return_key": "timestamp__range",
+        "service": "analytics",
+        "filter_type": "timestamp",
+        "filter_title": "Time Range"
+      }
+    ]
+  }
+}

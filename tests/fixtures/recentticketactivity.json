@@ -1,0 +1,87 @@
+[
+  {
+    "model": "console.recentticketactivity",
+    "pk": 1,
+    "fields": {
+      "srn": "054bfbc42d4e42a88ab4081d7d6583b1",
+      "last_updated_time": "2023-05-10T08:38:01.660Z",
+      "status": "CLOSED",
+      "priority": "LOW",
+      "source": "whatsapp",
+      "category_name": "Test Category",
+      "user_name": "manan_internal",
+      "tenant": "fcbdemo",
+      "hold_time": 0,
+      "created_timestamp": null,
+      "breached_status": null
+    }
+  },
+  {
+    "model": "console.recentticketactivity",
+    "pk": 2,
+    "fields": {
+      "srn": "069ed37728de47719e44d00832d6d28a",
+      "last_updated_time": "2023-05-04T06:53:14.118Z",
+      "status": "ESCALATION1",
+      "priority": "MEDIUM",
+      "source": "whatsapp",
+      "category_name": "Finance",
+      "user_name": "brajesh_internal",
+      "tenant": "bankofbhutan",
+      "hold_time": 0,
+      "created_timestamp": null,
+      "breached_status": null
+    }
+  },
+  {
+    "model": "console.recentticketactivity",
+    "pk": 3,
+    "fields": {
+      "srn": "0c4dd2a32bac4bffb30e49acf31da571",
+      "last_updated_time": "2023-04-26T12:10:32.308Z",
+      "status": "OPEN",
+      "priority": "LOW",
+      "source": "",
+      "category_name": "Channels",
+      "user_name": null,
+      "tenant": "projectaddtest",
+      "hold_time": 0,
+      "created_timestamp": null,
+      "breached_status": null
+    }
+  },
+  {
+    "model": "console.recentticketactivity",
+    "pk": 4,
+    "fields": {
+      "srn": "0f8f33a818b6467e87e3e21eaa27704c",
+      "last_updated_time": "2023-05-15T05:15:28.557Z",
+      "status": "ESCALATION2",
+      "priority": "MEDIUM",
+      "source": "",
+      "category_name": "Accounts",
+      "user_name": "aditya_affinsys",
+      "tenant": "uno",
+      "hold_time": 0,
+      "created_timestamp": "2023-05-15T04:51:42.618Z",
+      "breached_status": null
+    }
+  },
+  {
+    "model": "console.recentticketactivity",
+    "pk": 5,
+    "fields": {
+      "srn": "1026d3c351e94dc7b0689dc664c8c9d4",
+      "last_updated_time": "2023-05-12T12:37:48.171Z",
+      "status": "ESCALATION2",
+      "priority": "LOW",
+      "source": "whatsapp",
+      "category_name": "Finance",
+      "user_name": null,
+      "tenant": "stanbickenya",
+      "hold_time": 0,
+      "created_timestamp": null,
+      "breached_status": null
+    }
+  }
+]

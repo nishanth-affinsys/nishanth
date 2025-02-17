@@ -1,0 +1,13 @@
+code,detail_en_US
+ER-0001,Invalid Input
+ER-0002,Permission Denied
+ER-0003,Not Found
+ER-0004,Method {method} not allowed.
+ER-0005,Unsupported media type {media_type} in request
+ER-0006,Request was throttled
+ER-0007,No channels found for this project
+ER-0008,No Dashboard found for the following endpoint
+ER-0009,Redis connection failed.
+ER-0010,Database connection failed.
+ER-0011,Setup command failed as post start file does not exist.
+ER-0012,No template found for this project in picsum

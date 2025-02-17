@@ -1,0 +1,351 @@
+{
+  "common": {
+    "chart_title": "User Behaviour",
+    "charts": [
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Top 10 Messages",
+        "screenshot": true,
+        "color": 0,
+        "cols": 6,
+        "rows": 1.5,
+        "Property": {},
+        "path": "console.views.user_behaviours_views/UserBehaviourChartsViewSet/top_ten_message_export_csv",
+        "description": "The table chart displays the top 10 most frequently exchanged messages between the user and the bot.",
+        "chart_api_url": "userbehaviour-charts/bot_user_top_ten_messages/",
+        "chart_report_api": "userbehaviour-charts/bot_user_top_ten_messages_export_csv/",
+        "chart_report_pdf_api": "userbehaviour-charts/bot_user_top_ten_messages_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Top 10 Intents",
+        "screenshot": true,
+        "color": 0,
+        "cols": 6,
+        "rows": 1.5,
+        "Property": {},
+        "path": "console.views.user_behaviours_views/UserBehaviourChartsViewSet/top_ten_intents_export_csv",
+        "description": "The table lists the top 10 user intents most frequently identified by the bot during interactions.",
+        "chart_api_url": "userbehaviour-charts/bot_user_top_ten_intents/",
+        "chart_report_api": "userbehaviour-charts/bot_user_top_ten_intents_export_csv/",
+        "chart_report_pdf_api": "userbehaviour-charts/bot_user_top_ten_intents_export_pdf/"
+      },
+      {
+        "type": "word_cloud",
+        "chartType": "group",
+        "title": "Word Cloud",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "description": "A Word Cloud chart visually displays the most frequently occurring words in all user messages exchanged with the bot during interactions.",
+        "chart_api_url": "userbehaviour-charts/bot_user_messages_wordcloud/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "User Reactions",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "console.views.user_behaviours_views/UserBehaviourChartsViewSet/channels_reaction_export_csv",
+        "description": "The table chart summarizes user engagement with posts, capturing reactions(likes and comments) and associated details of the user.",
+        "chart_api_url": "userbehaviour-charts/bot_user_channels_reaction/",
+        "chart_report_api": "userbehaviour-charts/bot_user_channels_reaction_export_csv/",
+        "chart_report_pdf_api": "userbehaviour-charts/bot_user_channels_reaction_export_pdf/",
+        "chart_report_xlsx_api": "userbehaviour-charts/bot_user_channels_reaction_export_excel/"
+      }
+    ],
+    "filters": [
+      {
+        "api_url": "get_channels/",
+        "request_method": "GET",
+        "return_key": "channel",
+        "service": "analytics",
+        "filter_type": "select",
+        "filter_title": "Channel"
+      },
+      {
+        "return_key": "timestamp__range",
+        "service": "analytics",
+        "filter_type": "timestamp",
+        "filter_title": "Time Range"
+      }
+    ]
+  },
+  "stanbic": {
+    "chart_title": "User Behaviour",
+    "charts": [
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Top 10 Messages",
+        "screenshot": true,
+        "color": 0,
+        "cols": 6,
+        "rows": 1.5,
+        "Property": {},
+        "path": "console.views.user_behaviours_views/UserBehaviourChartsViewSet/top_ten_message_export_csv",
+        "description": "The table chart displays the top 10 most frequently exchanged messages between the user and the bot.",
+        "chart_api_url": "userbehaviour-charts/bot_user_top_ten_messages/",
+        "chart_report_api": "userbehaviour-charts/bot_user_top_ten_messages_export_csv/",
+        "chart_report_pdf_api": "userbehaviour-charts/bot_user_top_ten_messages_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Top 10 Intents",
+        "screenshot": true,
+        "color": 0,
+        "cols": 6,
+        "rows": 1.5,
+        "Property": {},
+        "path": "console.views.user_behaviours_views/UserBehaviourChartsViewSet/top_ten_intents_export_csv",
+        "description": "The table lists the top 10 user intents most frequently identified by the bot during interactions.",
+        "chart_api_url": "userbehaviour-charts/bot_user_top_ten_intents/",
+        "chart_report_api": "userbehaviour-charts/bot_user_top_ten_intents_export_csv/",
+        "chart_report_pdf_api": "userbehaviour-charts/bot_user_top_ten_intents_export_pdf/"
+      },
+      {
+        "type": "word_cloud",
+        "chartType": "group",
+        "title": "Word Cloud",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "description": "A Word Cloud chart visually displays the most frequently occurring words in all user messages exchanged with the bot during interactions.",
+        "chart_api_url": "userbehaviour-charts/bot_user_messages_wordcloud/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      }
+    ],
+    "filters": [
+      {
+        "api_url": "get_channels/",
+        "request_method": "GET",
+        "return_key": "channel",
+        "service": "analytics",
+        "filter_type": "select",
+        "filter_title": "Channel"
+      },
+      {
+        "return_key": "timestamp__range",
+        "service": "analytics",
+        "filter_type": "timestamp",
+        "filter_title": "Time Range"
+      }
+    ]
+  },
+  "nbf": {
+    "chart_title": "User Behaviour",
+    "charts": [
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Top 10 Messages",
+        "screenshot": true,
+        "color": 0,
+        "cols": 6,
+        "rows": 1.5,
+        "Property": {},
+        "path": "console.views.user_behaviours_views/UserBehaviourChartsViewSet/top_ten_message_export_csv",
+        "description": "The table chart displays the top 10 most frequently exchanged messages between the user and the bot.",
+        "chart_api_url": "userbehaviour-charts/bot_user_top_ten_messages/",
+        "chart_report_api": "userbehaviour-charts/bot_user_top_ten_messages_export_csv/",
+        "chart_report_pdf_api": "userbehaviour-charts/bot_user_top_ten_messages_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Top 10 Intents",
+        "screenshot": true,
+        "color": 0,
+        "cols": 6,
+        "rows": 1.5,
+        "Property": {},
+        "path": "console.views.user_behaviours_views/UserBehaviourChartsViewSet/top_ten_intents_export_csv",
+        "description": "The table lists the top 10 user intents most frequently identified by the bot during interactions.",
+        "chart_api_url": "userbehaviour-charts/bot_user_top_ten_intents/",
+        "chart_report_api": "userbehaviour-charts/bot_user_top_ten_intents_export_csv/",
+        "chart_report_pdf_api": "userbehaviour-charts/bot_user_top_ten_intents_export_pdf/"
+      },
+      {
+        "type": "word_cloud",
+        "chartType": "group",
+        "title": "Word Cloud",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "description": "A Word Cloud chart visually displays the most frequently occurring words in all user messages exchanged with the bot during interactions.",
+        "chart_api_url": "userbehaviour-charts/bot_user_messages_wordcloud/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      }
+    ],
+    "filters": [
+      {
+        "api_url": "get_channels/",
+        "request_method": "GET",
+        "return_key": "channel",
+        "service": "analytics",
+        "filter_type": "select",
+        "filter_title": "Channel"
+      },
+      {
+        "return_key": "timestamp__range",
+        "service": "analytics",
+        "filter_type": "timestamp",
+        "filter_title": "Time Range"
+      }
+    ]
+  },
+  "dashboard": {
+    "chart_title": "User Behaviour",
+    "charts": [
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Top 10 Messages",
+        "screenshot": true,
+        "color": 0,
+        "cols": 6,
+        "rows": 1.5,
+        "Property": {},
+        "path": "console.views.user_behaviours_views/UserBehaviourChartsViewSet/top_ten_message_export_csv",
+        "description": "The table chart displays the top 10 most frequently exchanged messages between the user and the bot.",
+        "chart_api_url": "userbehaviour-charts/bot_user_top_ten_messages/",
+        "chart_report_api": "userbehaviour-charts/bot_user_top_ten_messages_export_csv/",
+        "chart_report_pdf_api": "userbehaviour-charts/bot_user_top_ten_messages_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Top 10 Intents",
+        "screenshot": true,
+        "color": 0,
+        "cols": 6,
+        "rows": 1.5,
+        "Property": {},
+        "path": "console.views.user_behaviours_views/UserBehaviourChartsViewSet/top_ten_intents_export_csv",
+        "description": "The table lists the top 10 user intents most frequently identified by the bot during interactions.",
+        "chart_api_url": "userbehaviour-charts/bot_user_top_ten_intents/",
+        "chart_report_api": "userbehaviour-charts/bot_user_top_ten_intents_export_csv/",
+        "chart_report_pdf_api": "userbehaviour-charts/bot_user_top_ten_intents_export_pdf/"
+      },
+      {
+        "type": "word_cloud",
+        "chartType": "group",
+        "title": "Word Cloud",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "description": "A Word Cloud chart visually displays the most frequently occurring words in all user messages exchanged with the bot during interactions.",
+        "chart_api_url": "userbehaviour-charts/bot_user_messages_wordcloud/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      }
+    ],
+    "filters": [
+      {
+        "api_url": "get_channels/",
+        "request_method": "GET",
+        "return_key": "channel",
+        "service": "analytics",
+        "filter_type": "select",
+        "filter_title": "Channel"
+      },
+      {
+        "return_key": "timestamp__range",
+        "service": "analytics",
+        "filter_type": "timestamp",
+        "filter_title": "Time Range"
+      }
+    ]
+  },
+  "dib": {
+    "chart_title": "User Behaviour",
+    "charts": [
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Top 10 Messages",
+        "screenshot": true,
+        "color": 0,
+        "cols": 6,
+        "rows": 1.5,
+        "Property": {},
+        "path": "console.views.user_behaviours_views/UserBehaviourChartsViewSet/top_ten_message_export_csv",
+        "description": "The table chart displays the top 10 most frequently exchanged messages between the user and the bot.",
+        "chart_api_url": "userbehaviour-charts/bot_user_top_ten_messages/",
+        "chart_report_api": "userbehaviour-charts/bot_user_top_ten_messages_export_csv/",
+        "chart_report_pdf_api": "userbehaviour-charts/bot_user_top_ten_messages_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Top 10 Intents",
+        "screenshot": true,
+        "color": 0,
+        "cols": 6,
+        "rows": 1.5,
+        "Property": {},
+        "path": "console.views.user_behaviours_views/UserBehaviourChartsViewSet/top_ten_intents_export_csv",
+        "description": "The table lists the top 10 user intents most frequently identified by the bot during interactions.",
+        "chart_api_url": "userbehaviour-charts/bot_user_top_ten_intents/",
+        "chart_report_api": "userbehaviour-charts/bot_user_top_ten_intents_export_csv/",
+        "chart_report_pdf_api": "userbehaviour-charts/bot_user_top_ten_intents_export_pdf/"
+      },
+      {
+        "type": "word_cloud",
+        "chartType": "group",
+        "title": "Word Cloud",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "description": "A Word Cloud chart visually displays the most frequently occurring words in all user messages exchanged with the bot during interactions.",
+        "chart_api_url": "userbehaviour-charts/bot_user_messages_wordcloud/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      }
+    ],
+    "filters": [
+      {
+        "api_url": "get_channels/",
+        "request_method": "GET",
+        "return_key": "channel",
+        "service": "analytics",
+        "filter_type": "select",
+        "filter_title": "Channel"
+      },
+      {
+        "return_key": "timestamp__range",
+        "service": "analytics",
+        "filter_type": "timestamp",
+        "filter_title": "Time Range"
+      },
+      {
+        "api_url": "get_customer_types/",
+        "request_method": "GET",
+        "return_key": "customer_type",
+        "service": "analytics",
+        "filter_type": "select",
+        "filter_title": "Customer Type"
+      }
+    ]
+  }
+}

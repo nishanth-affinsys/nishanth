@@ -1,0 +1,97 @@
+[
+  {
+    "model": "campaign_manager.subcampaigncontentschedule",
+    "pk": 76,
+    "fields": {
+      "start_time": "2023-09-19T10:33:25.833Z",
+      "event_type": "Once",
+      "sub_campaign": 90,
+      "event_end_type": "Never",
+      "event_end_value_occurence": 1,
+      "event_end_value_time": "2023-09-19T10:33:25.834Z",
+      "event_schedule": "Now",
+      "repeat_interval": 1,
+      "repeats_on": null,
+      "schedule_type": "CUSTOM",
+      "interval": null,
+      "relativeto": null,
+      "type": ""
+    }
+  },
+  {
+    "model": "campaign_manager.subcampaigncontentschedule",
+    "pk": 77,
+    "fields": {
+      "start_time": "2023-09-19T11:19:02.255Z",
+      "event_type": "Once",
+      "sub_campaign": 91,
+      "event_end_type": "Never",
+      "event_end_value_occurence": 1,
+      "event_end_value_time": "2023-09-19T11:19:02.255Z",
+      "event_schedule": "Now",
+      "repeat_interval": 1,
+      "repeats_on": null,
+      "schedule_type": "CUSTOM",
+      "interval": null,
+      "relativeto": null,
+      "type": ""
+    }
+  },
+  {
+    "model": "campaign_manager.subcampaigncontentschedule",
+    "pk": 78,
+    "fields": {
+      "start_time": "2023-09-19T11:52:17.841Z",
+      "event_type": "Once",
+      "sub_campaign": 92,
+      "event_end_type": "Never",
+      "event_end_value_occurence": 1,
+      "event_end_value_time": "2023-09-19T11:52:17.841Z",
+      "event_schedule": "Now",
+      "repeat_interval": 1,
+      "repeats_on": null,
+      "schedule_type": "CUSTOM",
+      "interval": null,
+      "relativeto": null,
+      "type": ""
+    }
+  },
+  {
+    "model": "campaign_manager.subcampaigncontentschedule",
+    "pk": 79,
+    "fields": {
+      "start_time": "2023-09-19T11:52:17.841Z",
+      "event_type": "Once",
+      "sub_campaign": 93,
+      "event_end_type": "Never",
+      "event_end_value_occurence": 1,
+      "event_end_value_time": "2023-09-19T11:52:17.841Z",
+      "event_schedule": "Now",
+      "repeat_interval": 1,
+      "repeats_on": null,
+      "schedule_type": "CUSTOM",
+      "interval": null,
+      "relativeto": null,
+      "type": ""
+    }
+  },
+  {
+    "model": "campaign_manager.subcampaigncontentschedule",
+    "pk": 80,
+    "fields": {
+      "start_time": "2023-09-19T12:54:16.870Z",
+      "event_type": "Once",
+      "sub_campaign": 94,
+      "event_end_type": "Never",
+      "event_end_value_occurence": 1,
+      "event_end_value_time": "2023-09-19T12:54:16.870Z",
+      "event_schedule": "Now",
+      "repeat_interval": 1,
+      "repeats_on": null,
+      "schedule_type": "CUSTOM",
+      "interval": null,
+      "relativeto": null,
+      "type": ""
+    }
+  }
+]

@@ -1,0 +1,77 @@
+[
+  {
+    "model": "handoff.chatmessagesocialagent",
+    "pk": 1778,
+    "fields": {
+      "sender": "social_user",
+      "body": "handoff",
+      "sentiment": "none",
+      "message_type": "normal",
+      "intent": null,
+      "session_key": "bb4da9df-2e9d-4e44-a8e1-3b606600d8fc",
+      "chat_user": null,
+      "social_user": 29,
+      "tenant": "lebahandofffive"
+    }
+  },
+  {
+    "model": "handoff.chatmessagesocialagent",
+    "pk": 1779,
+    "fields": {
+      "sender": "social_user",
+      "body": "handoff",
+      "sentiment": "none",
+      "message_type": "normal",
+      "intent": null,
+      "session_key": "499f6ca9-cb4a-42d1-9cd4-f04016879343",
+      "chat_user": null,
+      "social_user": 29,
+      "tenant": "lebahandofffive"
+    }
+  },
+  {
+    "model": "handoff.chatmessagesocialagent",
+    "pk": 1780,
+    "fields": {
+      "sender": "social_user",
+      "body": "handoff",
+      "sentiment": "none",
+      "message_type": "normal",
+      "intent": null,
+      "session_key": "38f04bba-91ef-4698-a5e9-ad570c9c009b",
+      "chat_user": null,
+      "social_user": 29,
+      "tenant": "lebahandofffive"
+    }
+  },
+  {
+    "model": "handoff.chatmessagesocialagent",
+    "pk": 1781,
+    "fields": {
+      "sender": "social_user",
+      "body": "handoff",
+      "sentiment": "none",
+      "message_type": "normal",
+      "intent": null,
+      "session_key": "df7a7826-7ef9-42de-95bc-2519b596b737",
+      "chat_user": null,
+      "social_user": 29,
+      "tenant": "lebahandofffive"
+    }
+  },
+  {
+    "model": "handoff.chatmessagesocialagent",
+    "pk": 1782,
+    "fields": {
+      "sender": "social_user",
+      "body": "handoff",
+      "sentiment": "none",
+      "message_type": "normal",
+      "intent": null,
+      "session_key": "17471f20-c716-4d19-b3fa-030fc23c9a3b",
+      "chat_user": null,
+      "social_user": 29,
+      "tenant": "lebahandofffive"
+    }
+  }
+]

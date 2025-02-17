@@ -1,0 +1,688 @@
+{
+  "common": {
+    "chart_title": "Reports At a Glance",
+    "screenshot": true,
+    "charts": [
+      {
+        "type": "line_chart",
+        "chartType": "group",
+        "title": "Number of Active Customers",
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {
+          "x": "Date",
+          "y": [
+            "Active_Customer"
+          ]
+        },
+        "path": "console.views.reports_views/ReportsAtGlanceViewSet/active_customer_linechart_export_csv",
+        "description": "The line chart shows the number of customers who interacted with the bot during a specific time period.",
+        "chart_api_url": "reportglance-charts/bot_report_active_customers_linechart/",
+        "chart_report_api": "reportglance-charts/bot_report_active_customers_linechart_export_csv/",
+        "chart_report_pdf_api": "reportglance-charts/bot_report_active_customers_linechart_export_pdf/"
+      },
+      {
+        "type": "line_chart",
+        "chartType": "group",
+        "title": "Average Session Time",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {
+          "x": "Date",
+          "y": [
+            "Average Session Time"
+          ],
+          "alias": true
+        },
+        "path": "console.views.reports_views/ReportsAtGlanceViewSet/average_session_time_linechart_export_csv",
+        "description": "The line chart displays the mean duration of user sessions with the bot, for a specific time period.",
+        "chart_api_url": "reportglance-charts/bot_report_average_session_time_linechart/",
+        "chart_report_api": "reportglance-charts/bot_report_average_session_time_linechart_export_csv/",
+        "chart_report_pdf_api": "reportglance-charts/bot_report_average_session_time_linechart_export_pdf/"
+      },
+      {
+        "type": "line_chart",
+        "chartType": "group",
+        "title": "Number of Sessions",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {
+          "x": "Date",
+          "y": [
+            "Total_sessions"
+          ]
+        },
+        "path": "console.views.reports_views/ReportsAtGlanceViewSet/session_per_day_export_csv",
+        "description": "The line chart displays the total count of interactions between users and the bot over a specific time frame.",
+        "chart_api_url": "reportglance-charts/bot_report_no_of_sessions/",
+        "chart_report_api": "reportglance-charts/bot_report_no_of_sessions_export_csv/",
+        "chart_report_pdf_api": "reportglance-charts/bot_report_no_of_sessions_export_pdf/"
+      },
+      {
+        "type": "line_chart",
+        "chartType": "group",
+        "title": "Sessions per User",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {
+          "x": "Date",
+          "y": [
+            "sessions_per_user"
+          ]
+        },
+        "path": "console.views.reports_views/ReportsAtGlanceViewSet/session_per_user_export_csv",
+        "description": "The line chart displays average number of interactions or sessions a single user has with the bot over a specified time period.",
+        "chart_api_url": "reportglance-charts/bot_report_session_per_user/",
+        "chart_report_api": "reportglance-charts/bot_report_session_per_user_export_csv/",
+        "chart_report_pdf_api": "reportglance-charts/bot_report_session_per_user_export_pdf/"
+      },
+      {
+        "type": "line_chart",
+        "chartType": "group",
+        "title": "Messages per Session",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {
+          "x": "Date",
+          "y": [
+            "message_per_session"
+          ]
+        },
+        "path": "console.views.reports_views/ReportsAtGlanceViewSet/message_per_session_export_csv",
+        "description": "The line chart displays the average number of messages sent by the user to the bot during a single session for each channel over a specific time period.",
+        "chart_api_url": "reportglance-charts/bot_report_message_per_session_linechart/",
+        "chart_report_api": "reportglance-charts/bot_report_message_per_session_linechart_export_csv/",
+        "chart_report_pdf_api": "reportglance-charts/bot_report_message_per_session_linechart_export_pdf/"
+      },
+      {
+        "type": "donut_chart",
+        "chartType": "group",
+        "title": "Handled or Not",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "The donut chart shows the messages that the bot was able to comprehend and those that it could not handle during user interactions.",
+        "chart_api_url": "dailytraffic-charts/bot_daily_handled_or_not/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      }
+    ],
+    "filters": [
+      {
+        "api_url": "get_channels/",
+        "request_method": "GET",
+        "return_key": "channel",
+        "service": "analytics",
+        "filter_type": "select",
+        "filter_title": "Channel"
+      },
+      {
+        "return_key": "timestamp__range",
+        "service": "analytics",
+        "filter_type": "timestamp",
+        "filter_title": "Time Range"
+      }
+    ]
+  },
+  "dashboard": {
+    "chart_title": "Reports At a Glance",
+    "screenshot": true,
+    "charts": [
+      {
+        "type": "line_chart",
+        "chartType": "group",
+        "title": "Number of Active Customers",
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {
+          "x": "Date",
+          "y": [
+            "Active_Customer"
+          ]
+        },
+        "path": "console.views.reports_views/ReportsAtGlanceViewSet/active_customer_linechart_export_csv",
+        "description": "The line chart shows the number of customers who interacted with the bot during a specific time period.",
+        "chart_api_url": "reportglance-charts/bot_report_active_customers_linechart/",
+        "chart_report_api": "reportglance-charts/bot_report_active_customers_linechart_export_csv/",
+        "chart_report_pdf_api": "reportglance-charts/bot_report_active_customers_linechart_export_pdf/"
+      },
+      {
+        "type": "line_chart",
+        "chartType": "group",
+        "title": "Average Session Time",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {
+          "x": "Date",
+          "y": [
+            "Average Session Time"
+          ],
+          "alias": true
+        },
+        "path": "console.views.reports_views/ReportsAtGlanceViewSet/average_session_time_linechart_export_csv",
+        "description": "The line chart displays the mean duration of user sessions with the bot, for a specific time period.",
+        "chart_api_url": "reportglance-charts/bot_report_average_session_time_linechart/",
+        "chart_report_api": "reportglance-charts/bot_report_average_session_time_linechart_export_csv/",
+        "chart_report_pdf_api": "reportglance-charts/bot_report_average_session_time_linechart_export_pdf/"
+      },
+      {
+        "type": "line_chart",
+        "chartType": "group",
+        "title": "Number of Sessions",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {
+          "x": "Date",
+          "y": [
+            "Total_sessions"
+          ]
+        },
+        "path": "console.views.reports_views/ReportsAtGlanceViewSet/session_per_day_export_csv",
+        "description": "The line chart displays the total count of interactions between users and the bot over a specific time frame.",
+        "chart_api_url": "reportglance-charts/bot_report_no_of_sessions/",
+        "chart_report_api": "reportglance-charts/bot_report_no_of_sessions_export_csv/",
+        "chart_report_pdf_api": "reportglance-charts/bot_report_no_of_sessions_export_pdf/"
+      },
+      {
+        "type": "line_chart",
+        "chartType": "group",
+        "title": "Sessions per User",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {
+          "x": "Date",
+          "y": [
+            "sessions_per_user"
+          ]
+        },
+        "path": "console.views.reports_views/ReportsAtGlanceViewSet/session_per_user_export_csv",
+        "description": "The line chart displays average number of interactions or sessions a single user has with the bot over a specified time period.",
+        "chart_api_url": "reportglance-charts/bot_report_session_per_user/",
+        "chart_report_api": "reportglance-charts/bot_report_session_per_user_export_csv/",
+        "chart_report_pdf_api": "reportglance-charts/bot_report_session_per_user_export_pdf/"
+      },
+      {
+        "type": "line_chart",
+        "chartType": "group",
+        "title": "Messages per Session",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {
+          "x": "Date",
+          "y": [
+            "message_per_session"
+          ]
+        },
+        "path": "console.views.reports_views/ReportsAtGlanceViewSet/message_per_session_export_csv",
+        "description": "The line chart displays the average number of messages sent by the user to the bot during a single session for each channel over a specific time period.",
+        "chart_api_url": "reportglance-charts/bot_report_message_per_session_linechart/",
+        "chart_report_api": "reportglance-charts/bot_report_message_per_session_linechart_export_csv/",
+        "chart_report_pdf_api": "reportglance-charts/bot_report_message_per_session_linechart_export_pdf/"
+      },
+      {
+        "type": "donut_chart",
+        "chartType": "group",
+        "title": "Handled or Not",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "The donut chart shows the messages that the bot was able to comprehend and those that it could not handle during user interactions.",
+        "chart_api_url": "dailytraffic-charts/bot_daily_handled_or_not/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      }
+    ],
+    "filters": [
+      {
+        "api_url": "get_channels/",
+        "request_method": "GET",
+        "return_key": "channel",
+        "service": "analytics",
+        "filter_type": "select",
+        "filter_title": "Channel"
+      },
+      {
+        "return_key": "timestamp__range",
+        "service": "analytics",
+        "filter_type": "timestamp",
+        "filter_title": "Time Range"
+      }
+    ]
+  },
+  "stanbic": {
+    "chart_title": "Reports At a Glance",
+    "screenshot": true,
+    "charts": [
+      {
+        "type": "line_chart",
+        "chartType": "group",
+        "title": "Number of Active Customers",
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {
+          "x": "Date",
+          "y": [
+            "Active_Customer"
+          ]
+        },
+        "path": "console.views.reports_views/ReportsAtGlanceViewSet/active_customer_linechart_export_csv",
+        "description": "The line chart shows the number of customers who interacted with the bot during a specific time period.",
+        "chart_api_url": "reportglance-charts/bot_report_active_customers_linechart/",
+        "chart_report_api": "reportglance-charts/bot_report_active_customers_linechart_export_csv/",
+        "chart_report_pdf_api": "reportglance-charts/bot_report_active_customers_linechart_export_pdf/"
+      },
+      {
+        "type": "line_chart",
+        "chartType": "group",
+        "title": "Average Session Time",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {
+          "x": "Date",
+          "y": [
+            "Average Session Time"
+          ],
+          "alias": true
+        },
+        "path": "console.views.reports_views/ReportsAtGlanceViewSet/average_session_time_linechart_export_csv",
+        "description": "The line chart displays the mean duration of user sessions with the bot, for a specific time period.",
+        "chart_api_url": "reportglance-charts/bot_report_average_session_time_linechart/",
+        "chart_report_api": "reportglance-charts/bot_report_average_session_time_linechart_export_csv/",
+        "chart_report_pdf_api": "reportglance-charts/bot_report_average_session_time_linechart_export_pdf/"
+      },
+      {
+        "type": "line_chart",
+        "chartType": "group",
+        "title": "Number of Sessions",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {
+          "x": "Date",
+          "y": [
+            "Total_sessions"
+          ]
+        },
+        "path": "console.views.reports_views/ReportsAtGlanceViewSet/session_per_day_export_csv",
+        "description": "The line chart displays the total count of interactions between users and the bot over a specific time frame.",
+        "chart_api_url": "reportglance-charts/bot_report_no_of_sessions/",
+        "chart_report_api": "reportglance-charts/bot_report_no_of_sessions_export_csv/",
+        "chart_report_pdf_api": "reportglance-charts/bot_report_no_of_sessions_export_pdf/"
+      },
+      {
+        "type": "line_chart",
+        "chartType": "group",
+        "title": "Sessions per User",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {
+          "x": "Date",
+          "y": [
+            "sessions_per_user"
+          ]
+        },
+        "path": "console.views.reports_views/ReportsAtGlanceViewSet/session_per_user_export_csv",
+        "description": "The line chart displays average number of interactions or sessions a single user has with the bot over a specified time period.",
+        "chart_api_url": "reportglance-charts/bot_report_session_per_user/",
+        "chart_report_api": "reportglance-charts/bot_report_session_per_user_export_csv/",
+        "chart_report_pdf_api": "reportglance-charts/bot_report_session_per_user_export_pdf/"
+      },
+      {
+        "type": "line_chart",
+        "chartType": "group",
+        "title": "Messages per Session",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {
+          "x": "Date",
+          "y": [
+            "message_per_session"
+          ]
+        },
+        "path": "console.views.reports_views/ReportsAtGlanceViewSet/message_per_session_export_csv",
+        "description": "The line chart displays the average number of messages sent by the user to the bot during a single session for each channel over a specific time period.",
+        "chart_api_url": "reportglance-charts/bot_report_message_per_session_linechart/",
+        "chart_report_api": "reportglance-charts/bot_report_message_per_session_linechart_export_csv/",
+        "chart_report_pdf_api": "reportglance-charts/bot_report_message_per_session_linechart_export_pdf/"
+      },
+      {
+        "type": "donut_chart",
+        "chartType": "group",
+        "title": "Handled or Not",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "The donut chart shows the messages that the bot was able to comprehend and those that it could not handle during user interactions.",
+        "chart_api_url": "dailytraffic-charts/bot_daily_handled_or_not/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      }
+    ],
+    "filters": [
+      {
+        "api_url": "get_channels/",
+        "request_method": "GET",
+        "return_key": "channel",
+        "service": "analytics",
+        "filter_type": "select",
+        "filter_title": "Channel"
+      },
+      {
+        "return_key": "timestamp__range",
+        "service": "analytics",
+        "filter_type": "timestamp",
+        "filter_title": "Time Range"
+      }
+    ]
+  },
+  "nbf": {
+    "chart_title": "Reports At a Glance",
+    "screenshot": true,
+    "charts": [
+      {
+        "type": "line_chart",
+        "chartType": "group",
+        "title": "Number of Active Customers",
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {
+          "x": "Date",
+          "y": [
+            "Active_Customer"
+          ]
+        },
+        "path": "console.views.reports_views/ReportsAtGlanceViewSet/active_customer_linechart_export_csv",
+        "description": "The line chart shows the number of customers who interacted with the bot during a specific time period.",
+        "chart_api_url": "reportglance-charts/bot_report_active_customers_linechart/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "line_chart",
+        "chartType": "group",
+        "title": "Average Session Time(in min.)",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {
+          "x": "Date",
+          "y": [
+            "Average Session Time(minutes)"
+          ]
+        },
+        "description": "The line chart displays the mean duration of user sessions with the bot in minutes for a specific time period.",
+        "chart_api_url": "reportglance-charts/bot_report_average_session_time_linechart/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "line_chart",
+        "chartType": "group",
+        "title": "Number of Sessions",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {
+          "x": "Date",
+          "y": [
+            "Total_sessions"
+          ]
+        },
+        "path": "console.views.reports_views/ReportsAtGlanceViewSet/session_per_day_export_csv",
+        "description": "The line chart displays the total count of interactions between users and the bot over a specific time frame.",
+        "chart_api_url": "reportglance-charts/bot_report_no_of_sessions/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "line_chart",
+        "chartType": "group",
+        "title": "Sessions per User",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {
+          "x": "Date",
+          "y": [
+            "sessions_per_user"
+          ]
+        },
+        "path": "console.views.reports_views/ReportsAtGlanceViewSet/session_per_user_export_csv",
+        "description": "The line chart displays average number of interactions or sessions a single user has with the bot over a specified time period.",
+        "chart_api_url": "reportglance-charts/bot_report_session_per_user/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "line_chart",
+        "chartType": "group",
+        "title": "Messages per Session",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {
+          "x": "Date",
+          "y": [
+            "message_per_session"
+          ]
+        },
+        "path": "console.views.reports_views/ReportsAtGlanceViewSet/message_per_session_export_csv",
+        "description": "The line chart displays the average number of messages sent by the user to the bot during a single session for each channel over a specific time period.",
+        "chart_api_url": "reportglance-charts/bot_report_message_per_session_linechart/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "donut_chart",
+        "chartType": "group",
+        "title": "Handled or Not",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "The donut chart shows the messages that the bot was able to comprehend and those that it could not handle during user interactions.",
+        "chart_api_url": "dailytraffic-charts/bot_daily_handled_or_not/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      }
+    ],
+    "filters": [
+      {
+        "api_url": "get_channels/",
+        "request_method": "GET",
+        "return_key": "channel",
+        "service": "analytics",
+        "filter_type": "select",
+        "filter_title": "Channel"
+      },
+      {
+        "return_key": "timestamp__range",
+        "service": "analytics",
+        "filter_type": "timestamp",
+        "filter_title": "Time Range"
+      }
+    ]
+  },
+  "dib": {
+    "chart_title": "Reports At a Glance",
+    "screenshot": true,
+    "charts": [
+      {
+        "type": "line_chart",
+        "chartType": "group",
+        "title": "Number of Active Customers",
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {
+          "x": "Date",
+          "y": [
+            "Active_Customer"
+          ]
+        },
+        "path": "console.views.reports_views/ReportsAtGlanceViewSet/active_customer_linechart_export_csv",
+        "description": "The line chart shows the number of customers who interacted with the bot during a specific time period.",
+        "chart_api_url": "reportglance-charts/bot_report_active_customers_linechart/",
+        "chart_report_api": "reportglance-charts/bot_report_active_customers_linechart_export_csv/",
+        "chart_report_pdf_api": "reportglance-charts/bot_report_active_customers_linechart_export_pdf/"
+      },
+      {
+        "type": "line_chart",
+        "chartType": "group",
+        "title": "Average Session Time",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {
+          "x": "Date",
+          "y": [
+            "Average Session Time"
+          ],
+          "alias": true
+        },
+        "path": "console.views.reports_views/ReportsAtGlanceViewSet/average_session_time_linechart_export_csv",
+        "description": "The line chart displays the mean duration of user sessions with the bot, for a specific time period.",
+        "chart_api_url": "reportglance-charts/bot_report_average_session_time_linechart/",
+        "chart_report_api": "reportglance-charts/bot_report_average_session_time_linechart_export_csv/",
+        "chart_report_pdf_api": "reportglance-charts/bot_report_average_session_time_linechart_export_pdf/"
+      },
+      {
+        "type": "line_chart",
+        "chartType": "group",
+        "title": "Number of Sessions",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {
+          "x": "Date",
+          "y": [
+            "Total_sessions"
+          ]
+        },
+        "path": "console.views.reports_views/ReportsAtGlanceViewSet/session_per_day_export_csv",
+        "description": "The line chart displays the total count of interactions between users and the bot over a specific time frame.",
+        "chart_api_url": "reportglance-charts/bot_report_no_of_sessions/",
+        "chart_report_api": "reportglance-charts/bot_report_no_of_sessions_export_csv/",
+        "chart_report_pdf_api": "reportglance-charts/bot_report_no_of_sessions_export_pdf/"
+      },
+      {
+        "type": "line_chart",
+        "chartType": "group",
+        "title": "Sessions per User",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {
+          "x": "Date",
+          "y": [
+            "sessions_per_user"
+          ]
+        },
+        "path": "console.views.reports_views/ReportsAtGlanceViewSet/session_per_user_export_csv",
+        "description": "The line chart displays average number of interactions or sessions a single user has with the bot over a specified time period.",
+        "chart_api_url": "reportglance-charts/bot_report_session_per_user/",
+        "chart_report_api": "reportglance-charts/bot_report_session_per_user_export_csv/",
+        "chart_report_pdf_api": "reportglance-charts/bot_report_session_per_user_export_pdf/"
+      },
+      {
+        "type": "line_chart",
+        "chartType": "group",
+        "title": "Messages per Session",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {
+          "x": "Date",
+          "y": [
+            "message_per_session"
+          ]
+        },
+        "path": "console.views.reports_views/ReportsAtGlanceViewSet/message_per_session_export_csv",
+        "description": "The line chart displays the average number of messages sent by the user to the bot during a single session for each channel over a specific time period.",
+        "chart_api_url": "reportglance-charts/bot_report_message_per_session_linechart/",
+        "chart_report_api": "reportglance-charts/bot_report_message_per_session_linechart_export_csv/",
+        "chart_report_pdf_api": "reportglance-charts/bot_report_message_per_session_linechart_export_pdf/"
+      },
+      {
+        "type": "donut_chart",
+        "chartType": "group",
+        "title": "Handled or Not",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "The donut chart shows the messages that the bot was able to comprehend and those that it could not handle during user interactions.",
+        "chart_api_url": "dailytraffic-charts/bot_daily_handled_or_not/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      }
+    ],
+    "filters": [
+      {
+        "api_url": "get_channels/",
+        "request_method": "GET",
+        "return_key": "channel",
+        "service": "analytics",
+        "filter_type": "select",
+        "filter_title": "Channel"
+      },
+      {
+        "return_key": "timestamp__range",
+        "service": "analytics",
+        "filter_type": "timestamp",
+        "filter_title": "Time Range"
+      },
+      {
+        "api_url": "get_customer_types/",
+        "request_method": "GET",
+        "return_key": "customer_type",
+        "service": "analytics",
+        "filter_type": "select",
+        "filter_title": "Customer Type"
+      }
+    ]
+  }
+}

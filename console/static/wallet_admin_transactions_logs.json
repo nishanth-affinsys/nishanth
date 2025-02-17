@@ -1,0 +1,62 @@
+{
+  "common": {
+    "chart_title": "Transaction Logs Report",
+    "screenshot": true,
+    "charts": [
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Wallet Transaction Logs",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "wallet.views.admin_transaction_logs_views/AdminTransactionLogsViewSet/wallet_admin_transaction_logs_export_csv",
+        "description": "The table is used for displaying the data of transaction log",
+        "chart_api_url": "wallet_admin_transactions_logs/wallet_admin_transaction_logs/",
+        "chart_report_api": "wallet_admin_transactions_logs/wallet_admin_transaction_logs_export_csv/",
+        "chart_report_pdf_api": 0,
+        "chart_report_xlsx_api": "wallet_admin_transactions_logs/wallet_admin_transaction_logs_export_excel/"
+      }
+    ],
+    "filters": [
+      {
+        "return_key": "timestamp__range",
+        "service": "analytics",
+        "filter_type": "timestamp",
+        "filter_title": "Time Range"
+      }
+    ]
+  },
+  "dashboard": {
+    "chart_title": "Transaction Logs Report",
+    "screenshot": true,
+    "charts": [
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Wallet Transaction Logs",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "wallet.views.admin_transaction_logs_views/AdminTransactionLogsViewSet/wallet_admin_transaction_logs_export_csv",
+        "description": "The table is used for displaying the data of transaction log",
+        "chart_api_url": "wallet_admin_transactions_logs/wallet_admin_transaction_logs/",
+        "chart_report_api": "wallet_admin_transactions_logs/wallet_admin_transaction_logs_export_csv/",
+        "chart_report_pdf_api": 0,
+        "chart_report_xlsx_api": "wallet_admin_transactions_logs/wallet_admin_transaction_logs_export_excel/"
+      }
+    ],
+    "filters": [
+      {
+        "return_key": "timestamp__range",
+        "service": "analytics",
+        "filter_type": "timestamp",
+        "filter_title": "Time Range"
+      }
+    ]
+  }
+}

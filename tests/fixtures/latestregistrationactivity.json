@@ -1,0 +1,42 @@
+[
+  {
+    "model": "console.latestregistrationactivity",
+    "pk": 1,
+    "fields": {
+      "mobile_number": "+919884985185",
+      "timestamp": "2023-04-14T06:57:01.153Z",
+      "registered": "deregister",
+      "tenant": "stanbickenya"
+    }
+  },
+  {
+    "model": "console.latestregistrationactivity",
+    "pk": 2,
+    "fields": {
+      "mobile_number": "+919884985186",
+      "timestamp": "2023-04-14T09:05:51.972Z",
+      "registered": "deregister",
+      "tenant": "stanbickenya"
+    }
+  },
+  {
+    "model": "console.latestregistrationactivity",
+    "pk": 3,
+    "fields": {
+      "mobile_number": "+918806416267",
+      "timestamp": "2023-05-05T12:20:46.351Z",
+      "registered": "deregister",
+      "tenant": "stanbickenya"
+    }
+  },
+  {
+    "model": "console.latestregistrationactivity",
+    "pk": 4,
+    "fields": {
+      "mobile_number": "+918328282071",
+      "timestamp": "2023-05-06T06:03:48.515Z",
+      "registered": "register",
+      "tenant": "stanbickenya"
+    }
+  }
+]

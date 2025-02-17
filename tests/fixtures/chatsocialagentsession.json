@@ -1,0 +1,47 @@
+[
+  {
+    "model": "handoff.chatsocialagentsession",
+    "pk": 138,
+    "fields": {
+      "session_key": "758fa0e9-f933-4f16-8cc5-37c8fd553c65",
+      "chat_user": 18,
+      "social_user": 30
+    }
+  },
+  {
+    "model": "handoff.chatsocialagentsession",
+    "pk": 139,
+    "fields": {
+      "session_key": "85ebf14f-769f-45cf-87fd-6156a6155713",
+      "chat_user": 18,
+      "social_user": 30
+    }
+  },
+  {
+    "model": "handoff.chatsocialagentsession",
+    "pk": 140,
+    "fields": {
+      "session_key": "9d633ad4-779b-435d-a9d3-4701db59352b",
+      "chat_user": 18,
+      "social_user": 30
+    }
+  },
+  {
+    "model": "handoff.chatsocialagentsession",
+    "pk": 141,
+    "fields": {
+      "session_key": "66e5b3dd-fcd7-40de-8c0d-4f4fd82b6702",
+      "chat_user": 20,
+      "social_user": 32
+    }
+  },
+  {
+    "model": "handoff.chatsocialagentsession",
+    "pk": 142,
+    "fields": {
+      "session_key": "264eefe9-78a9-4f68-bb02-425bc05c5e73",
+      "chat_user": 5,
+      "social_user": 1
+    }
+  }
+]

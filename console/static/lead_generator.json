@@ -1,0 +1,430 @@
+{
+  "common": {
+    "chart_title": "Leads Generations",
+    "screenshot": true,
+    "charts": [
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Total Leads",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "The numeric value represents the count of total leads.",
+        "chart_api_url": "lead_gen/leads_total/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Total NTB leads",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "The numeric value represents the count of total leads for new users.",
+        "chart_api_url": "lead_gen/leads_total_NTB/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Total ETB Leads",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "The numeric value represents the count of total leads for existing customers",
+        "chart_api_url": "lead_gen/leads_total_ETB/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Lead by Products",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "client_specific.views.nbf_lead_generator_views/LeadGeneratorViewSet/lead_by_products_export",
+        "description": "The table chart gives a detailed report of lead by products selected by an user.",
+        "chart_api_url": "lead_gen/leads_by_products/",
+        "chart_report_api": "lead_gen/leads_by_products_export_csv/",
+        "chart_report_pdf_api": "lead_gen/leads_by_products_export_pdf/"
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Interested For Call",
+        "screenshot": true,
+        "color": 0,
+        "cols": 6,
+        "rows": 1,
+        "Property": {},
+        "description": "The numeric value represents the number of customers interested for call.",
+        "chart_api_url": "lead_gen/leads_interested_for_call/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Not Interested For Call",
+        "screenshot": true,
+        "color": 0,
+        "cols": 6,
+        "rows": 1,
+        "Property": {},
+        "description": "The numeric value represents the number of customers uninterested for call.",
+        "chart_api_url": "lead_gen/leads_not_interested_for_call/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      }
+    ],
+    "filters": [
+      {
+        "api_url": "get_channels/",
+        "request_method": "GET",
+        "return_key": "channel",
+        "service": "analytics",
+        "filter_type": "select",
+        "filter_title": "Channel"
+      },
+      {
+        "return_key": "timestamp__range",
+        "service": "analytics",
+        "filter_type": "timestamp",
+        "filter_title": "Time Range"
+      }
+    ]
+  },
+  "dashboard": {
+    "chart_title": "Leads Generations",
+    "screenshot": true,
+    "charts": [
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Total Leads",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "The numeric value represents the count of total leads.",
+        "chart_api_url": "lead_gen/leads_total/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Total NTB leads",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "The numeric value represents the count of total leads for new users.",
+        "chart_api_url": "lead_gen/leads_total_NTB/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Total ETB Leads",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "The numeric value represents the count of total leads for existing customers",
+        "chart_api_url": "lead_gen/leads_total_ETB/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Lead by Products",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "client_specific.views.nbf_lead_generator_views/LeadGeneratorViewSet/lead_by_products_export",
+        "description": "The table chart gives a detailed report of lead by products selected by an user.",
+        "chart_api_url": "lead_gen/leads_by_products/",
+        "chart_report_api": "lead_gen/leads_by_products_export_csv/",
+        "chart_report_pdf_api": "lead_gen/leads_by_products_export_pdf/"
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Interested For Call",
+        "screenshot": true,
+        "color": 0,
+        "cols": 6,
+        "rows": 1,
+        "Property": {},
+        "description": "The numeric value represents the number of customers interested for call.",
+        "chart_api_url": "lead_gen/leads_interested_for_call/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Not Interested For Call",
+        "screenshot": true,
+        "color": 0,
+        "cols": 6,
+        "rows": 1,
+        "Property": {},
+        "description": "The numeric value represents the number of customers uninterested for call.",
+        "chart_api_url": "lead_gen/leads_not_interested_for_call/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      }
+    ],
+    "filters": [
+      {
+        "api_url": "get_channels/",
+        "request_method": "GET",
+        "return_key": "channel",
+        "service": "analytics",
+        "filter_type": "select",
+        "filter_title": "Channel"
+      },
+      {
+        "return_key": "timestamp__range",
+        "service": "analytics",
+        "filter_type": "timestamp",
+        "filter_title": "Time Range"
+      }
+    ]
+  },
+  "stanbic": {
+    "chart_title": "Leads Generations",
+    "screenshot": true,
+    "charts": [
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Total Leads",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "The numeric value represents the count of total leads.",
+        "chart_api_url": "lead_gen/leads_total/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Total NTB leads",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "The numeric value represents the count of total leads for new users.",
+        "chart_api_url": "lead_gen/leads_total_NTB/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Total ETB Leads",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "The numeric value represents the count of total leads for existing customers",
+        "chart_api_url": "lead_gen/leads_total_ETB/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Lead by Products",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "client_specific.views.nbf_lead_generator_views/LeadGeneratorViewSet/lead_by_products_export",
+        "description": "The table chart gives a detailed report of lead by products selected by an user.",
+        "chart_api_url": "lead_gen/leads_by_products/",
+        "chart_report_api": "lead_gen/leads_by_products_export_csv/",
+        "chart_report_pdf_api": "lead_gen/leads_by_products_export_pdf/"
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Interested For Call",
+        "screenshot": true,
+        "color": 0,
+        "cols": 6,
+        "rows": 1,
+        "Property": {},
+        "description": "The numeric value represents the number of customers interested for call.",
+        "chart_api_url": "lead_gen/leads_interested_for_call/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Not Interested For Call",
+        "screenshot": true,
+        "color": 0,
+        "cols": 6,
+        "rows": 1,
+        "Property": {},
+        "description": "The numeric value represents the number of customers uninterested for call.",
+        "chart_api_url": "lead_gen/leads_not_interested_for_call/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      }
+    ],
+    "filters": [
+      {
+        "api_url": "get_channels/",
+        "request_method": "GET",
+        "return_key": "channel",
+        "service": "analytics",
+        "filter_type": "select",
+        "filter_title": "Channel"
+      },
+      {
+        "return_key": "timestamp__range",
+        "service": "analytics",
+        "filter_type": "timestamp",
+        "filter_title": "Time Range"
+      }
+    ]
+  },
+  "nbf": {
+    "chart_title": "Leads Generations",
+    "screenshot": true,
+    "charts": [
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Total Leads",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "The numeric value represents the count of total leads.",
+        "chart_api_url": "lead_gen/leads_total/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Total NTB leads",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "The numeric value represents the count of total leads for new users.",
+        "chart_api_url": "lead_gen/leads_total_NTB/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Total ETB Leads",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "The numeric value represents the count of total leads for existing customers",
+        "chart_api_url": "lead_gen/leads_total_ETB/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Lead by Products",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "client_specific.views.nbf_lead_generator_views/LeadGeneratorViewSet/lead_by_products_export",
+        "description": "The table chart gives a detailed report of lead by products selected by an user.",
+        "chart_api_url": "lead_gen/leads_by_products/",
+        "chart_report_api": "lead_gen/leads_by_products_export_csv/",
+        "chart_report_pdf_api": "lead_gen/leads_by_products_export_pdf/"
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Interested For Call",
+        "screenshot": true,
+        "color": 0,
+        "cols": 6,
+        "rows": 1,
+        "Property": {},
+        "description": "The numeric value represents the number of customers interested for call.",
+        "chart_api_url": "lead_gen/leads_interested_for_call/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Not Interested For Call",
+        "screenshot": true,
+        "color": 0,
+        "cols": 6,
+        "rows": 1,
+        "Property": {},
+        "description": "The numeric value represents the number of customers uninterested for call.",
+        "chart_api_url": "lead_gen/leads_not_interested_for_call/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      }
+    ],
+    "filters": [
+      {
+        "api_url": "get_channels/",
+        "request_method": "GET",
+        "return_key": "channel",
+        "service": "analytics",
+        "filter_type": "select",
+        "filter_title": "Channel"
+      },
+      {
+        "return_key": "timestamp__range",
+        "service": "analytics",
+        "filter_type": "timestamp",
+        "filter_title": "Time Range"
+      }
+    ]
+  }
+}

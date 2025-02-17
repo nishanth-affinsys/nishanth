@@ -1,0 +1,57 @@
+[
+  {
+    "model": "campaign_manager.subcampaignuser",
+    "pk": 310,
+    "fields": {
+      "segment_name": "20 numbers",
+      "profile_id": "61fd2a72-8c9b-4c33-ab54-2a3c430e7563",
+      "campaign_run": 83,
+      "target_segment": 75,
+      "channel": "whatsapp"
+    }
+  },
+  {
+    "model": "campaign_manager.subcampaignuser",
+    "pk": 311,
+    "fields": {
+      "segment_name": "20 numbers",
+      "profile_id": "4c1f20fc-e415-4439-a997-fddf197a764a",
+      "campaign_run": 86,
+      "target_segment": 76,
+      "channel": "whatsapp"
+    }
+  },
+  {
+    "model": "campaign_manager.subcampaignuser",
+    "pk": 312,
+    "fields": {
+      "segment_name": "Billing",
+      "profile_id": "2e74b919-6cf7-4a20-8611-6f67c16596a8",
+      "campaign_run": 87,
+      "target_segment": 78,
+      "channel": "whatsapp"
+    }
+  },
+  {
+    "model": "campaign_manager.subcampaignuser",
+    "pk": 313,
+    "fields": {
+      "segment_name": "campaign test admin",
+      "profile_id": "e1cb7046-0e44-4be3-91e8-903db623be51",
+      "campaign_run": 87,
+      "target_segment": 78,
+      "channel": "whatsapp"
+    }
+  },
+  {
+    "model": "campaign_manager.subcampaignuser",
+    "pk": 314,
+    "fields": {
+      "segment_name": "campaign test admin",
+      "profile_id": "61fd2a72-8c9b-4c33-ab54-2a3c430e7563",
+      "campaign_run": 83,
+      "target_segment": 75,
+      "channel": "whatsapp"
+    }
+  }
+]

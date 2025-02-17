@@ -1,0 +1,179 @@
+{
+  "onboarding": {
+    "chart_title": "Retail Detailed Report",
+    "screenshot": true,
+    "charts": [
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Agent Application Details",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "onboarding.views.onboarding_detailed_report_views/DetailedReportViewSet/applications_report_agent_rt_export_csv",
+        "description": "The table presents the audit trail record for agent applications in retail sector",
+        "chart_api_url": "onboarding_detailed_charts/applications_report_agent_rt/",
+        "chart_report_api": "onboarding_detailed_charts/applications_report_agent_rt_export_csv/",
+        "chart_report_pdf_api": "onboarding_detailed_charts/applications_report_agent_rt_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Self Application Details",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "onboarding.views.onboarding_detailed_report_views/DetailedReportViewSet/applications_report_self_rt_export_csv",
+        "description": "The table presents the audit trail record for self applications in retail sector",
+        "chart_api_url": "onboarding_detailed_charts/applications_report_self_rt/",
+        "chart_report_api": "onboarding_detailed_charts/applications_report_self_rt_export_csv/",
+        "chart_report_pdf_api": "onboarding_detailed_charts/applications_report_self_rt_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Staff Applications Details",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "onboarding.views.onboarding_detailed_report_views/DetailedReportViewSet/applications_report_staff_rt_export_csv",
+        "description": "The table presents the audit trail record for staff applications in retail sector",
+        "chart_api_url": "onboarding_detailed_charts/applications_report_staff_rt/",
+        "chart_report_api": "onboarding_detailed_charts/applications_report_staff_rt_export_csv/",
+        "chart_report_pdf_api": "onboarding_detailed_charts/applications_report_staff_rt_export_pdf/"
+      }
+    ],
+    "filters": [
+      {
+        "return_key": "timestamp__range",
+        "service": "analytics",
+        "filter_type": "timestamp",
+        "filter_title": "Time Range"
+      }
+    ]
+  },
+  "dashboard": {
+    "chart_title": "Retail Detailed Report",
+    "screenshot": true,
+    "charts": [
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Agent Application Details",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "onboarding.views.onboarding_detailed_report_views/DetailedReportViewSet/applications_report_agent_rt_export_csv",
+        "description": "The table presents the audit trail record for agent applications in retail sector",
+        "chart_api_url": "onboarding_detailed_charts/applications_report_agent_rt/",
+        "chart_report_api": "onboarding_detailed_charts/applications_report_agent_rt_export_csv/",
+        "chart_report_pdf_api": "onboarding_detailed_charts/applications_report_agent_rt_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Self Application Details",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "onboarding.views.onboarding_detailed_report_views/DetailedReportViewSet/applications_report_self_rt_export_csv",
+        "description": "The table presents the audit trail record for self applications in retail sector",
+        "chart_api_url": "onboarding_detailed_charts/applications_report_self_rt/",
+        "chart_report_api": "onboarding_detailed_charts/applications_report_self_rt_export_csv/",
+        "chart_report_pdf_api": "onboarding_detailed_charts/applications_report_self_rt_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Staff Applications Details",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "onboarding.views.onboarding_detailed_report_views/DetailedReportViewSet/applications_report_staff_rt_export_csv",
+        "description": "The table presents the audit trail record for staff applications in retail sector",
+        "chart_api_url": "onboarding_detailed_charts/applications_report_staff_rt/",
+        "chart_report_api": "onboarding_detailed_charts/applications_report_staff_rt_export_csv/",
+        "chart_report_pdf_api": "onboarding_detailed_charts/applications_report_staff_rt_export_pdf/"
+      }
+    ],
+    "filters": [
+      {
+        "return_key": "timestamp__range",
+        "service": "analytics",
+        "filter_type": "timestamp",
+        "filter_title": "Time Range"
+      }
+    ]
+  },
+  "common": {
+    "chart_title": "Retail Detailed Report",
+    "screenshot": true,
+    "charts": [
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Agent Application Details",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "onboarding.views.onboarding_detailed_report_views/DetailedReportViewSet/applications_report_agent_rt_export_csv",
+        "description": "The table presents the audit trail record for agent applications in retail sector",
+        "chart_api_url": "onboarding_detailed_charts/applications_report_agent_rt/",
+        "chart_report_api": "onboarding_detailed_charts/applications_report_agent_rt_export_csv/",
+        "chart_report_pdf_api": "onboarding_detailed_charts/applications_report_agent_rt_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Self Application Details",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "onboarding.views.onboarding_detailed_report_views/DetailedReportViewSet/applications_report_self_rt_export_csv",
+        "description": "The table presents the audit trail record for self applications in retail sector",
+        "chart_api_url": "onboarding_detailed_charts/applications_report_self_rt/",
+        "chart_report_api": "onboarding_detailed_charts/applications_report_self_rt_export_csv/",
+        "chart_report_pdf_api": "onboarding_detailed_charts/applications_report_self_rt_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Staff Applications Details",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "onboarding.views.onboarding_detailed_report_views/DetailedReportViewSet/applications_report_staff_rt_export_csv",
+        "description": "The table presents the audit trail record for staff applications in retail sector",
+        "chart_api_url": "onboarding_detailed_charts/applications_report_staff_rt/",
+        "chart_report_api": "onboarding_detailed_charts/applications_report_staff_rt_export_csv/",
+        "chart_report_pdf_api": "onboarding_detailed_charts/applications_report_staff_rt_export_pdf/"
+      }
+    ],
+    "filters": [
+      {
+        "return_key": "timestamp__range",
+        "service": "analytics",
+        "filter_type": "timestamp",
+        "filter_title": "Time Range"
+      }
+    ]
+  }
+}

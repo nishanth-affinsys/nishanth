@@ -1,0 +1,77 @@
+[
+  {
+    "model": "handoff.agenttransfer",
+    "pk": 338,
+    "fields": {
+      "parent_session_id": "6d109c6e-c1b5-4c75-84c2-2fa9ecad0f97",
+      "username": "icecream",
+      "transferred_agents": "['srujan','Aswin']",
+      "initial_agent": "['Aswin']",
+      "total_session": "00:01:29.742810",
+      "initial_time": "2023-04-01T05:30:57.659Z",
+      "accept_time": "2023-04-01T05:31:01.961Z",
+      "channel": "webchat",
+      "tenant": "lebahandofffive"
+    }
+  },
+  {
+    "model": "handoff.agenttransfer",
+    "pk": 339,
+    "fields": {
+      "parent_session_id": "8a8896e5-69c3-4299-9e56-30aa925611b4",
+      "username": "yes",
+      "transferred_agents": "{}",
+      "initial_agent": "{}",
+      "total_session": "00:00:00",
+      "initial_time": "2023-04-01T05:03:46.676Z",
+      "accept_time": null,
+      "channel": "webchat",
+      "tenant": "lebahandofffive"
+    }
+  },
+  {
+    "model": "handoff.agenttransfer",
+    "pk": 340,
+    "fields": {
+      "parent_session_id": "51cefd87-6bfa-4840-8ee2-d5c65364100a",
+      "username": "aerqwrefewqdsfc",
+      "transferred_agents": "{}",
+      "initial_agent": "{}",
+      "total_session": "00:00:00",
+      "initial_time": "2023-04-25T12:22:10.877Z",
+      "accept_time": null,
+      "channel": "webchat",
+      "tenant": "lebahandofffive"
+    }
+  },
+  {
+    "model": "handoff.agenttransfer",
+    "pk": 341,
+    "fields": {
+      "parent_session_id": "107603b3-d405-48fb-bdc8-26f0c3d266de",
+      "username": "aerqwrefewqdsfc",
+      "transferred_agents": "{}",
+      "initial_agent": "{}",
+      "total_session": "00:00:00",
+      "initial_time": "2023-04-25T12:25:59.230Z",
+      "accept_time": null,
+      "channel": "webchat",
+      "tenant": "lebahandofffive"
+    }
+  },
+  {
+    "model": "handoff.agenttransfer",
+    "pk": 342,
+    "fields": {
+      "parent_session_id": "42c67537-f9d7-43f1-a704-666cd90f60db",
+      "username": "aerqwrefewqdsfc",
+      "transferred_agents": "{}",
+      "initial_agent": "{}",
+      "total_session": "00:00:00",
+      "initial_time": "2023-04-26T09:23:36.211Z",
+      "accept_time": null,
+      "channel": "webchat",
+      "tenant": "lebahandofffive"
+    }
+  }
+]

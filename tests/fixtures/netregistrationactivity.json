@@ -1,0 +1,52 @@
+[
+  {
+    "model": "console.netregistrationactivity",
+    "pk": 1,
+    "fields": {
+      "mobile_number": "+918806416267",
+      "date": "2023-04-02",
+      "action": "register",
+      "tenant": "stanbickenya"
+    }
+  },
+  {
+    "model": "console.netregistrationactivity",
+    "pk": 2,
+    "fields": {
+      "mobile_number": "+918806416267",
+      "date": "2023-05-05",
+      "action": "deregister",
+      "tenant": "stanbickenya"
+    }
+  },
+  {
+    "model": "console.netregistrationactivity",
+    "pk": 3,
+    "fields": {
+      "mobile_number": "+919884985186",
+      "date": "2023-04-12",
+      "action": "register",
+      "tenant": "stanbickenya"
+    }
+  },
+  {
+    "model": "console.netregistrationactivity",
+    "pk": 4,
+    "fields": {
+      "mobile_number": "+919884985185",
+      "date": "2023-04-11",
+      "action": "deregister",
+      "tenant": "stanbickenya"
+    }
+  },
+  {
+    "model": "console.netregistrationactivity",
+    "pk": 5,
+    "fields": {
+      "mobile_number": "+919884985185",
+      "date": "2023-04-14",
+      "action": "deregister",
+      "tenant": "stanbickenya"
+    }
+  }
+]

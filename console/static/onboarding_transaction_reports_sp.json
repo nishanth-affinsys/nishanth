@@ -1,0 +1,290 @@
+{
+  "common": {
+    "chart_title": "Sole Proprietor Transaction Report",
+    "screenshot": true,
+    "charts": [
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Successful Transactions",
+        "screenshot": true,
+        "color": 0,
+        "cols": 6,
+        "rows": 1,
+        "Property": {},
+        "description": "The table shows the count of successfully created sole proprietor accounts within the chosen time period.",
+        "chart_api_url": "onboarding_transaction_charts/successful_transaction_sp/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Rejected Transactions",
+        "screenshot": true,
+        "color": 0,
+        "cols": 6,
+        "rows": 1,
+        "Property": {},
+        "description": "The numeric value represents the count of rejected sole proprietor applications for the chosen time period.",
+        "chart_api_url": "onboarding_transaction_charts/failed_transaction_sp/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Successful Transaction Report",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "onboarding.views.onboarding_transaction_report_views/TransactionReportViewSet/successful_transaction_report_sp_export_csv",
+        "description": "The table shows the details of successfully created sole proprietorship accounts for the chosen time period.",
+        "chart_api_url": "onboarding_transaction_charts/successful_transaction_report_sp/",
+        "chart_report_api": "onboarding_transaction_charts/successful_transaction_report_sp_export_csv/",
+        "chart_report_pdf_api": "onboarding_transaction_charts/successful_transaction_report_sp_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Rejected Transaction Report",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "onboarding.views.onboarding_transaction_report_views/TransactionReportViewSet/rejected_transactions_report_sp_export",
+        "description": "The table offers information on sole proprietorship applications that were not approved by the bank staff.",
+        "chart_api_url": "onboarding_transaction_charts/rejected_transactions_report_sp/",
+        "chart_report_api": "onboarding_transaction_charts/rejected_transactions_report_sp_export/",
+        "chart_report_pdf_api": "onboarding_transaction_charts/rejected_transactions_report_sp_export_pdf/"
+      }
+    ],
+    "filters": [
+      {
+        "return_key": "timestamp__range",
+        "service": "analytics",
+        "filter_type": "timestamp",
+        "filter_title": "Time Range"
+      }
+    ]
+  },
+  "dashboard": {
+    "chart_title": "Sole Proprietor Transaction Report",
+    "screenshot": true,
+    "charts": [
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Successful Transactions",
+        "screenshot": true,
+        "color": 0,
+        "cols": 6,
+        "rows": 1,
+        "Property": {},
+        "description": "The table shows the count of successfully created sole proprietor accounts within the chosen time period.",
+        "chart_api_url": "onboarding_transaction_charts/successful_transaction_sp/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Rejected Transactions",
+        "screenshot": true,
+        "color": 0,
+        "cols": 6,
+        "rows": 1,
+        "Property": {},
+        "description": "The numeric value represents the count of rejected sole proprietor applications for the chosen time period.",
+        "chart_api_url": "onboarding_transaction_charts/failed_transaction_sp/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Successful Transaction Report",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "onboarding.views.onboarding_transaction_report_views/TransactionReportViewSet/successful_transaction_report_sp_export_csv",
+        "description": "The table shows the details of successfully created sole proprietorship accounts for the chosen time period.",
+        "chart_api_url": "onboarding_transaction_charts/successful_transaction_report_sp/",
+        "chart_report_api": "onboarding_transaction_charts/successful_transaction_report_sp_export_csv/",
+        "chart_report_pdf_api": "onboarding_transaction_charts/successful_transaction_report_sp_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Rejected Transaction Report",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "onboarding.views.onboarding_transaction_report_views/TransactionReportViewSet/rejected_transactions_report_sp_export",
+        "description": "The table offers information on sole proprietorship applications that were not approved by the bank staff.",
+        "chart_api_url": "onboarding_transaction_charts/rejected_transactions_report_sp/",
+        "chart_report_api": "onboarding_transaction_charts/rejected_transactions_report_sp_export/",
+        "chart_report_pdf_api": "onboarding_transaction_charts/rejected_transactions_report_sp_export_pdf/"
+      }
+    ],
+    "filters": [
+      {
+        "return_key": "timestamp__range",
+        "service": "analytics",
+        "filter_type": "timestamp",
+        "filter_title": "Time Range"
+      }
+    ]
+  },
+  "stanbic": {
+    "chart_title": "Sole Proprietor Transaction Report",
+    "screenshot": true,
+    "charts": [
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Successful Transactions",
+        "screenshot": true,
+        "color": 0,
+        "cols": 6,
+        "rows": 1,
+        "Property": {},
+        "description": "The table shows the count of successfully created sole proprietor accounts within the chosen time period.",
+        "chart_api_url": "onboarding_transaction_charts/successful_transaction_sp/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Rejected Transactions",
+        "screenshot": true,
+        "color": 0,
+        "cols": 6,
+        "rows": 1,
+        "Property": {},
+        "description": "The numeric value represents the count of rejected sole proprietor applications for the chosen time period.",
+        "chart_api_url": "onboarding_transaction_charts/failed_transaction_sp/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Successful Transaction Report",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "onboarding.views.onboarding_transaction_report_views/TransactionReportViewSet/successful_transaction_report_sp_export_csv",
+        "description": "The table shows the details of successfully created sole proprietorship accounts for the chosen time period.",
+        "chart_api_url": "onboarding_transaction_charts/successful_transaction_report_sp/",
+        "chart_report_api": "onboarding_transaction_charts/successful_transaction_report_sp_export_csv/",
+        "chart_report_pdf_api": "onboarding_transaction_charts/successful_transaction_report_sp_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Rejected Transaction Report",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "onboarding.views.onboarding_transaction_report_views/TransactionReportViewSet/rejected_transactions_report_sp_export",
+        "description": "The table offers information on sole proprietorship applications that were not approved by the bank staff.",
+        "chart_api_url": "onboarding_transaction_charts/rejected_transactions_report_sp/",
+        "chart_report_api": "onboarding_transaction_charts/rejected_transactions_report_sp_export/",
+        "chart_report_pdf_api": "onboarding_transaction_charts/rejected_transactions_report_sp_export_pdf/"
+      }
+    ],
+    "filters": [
+      {
+        "return_key": "timestamp__range",
+        "service": "analytics",
+        "filter_type": "timestamp",
+        "filter_title": "Time Range"
+      }
+    ]
+  },
+  "onboarding": {
+    "chart_title": "Sole Proprietor Transaction Report",
+    "screenshot": true,
+    "charts": [
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Successful Transactions",
+        "screenshot": true,
+        "color": 0,
+        "cols": 6,
+        "rows": 1,
+        "Property": {},
+        "description": "The table shows the count of successfully created sole proprietor accounts within the chosen time period.",
+        "chart_api_url": "onboarding_transaction_charts/successful_transaction_sp/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Rejected Transactions",
+        "screenshot": true,
+        "color": 0,
+        "cols": 6,
+        "rows": 1,
+        "Property": {},
+        "description": "The numeric value represents the count of rejected sole proprietor applications for the chosen time period.",
+        "chart_api_url": "onboarding_transaction_charts/failed_transaction_sp/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Successful Transaction Report",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "onboarding.views.onboarding_transaction_report_views/TransactionReportViewSet/successful_transaction_report_sp_export_csv",
+        "description": "The table shows the details of successfully created sole proprietorship accounts for the chosen time period.",
+        "chart_api_url": "onboarding_transaction_charts/successful_transaction_report_sp/",
+        "chart_report_api": "onboarding_transaction_charts/successful_transaction_report_sp_export_csv/",
+        "chart_report_pdf_api": "onboarding_transaction_charts/successful_transaction_report_sp_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Rejected Transaction Report",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "onboarding.views.onboarding_transaction_report_views/TransactionReportViewSet/rejected_transactions_report_sp_export",
+        "description": "The table offers information on sole proprietorship applications that were not approved by the bank staff.",
+        "chart_api_url": "onboarding_transaction_charts/rejected_transactions_report_sp/",
+        "chart_report_api": "onboarding_transaction_charts/rejected_transactions_report_sp_export/",
+        "chart_report_pdf_api": "onboarding_transaction_charts/rejected_transactions_report_sp_export_pdf/"
+      }
+    ],
+    "filters": [
+      {
+        "return_key": "timestamp__range",
+        "service": "analytics",
+        "filter_type": "timestamp",
+        "filter_title": "Time Range"
+      }
+    ]
+  }
+}

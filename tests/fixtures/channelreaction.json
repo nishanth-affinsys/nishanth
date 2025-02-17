@@ -1,0 +1,77 @@
+[
+  {
+    "model": "console.channelreaction",
+    "pk": 1,
+    "fields": {
+      "page_id": 104198824616672,
+      "user_id": 6749444838419900,
+      "user_name": "Pavan Santosh",
+      "action_type": "reaction",
+      "remarks": "dislike",
+      "timestamp": "2023-07-14T11:23:04+00:00",
+      "tenant": "lebacpsix",
+      "post_id": "104198824616672_424630349682303",
+      "channel": "messenger"
+    }
+  },
+  {
+    "model": "console.channelreaction",
+    "pk": 2,
+    "fields": {
+      "page_id": 104198824616672,
+      "user_id": 6749444838419900,
+      "user_name": "Pavan Santosh",
+      "action_type": "reaction",
+      "remarks": "like",
+      "timestamp": "2023-07-14T11:23:11+00:00",
+      "tenant": "lebacpsix",
+      "post_id": "104198824616672_424630349682303",
+      "channel": "messenger"
+    }
+  },
+  {
+    "model": "console.channelreaction",
+    "pk": 3,
+    "fields": {
+      "page_id": 104198824616672,
+      "user_id": 6749444838419900,
+      "user_name": "Pavan Santosh",
+      "action_type": "comment",
+      "remarks": "Awesome ❤️",
+      "timestamp": "2023-07-14T11:24:47+00:00",
+      "tenant": "lebacpsix",
+      "post_id": "104198824616672_424630349682303",
+      "channel": "messenger"
+    }
+  },
+  {
+    "model": "console.channelreaction",
+    "pk": 4,
+    "fields": {
+      "page_id": 104198824616672,
+      "user_id": 6749444838419900,
+      "user_name": "Pavan Santosh",
+      "action_type": "reaction",
+      "remarks": "like",
+      "timestamp": "2023-07-14T11:09:46+00:00",
+      "tenant": "lebacpsix",
+      "post_id": "104198824616672_429318702546801",
+      "channel": "messenger"
+    }
+  },
+  {
+    "model": "console.channelreaction",
+    "pk": 5,
+    "fields": {
+      "page_id": 104198824616672,
+      "user_id": 6451435024923380,
+      "user_name": "Prakhar Goel",
+      "action_type": "reaction",
+      "remarks": "wow",
+      "timestamp": "2023-07-14T11:45:06+00:00",
+      "tenant": "lebacpsix",
+      "post_id": "104198824616672_542150451263625",
+      "channel": "messenger"
+    }
+  }
+]

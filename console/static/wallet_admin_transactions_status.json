@@ -1,0 +1,184 @@
+{
+  "common": {
+    "chart_title": "Transaction Status Report",
+    "screenshot": true,
+    "charts": [
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Initiated Transactions",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "The big number is used for displaying the total number of transactions initiated",
+        "chart_api_url": "wallet_admin_transactions_status/wallet_mw_transactions_initiated/",
+        "chart_report_api": "",
+        "chart_report_pdf_api": ""
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Transactions in progress",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "The big number is used for displaying the total number of not submitted transactions",
+        "chart_api_url": "wallet_admin_transactions_status/wallet_mw_transactions_not_submitted/",
+        "chart_report_api": "",
+        "chart_report_pdf_api": ""
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Abandoned Transactions",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "The big number is used for displaying the total number of transactions submitted but left unprocessed",
+        "chart_api_url": "wallet_admin_transactions_status/wallet_mw_submitted_unprocessed/",
+        "chart_report_api": "",
+        "chart_report_pdf_api": ""
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Processed Successfully Transactions",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "The big number is used for displaying the total number of transactions processed successfully",
+        "chart_api_url": "wallet_admin_transactions_status/wallet_mw_processed_successfully/",
+        "chart_report_api": "",
+        "chart_report_pdf_api": ""
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Failed Transactions",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "The big number is used for displaying the total number of transactions processed but failed",
+        "chart_api_url": "wallet_admin_transactions_status/wallet_mw_processed_failed/",
+        "chart_report_api": "",
+        "chart_report_pdf_api": ""
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Reversed Transactions",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "The big number is used for displaying the total number of transactions processed but reversed",
+        "chart_api_url": "wallet_admin_transactions_status/wallet_mw_processed_reversed/",
+        "chart_report_api": "",
+        "chart_report_pdf_api": ""
+      }
+    ],
+    "filters": [
+      {
+        "return_key": "timestamp__range",
+        "service": "analytics",
+        "filter_type": "timestamp",
+        "filter_title": "Time Range"
+      }
+    ]
+  },
+  "dashboard": {
+    "chart_title": "Transaction Status Report",
+    "screenshot": true,
+    "charts": [
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Initiated Transactions",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "The big number is used for displaying the total number of transactions initiated",
+        "chart_api_url": "wallet_admin_transactions_status/wallet_mw_transactions_initiated/",
+        "chart_report_api": "",
+        "chart_report_pdf_api": ""
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Transactions in progress",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "The big number is used for displaying the total number of not submitted transactions",
+        "chart_api_url": "wallet_admin_transactions_status/wallet_mw_transactions_not_submitted/",
+        "chart_report_api": "",
+        "chart_report_pdf_api": ""
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Abandoned Transactions",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "The big number is used for displaying the total number of transactions submitted but left unprocessed",
+        "chart_api_url": "wallet_admin_transactions_status/wallet_mw_submitted_unprocessed/",
+        "chart_report_api": "",
+        "chart_report_pdf_api": ""
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Processed Successfully Transactions",
+        "screenshot": true,
+        "color": 0,
+        "cols": 6,
+        "rows": 1,
+        "Property": {},
+        "description": "The big number is used for displaying the total number of transactions processed successfully",
+        "chart_api_url": "wallet_admin_transactions_status/wallet_mw_processed_successfully/",
+        "chart_report_api": "",
+        "chart_report_pdf_api": ""
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Failed Transactions",
+        "screenshot": true,
+        "color": 0,
+        "cols": 6,
+        "rows": 1,
+        "Property": {},
+        "description": "The big number is used for displaying the total number of transactions processed but failed",
+        "chart_api_url": "wallet_admin_transactions_status/wallet_mw_processed_failed/",
+        "chart_report_api": "",
+        "chart_report_pdf_api": ""
+      }
+    ],
+    "filters": [
+      {
+        "return_key": "timestamp__range",
+        "service": "analytics",
+        "filter_type": "timestamp",
+        "filter_title": "Time Range"
+      }
+    ]
+  }
+}

@@ -1,0 +1,42 @@
+[
+  {
+    "model": "console.activitylog",
+    "pk": 1,
+    "fields": {
+      "request_body": "{}",
+      "response_body": "{\"count\": 24, \"next\": 2, \"previous\": null, \"results\": [{\"id\": 19415, \"project_id\": 193, \"cj_reference_id\": 26687, \"timestamp\": \"2023-04-10 10:05:56.482539\", \"name\": \"mug\", \"service_type\": \"\", \"product_category\": \"\", \"product\": \"\", \"property\": \"\", \"lock\": null}, {\"id\": 19414, \"project_id\": 193, \"cj_reference_id\": 26686, \"timestamp\": \"2023-04-10 10:03:50.559639\", \"name\": \"unispace\", \"service_type\": \"\", \"product_category\": \"\", \"product\": \"\", \"property\": \"\", \"lock\": null}, {\"id\": 19413, \"project_id\": 193, \"cj_reference_id\": 26685, \"timestamp\": \"2023-04-10 09:20:07.076441\", \"name\": \"testone\", \"service_type\": \"\", \"product_category\": \"\", \"product\": \"\", \"property\": \"\", \"lock\": null}, {\"id\": 19412, \"project_id\": 193, \"cj_reference_id\": 26684, \"timestamp\": \"2023-04-10 08:50:10.913167\", \"name\": \"aaaaaa\", \"service_type\": \"\", \"product_category\": \"\", \"product\": \"\", \"property\": \"\", \"lock\": null}, {\"id\": 19410, \"project_id\": 193, \"cj_reference_id\": 26682, \"timestamp\": \"2023-04-10 07:03:07.139653\", \"name\": \"sthOne\", \"service_type\": \"\", \"product_category\": \"\", \"product\": \"\", \"property\": \"\", \"lock\": null}, {\"id\": 19409, \"project_id\": 193, \"cj_reference_id\": 26681, \"timestamp\": \"2023-04-10 06:36:46.031859\", \"name\": \"sth\", \"service_type\": \"\", \"product_category\": \"\", \"product\": \"\", \"property\": \"\", \"lock\": null}, {\"id\": 19408, \"project_id\": 193, \"cj_reference_id\": 26680, \"timestamp\": \"2023-04-06 08:32:34.661033\", \"name\": \"anotherintent\", \"service_type\": \"another\", \"product_category\": \"intent\", \"product\": \"\", \"property\": \"\", \"lock\": null}, {\"id\": 18605, \"project_id\": 193, \"cj_reference_id\": 25753, \"timestamp\": \"2023-03-31 06:53:26.127703\", \"name\": \"loanInt\", \"service_type\": \"jsjfsk\", \"product_category\": \"\", \"product\": \"\", \"property\": \"\", \"lock\": null}, {\"id\": 18604, \"project_id\": 193, \"cj_reference_id\": 25752, \"timestamp\": \"2023-03-31 06:51:09.026593\", \"name\": \"benefitSav\", \"service_type\": \"\", \"product_category\": \"\", \"product\": \"\", \"property\": \"\", \"lock\": null}, {\"id\": 18603, \"project_id\": 193, \"cj_reference_id\": 25751, \"timestamp\": \"2023-03-31 06:50:30.432883\", \"name\": \"savingsAcc\", \"service_type\": \"\", \"product_category\": \"\", \"product\": \"\", \"property\": \"\", \"lock\": null}]}"
+    }
+  },
+  {
+    "model": "console.activitylog",
+    "pk": 2,
+    "fields": {
+      "request_body": "{}",
+      "response_body": "{\"id\": 193, \"tenant\": \"prathambot\", \"repo_url\": \"https://github.com/amigobot3/prathambot.git\", \"name\": \"prathambot\", \"branch\": \"master\", \"description\": \"\", \"timestamp\": \"2023-03-02T10:40:59.023413\", \"lang\": [\"en\", \"ur\"], \"channel\": [\"webchat\", \"twitter\"], \"env\": [\"dev\", \"uat\", \"prod\"]}"
+    }
+  },
+  {
+    "model": "console.activitylog",
+    "pk": 3,
+    "fields": {
+      "request_body": "{}",
+      "response_body": "{\"count\": 0, \"next\": null, \"previous\": null, \"results\": []}"
+    }
+  },
+  {
+    "model": "console.activitylog",
+    "pk": 4,
+    "fields": {
+      "request_body": "{}",
+      "response_body": "{\"count\": 0, \"next\": null, \"previous\": null, \"results\": []}"
+    }
+  },
+  {
+    "model": "console.activitylog",
+    "pk": 5,
+    "fields": {
+      "request_body": "{\"name\": \"BotTest\"}",
+      "response_body": "{\"message\": \"success\"}"
+    }
+  }
+]

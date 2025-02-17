@@ -1,0 +1,434 @@
+{
+  "common": {
+    "chart_title": "Trend Analysis",
+    "screenshot": true,
+    "charts": [
+      {
+        "type": "line_chart",
+        "chartType": "group",
+        "title": "ETB Onboarded Daily",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1,
+        "Property": {
+          "x": "Date",
+          "y": [
+            "Agent",
+            "Self",
+            "Staff"
+          ]
+        },
+        "description": "The multiline chart illustrates the count of customers onboarded from various channel",
+        "chart_api_url": "onboarding_trend_charts/channelwise_etb_onboarding_rt/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "line_chart",
+        "chartType": "group",
+        "title": "NTB Onboarded Daily",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1,
+        "Property": {
+          "x": "Date",
+          "y": [
+            "Agent",
+            "Self",
+            "Staff"
+          ]
+        },
+        "description": "The multiline chart illustrates the count of customers onboarded from various channel",
+        "chart_api_url": "onboarding_trend_charts/channelwise_ntb_onboarding_rt/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "bar_chart",
+        "chartType": "group",
+        "title": "Onboarding ETB Monthly",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1,
+        "Property": {
+          "x": "Month",
+          "y": [
+            "Count"
+          ]
+        },
+        "description": "The bar chart illustrates the count of ETB customers onboarded monthly",
+        "chart_api_url": "onboarding_trend_charts/total_customer_onboarded_etb_rt/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "bar_chart",
+        "chartType": "group",
+        "title": "Onboarding NTB Monthly",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1,
+        "Property": {
+          "x": "Month",
+          "y": [
+            "Count"
+          ]
+        },
+        "description": "The bar chart illustrates the count of NTB customers onboarded monthly",
+        "chart_api_url": "onboarding_trend_charts/total_customer_onboarded_ntb_rt/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "donut_chart",
+        "chartType": "group",
+        "title": "Customer Onboarding by Product",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1,
+        "Property": {},
+        "description": "The donut chart showcases the openings of retail customer accounts based on product selection.",
+        "chart_api_url": "onboarding_trend_charts/productwise_account_opened_rt/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      }
+    ],
+    "filters": [
+      {
+        "return_key": "timestamp__range",
+        "service": "analytics",
+        "filter_type": "timestamp",
+        "filter_title": "Time Range"
+      }
+    ]
+  },
+  "dashboard": {
+    "chart_title": "Trend Analysis",
+    "screenshot": true,
+    "charts": [
+      {
+        "type": "line_chart",
+        "chartType": "group",
+        "title": "ETB Onboarded Daily",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1,
+        "Property": {
+          "x": "Date",
+          "y": [
+            "Agent",
+            "Self",
+            "Staff"
+          ]
+        },
+        "description": "The multiline chart illustrates the count of customers onboarded from various channel",
+        "chart_api_url": "onboarding_trend_charts/channelwise_etb_onboarding_rt/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "line_chart",
+        "chartType": "group",
+        "title": "NTB Onboarded Daily",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1,
+        "Property": {
+          "x": "Date",
+          "y": [
+            "Agent",
+            "Self",
+            "Staff"
+          ]
+        },
+        "description": "The multiline chart illustrates the count of customers onboarded from various channel",
+        "chart_api_url": "onboarding_trend_charts/channelwise_ntb_onboarding_rt/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "bar_chart",
+        "chartType": "group",
+        "title": "Onboarding ETB Monthly",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1,
+        "Property": {
+          "x": "Month",
+          "y": [
+            "Count"
+          ]
+        },
+        "description": "The bar chart illustrates the count of ETB customers onboarded monthly",
+        "chart_api_url": "onboarding_trend_charts/total_customer_onboarded_etb_rt/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "bar_chart",
+        "chartType": "group",
+        "title": "Onboarding NTB Monthly",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1,
+        "Property": {
+          "x": "Month",
+          "y": [
+            "Count"
+          ]
+        },
+        "description": "The bar chart illustrates the count of NTB customers onboarded monthly",
+        "chart_api_url": "onboarding_trend_charts/total_customer_onboarded_ntb_rt/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "donut_chart",
+        "chartType": "group",
+        "title": "Customer Onboarding by Product",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1,
+        "Property": {},
+        "description": "The donut chart showcases the openings of retail customer accounts based on product selection.",
+        "chart_api_url": "onboarding_trend_charts/productwise_account_opened_rt/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      }
+    ],
+    "filters": [
+      {
+        "return_key": "timestamp__range",
+        "service": "analytics",
+        "filter_type": "timestamp",
+        "filter_title": "Time Range"
+      }
+    ]
+  },
+  "stanbic": {
+    "chart_title": "Trend Analysis",
+    "screenshot": true,
+    "charts": [
+      {
+        "type": "line_chart",
+        "chartType": "group",
+        "title": "ETB Onboarded Daily",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1,
+        "Property": {
+          "x": "Date",
+          "y": [
+            "Agent",
+            "Self",
+            "Staff"
+          ]
+        },
+        "description": "The multiline chart illustrates the count of customers onboarded from various channel",
+        "chart_api_url": "onboarding_trend_charts/channelwise_etb_onboarding_rt/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "line_chart",
+        "chartType": "group",
+        "title": "NTB Onboarded Daily",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1,
+        "Property": {
+          "x": "Date",
+          "y": [
+            "Agent",
+            "Self",
+            "Staff"
+          ]
+        },
+        "description": "The multiline chart illustrates the count of customers onboarded from various channel",
+        "chart_api_url": "onboarding_trend_charts/channelwise_ntb_onboarding_rt/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "bar_chart",
+        "chartType": "group",
+        "title": "Onboarding ETB Monthly",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1,
+        "Property": {
+          "x": "Month",
+          "y": [
+            "Count"
+          ]
+        },
+        "description": "The bar chart illustrates the count of ETB customers onboarded monthly",
+        "chart_api_url": "onboarding_trend_charts/total_customer_onboarded_etb_rt/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "bar_chart",
+        "chartType": "group",
+        "title": "Onboarding NTB Monthly",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1,
+        "Property": {
+          "x": "Month",
+          "y": [
+            "Count"
+          ]
+        },
+        "description": "The bar chart illustrates the count of NTB customers onboarded monthly",
+        "chart_api_url": "onboarding_trend_charts/total_customer_onboarded_ntb_rt/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "donut_chart",
+        "chartType": "group",
+        "title": "Customer Onboarding by Product",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1,
+        "Property": {},
+        "description": "The donut chart showcases the openings of retail customer accounts based on product selection.",
+        "chart_api_url": "onboarding_trend_charts/productwise_account_opened_rt/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      }
+    ],
+    "filters": [
+      {
+        "return_key": "timestamp__range",
+        "service": "analytics",
+        "filter_type": "timestamp",
+        "filter_title": "Time Range"
+      }
+    ]
+  },
+  "onboarding": {
+    "chart_title": "Trend Analysis",
+    "screenshot": true,
+    "charts": [
+      {
+        "type": "line_chart",
+        "chartType": "group",
+        "title": "ETB Onboarded Daily",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1,
+        "Property": {
+          "x": "Date",
+          "y": [
+            "Agent",
+            "Self",
+            "Staff"
+          ]
+        },
+        "description": "The multiline chart illustrates the count of customers onboarded from various channel",
+        "chart_api_url": "onboarding_trend_charts/channelwise_etb_onboarding_rt/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "line_chart",
+        "chartType": "group",
+        "title": "NTB Onboarded Daily",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1,
+        "Property": {
+          "x": "Date",
+          "y": [
+            "Agent",
+            "Self",
+            "Staff"
+          ]
+        },
+        "description": "The multiline chart illustrates the count of customers onboarded from various channel",
+        "chart_api_url": "onboarding_trend_charts/channelwise_ntb_onboarding_rt/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "bar_chart",
+        "chartType": "group",
+        "title": "Onboarding ETB Monthly",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1,
+        "Property": {
+          "x": "Month",
+          "y": [
+            "Count"
+          ]
+        },
+        "description": "The bar chart illustrates the count of ETB customers onboarded monthly",
+        "chart_api_url": "onboarding_trend_charts/total_customer_onboarded_etb_rt/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "bar_chart",
+        "chartType": "group",
+        "title": "Onboarding NTB Monthly",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1,
+        "Property": {
+          "x": "Month",
+          "y": [
+            "Count"
+          ]
+        },
+        "description": "The bar chart illustrates the count of NTB customers onboarded monthly",
+        "chart_api_url": "onboarding_trend_charts/total_customer_onboarded_ntb_rt/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "donut_chart",
+        "chartType": "group",
+        "title": "Customer Onboarding by Product",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1,
+        "Property": {},
+        "description": "The donut chart showcases the openings of retail customer accounts based on product selection.",
+        "chart_api_url": "onboarding_trend_charts/productwise_account_opened_rt/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      }
+    ],
+    "filters": [
+      {
+        "return_key": "timestamp__range",
+        "service": "analytics",
+        "filter_type": "timestamp",
+        "filter_title": "Time Range"
+      }
+    ]
+  }
+}

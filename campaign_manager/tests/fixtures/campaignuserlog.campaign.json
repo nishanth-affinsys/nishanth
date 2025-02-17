@@ -1,0 +1,57 @@
+[
+  {
+    "model": "campaign_manager.campaignuserlog",
+    "pk": 1774,
+    "fields": {
+      "segment_name": "test",
+      "profile_id": "ce45b801-f4c2-4822-9a77-b6d8765082b6",
+      "campaign": 94,
+      "subcampaign": 94,
+      "group_id": "0e6a3bb6-f730-4356-8023-a98dc3996762"
+    }
+  },
+  {
+    "model": "campaign_manager.campaignuserlog",
+    "pk": 1775,
+    "fields": {
+      "segment_name": "test",
+      "profile_id": "858b1bdf-34e1-4d4e-b618-832213b75d5f",
+      "campaign": 94,
+      "subcampaign": 94,
+      "group_id": "0e6a3bb6-f730-4356-8023-a98dc3996762"
+    }
+  },
+  {
+    "model": "campaign_manager.campaignuserlog",
+    "pk": 1776,
+    "fields": {
+      "segment_name": "test",
+      "profile_id": "9d586b32-b112-4306-9188-90cb0591ad6f",
+      "campaign": 94,
+      "subcampaign": 94,
+      "group_id": "0e6a3bb6-f730-4356-8023-a98dc3996762"
+    }
+  },
+  {
+    "model": "campaign_manager.campaignuserlog",
+    "pk": 1777,
+    "fields": {
+      "segment_name": "campaign test admin",
+      "profile_id": "61fd2a72-8c9b-4c33-ab54-2a3c430e7563",
+      "campaign": 87,
+      "subcampaign": 87,
+      "group_id": "0e6a3bb6-f730-4356-8023-a98dc3996762"
+    }
+  },
+  {
+    "model": "campaign_manager.campaignuserlog",
+    "pk": 1778,
+    "fields": {
+      "segment_name": "campaign test admin",
+      "profile_id": "61fd2a72-8c9b-4c33-ab54-2a3c430e7563",
+      "campaign": 87,
+      "subcampaign": 87,
+      "group_id": "0e6a3bb6-f730-4356-8023-a98dc3996762"
+    }
+  }
+]

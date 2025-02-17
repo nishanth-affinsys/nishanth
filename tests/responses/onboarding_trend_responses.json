@@ -1,0 +1,84 @@
+{
+  "channel_ntb_rt": [
+    {
+      "Date": "2023-04-28",
+      "Agent": 0,
+      "Self": 0,
+      "Staff": 0
+    },
+    {
+      "Date": "2023-04-21",
+      "Agent": 0,
+      "Self": 0,
+      "Staff": 0
+    },
+    {
+      "Date": "2023-04-08",
+      "Agent": 0,
+      "Self": 0,
+      "Staff": 1
+    },
+    {
+      "Date": "2023-03-08",
+      "Agent": 0,
+      "Self": 0,
+      "Staff": 0
+    }
+  ],
+  "cust_etb_rt": [
+    {
+      "Month": "2023-Jun",
+      "Count": 2
+    }
+  ],
+  "product_rt": [
+    {
+      "label": "Current Account Retail",
+      "count": 1
+    },
+    {
+      "label": "Easy Smart Savers",
+      "count": 2
+    }
+  ],
+  "channel_etb_sp": [
+    {
+      "Date": "2023-04-18",
+      "Agent": 0,
+      "Self": 0,
+      "Staff": 0
+    },
+    {
+      "Date": "2023-02-08",
+      "Agent": 0,
+      "Self": 1,
+      "Staff": 0
+    },
+    {
+      "Date": "2022-12-08",
+      "Agent": 1,
+      "Self": 0,
+      "Staff": 1
+    }
+  ],
+  "cust_etb_sp": [
+    {
+      "Month": "2023-Feb",
+      "Count": 1
+    },
+    {
+      "Month": "2022-Dec",
+      "Count": 2
+    }
+  ],
+  "product_sp": [
+    {
+      "label": "Easy Smart Saver",
+      "count": 2
+    },
+    {
+      "label": "Monthly Smart Saver",
+      "count": 1
+    }
+  ]
+}

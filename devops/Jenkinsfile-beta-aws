@@ -1,0 +1,140 @@
+def getCommitID(message){
+  return message.tokenize()[0]
+}
+
+
+def cmd(){
+   String req_update_cmd = '/kaniko/executor \
+                      --build-arg "GIT_TOKEN=${GIT_PASSWD}"\
+                      --build-arg "INDEX_URL=${INDEX_URL}"\
+                      --compressed-caching=true  --force \
+                      --verbosity=info \
+                      --dockerfile ./devops/Dockerfile \
+                      --context=git://${GIT_PASSWD}@github.com/BankBuddy/${REPOSITORY_NAME}.git \
+                      --git branch=${BRANCH} \
+		      --destination=${IMAGE_ACR} \
+                      --destination=${IMAGE_ECR} \
+                      --tar-path=/trivy/image.tar'
+
+
+    return req_update_cmd
+
+}
+
+String determineRepoName() {
+    String reponame = scm.getUserRemoteConfigs()[0].getUrl().tokenize('/').last().split("\\.")[0]
+    return reponame.toLowerCase();
+}
+node("kaniko-agent") {
+
+   checkout scm
+   env.RELEASE_VERSION=sh(returnStdout: true, script: 'git describe --tags').trim()
+   env.TEAMS_WEBHOOK="https://affinsys.webhook.office.com/webhookb2/b8f1ee10-a1c2-41b2-9565-ae506ad2c257@ff6a797c-4692-4d8d-95cf-5f0481069b29/JenkinsCI/34756a6f3c144f509784e078201e3441/23d1354c-62e6-4d8d-b1ec-cbf1bd0430f5"
+
+   env.BRANCH="${env.BRANCH_NAME}"
+   env.REPOSITORY_NAME=determineRepoName()
+   env.IMAGE_ACR="bankbuddy.azurecr.io/${REPOSITORY_NAME}:${RELEASE_VERSION}"
+   env.IMAGE_ECR="400309783243.dkr.ecr.ap-south-1.amazonaws.com/${REPOSITORY_NAME}:${RELEASE_VERSION}"
+   
+
+
+   stage("Creating Dev Repository"){
+    // container('utilities'){
+    //  stage("LOGIN"){
+    //      catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
+          
+    //          withCredentials([file(credentialsId: 'Jenkins-GCR-AR', variable: 'CRED-FILE')]) {
+    //             sh '''
+    //                 cat /workdir/omega-scope-405709-a108cc248c58.json
+    //                 /google-cloud-sdk/bin/gcloud auth login --cred-file /workdir/omega-scope-405709-a108cc248c58.json
+    //             '''
+    //         }
+    //      }
+    //     env.GCR_LOGIN_TOKEN = sh(script: '''/google-cloud-sdk/bin/gcloud auth print-access-token''', returnStdout: true).trim()
+    //     env.DOCKER_LOGIN_CRED_GCR = sh(script: '''export GCR_LOGIN_TOKEN=$(/google-cloud-sdk/bin/gcloud auth print-access-token) && echo oauth2accesstoken:${GCR_LOGIN_TOKEN} | base64''', returnStdout: true).trim()
+    //     withCredentials([usernamePassword(credentialsId: 'jenkins-login', passwordVariable: 'PASSWORD', usernameVariable: 'USERNAME')]) {
+    //      env.DOCKER_LOGIN_CRED_ACR = sh(script: '''echo ${USERNAME}:${PASSWORD} | base64''', returnStdout: true).trim()
+    //     }
+    //  }
+    // }
+    container('utilities'){
+      stage("LOGIN"){
+          catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
+              withCredentials([usernamePassword(credentialsId: 'AWS-Jenkins-IAM', passwordVariable: 'AWS_SECRET_KEY', usernameVariable: 'AWS_ACCESS_KEY')]) {
+                 sh '''
+                    set -x
+                    aws configure set aws_access_key_id ${AWS_ACCESS_KEY}
+                    aws configure set aws_secret_access_key ${AWS_SECRET_KEY}
+                    aws configure set default.region ap-south-1
+                    aws configure set output json 
+                    echo "Creating Repository"
+                    aws ecr create-repository --repository-name ${REPOSITORY_NAME} --image-scanning-configuration scanOnPush=true
+                 '''
+            }
+          }   
+         env.AWS_LOGIN_TOKEN = sh(script: '''aws ecr get-login-password --region ap-south-1''', returnStdout: true).trim() 
+         env.DOCKER_LOGIN_CRED = sh(script: '''export AWS_LOGIN_TOKEN=$(aws ecr get-login-password --region ap-south-1) && echo AWS:${AWS_LOGIN_TOKEN} | base64''', returnStdout: true).trim()
+        withCredentials([usernamePassword(credentialsId: 'jenkins-acr', passwordVariable: 'PASSWORD', usernameVariable: 'USERNAME')]) {
+          env.DOCKER_LOGIN_CRED_ACR = sh(script: '''echo ${USERNAME}:${PASSWORD} | base64''', returnStdout: true).trim()
+         }
+      }
+    }
+    }
+    container('kaniko-ecr-gcr'){
+       stage('SETTING DOCKER CREDENTIALS') {
+      withCredentials([usernamePassword(credentialsId: 'jenkins-acr', passwordVariable: 'PASSWORD', usernameVariable: 'USERNAME')]) {
+
+        sh """
+echo '{"auths":{"400309783243.dkr.ecr.ap-south-1.amazonaws.com":{"auth":"${env.DOCKER_LOGIN_CRED.replaceAll("\\n", "")}"},"bankbuddy.azurecr.io":{"auth":"${env.DOCKER_LOGIN_CRED_ACR.replaceAll("\\n", "")}"}}}' > /kaniko/.docker/config.json
+"""
+}
+      }
+    }
+
+    stage('Start Build Notifier') {
+        catchError {
+            script {
+                def teamsMessage = "started build ${env.BUILD_NUMBER}"
+                office365ConnectorSend(
+                    message: teamsMessage,
+                    webhookUrl: env.TEAMS_WEBHOOK
+                )
+            }
+        }
+    }
+
+
+
+    stage('Build Docker Image') {
+       container('kaniko-ecr-gcr') {
+       stage('Build a Docker project') {
+        sh """echo ${env.ACTION}"""
+       withCredentials([usernamePassword(credentialsId: 'Pratham-GH', passwordVariable: 'GIT_PASSWD', usernameVariable: 'GIT_UNAME')]) {
+            withCredentials([string(credentialsId: 'PACKAGES_SECRET', variable: 'INDEX_URL' )]) {
+              env.CMD = cmd()
+              sh "${env.CMD}"
+            }
+           }
+         }
+       }
+    }
+
+
+    stage("DEPLOYMENTS"){
+      def deployment_stages = [:]
+      deployment_stages["dev-studio-cluster"] = {
+        container("utilities"){
+          withCredentials([usernamePassword(credentialsId: 'Pratham-GH', passwordVariable: 'GIT_PASSWD', usernameVariable: 'GIT_UNAME')]) {
+             sh '''
+               /workdir/helm_update.py -rn=beta-cluster-deploy --branch=beta-aws --file_path=beta-cluster-deploy/services/${REPOSITORY_NAME}/values.yaml -t=${RELEASE_VERSION} -gt=${GIT_PASSWD} -cr=${REPOSITORY_NAME} --code_branch=${BRANCH} --update_env=yes
+             '''
+          }
+
+        }
+      }
+      parallel(deployment_stages)
+   }
+
+}
+
+

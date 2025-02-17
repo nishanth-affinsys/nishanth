@@ -1,0 +1,382 @@
+{
+  "common": {
+    "chart_title": "Queue Report",
+    "screenshot": true,
+    "charts": [
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Aggregate Analysis",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "handoff.views.agent_reports_views/AgentReportViewSet/entered_accepted_export",
+        "description": "The table shows aggregate analysis of all the events of agent handoff.",
+        "chart_api_url": "agentreport-charts/agent_queue_report_aggregate_analysis/",
+        "chart_report_api": "agentreport-charts/agent_queue_report_aggregate_analysis_export_csv/",
+        "chart_report_pdf_api": "agentreport-charts/agent_queue_report_aggregate_analysis_export_pdf/"
+      },
+      {
+        "type": "pie_chart",
+        "chartType": "group",
+        "title": "Ended Chats",
+        "screenshot": true,
+        "color": 0,
+        "cols": 6,
+        "rows": 1,
+        "Property": {},
+        "description": "The pie chart illustrates the distribution of concluded interactions between an agent and a user.",
+        "chart_api_url": "detailreport-charts/agent_detailed_ended_chats/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "pie_chart",
+        "chartType": "group",
+        "title": "Unhandled Chats",
+        "screenshot": true,
+        "color": 0,
+        "cols": 6,
+        "rows": 1,
+        "Property": {},
+        "description": "The pie chart illustrates the distribution of handoffs notifications that couldn't reach the agents.",
+        "chart_api_url": "detailreport-charts/agent_detailed_unhandled_chats/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "New Users in Handoff",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "handoff.views.detail_report_views/DetailReportViewSet/new_user_in_handoff_export",
+        "description": "The table shows the details of the new user, who have requested to chat with agents.",
+        "chart_api_url": "detailreport-charts/agent_queue_new_users_handoff/",
+        "chart_report_api": "detailreport-charts/agent_queue_new_users_handoff_export_csv/",
+        "chart_report_pdf_api": "detailreport-charts/agent_queue_new_users_handoff_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Returning Users in Handoff",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "handoff.views.detail_report_views/DetailReportViewSet/return_user_in_handoff_export",
+        "description": "The table provides information regarding users who have revisited to seek assistance from agents in resolving their queries.",
+        "chart_api_url": "detailreport-charts/agent_queue_returning_users/",
+        "chart_report_api": "detailreport-charts/agent_queue_returning_users_export_csv/",
+        "chart_report_pdf_api": "detailreport-charts/agent_queue_returning_users_export_pdf/"
+      }
+    ],
+    "filters": [
+      {
+        "api_url": "get_channels/",
+        "request_method": "GET",
+        "return_key": "channel",
+        "service": "analytics",
+        "filter_type": "select",
+        "filter_title": "Channel"
+      },
+      {
+        "return_key": "timestamp__range",
+        "service": "analytics",
+        "filter_type": "timestamp",
+        "filter_title": "Time Range"
+      }
+    ]
+  },
+  "dashboard": {
+    "chart_title": "Queue Report",
+    "screenshot": true,
+    "charts": [
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Aggregate Analysis",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "handoff.views.agent_reports_views/AgentReportViewSet/entered_accepted_export",
+        "description": "The table shows aggregate analysis of all the events of agent handoff.",
+        "chart_api_url": "agentreport-charts/agent_queue_report_aggregate_analysis/",
+        "chart_report_api": "agentreport-charts/agent_queue_report_aggregate_analysis_export_csv/",
+        "chart_report_pdf_api": "agentreport-charts/agent_queue_report_aggregate_analysis_export_pdf/"
+      },
+      {
+        "type": "pie_chart",
+        "chartType": "group",
+        "title": "Ended Chats",
+        "screenshot": true,
+        "color": 0,
+        "cols": 6,
+        "rows": 1,
+        "Property": {},
+        "description": "The pie chart illustrates the distribution of concluded interactions between an agent and a user.",
+        "chart_api_url": "detailreport-charts/agent_detailed_ended_chats/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "pie_chart",
+        "chartType": "group",
+        "title": "Unhandled Chats",
+        "screenshot": true,
+        "color": 0,
+        "cols": 6,
+        "rows": 1,
+        "Property": {},
+        "description": "The pie chart illustrates the distribution of handoffs notifications that couldn't reach the agents.",
+        "chart_api_url": "detailreport-charts/agent_detailed_unhandled_chats/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "New Users in Handoff",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "handoff.views.detail_report_views/DetailReportViewSet/new_user_in_handoff_export",
+        "description": "The table shows the details of the new user, who have requested to chat with agents.",
+        "chart_api_url": "detailreport-charts/agent_queue_new_users_handoff/",
+        "chart_report_api": "detailreport-charts/agent_queue_new_users_handoff_export_csv/",
+        "chart_report_pdf_api": "detailreport-charts/agent_queue_new_users_handoff_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Returning Users in Handoff",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "handoff.views.detail_report_views/DetailReportViewSet/return_user_in_handoff_export",
+        "description": "The table provides information regarding users who have revisited to seek assistance from agents in resolving their queries.",
+        "chart_api_url": "detailreport-charts/agent_queue_returning_users/",
+        "chart_report_api": "detailreport-charts/agent_queue_returning_users_export_csv/",
+        "chart_report_pdf_api": "detailreport-charts/agent_queue_returning_users_export_pdf/"
+      }
+    ],
+    "filters": [
+      {
+        "api_url": "get_channels/",
+        "request_method": "GET",
+        "return_key": "channel",
+        "service": "analytics",
+        "filter_type": "select",
+        "filter_title": "Channel"
+      },
+      {
+        "return_key": "timestamp__range",
+        "service": "analytics",
+        "filter_type": "timestamp",
+        "filter_title": "Time Range"
+      }
+    ]
+  },
+  "stanbic": {
+    "chart_title": "Queue Report",
+    "screenshot": true,
+    "charts": [
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Aggregate Analysis",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "handoff.views.agent_reports_views/AgentReportViewSet/entered_accepted_export",
+        "description": "The table shows aggregate analysis of all the events of agent handoff.",
+        "chart_api_url": "agentreport-charts/agent_queue_report_aggregate_analysis/",
+        "chart_report_api": "agentreport-charts/agent_queue_report_aggregate_analysis_export_csv/",
+        "chart_report_pdf_api": "agentreport-charts/agent_queue_report_aggregate_analysis_export_pdf/"
+      },
+      {
+        "type": "pie_chart",
+        "chartType": "group",
+        "title": "Ended Chats",
+        "screenshot": true,
+        "color": 0,
+        "cols": 6,
+        "rows": 1,
+        "Property": {},
+        "description": "The pie chart illustrates the distribution of concluded interactions between an agent and a user.",
+        "chart_api_url": "detailreport-charts/agent_detailed_ended_chats/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "pie_chart",
+        "chartType": "group",
+        "title": "Unhandled Chats",
+        "screenshot": true,
+        "color": 0,
+        "cols": 6,
+        "rows": 1,
+        "Property": {},
+        "description": "The pie chart illustrates the distribution of handoffs notifications that couldn't reach the agents.",
+        "chart_api_url": "detailreport-charts/agent_detailed_unhandled_chats/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "New Users in Handoff",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "handoff.views.detail_report_views/DetailReportViewSet/new_user_in_handoff_export",
+        "description": "The table shows the details of the new user, who have requested to chat with agents.",
+        "chart_api_url": "detailreport-charts/agent_queue_new_users_handoff/",
+        "chart_report_api": "detailreport-charts/agent_queue_new_users_handoff_export_csv/",
+        "chart_report_pdf_api": "detailreport-charts/agent_queue_new_users_handoff_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Returning Users in Handoff",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "handoff.views.detail_report_views/DetailReportViewSet/return_user_in_handoff_export",
+        "description": "The table provides information regarding users who have revisited to seek assistance from agents in resolving their queries.",
+        "chart_api_url": "detailreport-charts/agent_queue_returning_users/",
+        "chart_report_api": "detailreport-charts/agent_queue_returning_users_export_csv/",
+        "chart_report_pdf_api": "detailreport-charts/agent_queue_returning_users_export_pdf/"
+      }
+    ],
+    "filters": [
+      {
+        "api_url": "get_channels/",
+        "request_method": "GET",
+        "return_key": "channel",
+        "service": "analytics",
+        "filter_type": "select",
+        "filter_title": "Channel"
+      },
+      {
+        "return_key": "timestamp__range",
+        "service": "analytics",
+        "filter_type": "timestamp",
+        "filter_title": "Time Range"
+      }
+    ]
+  },
+  "nbf": {
+    "chart_title": "Queue Report",
+    "screenshot": true,
+    "charts": [
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Aggregate Analysis",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "handoff.views.agent_reports_views/AgentReportViewSet/entered_accepted_export",
+        "description": "The table shows aggregate analysis of all the events of agent handoff.",
+        "chart_api_url": "agentreport-charts/agent_queue_report_aggregate_analysis/",
+        "chart_report_api": "agentreport-charts/agent_queue_report_aggregate_analysis_export_csv/",
+        "chart_report_pdf_api": "agentreport-charts/agent_queue_report_aggregate_analysis_export_pdf/"
+      },
+      {
+        "type": "pie_chart",
+        "chartType": "group",
+        "title": "Ended Chats",
+        "screenshot": true,
+        "color": 0,
+        "cols": 6,
+        "rows": 1,
+        "Property": {},
+        "description": "The pie chart illustrates the distribution of concluded interactions between an agent and a user.",
+        "chart_api_url": "detailreport-charts/agent_detailed_ended_chats/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "pie_chart",
+        "chartType": "group",
+        "title": "Unhandled Chats",
+        "screenshot": true,
+        "color": 0,
+        "cols": 6,
+        "rows": 1,
+        "Property": {},
+        "description": "The pie chart illustrates the distribution of handoffs notifications that couldn't reach the agents.",
+        "chart_api_url": "detailreport-charts/agent_detailed_unhandled_chats/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "New Users in Handoff",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "handoff.views.detail_report_views/DetailReportViewSet/new_user_in_handoff_export",
+        "description": "The table shows the details of the new user, who have requested to chat with agents.",
+        "chart_api_url": "detailreport-charts/agent_queue_new_users_handoff/",
+        "chart_report_api": "detailreport-charts/agent_queue_new_users_handoff_export_csv/",
+        "chart_report_pdf_api": "detailreport-charts/agent_queue_new_users_handoff_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Returning Users in Handoff",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "handoff.views.detail_report_views/DetailReportViewSet/return_user_in_handoff_export",
+        "description": "The table provides information regarding users who have revisited to seek assistance from agents in resolving their queries.",
+        "chart_api_url": "detailreport-charts/agent_queue_returning_users/",
+        "chart_report_api": "detailreport-charts/agent_queue_returning_users_export_csv/",
+        "chart_report_pdf_api": "detailreport-charts/agent_queue_returning_users_export_pdf/"
+      }
+    ],
+    "filters": [
+      {
+        "api_url": "get_channels/",
+        "request_method": "GET",
+        "return_key": "channel",
+        "service": "analytics",
+        "filter_type": "select",
+        "filter_title": "Channel"
+      },
+      {
+        "return_key": "timestamp__range",
+        "service": "analytics",
+        "filter_type": "timestamp",
+        "filter_title": "Time Range"
+      }
+    ]
+  }
+}

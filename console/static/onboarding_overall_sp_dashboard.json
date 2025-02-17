@@ -1,0 +1,362 @@
+{
+  "common": {
+    "chart_title": "Applications At Glance",
+    "screenshot": true,
+    "charts": [
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Ageing Report",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "onboarding.views.onboarding_ageing_report_views/AgeingReportViewSet/application_ageing_report_sp_export_csv",
+        "description": "This table lists the ageing report for sole proprietor customer applications, where customers are onboarded from various channels.",
+        "chart_api_url": "onboarding_ageing_charts/application_ageing_report_sp/",
+        "chart_report_api": "onboarding_ageing_charts/application_ageing_report_sp_export_csv/",
+        "chart_report_pdf_api": "onboarding_ageing_charts/application_ageing_report_sp_export_pdf/"
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Applications Processed",
+        "screenshot": true,
+        "color": 0,
+        "cols": 6,
+        "rows": 1,
+        "Property": {},
+        "description": "The numeric value indicates the total count of sole proprietorship accounts that have been successfully created through the all onboarding channels.",
+        "chart_api_url": "onboarding_stagereport_charts/applications_processed_bigNo_sp/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Applications Rejected",
+        "screenshot": true,
+        "color": 0,
+        "cols": 6,
+        "rows": 1,
+        "Property": {},
+        "description": "The numeric value represents the count of sole proprietorship applications that were rejected in all onboarding channels.",
+        "chart_api_url": "onboarding_stagereport_charts/applications_rejected_bigNo_sp/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Applications with Makers",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "The numeric value represents the count of sole proprietorship applications that have been created by individuals from all onboarding channels",
+        "chart_api_url": "onboarding_stagereport_charts/applications_with_maker_bigNo_sp/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Applications with Verifier",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "The numeric value represents the count of sole proprietorship applications that are currently with the verifier and waiting for verification.",
+        "chart_api_url": "onboarding_stagereport_charts/applications_with_verifier_bigNo_sp/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Applications with Approver",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "The numeric value represents the count of sole proprietorship applications that are currently with the approver and waiting for approval.",
+        "chart_api_url": "onboarding_stagereport_charts/applications_with_approvers_bigno_sp/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "bar_chart",
+        "chartType": "group",
+        "title": "Applications Status",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {
+          "x": "labels",
+          "y": [
+            "Agent",
+            "Staff",
+            "Self"
+          ]
+        },
+        "description": "The bar chart displays the number of sole proprietorship applications at various stages for all channels of onboarding.",
+        "chart_api_url": "onboarding_stagereport_charts/overall_application_stages_sp_stacked/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      }
+    ],
+    "filters": [
+      {
+        "return_key": "timestamp__range",
+        "service": "analytics",
+        "filter_type": "timestamp",
+        "filter_title": "Time Range"
+      }
+    ]
+  },
+  "dashboard": {
+    "chart_title": "Applications At Glance",
+    "screenshot": true,
+    "charts": [
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Ageing Report",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "onboarding.views.onboarding_ageing_report_views/AgeingReportViewSet/application_ageing_report_sp_export_csv",
+        "description": "This table lists the ageing report for sole proprietor customer applications, where customers are onboarded from various channels.",
+        "chart_api_url": "onboarding_ageing_charts/application_ageing_report_sp/",
+        "chart_report_api": "onboarding_ageing_charts/application_ageing_report_sp_export_csv/",
+        "chart_report_pdf_api": "onboarding_ageing_charts/application_ageing_report_sp_export_pdf/"
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Applications Processed",
+        "screenshot": true,
+        "color": 0,
+        "cols": 6,
+        "rows": 1,
+        "Property": {},
+        "description": "The numeric value indicates the total count of sole proprietorship accounts that have been successfully created through the all onboarding channels.",
+        "chart_api_url": "onboarding_stagereport_charts/applications_processed_bigNo_sp/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Applications Rejected",
+        "screenshot": true,
+        "color": 0,
+        "cols": 6,
+        "rows": 1,
+        "Property": {},
+        "description": "The numeric value represents the count of sole proprietorship applications that were rejected in all onboarding channels.",
+        "chart_api_url": "onboarding_stagereport_charts/applications_rejected_bigNo_sp/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Applications with Makers",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "The numeric value represents the count of sole proprietorship applications that have been created by individuals from all onboarding channels",
+        "chart_api_url": "onboarding_stagereport_charts/applications_with_maker_bigNo_sp/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Applications with Verifier",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "The numeric value represents the count of sole proprietorship applications that are currently with the verifier and waiting for verification.",
+        "chart_api_url": "onboarding_stagereport_charts/applications_with_verifier_bigNo_sp/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Applications with Approver",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "The numeric value represents the count of sole proprietorship applications that are currently with the approver and waiting for approval.",
+        "chart_api_url": "onboarding_stagereport_charts/applications_with_approvers_bigno_sp/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "bar_chart",
+        "chartType": "group",
+        "title": "Applications Status",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {
+          "x": "labels",
+          "y": [
+            "Agent",
+            "Staff",
+            "Self"
+          ]
+        },
+        "description": "The bar chart displays the number of sole proprietorship applications at various stages for all channels of onboarding.",
+        "chart_api_url": "onboarding_stagereport_charts/overall_application_stages_sp_stacked/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      }
+    ],
+    "filters": [
+      {
+        "return_key": "timestamp__range",
+        "service": "analytics",
+        "filter_type": "timestamp",
+        "filter_title": "Time Range"
+      }
+    ]
+  },
+  "stanbic": {
+    "chart_title": "Applications At Glance",
+    "screenshot": true,
+    "charts": [
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Ageing Report",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "onboarding.views.onboarding_ageing_report_views/AgeingReportViewSet/application_ageing_report_sp_export_csv",
+        "description": "This table lists the ageing report for sole proprietor customer applications, where customers are onboarded from various channels.",
+        "chart_api_url": "onboarding_ageing_charts/application_ageing_report_sp/",
+        "chart_report_api": "onboarding_ageing_charts/application_ageing_report_sp_export_csv/",
+        "chart_report_pdf_api": "onboarding_ageing_charts/application_ageing_report_sp_export_pdf/"
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Applications Processed",
+        "screenshot": true,
+        "color": 0,
+        "cols": 6,
+        "rows": 1,
+        "Property": {},
+        "description": "The numeric value indicates the total count of sole proprietorship accounts that have been successfully created through the all onboarding channels.",
+        "chart_api_url": "onboarding_stagereport_charts/applications_processed_bigNo_sp/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Applications Rejected",
+        "screenshot": true,
+        "color": 0,
+        "cols": 6,
+        "rows": 1,
+        "Property": {},
+        "description": "The numeric value represents the count of sole proprietorship applications that were rejected in all onboarding channels.",
+        "chart_api_url": "onboarding_stagereport_charts/applications_rejected_bigNo_sp/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Applications with Makers",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "The numeric value represents the count of sole proprietorship applications that have been created by individuals from all onboarding channels",
+        "chart_api_url": "onboarding_stagereport_charts/applications_with_maker_bigNo_sp/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Applications with Verifier",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "The numeric value represents the count of sole proprietorship applications that are currently with the verifier and waiting for verification.",
+        "chart_api_url": "onboarding_stagereport_charts/applications_with_verifier_bigNo_sp/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Applications with Approver",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "The numeric value represents the count of sole proprietorship applications that are currently with the approver and waiting for approval.",
+        "chart_api_url": "onboarding_stagereport_charts/applications_with_approvers_bigno_sp/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "bar_chart",
+        "chartType": "group",
+        "title": "Applications Status",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {
+          "x": "labels",
+          "y": [
+            "Agent",
+            "Staff",
+            "Self"
+          ]
+        },
+        "description": "The bar chart displays the number of sole proprietorship applications at various stages for all channels of onboarding.",
+        "chart_api_url": "onboarding_stagereport_charts/overall_application_stages_sp_stacked/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      }
+    ],
+    "filters": [
+      {
+        "return_key": "timestamp__range",
+        "service": "analytics",
+        "filter_type": "timestamp",
+        "filter_title": "Time Range"
+      }
+    ]
+  }
+}

@@ -1,0 +1,296 @@
+{
+  "common": {
+    "chart_title": "Clickstream ETB Details",
+    "screenshot": true,
+    "charts": [
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Number of ETB Sessions",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1,
+        "Property": {},
+        "description": "A numeric value is used to indicate the total number of interactions on the website by an existing customer.",
+        "chart_api_url": "clickstream_ETB/number_of_ETB_cust/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "ETB IP Information",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "description": "The table chart provides comprehensive information on the IP details of existing customers.",
+        "chart_api_url": "clickstream_ETB/uservice_ipinformation_ETB/",
+        "chart_report_api": "clickstream_ETB/uservice_ipinformation_ETB_export/",
+        "chart_report_pdf_api": "clickstream_ETB/uservice_ipinformation_ETB_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "ETB Device Information",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "description": "The table chart displays information regarding the devices used by existing customers to visit the website.",
+        "chart_api_url": "clickstream_ETB/uservice_device_ETB/",
+        "chart_report_api": "clickstream_ETB/uservice_device_ETB_export/",
+        "chart_report_pdf_api": "clickstream_ETB/uservice_device_ETB_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "ETB Browser Information",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "description": "The table chart displays information regarding the various browsers used by existing customers to visit the website",
+        "chart_api_url": "clickstream_ETB/uservice_browser_ETB/",
+        "chart_report_api": "clickstream_ETB/uservice_browser_ETB_export/",
+        "chart_report_pdf_api": "clickstream_ETB/uservice_browser_ETB_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "ETB Complete Information",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "description": "The table chart shows the details of the existing customers information like the location,device and browser information",
+        "chart_api_url": "clickstream_ETB/Complete_ETB_details/",
+        "chart_report_api": "clickstream_ETB/complete_ETB_details_export/",
+        "chart_report_pdf_api": "clickstream_ETB/complete_ETB_details_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Number of Clicks by ETB Customers",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "description": "The table chart presents the click frequency of existing customers during a single session.",
+        "chart_api_url": "clickstream_ETB/uservice_clicks_count_ETB/",
+        "chart_report_api": "clickstream_ETB/uservice_clicks_count_ETB_export/",
+        "chart_report_pdf_api": "clickstream_ETB/uservice_clicks_count_ETB_export_pdf/"
+      }
+    ],
+    "filters": [
+      {
+        "return_key": "timestamp__range",
+        "service": "analytics",
+        "filter_type": "timestamp",
+        "filter_title": "Time Range"
+      }
+    ]
+  },
+  "stanbic": {
+    "chart_title": "Clickstream ETB Details",
+    "screenshot": true,
+    "charts": [
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Number of ETB Sessions",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1,
+        "Property": {},
+        "description": "A numeric value is used to indicate the total number of interactions on the website by an existing customer.",
+        "chart_api_url": "clickstream_ETB/number_of_ETB_cust/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "ETB IP Information",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "description": "The table chart provides comprehensive information on the IP details of existing customers.",
+        "chart_api_url": "clickstream_ETB/uservice_ipinformation_ETB/",
+        "chart_report_api": "clickstream_ETB/uservice_ipinformation_ETB_export/",
+        "chart_report_pdf_api": "clickstream_ETB/uservice_ipinformation_ETB_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "ETB Device Information",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "description": "The table chart displays information regarding the devices used by existing customers to visit the website.",
+        "chart_api_url": "clickstream_ETB/uservice_device_ETB/",
+        "chart_report_api": "clickstream_ETB/uservice_device_ETB_export/",
+        "chart_report_pdf_api": "clickstream_ETB/uservice_device_ETB_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "ETB Browser Information",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "description": "The table chart displays information regarding the various browsers used by existing customers to visit the website",
+        "chart_api_url": "clickstream_ETB/uservice_browser_ETB/",
+        "chart_report_api": "clickstream_ETB/uservice_browser_ETB_export/",
+        "chart_report_pdf_api": "clickstream_ETB/uservice_browser_ETB_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "ETB Complete Information",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "description": "The table chart shows the details of the existing customers information like the location,device and browser information",
+        "chart_api_url": "clickstream_ETB/Complete_ETB_details/",
+        "chart_report_api": "clickstream_ETB/complete_ETB_details_export/",
+        "chart_report_pdf_api": "clickstream_ETB/complete_ETB_details_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Number of Clicks by ETB Customers",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "description": "The table chart presents the click frequency of existing customers during a single session.",
+        "chart_api_url": "clickstream_ETB/uservice_clicks_count_ETB/",
+        "chart_report_api": "clickstream_ETB/uservice_clicks_count_ETB_export/",
+        "chart_report_pdf_api": "clickstream_ETB/uservice_clicks_count_ETB_export_pdf/"
+      }
+    ],
+    "filters": [
+      {
+        "return_key": "timestamp__range",
+        "service": "analytics",
+        "filter_type": "timestamp",
+        "filter_title": "Time Range"
+      }
+    ]
+  },
+  "dashboard": {
+    "chart_title": "Clickstream ETB Details",
+    "screenshot": true,
+    "charts": [
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Number of ETB Sessions",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1,
+        "Property": {},
+        "description": "A numeric value is used to indicate the total number of interactions on the website by an existing customer.",
+        "chart_api_url": "clickstream_ETB/number_of_ETB_cust/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "ETB IP Information",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "description": "The table chart provides comprehensive information on the IP details of existing customers.",
+        "chart_api_url": "clickstream_ETB/uservice_ipinformation_ETB/",
+        "chart_report_api": "clickstream_ETB/uservice_ipinformation_ETB_export/",
+        "chart_report_pdf_api": "clickstream_ETB/uservice_ipinformation_ETB_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "ETB Device Information",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "description": "The table chart displays information regarding the devices used by existing customers to visit the website.",
+        "chart_api_url": "clickstream_ETB/uservice_device_ETB/",
+        "chart_report_api": "clickstream_ETB/uservice_device_ETB_export/",
+        "chart_report_pdf_api": "clickstream_ETB/uservice_device_ETB_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "ETB Browser Information",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "description": "The table chart displays information regarding the various browsers used by existing customers to visit the website",
+        "chart_api_url": "clickstream_ETB/uservice_browser_ETB/",
+        "chart_report_api": "clickstream_ETB/uservice_browser_ETB_export/",
+        "chart_report_pdf_api": "clickstream_ETB/uservice_browser_ETB_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "ETB Complete Information",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "description": "The table chart shows the details of the existing customers information like the location,device and browser information",
+        "chart_api_url": "clickstream_ETB/Complete_ETB_details/",
+        "chart_report_api": "clickstream_ETB/complete_ETB_details_export/",
+        "chart_report_pdf_api": "clickstream_ETB/complete_ETB_details_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Number of Clicks by ETB Customers",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "description": "The table chart presents the click frequency of existing customers during a single session.",
+        "chart_api_url": "clickstream_ETB/uservice_clicks_count_ETB/",
+        "chart_report_api": "clickstream_ETB/uservice_clicks_count_ETB_export/",
+        "chart_report_pdf_api": "clickstream_ETB/uservice_clicks_count_ETB_export_pdf/"
+      }
+    ],
+    "filters": [
+      {
+        "return_key": "timestamp__range",
+        "service": "analytics",
+        "filter_type": "timestamp",
+        "filter_title": "Time Range"
+      }
+    ]
+  }
+}

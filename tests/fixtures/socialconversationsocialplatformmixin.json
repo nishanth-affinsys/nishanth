@@ -1,0 +1,42 @@
+[
+  {
+    "model": "handoff.socialconversationsocialplatformmixin",
+    "pk": 1778,
+    "fields": {
+      "type": "dm",
+      "timestamp": "2023-04-26T09:34:02.204Z"
+    }
+  },
+  {
+    "model": "handoff.socialconversationsocialplatformmixin",
+    "pk": 1779,
+    "fields": {
+      "type": "dm",
+      "timestamp": "2023-04-26T09:34:02.449Z"
+    }
+  },
+  {
+    "model": "handoff.socialconversationsocialplatformmixin",
+    "pk": 1780,
+    "fields": {
+      "type": "dm",
+      "timestamp": "2023-04-26T09:34:02.895Z"
+    }
+  },
+  {
+    "model": "handoff.socialconversationsocialplatformmixin",
+    "pk": 1781,
+    "fields": {
+      "type": "dm",
+      "timestamp": "2023-04-26T09:34:04.251Z"
+    }
+  },
+  {
+    "model": "handoff.socialconversationsocialplatformmixin",
+    "pk": 1782,
+    "fields": {
+      "type": "dm",
+      "timestamp": "2023-04-26T09:34:04.971Z"
+    }
+  }
+]

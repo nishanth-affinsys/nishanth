@@ -1,0 +1,334 @@
+{
+  "agent_success_rt": {
+    "count": 1,
+    "next": null,
+    "previous": null,
+    "results": [
+      {
+        "Application_number": "20230606070857293952",
+        "Customer_name": "Ryan M Rodriguez",
+        "Account_number_1": "23456543212345",
+        "Account_number_2": "23456543212349",
+        "Customer_type": "ETB",
+        "Created_by": "tushar.singla@affinsys.com",
+        "Created_timestamp": "2023-06-08 06:01:20+00:00",
+        "Approved_by": "amogha",
+        "Approved_timestamp": "2023-06-09 06:09:09+00:00"
+      }
+    ]
+  },
+  "agent_failed_rt": {
+    "count": 1,
+    "next": null,
+    "previous": null,
+    "results": [
+      {
+        "Application_number": "20230526113943483086",
+        "Customer_name": "Niall L Hall",
+        "Customer_type": "ETB",
+        "Created_by": "tushar",
+        "Created_timestamp": "2023-04-28 14:31:20+00:00",
+        "Rejected_by": "amogha",
+        "Rejected_timestamp": "2023-06-09 06:39:09+00:00"
+      }
+    ]
+  },
+  "self_success_rt": {
+    "count": 1,
+    "next": null,
+    "previous": null,
+    "results": [
+      {
+        "Application_number": "20230606070857293152",
+        "Customer_name": "Riya M Rodriguez",
+        "Account_number_1": "23456543212345",
+        "Account_number_2": "23456543212349",
+        "Customer_type": "ETB",
+        "Created_by": "tushar.singla@affinsys.com",
+        "Created_timestamp": "2023-06-08 06:01:20+00:00",
+        "Approved_by": "amogha",
+        "Approved_timestamp": "2023-06-09 06:09:09+00:00"
+      }
+    ]
+  },
+  "self_failed_rt": {
+    "count": 1,
+    "next": null,
+    "previous": null,
+    "results": [
+      {
+        "Application_number": "20230526113943483084",
+        "Customer_name": "Liam L L",
+        "Customer_type": "NTB",
+        "Created_by": "amogha",
+        "Created_timestamp": "2023-04-28 14:31:20+00:00",
+        "Rejected_by": "malavika",
+        "Rejected_timestamp": "2023-06-09 08:19:09+00:00"
+      }
+    ]
+  },
+  "self_discarded_rt": {
+    "count": 1,
+    "next": null,
+    "previous": null,
+    "results": [
+      {
+        "Application_number": "20230526113943483017",
+        "Customer_name": "Samantha L Irene",
+        "Customer_type": "ETB",
+        "Created_by": "amogha",
+        "Created_timestamp": "2023-02-28 12:31:20+00:00",
+        "Abandoned_by": "tushar singla",
+        "Abandoned_timestamp": "2023-06-09 06:09:09+00:00"
+      }
+    ]
+  },
+  "staff_success_rt": {
+    "count": 1,
+    "next": null,
+    "previous": null,
+    "results": [
+      {
+        "Application_number": "20230526113943483081",
+        "Customer_name": "Malavika M V",
+        "Account_number_1": "23456543212345",
+        "Account_number_2": null,
+        "Customer_type": "NTB",
+        "Created_by": "anvesh_affinsys",
+        "Created_timestamp": "2023-04-08 14:01:20+00:00",
+        "Approved_by": "amogha",
+        "Approved_timestamp": "2023-06-09 06:09:09+00:00"
+      }
+    ]
+  },
+  "staff_failed_rt": {
+    "count": 1,
+    "next": null,
+    "previous": null,
+    "results": [
+      {
+        "Application_number": "20230526113943483083",
+        "Customer_name": "Mythlee M V",
+        "Customer_type": "ETB",
+        "Created_by": "anvesh_affinsys",
+        "Created_timestamp": "2023-04-08 14:01:20+00:00",
+        "Rejected_by": "malavika",
+        "Rejected_timestamp": "2023-06-08 16:07:09+00:00"
+      }
+    ]
+  },
+  "stacked_bar_rt": [
+    {
+      "labels": "In Progress",
+      "Agent": 0,
+      "Staff": 1,
+      "Self": 1
+    },
+    {
+      "labels": "Pending Verification",
+      "Agent": 0,
+      "Staff": 0,
+      "Self": 1
+    },
+    {
+      "labels": "Pending Approval",
+      "Agent": 0,
+      "Staff": 0,
+      "Self": 1
+    },
+    {
+      "labels": "Successful",
+      "Agent": 1,
+      "Staff": 1,
+      "Self": 1
+    },
+    {
+      "labels": "Rejected",
+      "Agent": 1,
+      "Staff": 1,
+      "Self": 1
+    },
+    {
+      "labels": "Exceptions",
+      "Agent": 1,
+      "Staff": 0,
+      "Self": 0
+    }
+  ],
+  "self_pie_rt": [
+    {
+      "label": "Abandoned",
+      "count": 1
+    },
+    {
+      "label": "In Progress",
+      "count": 1
+    },
+    {
+      "label": "Pending Approval",
+      "count": 1
+    },
+    {
+      "label": "Pending Verification",
+      "count": 1
+    },
+    {
+      "label": "Rejected",
+      "count": 1
+    },
+    {
+      "label": "Successful",
+      "count": 1
+    }
+  ],
+  "agent_success_sp": {
+    "count": 1,
+    "next": null,
+    "previous": null,
+    "results": [
+      {
+        "Application_number": "20230606070857293902",
+        "Business_name": "Tech",
+        "Account_number_1": "5754324565445",
+        "Account_number_2": "5754324565433",
+        "Customer_type": "ETB",
+        "Created_by": "malavika",
+        "Created_timestamp": "2022-12-08 06:01:20+00:00",
+        "Approved_by": "tushar",
+        "Approved_timestamp": "2023-05-09 06:09:09+00:00"
+      }
+    ]
+  },
+  "agent_failed_sp": {
+    "count": 1,
+    "next": null,
+    "previous": null,
+    "results": [
+      {
+        "Application_number": "20230606070857293912",
+        "Business_name": "Tech",
+        "Customer_type": "ETB",
+        "Created_by": "tushar",
+        "Created_timestamp": "2022-12-08 06:01:20+00:00",
+        "Rejected_by": "malavika",
+        "Rejected_timestamp": "2023-05-19 03:39:09+00:00"
+      }
+    ]
+  },
+  "self_success_sp": {
+    "count": 1,
+    "next": null,
+    "previous": null,
+    "results": [
+      {
+        "Application_number": "20230606070857293900",
+        "Business_name": "Tech",
+        "Account_number_1": "5754324565445",
+        "Account_number_2": "5754324565433",
+        "Customer_type": "ETB",
+        "Created_by": "tushar",
+        "Created_timestamp": "2023-02-08 06:01:20+00:00",
+        "Approved_by": "tushar",
+        "Approved_timestamp": "2023-05-09 06:09:09+00:00"
+      }
+    ]
+  },
+  "self_failed_sp": {
+    "count": 1,
+    "next": null,
+    "previous": null,
+    "results": [
+      {
+        "Application_number": "20230606070857293952",
+        "Business_name": "Tech",
+        "Customer_type": "ETB",
+        "Created_by": "tushar",
+        "Created_timestamp": "2022-12-08 06:01:20+00:00",
+        "Rejected_by": "amogha",
+        "Rejected_timestamp": "2023-05-10 13:09:09+00:00"
+      }
+    ]
+  },
+  "self_discarded_sp": {
+    "count": 1,
+    "next": null,
+    "previous": null,
+    "results": [
+      {
+        "Application_number": "20230606070857295433",
+        "Business_name": "Tech",
+        "Customer_type": "ETB",
+        "Created_by": "tushar",
+        "Created_timestamp": "2022-12-08 06:01:20+00:00",
+        "Abandoned_by": "tushar",
+        "Abandoned_timestamp": "2023-05-19 16:19:09+00:00"
+      }
+    ]
+  },
+  "staff_success_sp": {
+    "count": 1,
+    "next": null,
+    "previous": null,
+    "results": [
+      {
+        "Application_number": "20230606070857293901",
+        "Business_name": "Tech",
+        "Account_number_1": "5754324565445",
+        "Account_number_2": "5754324565433",
+        "Customer_type": "ETB",
+        "Created_by": "amogha",
+        "Created_timestamp": "2022-12-08 06:01:20+00:00",
+        "Approved_by": "tushar",
+        "Approved_timestamp": "2023-05-09 06:09:09+00:00"
+      }
+    ]
+  },
+  "staff_failed_sp": {
+    "count": 1,
+    "next": null,
+    "previous": null,
+    "results": [
+      {
+        "Application_number": "20230606070857293990",
+        "Business_name": "Tech",
+        "Customer_type": "ETB",
+        "Created_by": "tushar",
+        "Created_timestamp": "2022-12-08 06:01:20+00:00",
+        "Rejected_by": "malavika",
+        "Rejected_timestamp": "2023-05-11 16:49:09+00:00"
+      }
+    ]
+  },
+  "stacked_bar_sp": [
+    {
+      "labels": "In Progress",
+      "Agent": 0,
+      "Staff": 1,
+      "Self": 1
+    },
+    {
+      "labels": "Pending Verification",
+      "Agent": 0,
+      "Staff": 1,
+      "Self": 0
+    },
+    {
+      "labels": "Pending Approval",
+      "Agent": 1,
+      "Staff": 0,
+      "Self": 0
+    },
+    {
+      "labels": "Successful",
+      "Agent": 1,
+      "Staff": 1,
+      "Self": 1
+    },
+    {
+      "labels": "Rejected",
+      "Agent": 1,
+      "Staff": 1,
+      "Self": 1
+    }
+  ]
+}

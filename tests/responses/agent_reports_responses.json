@@ -1,0 +1,384 @@
+{
+  "entered_queue": {
+    "count": 1,
+    "next": null,
+    "previous": null,
+    "results": [
+      {
+        "channel": "webchat",
+        "Entered_in_Queue": 2,
+        "Accepted_by_Agent": 1,
+        "Unhandled_Chats": 1,
+        "Abandoned_Chats": 1
+      }
+    ]
+  },
+  "sankey_chart": {
+    "values": [
+      {
+        "Target": "Abandoned",
+        "value": 2
+      },
+      {
+        "Target": "Notifications Arrived",
+        "value": 1
+      }
+    ],
+    "links": [
+      {
+        "Source": "Entered in Queue",
+        "Target": "Notifications Arrived",
+        "value": 1
+      },
+      {
+        "Source": "Notifications Arrived",
+        "Target": "Abandoned",
+        "value": 1
+      }
+    ]
+  },
+  "agent_routing": {
+    "count": 5,
+    "next": null,
+    "previous": null,
+    "results": [
+      {
+        "username": "yes",
+        "agent_routed": "['Aswin']",
+        "session_id": "c2693090-3010-48ec-b21d-9628e4080c4f",
+        "channel": "webchat",
+        "agent_accept": "['Aswin']",
+        "accepted_time(Seconds)": "00:00:04",
+        "initialized_time": "2023-04-04 06:03:54+00:00"
+      },
+      {
+        "username": "yes",
+        "agent_routed": "['Aswin']",
+        "session_id": "c2a8d831-6331-4648-b3e1-052fc4f6e44e",
+        "channel": "webchat",
+        "agent_accept": "['Aswin']",
+        "accepted_time(Seconds)": "00:00:02",
+        "initialized_time": "2023-04-01 05:09:12+00:00"
+      },
+      {
+        "username": "yes",
+        "agent_routed": "['Srujan-Affinsys']",
+        "session_id": "e26b8cb5-dd2f-444e-b6f4-559484b7427b",
+        "channel": "webchat",
+        "agent_accept": "[]",
+        "accepted_time(Seconds)": "00:00:00",
+        "initialized_time": "2023-03-31 06:46:19+00:00"
+      },
+      {
+        "username": "yes",
+        "agent_routed": "[None]",
+        "session_id": "af1e734f-69e6-4072-9ab2-1207927c8af7",
+        "channel": "webchat",
+        "agent_accept": "[None]",
+        "accepted_time(Seconds)": "00:00:05",
+        "initialized_time": "2023-03-29 13:31:54+00:00"
+      },
+      {
+        "username": "yes",
+        "agent_routed": "['Srujan-Affinsys']",
+        "session_id": "089b0a85-c6aa-4b5d-9d56-183b74abe308",
+        "channel": "webchat",
+        "agent_accept": "['Srujan-Affinsys']",
+        "accepted_time(Seconds)": "00:00:05",
+        "initialized_time": "2023-03-24 10:32:50+00:00"
+      }
+    ]
+  },
+  "abandoned_chats": {
+    "count": 1,
+    "next": null,
+    "previous": null,
+    "results": [
+      {
+        "channel": "webchat",
+        "Count": 1
+      }
+    ]
+  },
+  "chatbot_message_interactions": [
+    {
+      "Channel": "webchat",
+      "Total_messages_user_to_agent": 1,
+      "Total_messages_agent_to_user": 1,
+      "Total_messages_user_to_bot": 0
+    }
+  ],
+  "total_session_time": {
+    "count": 1,
+    "next": null,
+    "previous": null,
+    "results": [
+      {
+        "Agent Name": "Aswin",
+        "Date": "2023-04-26",
+        "Total Handling time(in Minutes)": 0.0
+      }
+    ]
+  },
+  "cust_req_handoff": {
+    "count": 1,
+    "next": null,
+    "previous": null,
+    "results": [
+      {
+        "Date": "2023-04-26",
+        "Hour(00-59minutes)": 9,
+        "count": 2
+      }
+    ]
+  },
+  "new_user_handoff": {
+    "count": 4,
+    "next": null,
+    "previous": null,
+    "results": [
+      {
+        "Customer_Id": "17d058ff4053d50e2feb68b660cad307",
+        "Username": "Name",
+        "Channel": "webchat",
+        "Phone_Number": "",
+        "Email": "",
+        "Timestamp": "2023-04-01 06:26:22+00:00"
+      },
+      {
+        "Customer_Id": "7b3199eaaf74cca3c10298b57d3383e6",
+        "Username": "ssss",
+        "Channel": "webchat",
+        "Phone_Number": "",
+        "Email": "",
+        "Timestamp": "2023-03-30 06:40:04+00:00"
+      },
+      {
+        "Customer_Id": "d403e5ed305e95326d65fb955eea1e08",
+        "Username": "ssss",
+        "Channel": "webchat",
+        "Phone_Number": "",
+        "Email": "",
+        "Timestamp": "2023-03-24 10:48:24+00:00"
+      },
+      {
+        "Customer_Id": "03259301b1bcebcacce87039831d5e9a",
+        "Username": "yes",
+        "Channel": "webchat",
+        "Phone_Number": "",
+        "Email": "",
+        "Timestamp": "2023-03-24 10:32:50+00:00"
+      }
+    ]
+  },
+  "returning_user_handoff": {
+    "count": 4,
+    "next": null,
+    "previous": null,
+    "results": [
+      {
+        "Customer_Id": "3f471c56d601a25b32c207c5b46f44bf",
+        "Username": "april",
+        "Channel": "webchat",
+        "Phone_Number": "",
+        "Email": "",
+        "Timestamp": "2023-04-04 07:05:12+00:00"
+      },
+      {
+        "Customer_Id": "cafb04e054fdf09c40d4c1dc6dacd3b7",
+        "Username": "icecream",
+        "Channel": "webchat",
+        "Phone_Number": "",
+        "Email": "",
+        "Timestamp": "2023-04-04 06:55:43+00:00"
+      },
+      {
+        "Customer_Id": "1a8a35e2f0737a924cd25a370a5702f3",
+        "Username": "kavin",
+        "Channel": "webchat",
+        "Phone_Number": "",
+        "Email": "",
+        "Timestamp": "2023-04-04 06:18:36+00:00"
+      },
+      {
+        "Customer_Id": "03259301b1bcebcacce87039831d5e9a",
+        "Username": "yes",
+        "Channel": "webchat",
+        "Phone_Number": "",
+        "Email": "",
+        "Timestamp": "2023-04-04 06:11:50+00:00"
+      }
+    ]
+  },
+  "abandoned_users_details": {
+    "count": 1,
+    "next": null,
+    "previous": null,
+    "results": [
+      {
+        "Customer_name": "aerqwrefewqdsfc",
+        "Phone_Number": "",
+        "Email": "",
+        "Channel": "webchat",
+        "Session": "499f6ca9-cb4a-42d1-9cd4-f04016879343",
+        "Timestamp": "2023-04-26 09:34:02+00:00"
+      }
+    ]
+  },
+  "avg_session_time": {
+    "count": 1,
+    "next": null,
+    "previous": null,
+    "results": [
+      {
+        "Agent Name": "Aswin",
+        "Date": "2023-04-26",
+        "Channel": "webchat",
+        "Average Handling time(in Minutes)": 0.0
+      }
+    ]
+  },
+  "customer_activity": {
+    "count": 2,
+    "next": null,
+    "previous": null,
+    "results": [
+      {
+        "Customer": "sss",
+        "Skill": "en",
+        "Phone_Number": "",
+        "Email": "",
+        "Channel": "webchat",
+        "Timestamp": "2023-04-26 09:34:04+00:00"
+      },
+      {
+        "Customer": "Koli",
+        "Skill": "en",
+        "Phone_Number": "",
+        "Email": "",
+        "Channel": "webchat",
+        "Timestamp": "2023-04-26 09:34:02+00:00"
+      }
+    ]
+  },
+  "agent_handoff_details": {
+    "count": 1,
+    "next": null,
+    "previous": null,
+    "results": [
+      {
+        "Agent_Name": "Aswin",
+        "Customer_Name": "Koli",
+        "Phone_Number": "",
+        "Email": "",
+        "Channel": "webchat",
+        "Timestamp": "2023-04-26 09:34:06+00:00"
+      }
+    ]
+  },
+  "transfer_details": {
+    "count": 1,
+    "next": null,
+    "previous": null,
+    "results": [
+      {
+        "Username": "icecream",
+        "Parent_Session_Id": "6d109c6e-c1b5-4c75-84c2-2fa9ecad0f97",
+        "Initial_Agent": "['Aswin']",
+        "Agents_Transferred": "['srujan','Aswin']",
+        "Channel": "webchat",
+        "Initialized_time": "2023-04-01 05:30:57+00:00",
+        "Total_session_time": "00:01:29"
+      }
+    ]
+  },
+  "only_transfer": {
+    "count": 1,
+    "next": null,
+    "previous": null,
+    "results": [
+      {
+        "Username": "icecream",
+        "Parent_Session_Id": "6d109c6e-c1b5-4c75-84c2-2fa9ecad0f97",
+        "Initial_Agent": "['Aswin']",
+        "Agents_Transferred": "['srujan','Aswin']",
+        "Channel": "webchat",
+        "Initialized_time": "2023-04-01 05:30:57+00:00",
+        "Accept_time": "2023-04-01 05:31:01",
+        "Total_session_time": "00:01:29"
+      }
+    ]
+  },
+  "agent_skill": {
+    "count": 1,
+    "next": null,
+    "previous": null,
+    "results": [
+      {
+        "User Name": "Aswin",
+        "Skills": [
+          "Hello World",
+          "en"
+        ],
+        "Number of Skills": 2
+      }
+    ]
+  },
+  "ongoing_max_chats": {
+    "count": 0,
+    "next": null,
+    "previous": null,
+    "results": []
+  },
+  "interactions_arrived": {
+    "count": 0,
+    "next": null,
+    "previous": null,
+    "results": []
+  },
+  "interactions_accepted": {
+    "count": 0,
+    "next": null,
+    "previous": null,
+    "results": []
+  },
+  "messages_in_interactions": {
+    "count": 1,
+    "next": null,
+    "previous": null,
+    "results": [
+      {
+        "Agent_Name": "Aswin",
+        "Customer_Name": "Koli",
+        "Session": "17471f20-c716-4d19-b3fa-030fc23c9a3b",
+        "Channel": "webchat",
+        "Timestamp": "2023-04-26",
+        "Count": 2
+      }
+    ]
+  },
+  "agent_availability": {
+    "count": 0,
+    "next": null,
+    "previous": null,
+    "results": []
+  },
+  "agent_login": {
+    "count": 0,
+    "next": null,
+    "previous": null,
+    "results": []
+  },
+  "average_handling_time": {
+    "count": 1,
+    "next": null,
+    "previous": null,
+    "results": [
+      {
+        "Agent Name": "Aswin",
+        "Date": "2023-04-26",
+        "Average Handling time(in Minutes)": 0.0
+      }
+    ]
+  }
+}

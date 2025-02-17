@@ -1,0 +1,510 @@
+{
+  "common": {
+    "chart_title": "KYC Stage Report",
+    "screenshot": true,
+    "charts": [
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Self Total KYCs",
+        "color": 0,
+        "cols": 6,
+        "rows": 1,
+        "Property": {},
+        "description": "",
+        "chart_api_url": "kyc_stagereport_charts/kyc_total_application_self/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Staff Total KYCs",
+        "color": 0,
+        "cols": 6,
+        "rows": 1,
+        "Property": {},
+        "description": "",
+        "chart_api_url": "kyc_stagereport_charts/kyc_total_application_staff/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "pie_chart",
+        "chartType": "group",
+        "title": "Self KYC Stages",
+        "color": 0,
+        "cols": 6,
+        "rows": 1,
+        "Property": {},
+        "description": "",
+        "chart_api_url": "kyc_stagereport_charts/self_queuecodes_pie_kyc/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "pie_chart",
+        "chartType": "group",
+        "title": "Staff KYC Stages",
+        "color": 0,
+        "cols": 6,
+        "rows": 1,
+        "Property": {},
+        "description": "",
+        "chart_api_url": "kyc_stagereport_charts/staff_queuecodes_pie_kyc/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Successful KYCs",
+        "screenshot": true,
+        "color": 0,
+        "cols": 3,
+        "rows": 1,
+        "Property": {},
+        "description": "",
+        "chart_api_url": "kyc_transaction_charts/kyc_successful_big_no/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Rejected KYCs",
+        "screenshot": true,
+        "color": 0,
+        "cols": 3,
+        "rows": 1,
+        "Property": {},
+        "description": "",
+        "chart_api_url": "kyc_transaction_charts/kyc_failed_big_no/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "KYC Exceptions",
+        "screenshot": true,
+        "color": 0,
+        "cols": 3,
+        "rows": 1,
+        "Property": {},
+        "description": "",
+        "chart_api_url": "kyc_transaction_charts/kyc_exceptions_big_no/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Discarded KYCs",
+        "screenshot": true,
+        "color": 0,
+        "cols": 3,
+        "rows": 1,
+        "Property": {},
+        "description": "",
+        "chart_api_url": "kyc_stagereport_charts/kyc_discarded_big_no/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Discarded KYCs Details",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "description": "",
+        "path": "onboarding.views.kyc_stage_report_views/KYCStageReportViewSet/kyc_discarded_details_export_csv",
+        "chart_api_url": "kyc_stagereport_charts/kyc_discarded_details/",
+        "chart_report_api": "kyc_stagereport_charts/kyc_discarded_details_export_csv/",
+        "chart_report_pdf_api": "kyc_stagereport_charts/kyc_discarded_details_export_pdf/"
+      }
+    ],
+    "filters": [
+      {
+        "return_key": "timestamp__range",
+        "service": "analytics",
+        "filter_type": "timestamp",
+        "filter_title": "Time Range"
+      }
+    ]
+  },
+  "dashboard": {
+    "chart_title": "KYC Stage Report",
+    "screenshot": true,
+    "charts": [
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Self Total KYCs",
+        "color": 0,
+        "cols": 6,
+        "rows": 1,
+        "Property": {},
+        "description": "",
+        "chart_api_url": "kyc_stagereport_charts/kyc_total_application_self/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Staff Total KYCs",
+        "color": 0,
+        "cols": 6,
+        "rows": 1,
+        "Property": {},
+        "description": "",
+        "chart_api_url": "kyc_stagereport_charts/kyc_total_application_staff/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "pie_chart",
+        "chartType": "group",
+        "title": "Self KYC Stages",
+        "color": 0,
+        "cols": 6,
+        "rows": 1,
+        "Property": {},
+        "description": "",
+        "chart_api_url": "kyc_stagereport_charts/self_queuecodes_pie_kyc/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "pie_chart",
+        "chartType": "group",
+        "title": "Staff KYC Stages",
+        "color": 0,
+        "cols": 6,
+        "rows": 1,
+        "Property": {},
+        "description": "",
+        "chart_api_url": "kyc_stagereport_charts/staff_queuecodes_pie_kyc/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Successful KYCs",
+        "screenshot": true,
+        "color": 0,
+        "cols": 3,
+        "rows": 1,
+        "Property": {},
+        "description": "",
+        "chart_api_url": "kyc_transaction_charts/kyc_successful_big_no/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Rejected KYCs",
+        "screenshot": true,
+        "color": 0,
+        "cols": 3,
+        "rows": 1,
+        "Property": {},
+        "description": "",
+        "chart_api_url": "kyc_transaction_charts/kyc_failed_big_no/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "KYC Exceptions",
+        "screenshot": true,
+        "color": 0,
+        "cols": 3,
+        "rows": 1,
+        "Property": {},
+        "description": "",
+        "chart_api_url": "kyc_transaction_charts/kyc_exceptions_big_no/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Discarded KYCs",
+        "screenshot": true,
+        "color": 0,
+        "cols": 3,
+        "rows": 1,
+        "Property": {},
+        "description": "",
+        "chart_api_url": "kyc_stagereport_charts/kyc_discarded_big_no/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Discarded KYCs Details",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "description": "",
+        "path": "onboarding.views.kyc_stage_report_views/KYCStageReportViewSet/kyc_discarded_details_export_csv",
+        "chart_api_url": "kyc_stagereport_charts/kyc_discarded_details/",
+        "chart_report_api": "kyc_stagereport_charts/kyc_discarded_details_export_csv/",
+        "chart_report_pdf_api": "kyc_stagereport_charts/kyc_discarded_details_export_pdf/"
+      }
+    ],
+    "filters": [
+      {
+        "return_key": "timestamp__range",
+        "service": "analytics",
+        "filter_type": "timestamp",
+        "filter_title": "Time Range"
+      }
+    ]
+  },
+  "stanbic": {
+    "chart_title": "KYC Stage Report",
+    "screenshot": true,
+    "charts": [
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Self Total KYCs",
+        "color": 0,
+        "cols": 6,
+        "rows": 1,
+        "Property": {},
+        "description": "",
+        "chart_api_url": "kyc_stagereport_charts/kyc_total_application_self/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Staff Total KYCs",
+        "color": 0,
+        "cols": 6,
+        "rows": 1,
+        "Property": {},
+        "description": "",
+        "chart_api_url": "kyc_stagereport_charts/kyc_total_application_staff/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "pie_chart",
+        "chartType": "group",
+        "title": "Self KYC Stages",
+        "color": 0,
+        "cols": 6,
+        "rows": 1,
+        "Property": {},
+        "description": "",
+        "chart_api_url": "kyc_stagereport_charts/self_queuecodes_pie_kyc/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "pie_chart",
+        "chartType": "group",
+        "title": "Staff KYC Stages",
+        "color": 0,
+        "cols": 6,
+        "rows": 1,
+        "Property": {},
+        "description": "",
+        "chart_api_url": "kyc_stagereport_charts/staff_queuecodes_pie_kyc/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Successful KYCs",
+        "screenshot": true,
+        "color": 0,
+        "cols": 3,
+        "rows": 1,
+        "Property": {},
+        "description": "",
+        "chart_api_url": "kyc_transaction_charts/kyc_successful_big_no/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Rejected KYCs",
+        "screenshot": true,
+        "color": 0,
+        "cols": 3,
+        "rows": 1,
+        "Property": {},
+        "description": "",
+        "chart_api_url": "kyc_transaction_charts/kyc_failed_big_no/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "KYC Exceptions",
+        "screenshot": true,
+        "color": 0,
+        "cols": 3,
+        "rows": 1,
+        "Property": {},
+        "description": "",
+        "chart_api_url": "kyc_transaction_charts/kyc_exceptions_big_no/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Discarded KYCs",
+        "screenshot": true,
+        "color": 0,
+        "cols": 3,
+        "rows": 1,
+        "Property": {},
+        "description": "",
+        "chart_api_url": "kyc_stagereport_charts/kyc_discarded_big_no/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Discarded KYCs Details",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "description": "",
+        "path": "onboarding.views.kyc_stage_report_views/KYCStageReportViewSet/kyc_discarded_details_export_csv",
+        "chart_api_url": "kyc_stagereport_charts/kyc_discarded_details/",
+        "chart_report_api": "kyc_stagereport_charts/kyc_discarded_details_export_csv/",
+        "chart_report_pdf_api": "kyc_stagereport_charts/kyc_discarded_details_export_pdf/"
+      }
+    ],
+    "filters": [
+      {
+        "return_key": "timestamp__range",
+        "service": "analytics",
+        "filter_type": "timestamp",
+        "filter_title": "Time Range"
+      }
+    ]
+  },
+  "kina": {
+    "chart_title": "KYC Stage Report",
+    "screenshot": true,
+    "charts": [
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Self Total KYCs",
+        "color": 0,
+        "cols": 6,
+        "rows": 1,
+        "Property": {},
+        "description": "",
+        "chart_api_url": "kyc_stagereport_charts/kyc_total_application_self/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "pie_chart",
+        "chartType": "group",
+        "title": "Self KYC Stages",
+        "color": 0,
+        "cols": 6,
+        "rows": 1,
+        "Property": {},
+        "description": "",
+        "chart_api_url": "kyc_stagereport_charts/self_queuecodes_pie_kyc/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Successful KYCs",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "",
+        "chart_api_url": "kyc_transaction_charts/kyc_onboarding_successful_big_no/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "KYC Exceptions",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "",
+        "chart_api_url": "kyc_transaction_charts/kyc_exceptions_big_no/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Discarded KYCs",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "",
+        "chart_api_url": "kyc_stagereport_charts/kyc_discarded_big_no/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Discarded KYCs Details",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "description": "",
+        "path": "onboarding.views.kyc_stage_report_views/KYCStageReportViewSet/kyc_discarded_details_export_csv",
+        "chart_api_url": "kyc_stagereport_charts/kyc_discarded_details/",
+        "chart_report_api": "kyc_stagereport_charts/kyc_discarded_details_export_csv/",
+        "chart_report_pdf_api": "kyc_stagereport_charts/kyc_discarded_details_export_pdf/"
+      }
+    ],
+    "filters": [
+      {
+        "return_key": "timestamp__range",
+        "service": "analytics",
+        "filter_type": "timestamp",
+        "filter_title": "Time Range"
+      }
+    ]
+  }
+}

@@ -1,0 +1,62 @@
+[
+  {
+    "model": "console.messagestatus",
+    "pk": 89,
+    "fields": {
+      "channel_id": "917379663636",
+      "message_id": "wamid.HBgMOTE3Mzc5NjYzNjM2FQIAERgSRjJCNjk3Njc3RTY4OUQzNkY3AA==",
+      "channel": "whatsapp",
+      "status": "sent",
+      "timestamp": "2023-05-23T09:45:49Z",
+      "tenant": "alsagrone"
+    }
+  },
+  {
+    "model": "console.messagestatus",
+    "pk": 90,
+    "fields": {
+      "channel_id": "917379663636",
+      "message_id": "wamid.HBgMOTE3Mzc5NjYzNjM2FQIAERgSN0RCMzMzMEZEMDEyRTVBNTcwAA==",
+      "channel": "whatsapp",
+      "status": "sent",
+      "timestamp": "2023-05-23T09:58:53Z",
+      "tenant": "alsagrone"
+    }
+  },
+  {
+    "model": "console.messagestatus",
+    "pk": 91,
+    "fields": {
+      "channel_id": "917379663636",
+      "message_id": "wamid.HBgMOTE3Mzc5NjYzNjM2FQIAERgSRTU0OTZENTFCRDlBNEIzQzVEAA==",
+      "channel": "whatsapp",
+      "status": "sent",
+      "timestamp": "2023-05-23T10:01:44Z",
+      "tenant": "alsagrone"
+    }
+  },
+  {
+    "model": "console.messagestatus",
+    "pk": 92,
+    "fields": {
+      "channel_id": "917379663636",
+      "message_id": "wamid.HBgMOTE3Mzc5NjYzNjM2FQIAERgSN0RCMzMzMEZEMDEyRTVBNTcwAA==",
+      "channel": "whatsapp",
+      "status": "delivered",
+      "timestamp": "2023-05-23T10:09:34Z",
+      "tenant": "alsagrone"
+    }
+  },
+  {
+    "model": "console.messagestatus",
+    "pk": 93,
+    "fields": {
+      "channel_id": "917379663636",
+      "message_id": "wamid.HBgMOTE3Mzc5NjYzNjM2FQIAERgSRjJCNjk3Njc3RTY4OUQzNkY3AA==",
+      "channel": "whatsapp",
+      "status": "delivered",
+      "timestamp": "2023-05-23T10:09:34Z",
+      "tenant": "alsagrone"
+    }
+  }
+]

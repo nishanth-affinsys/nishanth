@@ -1,0 +1,37 @@
+[
+  {
+    "model": "campaign_manager.profiledataprofiledataslotuuid",
+    "pk": "61fd2a72-8c9b-4c33-ab54-2a3c430e7563",
+    "fields": {
+      "attr": "6bdd1908-421a-41a3-90df-301215eb807dAbhinav Nair"
+    }
+  },
+  {
+    "model": "campaign_manager.profiledataprofiledataslotuuid",
+    "pk": "7f2dabab-c191-4910-bd8a-9ac06e8859d6",
+    "fields": {
+      "attr": "ee92fe95-7b0e-4c45-9f68-e60290da6969Abhinav Nair 658"
+    }
+  },
+  {
+    "model": "campaign_manager.profiledataprofiledataslotuuid",
+    "pk": "5775367e-38ae-48fb-bace-c9ef368d90d3",
+    "fields": {
+      "attr": "df500fee-3e39-493b-a68c-fa148ef78247Abhinav Nair 661"
+    }
+  },
+  {
+    "model": "campaign_manager.profiledataprofiledataslotuuid",
+    "pk": "fd612b41-acbf-478b-a9a9-68ea5b198550",
+    "fields": {
+      "attr": "d1965e3e-20f8-425e-96ca-b2fb2505cb6fAbhinav Nair 662"
+    }
+  },
+  {
+    "model": "campaign_manager.profiledataprofiledataslotuuid",
+    "pk": "fef9d12d-a613-4030-9891-3b2360654239",
+    "fields": {
+      "attr": "fbf49902-6c3f-4a0b-be0e-fa92dbca928dAbhinav Nair 665"
+    }
+  }
+]

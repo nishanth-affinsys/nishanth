@@ -1,0 +1,691 @@
+{
+  "common": {
+    "chart_title": "Agent Report",
+    "screenshot": true,
+    "charts": [
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Agent Login Status",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "handoff.views.agent_productivity_views/AgentProductivityViewSet/agent_login_status_export",
+        "description": "The table shows the login and logout details of every agent",
+        "chart_api_url": "agent_productivity/agent_report_agent_login_status/",
+        "chart_report_api": "agent_productivity/agent_report_agent_login_status_export_csv/",
+        "chart_report_pdf_api": "agent_productivity/agent_report_agent_login_status_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Agents Routing details",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "handoff.views.agent_productivity_views/AgentProductivityViewSet/agent_routing_export",
+        "description": "The table displays information about how incoming requests for agents are routed to available agents.",
+        "chart_api_url": "agent_productivity/agent_report_agent_routing_details/",
+        "chart_report_api": "agent_productivity/agent_report_agent_routing_details_export_csv/",
+        "chart_report_pdf_api": "agent_productivity/agent_report_agent_routing_details_export_pdf/"
+      },
+      {
+        "type": "bar_chart",
+        "chartType": "group",
+        "title": "Total Interactions Arrived",
+        "screenshot": true,
+        "color": 0,
+        "cols": 6,
+        "rows": 1,
+        "Property": {
+          "x": "Channel",
+          "y": [
+            "Count"
+          ]
+        },
+        "description": "The numeric value represents the total number of notifications that have arrived for the agents to handle during a specific time period.",
+        "chart_api_url": "agentreport-charts/agent_report_interaction_arrived_bar/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "bar_chart",
+        "chartType": "group",
+        "title": "Total Interactions Accepted",
+        "screenshot": true,
+        "color": 0,
+        "cols": 6,
+        "rows": 1,
+        "Property": {
+          "x": "Channel",
+          "y": [
+            "Count"
+          ]
+        },
+        "description": "The numeric value represents the total number of handoff requests that the agents have accepted during a specific time period.",
+        "chart_api_url": "agentreport-charts/agent_report_interaction_accepted_bar/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Interactions Arrived per Agent",
+        "screenshot": true,
+        "color": 0,
+        "cols": 6,
+        "rows": 1.5,
+        "Property": {},
+        "path": "handoff.views.agent_reports_views/AgentReportViewSet/interaction_arrived_export",
+        "description": "The table shows the number of handoff notifications that have been received by each agent in a given time period.",
+        "chart_api_url": "agentreport-charts/agent_report_interaction_arrived_details/",
+        "chart_report_api": "agentreport-charts/agent_report_interaction_arrived_details_export_csv/",
+        "chart_report_pdf_api": "agentreport-charts/agent_report_interaction_arrived_details_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Interactions Accepted per Agent",
+        "screenshot": true,
+        "color": 0,
+        "cols": 6,
+        "rows": 1.5,
+        "Property": {},
+        "path": "handoff.views.agent_reports_views/AgentReportViewSet/interaction_accepted_export",
+        "description": "The table shows the number of handoff requests that each agent accepted in a given time period.",
+        "chart_api_url": "agentreport-charts/agent_report_interaction_accepted_details/",
+        "chart_report_api": "agentreport-charts/agent_report_interaction_accepted_details_export_csv/",
+        "chart_report_pdf_api": "agentreport-charts/agent_report_interaction_accepted_details_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Average Handling Time",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "handoff.views.agent_reports_views/AgentReportViewSet/average_session_time_export",
+        "description": "The table represents the average amount of time, that an agent takes to resolve a customer's query",
+        "chart_api_url": "agentreport-charts/agent_report_average_session_time/",
+        "chart_report_api": "agentreport-charts/agent_report_average_session_time_export_csv/",
+        "chart_report_pdf_api": "agentreport-charts/agent_report_average_session_time_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Number of Messages in Each User Session",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "handoff.views.agent_reports_views/AgentReportViewSet/messages_in_interactions_export",
+        "description": "The table shows the count of messages exchanged between a user and an agent during a single session",
+        "chart_api_url": "agentreport-charts/agent_report_messages_in_interactions/",
+        "chart_report_api": "agentreport-charts/agent_report_messages_in_interactions_export_csv/",
+        "chart_report_pdf_api": "agentreport-charts/agent_report_messages_in_interactions_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Handoff Duration",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "handoff.views.agent_transfer_views/AgentTransferViewSet/transfer_details_export",
+        "description": "The table shows the comprehensive details of the customer's interaction with agents",
+        "chart_api_url": "agent_transfer_charts/agent_report_handoff_transfer_details/",
+        "chart_report_api": "agent_transfer_charts/agent_report_handoff_transfer_details_export_csv/",
+        "chart_report_pdf_api": "agent_transfer_charts/agent_report_handoff_transfer_details_export_pdf/"
+      }
+    ],
+    "filters": [
+      {
+        "api_url": "get_channels/",
+        "request_method": "GET",
+        "return_key": "channel",
+        "service": "analytics",
+        "filter_type": "select",
+        "filter_title": "Channel"
+      },
+      {
+        "return_key": "timestamp__range",
+        "service": "analytics",
+        "filter_type": "timestamp",
+        "filter_title": "Time Range"
+      }
+    ]
+  },
+  "stanbic": {
+    "chart_title": "Agent Report",
+    "screenshot": true,
+    "charts": [
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Agent Login Status",
+        "screenshot": true,
+        "color": 0,
+        "cols": 6,
+        "rows": 1.5,
+        "Property": {},
+        "path": "handoff.views.agent_productivity_views/AgentProductivityViewSet/agent_login_status_export",
+        "description": "The table shows the login and logout details of every agent",
+        "chart_api_url": "agent_productivity/agent_report_agent_login_status/",
+        "chart_report_api": "agent_productivity/agent_report_agent_login_status_export_csv/",
+        "chart_report_pdf_api": "agent_productivity/agent_report_agent_login_status_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Agent Availability",
+        "screenshot": true,
+        "color": 0,
+        "cols": 6,
+        "rows": 1.5,
+        "Property": {},
+        "path": "handoff.views.agent_productivity_views/AgentProductivityViewSet/agent_availability_export",
+        "description": "The table shows the online and offline details of every agent",
+        "chart_api_url": "agent_productivity/agent_report_agent_availability/",
+        "chart_report_api": "agent_productivity/agent_report_agent_availability_export_csv/",
+        "chart_report_pdf_api": "agent_productivity/agent_report_agent_availability_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Agents Routing details",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "handoff.views.agent_productivity_views/AgentProductivityViewSet/agent_routing_export",
+        "description": "The table displays information about how incoming requests for agents are routed to available agents.",
+        "chart_api_url": "agent_productivity/agent_report_agent_routing_details/",
+        "chart_report_api": "agent_productivity/agent_report_agent_routing_details_export_csv/",
+        "chart_report_pdf_api": "agent_productivity/agent_report_agent_routing_details_export_pdf/"
+      },
+      {
+        "type": "bar_chart",
+        "chartType": "group",
+        "title": "Total Interactions Arrived",
+        "screenshot": true,
+        "color": 0,
+        "cols": 6,
+        "rows": 1,
+        "Property": {
+          "x": "Channel",
+          "y": [
+            "Count"
+          ]
+        },
+        "description": "The numeric value represents the total number of notifications that have arrived for the agents to handle during a specific time period.",
+        "chart_api_url": "agentreport-charts/agent_report_interaction_arrived_bar/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "bar_chart",
+        "chartType": "group",
+        "title": "Total Interactions Accepted",
+        "screenshot": true,
+        "color": 0,
+        "cols": 6,
+        "rows": 1,
+        "Property": {
+          "x": "Channel",
+          "y": [
+            "Count"
+          ]
+        },
+        "description": "The numeric value represents the total number of handoff requests that the agents have accepted during a specific time period.",
+        "chart_api_url": "agentreport-charts/agent_report_interaction_accepted_bar/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Interactions Arrived per Agent",
+        "screenshot": true,
+        "color": 0,
+        "cols": 6,
+        "rows": 1.5,
+        "Property": {},
+        "path": "handoff.views.agent_reports_views/AgentReportViewSet/interaction_arrived_export",
+        "description": "The table shows the number of handoff notifications that have been received by each agent in a given time period.",
+        "chart_api_url": "agentreport-charts/agent_report_interaction_arrived_details/",
+        "chart_report_api": "agentreport-charts/agent_report_interaction_arrived_details_export_csv/",
+        "chart_report_pdf_api": "agentreport-charts/agent_report_interaction_arrived_details_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Interactions Accepted per Agent",
+        "screenshot": true,
+        "color": 0,
+        "cols": 6,
+        "rows": 1.5,
+        "Property": {},
+        "path": "handoff.views.agent_reports_views/AgentReportViewSet/interaction_accepted_export",
+        "description": "The table shows the number of handoff requests that each agent accepted in a given time period.",
+        "chart_api_url": "agentreport-charts/agent_report_interaction_accepted_details/",
+        "chart_report_api": "agentreport-charts/agent_report_interaction_accepted_details_export_csv/",
+        "chart_report_pdf_api": "agentreport-charts/agent_report_interaction_accepted_details_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Average Handling Time",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "handoff.views.agent_reports_views/AgentReportViewSet/average_session_time_export",
+        "description": "The table represents the average amount of time, that an agent takes to resolve a customer's query",
+        "chart_api_url": "agentreport-charts/agent_report_average_session_time/",
+        "chart_report_api": "agentreport-charts/agent_report_average_session_time_export_csv/",
+        "chart_report_pdf_api": "agentreport-charts/agent_report_average_session_time_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Number of Messages in Each User Session",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "handoff.views.agent_reports_views/AgentReportViewSet/messages_in_interactions_export",
+        "description": "The table shows the count of messages exchanged between a user and an agent during a single session",
+        "chart_api_url": "agentreport-charts/agent_report_messages_in_interactions/",
+        "chart_report_api": "agentreport-charts/agent_report_messages_in_interactions_export_csv/",
+        "chart_report_pdf_api": "agentreport-charts/agent_report_messages_in_interactions_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Handoff Duration",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "handoff.views.agent_transfer_views/AgentTransferViewSet/transfer_details_export",
+        "description": "The table shows the comphrensive details of the customer's interaction with agents",
+        "chart_api_url": "agent_transfer_charts/agent_report_handoff_transfer_details/",
+        "chart_report_api": "agent_transfer_charts/agent_report_handoff_transfer_details_export_csv/",
+        "chart_report_pdf_api": "agent_transfer_charts/agent_report_handoff_transfer_details_export_pdf/"
+      }
+    ],
+    "filters": [
+      {
+        "api_url": "get_channels/",
+        "request_method": "GET",
+        "return_key": "channel",
+        "service": "analytics",
+        "filter_type": "select",
+        "filter_title": "Channel"
+      },
+      {
+        "return_key": "timestamp__range",
+        "service": "analytics",
+        "filter_type": "timestamp",
+        "filter_title": "Time Range"
+      }
+    ]
+  },
+  "nbf": {
+    "chart_title": "Agent Report",
+    "screenshot": true,
+    "charts": [
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Agent Login Status",
+        "screenshot": true,
+        "color": 0,
+        "cols": 6,
+        "rows": 1.5,
+        "Property": {},
+        "path": "handoff.views.agent_productivity_views/AgentProductivityViewSet/agent_login_status_export",
+        "description": "The table shows the login and logout details of every agent",
+        "chart_api_url": "agent_productivity/agent_report_agent_login_status/",
+        "chart_report_api": "agent_productivity/agent_report_agent_login_status_export_csv/",
+        "chart_report_pdf_api": "agent_productivity/agent_report_agent_login_status_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Agent Availability",
+        "screenshot": true,
+        "color": 0,
+        "cols": 6,
+        "rows": 1.5,
+        "Property": {},
+        "path": "handoff.views.agent_productivity_views/AgentProductivityViewSet/agent_availability_export",
+        "description": "The table shows the online and offline details of every agent",
+        "chart_api_url": "agent_productivity/agent_report_agent_availability/",
+        "chart_report_api": "agent_productivity/agent_report_agent_availability_export_csv/",
+        "chart_report_pdf_api": "agent_productivity/agent_report_agent_availability_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Agents Routing details",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "handoff.views.agent_productivity_views/AgentProductivityViewSet/agent_routing_export",
+        "description": "The table displays information about how incoming requests for agents are routed to available agents.",
+        "chart_api_url": "agent_productivity/agent_report_agent_routing_details/",
+        "chart_report_api": "agent_productivity/agent_report_agent_routing_details_export_csv/",
+        "chart_report_pdf_api": "agent_productivity/agent_report_agent_routing_details_export_pdf/"
+      },
+      {
+        "type": "bar_chart",
+        "chartType": "group",
+        "title": "Total Interactions Arrived",
+        "screenshot": true,
+        "color": 0,
+        "cols": 6,
+        "rows": 1,
+        "Property": {
+          "x": "Channel",
+          "y": [
+            "Count"
+          ]
+        },
+        "description": "The numeric value represents the total number of notifications that have arrived for the agents to handle during a specific time period.",
+        "chart_api_url": "agentreport-charts/agent_report_interaction_arrived_bar/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "bar_chart",
+        "chartType": "group",
+        "title": "Total Interactions Accepted",
+        "screenshot": true,
+        "color": 0,
+        "cols": 6,
+        "rows": 1,
+        "Property": {
+          "x": "Channel",
+          "y": [
+            "Count"
+          ]
+        },
+        "description": "The numeric value represents the total number of handoff requests that the agents have accepted during a specific time period.",
+        "chart_api_url": "agentreport-charts/agent_report_interaction_accepted_bar/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Interactions Arrived per Agent",
+        "screenshot": true,
+        "color": 0,
+        "cols": 6,
+        "rows": 1.5,
+        "Property": {},
+        "path": "handoff.views.agent_reports_views/AgentReportViewSet/interaction_arrived_export",
+        "description": "The table shows the number of handoff notifications that have been received by each agent in a given time period.",
+        "chart_api_url": "agentreport-charts/agent_report_interaction_arrived_details/",
+        "chart_report_api": "agentreport-charts/agent_report_interaction_arrived_details_export_csv/",
+        "chart_report_pdf_api": "agentreport-charts/agent_report_interaction_arrived_details_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Interactions Accepted per Agent",
+        "screenshot": true,
+        "color": 0,
+        "cols": 6,
+        "rows": 1.5,
+        "Property": {},
+        "path": "handoff.views.agent_reports_views/AgentReportViewSet/interaction_accepted_export",
+        "description": "The table shows the number of handoff requests that each agent accepted in a given time period.",
+        "chart_api_url": "agentreport-charts/agent_report_interaction_accepted_details/",
+        "chart_report_api": "agentreport-charts/agent_report_interaction_accepted_details_export_csv/",
+        "chart_report_pdf_api": "agentreport-charts/agent_report_interaction_accepted_details_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Average Handling Time",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "handoff.views.agent_reports_views/AgentReportViewSet/average_session_time_export",
+        "description": "The table represents the average amount of time, that an agent takes to resolve a customer's query",
+        "chart_api_url": "agentreport-charts/agent_report_average_session_time/",
+        "chart_report_api": "agentreport-charts/agent_report_average_session_time_export_csv/",
+        "chart_report_pdf_api": "agentreport-charts/agent_report_average_session_time_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Number of Messages in Each User Session",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "handoff.views.agent_reports_views/AgentReportViewSet/messages_in_interactions_export",
+        "description": "The table shows the count of messages exchanged between a user and an agent during a single session",
+        "chart_api_url": "agentreport-charts/agent_report_messages_in_interactions/",
+        "chart_report_api": "agentreport-charts/agent_report_messages_in_interactions_export_csv/",
+        "chart_report_pdf_api": "agentreport-charts/agent_report_messages_in_interactions_export_pdf/"
+      },
+      {
+        "type": "shankey_chart",
+        "chartType": "group",
+        "title": "Handoff Flow",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "description": "The sankey chart represents the path of interactions as they move through different stages of the handoff process",
+        "chart_api_url": "agentreport-charts/handoff_flow_shankey_chart/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      }
+    ],
+    "filters": [
+      {
+        "api_url": "get_channels/",
+        "request_method": "GET",
+        "return_key": "channel",
+        "service": "analytics",
+        "filter_type": "select",
+        "filter_title": "Channel"
+      },
+      {
+        "return_key": "timestamp__range",
+        "service": "analytics",
+        "filter_type": "timestamp",
+        "filter_title": "Time Range"
+      }
+    ]
+  },
+  "dashboard": {
+    "chart_title": "Agent Report",
+    "screenshot": true,
+    "charts": [
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Agent Login Status",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "handoff.views.agent_productivity_views/AgentProductivityViewSet/agent_login_status_export",
+        "description": "The table shows the login and logout details of every agent",
+        "chart_api_url": "agent_productivity/agent_report_agent_login_status/",
+        "chart_report_api": "agent_productivity/agent_report_agent_login_status_export_csv/",
+        "chart_report_pdf_api": "agent_productivity/agent_report_agent_login_status_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Agents Routing details",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "handoff.views.agent_productivity_views/AgentProductivityViewSet/agent_routing_export",
+        "description": "The table displays information about how incoming requests for agents are routed to available agents.",
+        "chart_api_url": "agent_productivity/agent_report_agent_routing_details/",
+        "chart_report_api": "agent_productivity/agent_report_agent_routing_details_export_csv/",
+        "chart_report_pdf_api": "agent_productivity/agent_report_agent_routing_details_export_pdf/"
+      },
+      {
+        "type": "bar_chart",
+        "chartType": "group",
+        "title": "Total Interactions Arrived",
+        "screenshot": true,
+        "color": 0,
+        "cols": 6,
+        "rows": 1,
+        "Property": {
+          "x": "Channel",
+          "y": [
+            "Count"
+          ]
+        },
+        "description": "The numeric value represents the total number of notifications that have arrived for the agents to handle during a specific time period.",
+        "chart_api_url": "agentreport-charts/agent_report_interaction_arrived_bar/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "bar_chart",
+        "chartType": "group",
+        "title": "Total Interactions Accepted",
+        "screenshot": true,
+        "color": 0,
+        "cols": 6,
+        "rows": 1,
+        "Property": {
+          "x": "Channel",
+          "y": [
+            "Count"
+          ]
+        },
+        "description": "The numeric value represents the total number of handoff requests that the agents have accepted during a specific time period.",
+        "chart_api_url": "agentreport-charts/agent_report_interaction_accepted_bar/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Interactions Arrived per Agent",
+        "screenshot": true,
+        "color": 0,
+        "cols": 6,
+        "rows": 1.5,
+        "Property": {},
+        "path": "handoff.views.agent_reports_views/AgentReportViewSet/interaction_arrived_export",
+        "description": "The table shows the number of handoff notifications that have been received by each agent in a given time period.",
+        "chart_api_url": "agentreport-charts/agent_report_interaction_arrived_details/",
+        "chart_report_api": "agentreport-charts/agent_report_interaction_arrived_details_export_csv/",
+        "chart_report_pdf_api": "agentreport-charts/agent_report_interaction_arrived_details_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Interactions Accepted per Agent",
+        "screenshot": true,
+        "color": 0,
+        "cols": 6,
+        "rows": 1.5,
+        "Property": {},
+        "path": "handoff.views.agent_reports_views/AgentReportViewSet/interaction_accepted_export",
+        "description": "The table shows the number of handoff requests that each agent accepted in a given time period.",
+        "chart_api_url": "agentreport-charts/agent_report_interaction_accepted_details/",
+        "chart_report_api": "agentreport-charts/agent_report_interaction_accepted_details_export_csv/",
+        "chart_report_pdf_api": "agentreport-charts/agent_report_interaction_accepted_details_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Average Handling Time",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "handoff.views.agent_reports_views/AgentReportViewSet/average_session_time_export",
+        "description": "The table represents the average amount of time, that an agent takes to resolve a customer's query",
+        "chart_api_url": "agentreport-charts/agent_report_average_session_time/",
+        "chart_report_api": "agentreport-charts/agent_report_average_session_time_export_csv/",
+        "chart_report_pdf_api": "agentreport-charts/agent_report_average_session_time_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Number of Messages in Each User Session",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "handoff.views.agent_reports_views/AgentReportViewSet/messages_in_interactions_export",
+        "description": "The table shows the count of messages exchanged between a user and an agent during a single session",
+        "chart_api_url": "agentreport-charts/agent_report_messages_in_interactions/",
+        "chart_report_api": "agentreport-charts/agent_report_messages_in_interactions_export_csv/",
+        "chart_report_pdf_api": "agentreport-charts/agent_report_messages_in_interactions_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Handoff Duration",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "handoff.views.agent_transfer_views/AgentTransferViewSet/transfer_details_export",
+        "description": "The table shows the comprehensive details of the customer's interaction with agents",
+        "chart_api_url": "agent_transfer_charts/agent_report_handoff_transfer_details/",
+        "chart_report_api": "agent_transfer_charts/agent_report_handoff_transfer_details_export_csv/",
+        "chart_report_pdf_api": "agent_transfer_charts/agent_report_handoff_transfer_details_export_pdf/"
+      }
+    ],
+    "filters": [
+      {
+        "api_url": "get_channels/",
+        "request_method": "GET",
+        "return_key": "channel",
+        "service": "analytics",
+        "filter_type": "select",
+        "filter_title": "Channel"
+      },
+      {
+        "return_key": "timestamp__range",
+        "service": "analytics",
+        "filter_type": "timestamp",
+        "filter_title": "Time Range"
+      }
+    ]
+  }
+}

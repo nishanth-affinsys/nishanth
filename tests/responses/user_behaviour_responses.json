@@ -1,0 +1,129 @@
+{
+  "top_10_message": {
+    "count": 10,
+    "next": null,
+    "previous": null,
+    "results": [
+      {
+        "Message": "query_timeout",
+        "count": 37901
+      },
+      {
+        "Message": "Hi hi",
+        "count": 4256
+      },
+      {
+        "Message": "proceed",
+        "count": 2441
+      },
+      {
+        "Message": "123456",
+        "count": 1813
+      },
+      {
+        "Message": "now",
+        "count": 1773
+      },
+      {
+        "Message": "cancel",
+        "count": 1590
+      },
+      {
+        "Message": "confirm",
+        "count": 1320
+      },
+      {
+        "Message": "understood",
+        "count": 1305
+      },
+      {
+        "Message": "credit card",
+        "count": 1088
+      },
+      {
+        "Message": "hi",
+        "count": 1086
+      }
+    ]
+  },
+  "top_10_intents": {
+    "count": 3,
+    "next": null,
+    "previous": null,
+    "results": [
+      {
+        "intent": "welcome",
+        "count": 2
+      },
+      {
+        "intent": "card",
+        "count": 1
+      },
+      {
+        "intent": "fallback",
+        "count": 1
+      }
+    ]
+  },
+  "wordcloud": [
+    {
+      "name": "hi",
+      "count": 2
+    },
+    {
+      "name": "cards",
+      "count": 1
+    },
+    {
+      "name": "heyy",
+      "count": 1
+    }
+  ],
+  "channel_reaction": {
+    "count": 5,
+    "next": null,
+    "previous": null,
+    "results": [
+      {
+        "Username": "Prakhar Goel",
+        "Page_Id": "104198824616672",
+        "Post_Id": "104198824616672_542150451263625",
+        "Action_Type": "reaction",
+        "Remarks": "wow",
+        "Timestamp": "2023-07-14 11:45:06+00:00"
+      },
+      {
+        "Username": "Pavan Santosh",
+        "Page_Id": "104198824616672",
+        "Post_Id": "104198824616672_424630349682303",
+        "Action_Type": "comment",
+        "Remarks": "Awesome ❤️",
+        "Timestamp": "2023-07-14 11:24:47+00:00"
+      },
+      {
+        "Username": "Pavan Santosh",
+        "Page_Id": "104198824616672",
+        "Post_Id": "104198824616672_424630349682303",
+        "Action_Type": "reaction",
+        "Remarks": "like",
+        "Timestamp": "2023-07-14 11:23:11+00:00"
+      },
+      {
+        "Username": "Pavan Santosh",
+        "Page_Id": "104198824616672",
+        "Post_Id": "104198824616672_424630349682303",
+        "Action_Type": "reaction",
+        "Remarks": "dislike",
+        "Timestamp": "2023-07-14 11:23:04+00:00"
+      },
+      {
+        "Username": "Pavan Santosh",
+        "Page_Id": "104198824616672",
+        "Post_Id": "104198824616672_429318702546801",
+        "Action_Type": "reaction",
+        "Remarks": "like",
+        "Timestamp": "2023-07-14 11:09:46+00:00"
+      }
+    ]
+  }
+}

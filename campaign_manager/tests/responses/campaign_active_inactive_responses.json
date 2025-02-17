@@ -1,0 +1,150 @@
+{
+  "created_campaign": {
+    "count": 6
+  },
+  "completed_campaign": {
+    "count": 3
+  },
+  "active_campaign": {
+    "count": 1
+  },
+  "inactive_campaign": {
+    "count": 1
+  },
+  "deleted_campaign": {
+    "count": 1
+  },
+  "active_inactive_linechart": [
+    {
+      "Date": "2023-09-19",
+      "Active_Campaigns": 1,
+      "Inactive_Campaigns": 1,
+      "Completed_Campaigns": 3,
+      "Deleted_Campaigns": 1
+    }
+  ],
+  "aggregate_details": {
+    "count": 6,
+    "next": null,
+    "previous": null,
+    "results": [
+      {
+        "Campaign_id": "1",
+        "Total_Sub_Campaigns": 1,
+        "Total_Active_Sub_Campaigns": 0,
+        "Total_Inactive_Sub_Campaigns": 1,
+        "Total_Completed_Sub_Campaigns": 0
+      },
+      {
+        "Campaign_id": "2.5",
+        "Total_Sub_Campaigns": 1,
+        "Total_Active_Sub_Campaigns": 0,
+        "Total_Inactive_Sub_Campaigns": 1,
+        "Total_Completed_Sub_Campaigns": 0
+      },
+      {
+        "Campaign_id": "27",
+        "Total_Sub_Campaigns": 1,
+        "Total_Active_Sub_Campaigns": 0,
+        "Total_Inactive_Sub_Campaigns": 1,
+        "Total_Completed_Sub_Campaigns": 0
+      },
+      {
+        "Campaign_id": "3",
+        "Total_Sub_Campaigns": 1,
+        "Total_Active_Sub_Campaigns": 0,
+        "Total_Inactive_Sub_Campaigns": 1,
+        "Total_Completed_Sub_Campaigns": 0
+      },
+      {
+        "Campaign_id": "4",
+        "Total_Sub_Campaigns": 1,
+        "Total_Active_Sub_Campaigns": 0,
+        "Total_Inactive_Sub_Campaigns": 0,
+        "Total_Completed_Sub_Campaigns": 1
+      },
+      {
+        "Campaign_id": "5",
+        "Total_Sub_Campaigns": 1,
+        "Total_Active_Sub_Campaigns": 0,
+        "Total_Inactive_Sub_Campaigns": 0,
+        "Total_Completed_Sub_Campaigns": 1
+      }
+    ]
+  },
+  "campaign_type_details": {
+    "count": 6,
+    "next": null,
+    "previous": null,
+    "results": [
+      {
+        "Campaign_Id": "1",
+        "Campaign_Name": "campaign test admin",
+        "Campaign_Category": "Marketing",
+        "Sub_Campaign_Id": "1-A",
+        "Sub_Campaign_Name": "campaign test admin",
+        "Sub_Campaign_Status": "INACTIVE",
+        "Sub_Campaign_Type": "NOTIFICATION"
+      },
+      {
+        "Campaign_Id": "2.5",
+        "Campaign_Name": "20 numbers",
+        "Campaign_Category": "Marketing",
+        "Sub_Campaign_Id": "2.1-A",
+        "Sub_Campaign_Name": "test marketing",
+        "Sub_Campaign_Status": "INACTIVE",
+        "Sub_Campaign_Type": "NOTIFICATION"
+      },
+      {
+        "Campaign_Id": "27",
+        "Campaign_Name": "test",
+        "Campaign_Category": "Marketing",
+        "Sub_Campaign_Id": "2.3-A",
+        "Sub_Campaign_Name": "test marketing",
+        "Sub_Campaign_Status": "INACTIVE",
+        "Sub_Campaign_Type": "NOTIFICATION"
+      },
+      {
+        "Campaign_Id": "3",
+        "Campaign_Name": "Sample Bill",
+        "Campaign_Category": "Marketing",
+        "Sub_Campaign_Id": "2.4-A",
+        "Sub_Campaign_Name": "test marketing",
+        "Sub_Campaign_Status": "INACTIVE",
+        "Sub_Campaign_Type": "NOTIFICATION"
+      },
+      {
+        "Campaign_Id": "4",
+        "Campaign_Name": "Affinsys Bill",
+        "Campaign_Category": "Utility",
+        "Sub_Campaign_Id": "26-A",
+        "Sub_Campaign_Name": "testing",
+        "Sub_Campaign_Status": "COMPLETED",
+        "Sub_Campaign_Type": "NOTIFICATION"
+      },
+      {
+        "Campaign_Id": "5",
+        "Campaign_Name": "Affinsys Bill payments",
+        "Campaign_Category": "Utility",
+        "Sub_Campaign_Id": "1-A",
+        "Sub_Campaign_Name": "campaign test admin",
+        "Sub_Campaign_Status": "COMPLETED",
+        "Sub_Campaign_Type": "NOTIFICATION"
+      }
+    ]
+  },
+  "sub_targeted_users": {
+    "count": 1,
+    "next": null,
+    "previous": null,
+    "results": [
+      {
+        "Campaign_Id": "5",
+        "Campaign_Name": "Affinsys Bill payments",
+        "Sub_Campaign_Id": "1-A",
+        "Sub_Campaign_Name": "campaign test admin",
+        "Total_Targeted_User": 1
+      }
+    ]
+  }
+}

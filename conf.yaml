@@ -1,0 +1,19 @@
+MAX_TIME_RANGE:
+  description: Number of months a user can filter in analytics
+  default: '24'
+
+SPECIAL_CHANNELS:
+  description: Channels for analytics filters that are not in metadata
+  default: '{}'
+
+DASHBOARD_LOCATION:
+  description: Different dashboard to render according to clients
+  default: 'common'
+
+PDF_TEMPLATE_NAME:
+  description: Template name for analytics pdf in picsum
+  default: 'analytics_pdf'
+
+DEFAULT_EMAIL_SCHEDULE_MESSAGE:
+  description: Default message for email scheduling
+  default: '<div><p>Please find attached the requested zip file. If you have any issues or need further assistance, please let us know.</p><p>Regards,<br>Team Affinsys</p></div>'

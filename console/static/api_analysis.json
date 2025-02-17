@@ -1,0 +1,435 @@
+{
+  "common": {
+    "chart_title": "API Log Report",
+    "screenshot": true,
+    "charts": [
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Total API Calls",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "console.views.api_logs_views/ApiLogsChartsViewSet/api_calls_export",
+        "description": "The table displays the names of APIs and their corresponding call frequencies.",
+        "chart_api_url": "api-charts/api_calls/",
+        "chart_report_api": "api-charts/api_calls_export_csv/",
+        "chart_report_pdf_api": "api-charts/api_calls_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "API Details",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "console.views.api_logs_views/ApiLogsChartsViewSet/api_details_export",
+        "description": "The table gives a comprehensive view of APIs that are used.",
+        "chart_api_url": "api-charts/api_details/",
+        "chart_report_api": "api-charts/api_details_export_csv/",
+        "chart_report_pdf_api": "api-charts/api_details_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "API Exceptions",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "console.views.api_logs_views/ApiLogsChartsViewSet/api_exceptions_export",
+        "description": "The table shows the details of the errors or anomalies that occurs when utilizing an API",
+        "chart_api_url": "api-charts/api_exceptions/",
+        "chart_report_api": "api-charts/api_exceptions_export_csv/",
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "API Request Details",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "console.views.api_logs_views/ApiLogsChartsViewSet/api_request_details_export_csv",
+        "description": "The table provides detailed information regarding all the API requests that were made.",
+        "chart_api_url": "api-charts/api_request_details/",
+        "chart_report_api": "api-charts/api_request_details_export_csv/",
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "API Response Details",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "console.views.api_logs_views/ApiLogsChartsViewSet/api_response_details_export_csv",
+        "description": "The table provides detailed information regarding all the API responses that were returned.",
+        "chart_api_url": "api-charts/api_response_details/",
+        "chart_report_api": "api-charts/api_response_details_export_csv/",
+        "chart_report_pdf_api": 0
+      }
+    ],
+    "filters": [
+      {
+        "api_url": "get_channels/",
+        "request_method": "GET",
+        "return_key": "channel",
+        "service": "analytics",
+        "filter_type": "select",
+        "filter_title": "Channel"
+      },
+      {
+        "return_key": "timestamp__range",
+        "service": "analytics",
+        "filter_type": "timestamp",
+        "filter_title": "Time Range"
+      }
+    ]
+  },
+  "stanbic": {
+    "chart_title": "API Log Report",
+    "screenshot": true,
+    "charts": [
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Total API Calls",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "console.views.api_logs_views/ApiLogsChartsViewSet/api_calls_export",
+        "description": "The table displays the names of APIs and their corresponding call frequencies.",
+        "chart_api_url": "api-charts/api_calls/",
+        "chart_report_api": "api-charts/api_calls_export_csv/",
+        "chart_report_pdf_api": "api-charts/api_calls_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "API Details",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "console.views.api_logs_views/ApiLogsChartsViewSet/api_details_export",
+        "description": "The table gives a comprehensive view of APIs that are used.",
+        "chart_api_url": "api-charts/api_details/",
+        "chart_report_api": "api-charts/api_details_export_csv/",
+        "chart_report_pdf_api": "api-charts/api_details_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "API Exceptions",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "console.views.api_logs_views/ApiLogsChartsViewSet/api_exceptions_export",
+        "description": "The table shows the details of the errors or anomalies that occurs when utilizing an API",
+        "chart_api_url": "api-charts/api_exceptions/",
+        "chart_report_api": "api-charts/api_exceptions_export_csv/",
+        "chart_report_pdf_api": 0
+      }
+    ],
+    "filters": [
+      {
+        "api_url": "get_channels/",
+        "request_method": "GET",
+        "return_key": "channel",
+        "service": "analytics",
+        "filter_type": "select",
+        "filter_title": "Channel"
+      },
+      {
+        "return_key": "timestamp__range",
+        "service": "analytics",
+        "filter_type": "timestamp",
+        "filter_title": "Time Range"
+      }
+    ]
+  },
+  "nbf": {
+    "chart_title": "API Log Report",
+    "screenshot": true,
+    "charts": [
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Total API Calls",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "console.views.api_logs_views/ApiLogsChartsViewSet/api_calls_export",
+        "description": "The table displays the names of APIs and their corresponding call frequencies.",
+        "chart_api_url": "api-charts/api_calls/",
+        "chart_report_api": "api-charts/api_calls_export_csv/",
+        "chart_report_pdf_api": "api-charts/api_calls_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "API Details",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "console.views.api_logs_views/ApiLogsChartsViewSet/api_details_export",
+        "description": "The table gives a comprehensive view of APIs that are used.",
+        "chart_api_url": "api-charts/api_details/",
+        "chart_report_api": "api-charts/api_details_export_csv/",
+        "chart_report_pdf_api": "api-charts/api_details_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "API Exceptions",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "console.views.api_logs_views/ApiLogsChartsViewSet/api_exceptions_export",
+        "description": "The table shows the details of the errors or anomalies that occurs when utilizing an API",
+        "chart_api_url": "api-charts/api_exceptions/",
+        "chart_report_api": "api-charts/api_exceptions_export_csv/",
+        "chart_report_pdf_api": 0
+      }
+    ],
+    "filters": [
+      {
+        "api_url": "get_channels/",
+        "request_method": "GET",
+        "return_key": "channel",
+        "service": "analytics",
+        "filter_type": "select",
+        "filter_title": "Channel"
+      },
+      {
+        "return_key": "timestamp__range",
+        "service": "analytics",
+        "filter_type": "timestamp",
+        "filter_title": "Time Range"
+      }
+    ]
+  },
+  "dashboard": {
+    "chart_title": "API Log Report",
+    "screenshot": true,
+    "charts": [
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Total API Calls",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "console.views.api_logs_views/ApiLogsChartsViewSet/api_calls_export",
+        "description": "The table displays the names of APIs and their corresponding call frequencies.",
+        "chart_api_url": "api-charts/api_calls/",
+        "chart_report_api": "api-charts/api_calls_export_csv/",
+        "chart_report_pdf_api": "api-charts/api_calls_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "API Details",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "console.views.api_logs_views/ApiLogsChartsViewSet/api_details_export",
+        "description": "The table gives a comprehensive view of APIs that are used.",
+        "chart_api_url": "api-charts/api_details/",
+        "chart_report_api": "api-charts/api_details_export_csv/",
+        "chart_report_pdf_api": "api-charts/api_details_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "API Exceptions",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "console.views.api_logs_views/ApiLogsChartsViewSet/api_exceptions_export",
+        "description": "The table shows the details of the errors or anomalies that occurs when utilizing an API",
+        "chart_api_url": "api-charts/api_exceptions/",
+        "chart_report_api": "api-charts/api_exceptions_export_csv/",
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "API Request Details",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "console.views.api_logs_views/ApiLogsChartsViewSet/api_request_details_export_csv",
+        "description": "The table provides detailed information regarding all the API requests that were made.",
+        "chart_api_url": "api-charts/api_request_details/",
+        "chart_report_api": "api-charts/api_request_details_export_csv/",
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "API Response Details",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "console.views.api_logs_views/ApiLogsChartsViewSet/api_response_details_export_csv",
+        "description": "The table provides detailed information regarding all the API responses that were returned.",
+        "chart_api_url": "api-charts/api_response_details/",
+        "chart_report_api": "api-charts/api_response_details_export_csv/",
+        "chart_report_pdf_api": 0
+      }
+    ],
+    "filters": [
+      {
+        "api_url": "get_channels/",
+        "request_method": "GET",
+        "return_key": "channel",
+        "service": "analytics",
+        "filter_type": "select",
+        "filter_title": "Channel"
+      },
+      {
+        "return_key": "timestamp__range",
+        "service": "analytics",
+        "filter_type": "timestamp",
+        "filter_title": "Time Range"
+      }
+    ]
+  },
+  "dib": {
+    "chart_title": "API Log Report",
+    "screenshot": true,
+    "charts": [
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Total API Calls",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "console.views.api_logs_views/ApiLogsChartsViewSet/api_calls_export",
+        "description": "The table displays the names of APIs and their corresponding call frequencies.",
+        "chart_api_url": "api-charts/api_calls/",
+        "chart_report_api": "api-charts/api_calls_export_csv/",
+        "chart_report_pdf_api": "api-charts/api_calls_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "API Details",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "console.views.api_logs_views/ApiLogsChartsViewSet/api_details_export",
+        "description": "The table gives a comprehensive view of APIs that are used.",
+        "chart_api_url": "api-charts/api_details/",
+        "chart_report_api": "api-charts/api_details_export_csv/",
+        "chart_report_pdf_api": "api-charts/api_details_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "API Exceptions",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "console.views.api_logs_views/ApiLogsChartsViewSet/api_exceptions_export",
+        "description": "The table shows the details of the errors or anomalies that occurs when utilizing an API",
+        "chart_api_url": "api-charts/api_exceptions/",
+        "chart_report_api": "api-charts/api_exceptions_export_csv/",
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "API Request Details",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "console.views.api_logs_views/ApiLogsChartsViewSet/api_request_details_export_csv",
+        "description": "The table provides detailed information regarding all the API requests that were made.",
+        "chart_api_url": "api-charts/api_request_details/",
+        "chart_report_api": "api-charts/api_request_details_export_csv/",
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "API Response Details",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "console.views.api_logs_views/ApiLogsChartsViewSet/api_response_details_export_csv",
+        "description": "The table provides detailed information regarding all the API responses that were returned.",
+        "chart_api_url": "api-charts/api_response_details/",
+        "chart_report_api": "api-charts/api_response_details_export_csv/",
+        "chart_report_pdf_api": 0
+      }
+    ],
+    "filters": [
+      {
+        "api_url": "get_channels/",
+        "request_method": "GET",
+        "return_key": "channel",
+        "service": "analytics",
+        "filter_type": "select",
+        "filter_title": "Channel"
+      },
+      {
+        "return_key": "timestamp__range",
+        "service": "analytics",
+        "filter_type": "timestamp",
+        "filter_title": "Time Range"
+      },
+      {
+        "api_url": "get_customer_types/",
+        "request_method": "GET",
+        "return_key": "customer_type",
+        "service": "analytics",
+        "filter_type": "select",
+        "filter_title": "Customer Type"
+      }
+    ]
+  }
+}

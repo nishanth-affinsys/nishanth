@@ -1,0 +1,62 @@
+[
+  {
+    "model": "handoff.socialconversationagent",
+    "pk": 1,
+    "fields": {
+      "user": "1afe0e69-7b9c-448c-a9a6-9eccc95cbe39",
+      "max_concurrent": 5,
+      "current_chats": 0,
+      "is_online": false,
+      "is_ready": false,
+      "username": "PavanKumar-Affinsys"
+    }
+  },
+  {
+    "model": "handoff.socialconversationagent",
+    "pk": 18,
+    "fields": {
+      "user": "4af97637-9c0d-4e1b-b162-4b910ff6a846",
+      "max_concurrent": 3,
+      "current_chats": 0,
+      "is_online": false,
+      "is_ready": false,
+      "username": "Aswin"
+    }
+  },
+  {
+    "model": "handoff.socialconversationagent",
+    "pk": 7,
+    "fields": {
+      "user": "9d7a8024-5df8-4fb7-8c68-b870d283d5b6",
+      "max_concurrent": 3,
+      "current_chats": 0,
+      "is_online": false,
+      "is_ready": false,
+      "username": "aditya"
+    }
+  },
+  {
+    "model": "handoff.socialconversationagent",
+    "pk": 5,
+    "fields": {
+      "user": "501a0c93-d5a1-44fd-aa5b-a5c9cfe41abf",
+      "max_concurrent": 5,
+      "current_chats": 0,
+      "is_online": false,
+      "is_ready": false,
+      "username": "Srujan-Affinsys"
+    }
+  },
+  {
+    "model": "handoff.socialconversationagent",
+    "pk": 20,
+    "fields": {
+      "user": "581cd169-2ce7-4dc0-b481-25666a0fcd08",
+      "max_concurrent": 3,
+      "current_chats": 0,
+      "is_online": false,
+      "is_ready": false,
+      "username": "srujangowda"
+    }
+  }
+]

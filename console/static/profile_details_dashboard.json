@@ -1,0 +1,232 @@
+{
+  "common": {
+    "chart_title": "Profile Details",
+    "screenshot": true,
+    "charts": [
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Total Profiles",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "The numeric value represents the total number of profiles created across different services",
+        "chart_api_url": "profile_data/profile_total_profiles_created/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Verified Profiles",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "The numeric value represents the the profiles that were authenticated",
+        "chart_api_url": "profile_data/profile_total_authenticated/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Unverified Users",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "The numeric value represents the the profiles that are unauthenticated",
+        "chart_api_url": "profile_data/profile_total_unauthenticated/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "donut_chart",
+        "chartType": "group",
+        "title": "Verified vs Unverified",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1,
+        "Property": {},
+        "description": "The donut chart represents the the profiles that are verified or unverified",
+        "chart_api_url": "profile_data/profile_authenticated_or_not/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Verified Profile Details",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "profile_data.views.profile_analytics_views/ProfileDataViewSet/profile_verified_user_details_export_csv",
+        "description": "The table chart provides the details of the users that are authenticated",
+        "chart_api_url": "profile_data/profile_verified_user_details/",
+        "chart_report_api": "profile_data/profile_verified_user_details_export_csv/",
+        "chart_report_pdf_api": "profile_data/profile_verified_user_details_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Unverified User Details",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "profile_data.views.profile_analytics_views/ProfileDataViewSet/profile_unverified_user_details_export_csv",
+        "description": "The table chart provides the details of the users that are authenticated",
+        "chart_api_url": "profile_data/profile_unverified_user_details/",
+        "chart_report_api": "profile_data/profile_unverified_user_details_export_csv/",
+        "chart_report_pdf_api": "profile_data/profile_unverified_user_details_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Opted Category Status",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "profile_data.views.profile_analytics_views/ProfileDataViewSet/profile_opted_category_details_export_csv",
+        "description": "The table chart provides the details of opted details of each user",
+        "chart_api_url": "profile_data/profile_opted_category_details/",
+        "chart_report_api": "profile_data/profile_opted_category_details_export_csv/",
+        "chart_report_pdf_api": "profile_data/profile_opted_category_details_export_pdf/"
+      }
+    ],
+    "filters": [
+      {
+        "return_key": "timestamp__range",
+        "service": "analytics",
+        "filter_type": "timestamp",
+        "filter_title": "Time Range"
+      }
+    ]
+  },
+  "dashboard": {
+    "chart_title": "Profile Details",
+    "screenshot": true,
+    "charts": [
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Total Profiles",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "The numeric value represents the total number of profiles created across different services",
+        "chart_api_url": "profile_data/profile_total_profiles_created/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Verified Profiles",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "The numeric value represents the the profiles that were authenticated",
+        "chart_api_url": "profile_data/profile_total_authenticated/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "big_number",
+        "chartType": "group",
+        "title": "Unverified Users",
+        "screenshot": true,
+        "color": 0,
+        "cols": 4,
+        "rows": 1,
+        "Property": {},
+        "description": "The numeric value represents the the profiles that are unauthenticated",
+        "chart_api_url": "profile_data/profile_total_unauthenticated/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "donut_chart",
+        "chartType": "group",
+        "title": "Verified vs Unverified",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1,
+        "Property": {},
+        "description": "The donut chart represents the the profiles that are verified or unverified",
+        "chart_api_url": "profile_data/profile_authenticated_or_not/",
+        "chart_report_api": 0,
+        "chart_report_pdf_api": 0
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Verified Profile Details",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "profile_data.views.profile_analytics_views/ProfileDataViewSet/profile_verified_user_details_export_csv",
+        "description": "The table chart provides the details of the users that are authenticated",
+        "chart_api_url": "profile_data/profile_verified_user_details/",
+        "chart_report_api": "profile_data/profile_verified_user_details_export_csv/",
+        "chart_report_pdf_api": "profile_data/profile_verified_user_details_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Unverified User Details",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "profile_data.views.profile_analytics_views/ProfileDataViewSet/profile_unverified_user_details_export_csv",
+        "description": "The table chart provides the details of the users that are authenticated",
+        "chart_api_url": "profile_data/profile_unverified_user_details/",
+        "chart_report_api": "profile_data/profile_unverified_user_details_export_csv/",
+        "chart_report_pdf_api": "profile_data/profile_unverified_user_details_export_pdf/"
+      },
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "Opted Category Status",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "path": "profile_data.views.profile_analytics_views/ProfileDataViewSet/profile_opted_category_details_export_csv",
+        "description": "The table chart provides the details of opted details of each user",
+        "chart_api_url": "profile_data/profile_opted_category_details/",
+        "chart_report_api": "profile_data/profile_opted_category_details_export_csv/",
+        "chart_report_pdf_api": "profile_data/profile_opted_category_details_export_pdf/"
+      }
+    ],
+    "filters": [
+      {
+        "return_key": "timestamp__range",
+        "service": "analytics",
+        "filter_type": "timestamp",
+        "filter_title": "Time Range"
+      }
+    ]
+  }
+}

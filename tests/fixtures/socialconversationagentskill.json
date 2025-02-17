@@ -1,0 +1,42 @@
+[
+  {
+    "model": "handoff.socialconversationagentskill",
+    "pk": 2,
+    "fields": {
+      "agent": 18,
+      "skill": 2
+    }
+  },
+  {
+    "model": "handoff.socialconversationagentskill",
+    "pk": 52,
+    "fields": {
+      "agent": 18,
+      "skill": 3
+    }
+  },
+  {
+    "model": "handoff.socialconversationagentskill",
+    "pk": 53,
+    "fields": {
+      "agent": 18,
+      "skill": 4
+    }
+  },
+  {
+    "model": "handoff.socialconversationagentskill",
+    "pk": 54,
+    "fields": {
+      "agent": 18,
+      "skill": 5
+    }
+  },
+  {
+    "model": "handoff.socialconversationagentskill",
+    "pk": 56,
+    "fields": {
+      "agent": 5,
+      "skill": 5
+    }
+  }
+]

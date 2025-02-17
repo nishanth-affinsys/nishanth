@@ -1,0 +1,118 @@
+{
+  "common": {
+    "chart_title": "KYC Detailed Report",
+    "screenshot": true,
+    "charts": [
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "KYC details",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "description": "",
+        "path": "onboarding.views.kyc_detailed_report_views/KYCDetailedReport/kyc_detailed_report_export_csv",
+        "chart_api_url": "kyc_detailed_charts/kyc_detailed_report/",
+        "chart_report_api": "kyc_detailed_charts/kyc_detailed_report_export_csv/",
+        "chart_report_pdf_api": "kyc_detailed_charts/kyc_detailed_report_export_pdf/"
+      }
+    ],
+    "filters": [
+      {
+        "return_key": "timestamp__range",
+        "service": "analytics",
+        "filter_type": "timestamp",
+        "filter_title": "Time Range"
+      }
+    ]
+  },
+  "dashboard": {
+    "chart_title": "KYC Detailed Report",
+    "screenshot": true,
+    "charts": [
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "KYC details",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "description": "",
+        "path": "onboarding.views.kyc_detailed_report_views/KYCDetailedReport/kyc_detailed_report_export_csv",
+        "chart_api_url": "kyc_detailed_charts/kyc_detailed_report/",
+        "chart_report_api": "kyc_detailed_charts/kyc_detailed_report_export_csv/",
+        "chart_report_pdf_api": "kyc_detailed_charts/kyc_detailed_report_export_pdf/"
+      }
+    ],
+    "filters": [
+      {
+        "return_key": "timestamp__range",
+        "service": "analytics",
+        "filter_type": "timestamp",
+        "filter_title": "Time Range"
+      }
+    ]
+  },
+  "stanbic": {
+    "chart_title": "KYC Detailed Report",
+    "screenshot": true,
+    "charts": [
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "KYC details",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "description": "",
+        "path": "onboarding.views.kyc_detailed_report_views/KYCDetailedReport/kyc_detailed_report_export_csv",
+        "chart_api_url": "kyc_detailed_charts/kyc_detailed_report/",
+        "chart_report_api": "kyc_detailed_charts/kyc_detailed_report_export_csv/",
+        "chart_report_pdf_api": "kyc_detailed_charts/kyc_detailed_report_export_pdf/"
+      }
+    ],
+    "filters": [
+      {
+        "return_key": "timestamp__range",
+        "service": "analytics",
+        "filter_type": "timestamp",
+        "filter_title": "Time Range"
+      }
+    ]
+  },
+  "kina": {
+    "chart_title": "KYC Detailed Report",
+    "screenshot": true,
+    "charts": [
+      {
+        "type": "table_chart",
+        "chartType": "group",
+        "title": "KYC details",
+        "screenshot": true,
+        "color": 0,
+        "cols": 12,
+        "rows": 1.5,
+        "Property": {},
+        "description": "",
+        "path": "onboarding.views.kyc_detailed_report_views/KYCDetailedReport/kyc_detailed_comments_report_export_csv",
+        "chart_api_url": "kyc_detailed_charts/kyc_detailed_comments_report/",
+        "chart_report_api": "kyc_detailed_charts/kyc_detailed_comments_report_export_csv/",
+        "chart_report_pdf_api": "kyc_detailed_charts/kyc_detailed_comments_report_export_pdf/"
+      }
+    ],
+    "filters": [
+      {
+        "return_key": "timestamp__range",
+        "service": "analytics",
+        "filter_type": "timestamp",
+        "filter_title": "Time Range"
+      }
+    ]
+  }
+}
