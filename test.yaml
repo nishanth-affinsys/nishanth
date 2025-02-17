@@ -19,3 +19,9 @@ spec:
         image: nginx:alpine
         ports:
         - containerPort: 80
+
+
+
+Hello,
+
+I am a DevOps engineer, and I use Git and GitHub to manage my deployment repository. Currently, I have several old branches in the repository that are no longer in use but need to be retained for logging purposes. I would like to clean up the repository by removing unnecessary branches while preserving the required history. What would be the best approach to achieve this?
