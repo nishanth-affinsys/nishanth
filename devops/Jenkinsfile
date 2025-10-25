@@ -5,6 +5,8 @@ metadata:
   labels:
     jenkins/label-dynamic: "true"
 spec:
+  securityContext:
+    fsGroup: 1000
   containers:
     - name: git
       image: alpine/git
