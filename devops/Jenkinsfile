@@ -20,7 +20,10 @@ spec:
           }
 
           stage('List Files') {
-                  sh 'ls -l'
+                  sh '''
+                    ls -l
+                    pwd
+                '''
           }
         }
     }
