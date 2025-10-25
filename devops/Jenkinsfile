@@ -11,12 +11,20 @@ spec:
       command:
       - cat
       tty: true
+      volumeMounts:
+      - name: workdir
+        mountPath: /workdir
+  volumes:
+    - name: workdir
+      emptyDir: {}
 '''
 ) {
     node(POD_LABEL) {
         container('git'){
           stage('Checkout Repo') {
-              checkout scm
+              dir(/workspace) {
+                checkout scm
+              }
           }
 
           stage('List Files') {
