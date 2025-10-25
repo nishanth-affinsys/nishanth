@@ -14,6 +14,10 @@ spec:
 '''
 ) {
     node(POD_LABEL) {
+        stage('Checkout Repo') {
+            checkout scm
+        }
+        
         stage('List Files') {
             container('git') {
                 sh 'ls -l'
