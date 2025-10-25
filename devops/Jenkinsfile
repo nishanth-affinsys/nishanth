@@ -22,7 +22,7 @@ spec:
     node(POD_LABEL) {
         container('git'){
           stage('Checkout Repo') {
-              dir('/workspace') {
+              dir('/workdir') {
                 checkout scm
               }
           }
