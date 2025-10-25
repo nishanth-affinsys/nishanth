@@ -1,0 +1,23 @@
+podTemplate(yaml: '''
+apiVersion: v1
+kind: Pod
+metadata:
+  labels:
+    jenkins/label-dynamic: "true"
+spec:
+  containers:
+    - name: git
+      image: alpine/git
+      command:
+      - cat
+      tty: true
+'''
+) {
+    node(POD_LABEL) {
+        stage('List Files') {
+            container('git') {
+                sh 'ls -l'
+            }
+        }
+    }
+}
