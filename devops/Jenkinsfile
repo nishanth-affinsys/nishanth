@@ -27,16 +27,11 @@ spec:
           stage('Checkout Repo') {
               dir('/workdir') {
                 checkout scm
+                sh '''
+                  ls -l
+                  pwd
+                  '''
               }
-          }
-
-          stage('List Files') {
-            dir('/workdir'){
-              sh '''
-                ls -l
-                pwd
-              '''
-            }
           }
         }
     }
