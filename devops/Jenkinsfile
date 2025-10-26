@@ -13,6 +13,7 @@ spec:
       image: alpine/git
       command: ["/bin/sh", "-c"]
       args: ["sleep 3600"]
+      workingDir: /workDir
       volumeMounts:
       - name: workdir
         mountPath: /workdir
