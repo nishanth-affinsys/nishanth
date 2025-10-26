@@ -50,7 +50,7 @@ EOF
                 sh '''
                     /kaniko/executor \
                       --context=${WORKSPACE} \
-                      --dockerfile=${WORKSPACE}/devops/Dockerfile \
+                      --dockerfile=${WORKSPACE}/Dockerfile \
                       --destination=nishanthveeru/jenkins-demo:${BUILD_NUMBER} \
                       --cache=true \
                       --cache-repo=nishanthveeru/jenkins-demo-cache
