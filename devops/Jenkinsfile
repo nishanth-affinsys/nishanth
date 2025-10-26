@@ -11,10 +11,8 @@ spec:
   containers:
     - name: git
       image: alpine/git
-      command:
-      - /bin/sh
-      - -c
-      - "sleep infinity"
+      command: ["/bin/sh", "-c"]
+      args: ["sleep 3600"]
       volumeMounts:
       - name: workdir
         mountPath: /workdir
@@ -29,6 +27,7 @@ spec:
                 dir('/workdir') {
                     checkout scm
                     sh '''
+                      echo "Inside container"
                       ls -l
                       pwd
                     '''
