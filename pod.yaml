@@ -6,6 +6,6 @@ metadata:
   name: tiktactoe
 spec:
   containers:
-  - image: nishanthveeru/jenkins-demo:5
+  - image: nishanthveeru/jenkins-demo:6
     name: tiktactoe
   restartPolicy: Always
