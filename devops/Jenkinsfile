@@ -18,6 +18,14 @@ spec:
       volumeMounts:
       - name: docker-config
         mountPath: /kaniko/.docker
+    - name: git
+      image: alpine/git:latest
+      command:
+      - cat
+      tty: true
+      securityContext:
+        runAsUser: 0
+        runAsGroup: 0
   volumes:
     - name: docker-config
       emptyDir: {}
@@ -55,6 +63,29 @@ EOF
                       --cache=true \
                       --cache-repo=nishanthveeru/jenkins-demo-cache
                 '''
+            }
+        }
+        
+        container('git') {
+            stage('Clone Repo and Update YAML') {
+                withCredentials([usernamePassword(
+                    credentialsId: 'github-creds',
+                    usernameVariable: 'GIT_USERNAME',
+                    passwordVariable: 'GIT_TOKEN'
+                )]) {
+                    sh '''
+                        git clone --branch test-jenkins --single-branch https://github.com/nishanth-affinsys/nishanth.git repo
+                        cd repo
+                        git config user.name "nishanth-affinsys"
+                        git config user.email "nishanth.hg@affinsys.com"
+                        
+                        ./update.sh ./pod.yaml ${BUILD_NUMBER}
+                        
+                        git add .
+                        git commit -m "artifact update: ${BUILD_NUMBER}"
+                        git push https://${GIT_USERNAME}:${GIT_TOKEN}@github.com/nishanth-affinsys/nishanth.git test-jenkins
+                    '''
+                }
             }
         }
     }
