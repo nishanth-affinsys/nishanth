@@ -12,18 +12,13 @@ spec:
       - /bin/sh
       - -c
       - sleep 3600
-      volumeMounts:
-      - name: kaniko-workdir
-        mountPath: /workspace
-      - name: docker-config
-        mountPath: /kaniko/.docker
       securityContext:
         runAsUser: 0
         runAsGroup: 0
-        fsGroup: 0
+      volumeMounts:
+      - name: docker-config
+        mountPath: /kaniko/.docker
   volumes:
-    - name: kaniko-workdir
-      emptyDir: {}
     - name: docker-config
       emptyDir: {}
 '''
@@ -31,17 +26,16 @@ spec:
     node(POD_LABEL) {
         container('kaniko') {
             stage('Checkout And Build Image') {
-                dir('/workspace') {
-                    checkout scm
+                checkout scm
 
-                    withCredentials([usernamePassword(
-                        credentialsId: 'docker-creds',
-                        usernameVariable: 'USERNAME',
-                        passwordVariable: 'PASSWORD'
-                    )]) {
-                        sh '''
-                            mkdir -p /kaniko/.docker
-                            cat > /kaniko/.docker/config.json <<EOF
+                withCredentials([usernamePassword(
+                    credentialsId: 'docker-creds',
+                    usernameVariable: 'USERNAME',
+                    passwordVariable: 'PASSWORD'
+                )]) {
+                    sh '''
+                        mkdir -p /kaniko/.docker
+                        cat > /kaniko/.docker/config.json <<EOF
 {
   "auths": {
     "https://index.docker.io/v1/": {
@@ -50,18 +44,17 @@ spec:
   }
 }
 EOF
-                        '''
-                    }
-
-                    sh '''
-                        /kaniko/executor \
-                          --context=/workspace \
-                          --dockerfile=/workspace/devops/Dockerfile \
-                          --destination=nishanthveeru/jenkins-demo:${BUILD_NUMBER} \
-                          --cache=true \
-                          --cache-repo=nishanthveeru/jenkins-demo-cache
                     '''
                 }
+
+                sh '''
+                    /kaniko/executor \
+                      --context=${WORKSPACE} \
+                      --dockerfile=${WORKSPACE}/devops/Dockerfile \
+                      --destination=nishanthveeru/jenkins-demo:${BUILD_NUMBER} \
+                      --cache=true \
+                      --cache-repo=nishanthveeru/jenkins-demo-cache
+                '''
             }
         }
     }
