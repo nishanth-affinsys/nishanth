@@ -1,14 +1,15 @@
-# Use an official Python runtime as a parent image
-FROM python:3.10-slim
-
-# Set the working directory in the container
+# Build stage
+FROM node:20-alpine AS build
 WORKDIR /app
+COPY package*.json ./
+RUN npm ci
+COPY . .
+RUN npm run build
 
-# Copy the current directory contents into the container at /app
-COPY app.py .
-
-# Expose the port the app runs on
-EXPOSE 8000
-
-# Run the app.py when the container launches
-CMD ["python", "app.py"]
+# Production stage
+FROM nginx:alpine
+COPY --from=build /app/dist /usr/share/nginx/html
+# Add nginx configuration if needed
+# COPY nginx.conf /etc/nginx/conf.d/default.conf
+EXPOSE 80
+CMD ["nginx", "-g", "daemon off;"]

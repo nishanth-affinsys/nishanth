@@ -5,32 +5,57 @@ metadata:
   labels:
     jenkins/label-dynamic: "true"
 spec:
-  securityContext:
-    runAsUser: 0
-    fsGroup: 0
   containers:
-    - name: git
-      image: alpine/git
-      command: ["/bin/sh", "-c"]
-      args: ["sleep 3600"]
-      workingDir: /workDir
+    - name: kaniko
+      image: gcr.io/kaniko-project/executor:debug
+      command:
+      - /bin/sh
+      - -c
+      - sleep 3600
       volumeMounts:
-      - name: workdir
-        mountPath: /workdir
+      - name: kaniko-workdir
+        mountPath: /workspace
+      - name: docker-config
+        mountPath: /kaniko/.docker
   volumes:
-    - name: workdir
+    - name: kaniko-workdir
+      emptyDir: {}
+    - name: docker-config
       emptyDir: {}
 '''
 ) {
     node(POD_LABEL) {
-        container('git') {
-            stage('Checkout and List') {
-                dir('/workdir') {
+        container('kaniko') {
+            stage('Checkout And Build Image') {
+                dir('/workspace') {
                     checkout scm
+
+                    withCredentials([usernamePassword(
+                        credentialsId: 'docker-creds',
+                        usernameVariable: 'USERNAME',
+                        passwordVariable: 'PASSWORD'
+                    )]) {
+                        sh '''
+                            mkdir -p /kaniko/.docker
+                            cat > /kaniko/.docker/config.json <<EOF
+{
+  "auths": {
+    "https://index.docker.io/v1/": {
+      "auth": "$(echo -n "${USERNAME}:${PASSWORD}" | base64 -w 0)"
+    }
+  }
+}
+EOF
+                        '''
+                    }
+
                     sh '''
-                      echo "Inside container"
-                      ls -l
-                      pwd
+                        /kaniko/executor \
+                          --context=/workspace \
+                          --dockerfile=/workspace/devops/Dockerfile \
+                          --destination=nishanthveeru/jenkins-demo:${BUILD_NUMBER} \
+                          --cache=true \
+                          --cache-repo=nishanthveeru/jenkins-demo-cache
                     '''
                 }
             }
