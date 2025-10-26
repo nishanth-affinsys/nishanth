@@ -25,13 +25,11 @@ spec:
     node(POD_LABEL) {
         container('git'){
           stage('Checkout Repo') {
-              dir('/workdir') {
-                checkout scm
-                sh '''
-                  ls -l
-                  pwd
-                  '''
-              }
+            checkout scm
+            sh '''
+              ls -l
+              pwd
+            '''
           }
         }
     }
