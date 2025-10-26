@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  labels:
+    app: tiktactoe
+  name: tiktactoe
+spec:
+  containers:
+  - image: nishanthveeru/jenkins-demo:5
+    name: tiktactoe
+  restartPolicy: Always
