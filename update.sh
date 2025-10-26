@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/sh
 
 FILE_PATH="$1"
 NEW_TAG="$2"
@@ -8,8 +8,8 @@ if [ -z "$FILE_PATH" ] || [ -z "$NEW_TAG" ]; then
   exit 1
 fi
 
-# Replace only the tag after the colon
-sed -i "s#\(image:.*:\).*#\1${NEW_TAG}#g" "$FILE_PATH"
+# Portable sed without -i
+sed "s#\(image:.*:\).*#\1${NEW_TAG}#g" "$FILE_PATH" > "${FILE_PATH}.tmp"
+mv "${FILE_PATH}.tmp" "$FILE_PATH"
 
 echo "Updated image tag to: ${NEW_TAG} in $FILE_PATH"
-
