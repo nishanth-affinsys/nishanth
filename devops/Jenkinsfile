@@ -12,8 +12,9 @@ spec:
     - name: git
       image: alpine/git
       command:
-      - cat
-      tty: true
+      - /bin/sh
+      - -c
+      - "sleep infinity"
       volumeMounts:
       - name: workdir
         mountPath: /workdir
@@ -23,14 +24,16 @@ spec:
 '''
 ) {
     node(POD_LABEL) {
-        container('git'){
-          stage('Checkout Repo') {
-            checkout scm
-            sh '''
-              ls -l
-              pwd
-            '''
-          }
+        container('git') {
+            stage('Checkout and List') {
+                dir('/workdir') {
+                    checkout scm
+                    sh '''
+                      ls -l
+                      pwd
+                    '''
+                }
+            }
         }
     }
 }
