@@ -31,10 +31,12 @@ spec:
           }
 
           stage('List Files') {
-                  sh '''
-                    ls -l
-                    pwd
-                '''
+            dir('/workdir'){
+              sh '''
+                ls -l
+                pwd
+              '''
+            }
           }
         }
     }
