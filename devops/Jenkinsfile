@@ -6,6 +6,26 @@ metadata:
     jenkins/label-dynamic: "true"
 spec:
   containers:
+    - name: buildkit
+      image: moby/buildkit:latest
+      command:
+      - buildkitd
+      args:
+      - --addr
+      - unix:///run/buildkit/buildkitd.sock
+      securityContext:
+        privileged: true
+      readinessProbe:
+        exec:
+          command:
+          - buildctl
+          - debug
+          - workers
+        initialDelaySeconds: 5
+        periodSeconds: 5
+      volumeMounts:
+      - name: buildkit-socket
+        mountPath: /run/buildkit
     - name: buildctl
       image: moby/buildkit:latest
       command:
@@ -13,10 +33,12 @@ spec:
       tty: true
       env:
       - name: BUILDKIT_HOST
-        value: tcp://buildkit.buildkit.svc.cluster.local:1234
+        value: unix:///run/buildkit/buildkitd.sock
       - name: DOCKER_CONFIG
         value: /root/.docker
       volumeMounts:
+      - name: buildkit-socket
+        mountPath: /run/buildkit
       - name: docker-config
         mountPath: /root/.docker
     - name: git
@@ -28,6 +50,8 @@ spec:
         runAsUser: 0
         runAsGroup: 0
   volumes:
+    - name: buildkit-socket
+      emptyDir: {}
     - name: docker-config
       emptyDir: {}
 '''
@@ -43,6 +67,20 @@ spec:
                     passwordVariable: 'PASSWORD'
                 )]) {
                     sh '''
+                        # Wait for BuildKit daemon to be ready
+                        echo "Waiting for BuildKit daemon..."
+                        for i in {1..30}; do
+                            if buildctl debug workers 2>/dev/null; then
+                                echo "BuildKit daemon is ready!"
+                                break
+                            fi
+                            echo "Attempt $i: BuildKit not ready yet, waiting..."
+                            sleep 2
+                        done
+                        
+                        # Verify connection
+                        buildctl debug workers
+                        
                         # Create Docker config for authentication
                         mkdir -p /root/.docker
                         cat > /root/.docker/config.json <<EOF
@@ -54,9 +92,6 @@ spec:
   }
 }
 EOF
-                        
-                        # Verify BuildKit connection
-                        buildctl debug workers
                         
                         # Build and push with BuildKit
                         buildctl build \
