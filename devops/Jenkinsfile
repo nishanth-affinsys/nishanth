@@ -6,28 +6,6 @@ metadata:
     jenkins/label-dynamic: "true"
 spec:
   containers:
-    - name: buildkit
-      image: moby/buildkit:latest
-      command:
-      - buildkitd
-      args:
-      - --addr
-      - unix:///run/buildkit/buildkitd.sock
-      - --addr
-      - tcp://0.0.0.0:1234
-      securityContext:
-        privileged: true
-      readinessProbe:
-        exec:
-          command:
-          - buildctl
-          - debug
-          - workers
-        initialDelaySeconds: 5
-        periodSeconds: 5
-      volumeMounts:
-      - name: buildkit-socket
-        mountPath: /run/buildkit
     - name: buildctl
       image: moby/buildkit:latest
       command:
@@ -35,10 +13,12 @@ spec:
       tty: true
       env:
       - name: BUILDKIT_HOST
-        value: unix:///run/buildkit/buildkitd.sock
+        value: tcp://buildkit.buildkit.svc.cluster.local:1234
+      - name: DOCKER_CONFIG
+        value: /root/.docker
       volumeMounts:
-      - name: buildkit-socket
-        mountPath: /run/buildkit
+      - name: docker-config
+        mountPath: /root/.docker
     - name: git
       image: alpine/git:latest
       command:
@@ -48,7 +28,7 @@ spec:
         runAsUser: 0
         runAsGroup: 0
   volumes:
-    - name: buildkit-socket
+    - name: docker-config
       emptyDir: {}
 '''
 ) {
@@ -63,23 +43,31 @@ spec:
                     passwordVariable: 'PASSWORD'
                 )]) {
                     sh '''
-                        # Wait for BuildKit daemon to be ready
-                        until buildctl debug workers; do
-                            echo "Waiting for BuildKit daemon..."
-                            sleep 2
-                        done
+                        # Create Docker config for authentication
+                        mkdir -p /root/.docker
+                        cat > /root/.docker/config.json <<EOF
+{
+  "auths": {
+    "https://index.docker.io/v1/": {
+      "auth": "$(echo -n "${USERNAME}:${PASSWORD}" | base64 -w 0)"
+    }
+  }
+}
+EOF
                         
-                        # Login to Docker registry
-                        echo "${PASSWORD}" | buildctl build \
-                          --frontend gateway.v0 \
-                          --opt source=docker/dockerfile \
+                        # Verify BuildKit connection
+                        buildctl debug workers
+                        
+                        # Build and push with BuildKit
+                        buildctl build \
+                          --frontend dockerfile.v0 \
                           --local context=${WORKSPACE} \
                           --local dockerfile=${WORKSPACE} \
-                          --output type=image,name=nishanthveeru/jenkins-demo:${BUILD_NUMBER},push=true,registry.insecure=false \
+                          --output type=image,name=nishanthveeru/jenkins-demo:${BUILD_NUMBER},push=true \
                           --export-cache type=registry,ref=nishanthveeru/jenkins-demo-cache:buildcache,mode=max \
-                          --import-cache type=registry,ref=nishanthveeru/jenkins-demo-cache:buildcache \
-                          --opt build-arg:DOCKER_USER=${USERNAME} \
-                          --opt build-arg:DOCKER_PASS=${PASSWORD}
+                          --import-cache type=registry,ref=nishanthveeru/jenkins-demo-cache:buildcache
+                        
+                        echo "Successfully built and pushed: nishanthveeru/jenkins-demo:${BUILD_NUMBER}"
                     '''
                 }
             }
@@ -109,4 +97,3 @@ spec:
         }
     }
 }
-''')
