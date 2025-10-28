@@ -28,8 +28,6 @@ spec:
       volumeMounts:
       - name: buildkit-socket
         mountPath: /run/buildkit
-      - name: docker-config
-        mountPath: /root/.docker
     - name: buildctl
       image: moby/buildkit:latest
       command:
@@ -38,13 +36,9 @@ spec:
       env:
       - name: BUILDKIT_HOST
         value: unix:///run/buildkit/buildkitd.sock
-      - name: DOCKER_CONFIG
-        value: /root/.docker
       volumeMounts:
       - name: buildkit-socket
         mountPath: /run/buildkit
-      - name: docker-config
-        mountPath: /root/.docker
     - name: git
       image: alpine/git:latest
       command:
@@ -55,8 +49,6 @@ spec:
         runAsGroup: 0
   volumes:
     - name: buildkit-socket
-      emptyDir: {}
-    - name: docker-config
       emptyDir: {}
 '''
 ) {
@@ -77,28 +69,17 @@ spec:
                             sleep 2
                         done
                         
-                        # Create Docker config for authentication
-                        mkdir -p /root/.docker
-                        cat > /root/.docker/config.json <<EOF
-{
-  "auths": {
-    "https://index.docker.io/v1/": {
-      "auth": "$(echo -n "${USERNAME}:${PASSWORD}" | base64 -w 0)"
-    }
-  }
-}
-EOF
-                        
-                        # Build and push with BuildKit
-                        buildctl build \
-                          --frontend dockerfile.v0 \
+                        # Login to Docker registry
+                        echo "${PASSWORD}" | buildctl build \
+                          --frontend gateway.v0 \
+                          --opt source=docker/dockerfile \
                           --local context=${WORKSPACE} \
                           --local dockerfile=${WORKSPACE} \
-                          --output type=image,name=nishanthveeru/jenkins-demo:${BUILD_NUMBER},push=true \
+                          --output type=image,name=nishanthveeru/jenkins-demo:${BUILD_NUMBER},push=true,registry.insecure=false \
                           --export-cache type=registry,ref=nishanthveeru/jenkins-demo-cache:buildcache,mode=max \
-                          --import-cache type=registry,ref=nishanthveeru/jenkins-demo-cache:buildcache
-                        
-                        echo "Successfully built and pushed: nishanthveeru/jenkins-demo:${BUILD_NUMBER}"
+                          --import-cache type=registry,ref=nishanthveeru/jenkins-demo-cache:buildcache \
+                          --opt build-arg:DOCKER_USER=${USERNAME} \
+                          --opt build-arg:DOCKER_PASS=${PASSWORD}
                     '''
                 }
             }
